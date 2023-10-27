@@ -1,0 +1,12 @@
+name: API
+type: module
+description: Extensions for JSON:API
+core_version_requirement: ^8 || ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:consumers
+  - drupal:jsonapi
+  - drupal:jsonapi_response_alter
+  - drupal:next
+  - drupal:next_jsonapi

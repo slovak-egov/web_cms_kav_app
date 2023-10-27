@@ -1,0 +1,520 @@
+article.creation_date:
+  sk:
+    - 'Dátum zverejnenia'
+  en:
+    - Published
+article.revision_date:
+  sk:
+    - 'Dátum poslednej zmeny'
+  en:
+    - Revised
+attachm.download_in_format:
+  sk:
+    - 'Stiahnuť vo formáte {{format}} ({{size}})'
+  en:
+    - 'Download in format {{format}} ({{size}})'
+button.login:
+  sk:
+    - 'Prihlásiť sa'
+  en:
+    - 'Log In'
+button.logout:
+  sk:
+    - 'Odhlásiť sa'
+  en:
+    - 'Log Out'
+button.menu:
+  sk:
+    - Menu
+  en:
+    - Menu
+button.mid_or_eid_login:
+  sk:
+    - 'Prihláste sa pomocou aplikácie Slovensko v mobile (mID) alebo pomocou elektronickeho OP (eID)'
+  en:
+    - 'Log in using the application Slovensko v Mobile (mID) or ID card (eID)'
+button.mid_or_eid_login_desc:
+  sk:
+    - 'Pre, vyplnenie žiadosti je potrebné sa prihlásiť svojím elektronickým kontom občana'
+  en:
+    - 'To filling out the request, you need to log in with your account'
+comment.add:
+  sk:
+    - 'Pridať komentár'
+  en:
+    - 'Add comment'
+comment.placeholder_msg:
+  sk:
+    - Správa
+  en:
+    - Message
+comment.placeholder_name:
+  sk:
+    - Meno
+  en:
+    - Name
+comment.post:
+  sk:
+    - 'Zverejniť komentár'
+  en:
+    - 'Post comment'
+comment.required_message:
+  sk:
+    - 'Správa je povinná'
+  en:
+    - 'Message is required'
+comment.required_name:
+  sk:
+    - 'Meno je povinné'
+  en:
+    - 'Name is required'
+comment.send:
+  sk:
+    - 'Komentár bol odoslaný na schválenie'
+  en:
+    - 'Comment has been submitted for approval'
+comment.send_error:
+  sk:
+    - 'Chyba pri odoslaní komentára'
+  en:
+    - 'There was problem sending comment'
+comments.comments_count_few:
+  sk:
+    - '{{count}} Komentáre'
+  en:
+    - '{{count}} Comments'
+comments.comments_count_one:
+  sk:
+    - '{{count}} Komentár'
+  en:
+    - '{{count}} Comment'
+comments.comments_count_other:
+  sk:
+    - '{{count}} Komentárov'
+  en:
+    - '{{count}} Comments'
+comments.comments_count_two:
+  sk:
+    - '{{count}} Komentáre'
+  en:
+    - '{{count}} Comments'
+comments.count:
+  sk:
+    - 'Počet komentárov'
+  en:
+    - 'Number of comments'
+comments.redactor:
+  sk:
+    - 'Redaktor mUPVS'
+  en:
+    - 'Redactor mUPVS'
+comments.title_all:
+  sk:
+    - 'Všetky komentáre'
+  en:
+    - 'All comments'
+cookies_consent.button_consent:
+  sk:
+    - 'Prijať súbory cookies'
+  en:
+    - 'Accept cookies'
+cookies_consent.button_dissent:
+  sk:
+    - 'Odmietnuť súbory cookies'
+  en:
+    - 'Reject cookies'
+cookies_consent.subtitle1:
+  sk:
+    - 'Aby táto služba fungovala, používame niektoré nevyhnutné súbory cookie.'
+  en:
+    - 'In order for this service to work, we use some necessary cookies.'
+cookies_consent.subtitle2:
+  sk:
+    - 'Chceli by sme nastaviť ďalšie súbory cookie, aby sme si mohli zapamätať vaše nastavenia, porozumieť tomu, ako ľudia používajú službu, a vykonať vylepšenia.'
+  en:
+    - 'We would like to set additional cookies so that we can remember your settings, understand how people use the service, and make improvements.'
+cookies_consent.title:
+  sk:
+    - 'Súbory cookie na stránke slovensko.sk'
+  en:
+    - 'Cookies on the slovensko.sk website'
+copy_url.success:
+  sk:
+    - 'Odkaz bol skopírovaný'
+  en:
+    - 'The link has been copied'
+copy_url.title:
+  sk:
+    - 'Kopírovať odkaz'
+  en:
+    - 'Copy Link'
+date.format_string:
+  sk:
+    - 'dd. MM. yyyy'
+  en:
+    - dd/MM/yyyy
+error_page.403:
+  sk:
+    - 'Prístup zakázaný'
+  en:
+    - Forbidden
+error_page.404:
+  sk:
+    - 'Stránka nenájdená'
+  en:
+    - 'Not Found'
+error_page.408:
+  sk:
+    - 'Požiadavka vypršala'
+  en:
+    - 'Request Timeout'
+error_page.500:
+  sk:
+    - 'Chyba servera'
+  en:
+    - 'Internal Server Error'
+error_page.go_to_homepage:
+  sk:
+    - 'Prejsť na domovskú stránku'
+  en:
+    - 'Go to Homepage'
+error_page.sorry:
+  sk:
+    - 'Je nám ľúto, ale Vami požadovaná stránka sa nenašla.'
+  en:
+    - 'We are sorry.'
+example:
+  sk:
+    - Test
+  en:
+    - Example
+faq.title:
+  sk:
+    - 'Časté otázky'
+  en:
+    - 'Frequently Asked Questions'
+footer.copyright:
+  sk:
+    - 'Autorske prava 2022'
+  en:
+    - 'Copyright 2022'
+global_search_page.subtitle:
+  sk:
+    - 'V tejto sekcií nájdete výsledky hľadaného výrazu'
+  en:
+    - 'Search results for the phrase'
+global_search_page.title:
+  sk:
+    - 'Výsledky vyhľadávania'
+  en:
+    - 'Search results'
+header_search.placeholder:
+  sk:
+    - 'Zadajte hľadaný výraz'
+  en:
+    - 'Enter the search term'
+home:
+  sk:
+    - Domov
+  en:
+    - Home
+home_page.title:
+  sk:
+    - 'Verejné služby na jednom mieste'
+  en:
+    - 'All government services here.'
+language.cs:
+  sk:
+    - czech
+  en:
+    - czech
+language.en:
+  sk:
+    - english
+  en:
+    - english
+language.sk:
+  sk:
+    - slovenčina
+  en:
+    - slovenčina
+life_event.eservice_necessary_login:
+  sk:
+    - 'Pre využitie uvedenej služby je potrebné, aby ste sa prihlásili svojim elektronickým OP (eID).'
+  en:
+    - 'Login is necessary.'
+life_event.go_to_eservice:
+  sk:
+    - 'Prejsť na elektronickú službu'
+  en:
+    - 'Go to eGov Service'
+life_event.handled_online:
+  sk:
+    - 'Vybavíte online'
+  en:
+    - 'Handled Online'
+life_event.manuals:
+  sk:
+    - Návody
+  en:
+    - Manuals
+life_event.more_manuals:
+  sk:
+    - 'Ďalšie návody'
+  en:
+    - 'More Manuals'
+life_event.more_services:
+  sk:
+    - 'Viac elektronických služieb v kategórii {{ category_name }}.'
+  en:
+    - 'More eGov services in category {{ category_name }}.'
+life_event.nonmandatory:
+  sk:
+    - Nepovinný
+  en:
+    - Nonmandatory
+life_event.steps:
+  sk:
+    - Postup
+  en:
+    - Steps
+life_event.what_handled_online:
+  sk:
+    - 'Čo môžem vyriešiť elektronicky?'
+  en:
+    - 'What can be handled online?'
+login_button:
+  sk:
+    - 'Prihlásiť sa'
+  en:
+    - 'Log In'
+menu:
+  sk:
+    - Menu
+  en:
+    - Menu
+menu.close:
+  sk:
+    - Zatvoriť
+  en:
+    - Close
+menu.home:
+  sk:
+    - Domov
+  en:
+    - Home
+menu_button:
+  sk:
+    - Menu
+  en:
+    - Menu
+menu_home:
+  sk:
+    - Domov
+  en:
+    - Home
+node_type.article:
+  sk:
+    - články
+  en:
+    - articles
+organization.articles:
+  sk:
+    - Články
+  en:
+    - Articles
+organization.contact:
+  sk:
+    - Kontakt
+  en:
+    - Contact
+organization.id_numbers.cin:
+  sk:
+    - 'IČO: {{ cin }}'
+  en:
+    - 'CIN: {{ cin }}'
+organization.id_numbers.tin:
+  sk:
+    - 'DIČ: {{ tin }}'
+  en:
+    - 'TIN: {{ tin }}'
+organization.id_numbers.vat:
+  sk:
+    - 'IČ DPH: {{ vat }}'
+  en:
+    - 'VAT: {{ vat }}'
+organization.map:
+  sk:
+    - Mapa
+  en:
+    - Map
+organization.news:
+  sk:
+    - Aktuality
+  en:
+    - News
+organization.notices:
+  sk:
+    - Oznamy
+  en:
+    - Notices
+organization.popular_contacts:
+  sk:
+    - 'Obľúbené kontakty'
+  en:
+    - 'Popular contacts'
+organization.services_and_forms:
+  sk:
+    - 'Elektronické služby a formuláre'
+  en:
+    - 'Electronic services and forms'
+organization.services_and_forms.subtitle:
+  sk:
+    - 'Vybavte rýchlo a jednoducho vďaka elektronickým službám {{ organization_code }}'
+  en:
+    - 'Execute quickly and easily thanks to electronic services {{ organization_code }}'
+related_content.empty_list:
+  sk:
+    - 'Mrzí nás to ale, momentálne sa tu nenachádzaju žiadne {{node_type}}.'
+  en:
+    - 'No {{node_type}}, here.'
+related_content.related_articles:
+  sk:
+    - 'Súvisiace články'
+  en:
+    - 'Related articles'
+search_container.advanced_search_label:
+  sk:
+    - 'Rozšírené vyhľadávanie'
+  en:
+    - 'Advanced search'
+search_container.empty_error:
+  sk:
+    - 'Hľadaný text musí mať minimálne 3 znaky.'
+  en:
+    - 'Type the phrase with at least 3 characters...'
+search_container.no_results:
+  sk:
+    - 'Pre hľadaný text sa nenašli žiadne výsledky.'
+  en:
+    - 'No results.'
+search_container.placeholder:
+  sk:
+    - 'Vyberte z možností'
+  en:
+    - 'Select from the options'
+search_container.search_label:
+  sk:
+    - Vyhľadať
+  en:
+    - Search
+search_container.title:
+  sk:
+    - Vyhľadávanie
+  en:
+    - Searching
+service.additional_info:
+  sk:
+    - 'Doplňujúce informácie'
+  en:
+    - 'Additional informations'
+service.content:
+  sk:
+    - Obsah
+  en:
+    - Content
+service.description:
+  sk:
+    - 'Popis služby'
+  en:
+    - 'Service description'
+service.organizational_unit_name:
+  sk:
+    - 'Gestor elektronickej služby'
+  en:
+    - 'Electronic service manager'
+service.service_signature_type_kep_title:
+  sk:
+    - 'Zvolená služba vyžaduje v poslednom kroku'
+  en:
+    - 'The final step of the selected service requires'
+service.service_signature_type_kep_link:
+  sk:
+    - 'kvalifikovaný elektronický podpis (KEP)'
+  en:
+    - 'a qualified electronic signature (QES)'
+service.service_signature_type_kep_desc:
+  sk:
+    - 'Skontrolujte či máte potrebné podpisové prostriedky. Bez podpisu nemôžete podanie odoslať.'
+  en:
+    - 'Check if you have the necessary signature tools. Without a signature, you cannot submit the application.'
+service.select_service_provider_desc:
+  sk:
+    - 'Vyberte poskytovateľa služby, ktorému budete adresovať zvolené podanie.'
+  en:
+    - 'Select the service provider to whom you will address the selected submission.'
+service.select_service_provider:
+  sk:
+    - 'Vyberte poskytovateľa služby'
+  en:
+    - 'Select the service provider'
+service.select_service_provider.no_options:
+  sk:
+    - 'Žiaden poskytovateľ služby'
+  en:
+    - 'No service provider'
+service.fill_application_online:
+  sk:
+    - 'Vyplnenie žiadosti online'
+  en:
+    - 'Filling out an online application'
+service.fill_application_online_desc:
+  sk:
+    - 'Pre vyplnenie žiadosti je potrebné sa prihlásiť elektronickým občianským.'
+  en:
+    - 'To fill out the application, it is necessary to log in with an electronic ID.'
+service.fill_application_online_button:
+  sk:
+    - 'Prejsť na elektronickú službu'
+  en:
+    - 'Go to the electronic service'
+service.fill_application_no_auth:
+  sk:
+    - 'Vyplniť žiadosť bez prihlásenia'
+  en:
+    - 'Fill out the application without logging in'
+service.fill_application_no_auth_desc:
+  sk:
+    - 'Na vyplnenie nie je potrebné použiť občianský s čipom. Po vyplnení si môžete žiadosť stiahnúť alebo zaslať na email.'
+  en:
+    - 'It is not necessary to use an ID card with a chip to fill out the form. After filling it out, you can download the application or send it to an email.'
+service.fill_application_no_auth_button:
+  sk:
+    - 'Prejsť na službu bez prihlásenia'
+  en:
+    - 'Access the service without logging in'
+service.popular_services:
+  sk:
+    - 'Obľúbené služby'
+  en:
+    - 'Popular services'
+service.process:
+  sk:
+    - 'Vybavenie služby'
+  en:
+    - 'Service process'
+service.right_data.content:
+  sk:
+    - 'Od 13.07.2021 do neurčita'
+  en:
+    - 'Of 13.07.2021 indefinitely'
+service.right_data.title:
+  sk:
+    - Účinnosť
+  en:
+    - Effectiveness
+time.format_string:
+  sk:
+    - 'HH:mm'
+  en:
+    - 'HH:mm'

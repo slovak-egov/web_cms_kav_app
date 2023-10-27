@@ -1,0 +1,11 @@
+uuid: 3afc9398-05aa-4308-a3d4-a7f013e09ee2
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_municipality.lv_municipality
+target_entity_type_id: lv_municipality
+target_bundle: lv_municipality
+default_langcode: site_default
+language_alterable: false

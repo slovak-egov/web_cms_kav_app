@@ -1,0 +1,5 @@
+entity.svksk_ui_translation.add_form:
+  route_name: entity.svksk_ui_translation.add_form
+  title: 'Add Translated string'
+  appears_on:
+    - entity.svksk_ui_translation.collection

@@ -1,0 +1,27 @@
+uuid: 603f8c61-d310-4605-8fa5-049b06b691b8
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_perex
+    - node.type.faq
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - plain_text
+id: node.faq.field_perex
+field_name: field_perex
+entity_type: node
+bundle: faq
+label: Perex
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

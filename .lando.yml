@@ -1,0 +1,62 @@
+name: cms-kav-slovensko-sk
+recipe: drupal10
+config:
+  php: '8.2'
+  via: apache
+  database: postgres:13
+  webroot: web
+  xdebug: true
+services:
+  appserver:
+    config:
+      php: .lando/php.ini
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    composer_version: "2.5.8"
+    overrides:
+      environment:
+        # Support debugging CLI with XDEBUG.
+        PHP_IDE_CONFIG: "serverName=appserver"
+        XDEBUG_SESSION_START: lando
+    scanner:
+      maxRedirects: 3
+      timeout: 1000
+      retry: 10
+  mailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
+  database:
+    portforward: 55432
+  s3:
+    type: compose
+    app_mount: disabled
+    services:
+      image: quay.io/minio/minio
+      volumes:
+        - minio_data_volume:/data
+      command: minio server /data --console-address ":9001"
+    volumes:
+      minio_data_volume:
+    ports:
+      - '59000:9000'
+      - '59001:9001'
+proxy:
+  mailhog:
+    - mail.lndo.site
+tooling:
+  post-pull:
+    service: appserver
+    description: "Apply all db and config changes"
+    dir: /app
+    cmd:
+      # - composer install
+      - drush updb -y --cache-clear=0
+      - drush cr
+      - drush cim -y
+      - drush cr
+      - drush locale:import sk ../translations/app.sk.po --type=customized --override=all -y
+      - drush locale:check
+      - drush locale:update
+      - drush simple-oauth:generate-keys ../config/simple_oauth_keys

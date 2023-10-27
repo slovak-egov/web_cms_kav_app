@@ -1,0 +1,15 @@
+uuid: a2309f53-593c-4f58-9b67-337be3f43771
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: info_banner
+label: 'Informačný banner'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

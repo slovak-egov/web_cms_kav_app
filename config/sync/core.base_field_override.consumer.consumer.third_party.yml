@@ -1,0 +1,22 @@
+uuid: f555e57c-8687-471d-83df-3c1efb6bd0d9
+langcode: sk
+status: true
+dependencies:
+  module:
+    - consumers
+id: consumer.consumer.third_party
+field_name: third_party
+entity_type: consumer
+bundle: consumer
+label: 'Is this consumer 3rd party?'
+description: 'Mark this if the organization behind this consumer is not the same as the one behind the Drupal API.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnúť
+  off_label: Vypnúť
+field_type: boolean

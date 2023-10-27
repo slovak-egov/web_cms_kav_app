@@ -1,0 +1,33 @@
+uuid: 1bf9bd27-b154-41e3-a6e9-e4184afc6a43
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: life_event_categories_en
+label: 'Life Event - Categories'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/life-events/[term:name]'
+selection_criteria:
+  bcd5c222-0f37-4234-ab24-0c4592e78bdf:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: bcd5c222-0f37-4234-ab24-0c4592e78bdf
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      life_event_categories: life_event_categories
+  da58631e-0625-4736-8ae8-1c6f59d3f155:
+    id: language
+    negate: false
+    uuid: da58631e-0625-4736-8ae8-1c6f59d3f155
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Jazyk

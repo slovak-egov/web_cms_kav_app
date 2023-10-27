@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Slovensko.sk Service module.
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Session\AccountInterface;
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function svksk_service_preprocess_node_add_list(&$variables) {
+  // Remove Service content-type from a list.
+  if (isset($variables['types']['service'])) {
+    unset($variables['types']['service']);
+  }
+  if (isset($variables['content']['service'])) {
+    unset($variables['content']['service']);
+  }
+}
+
+/**
+ * Implements hook_menu_links_discovered_alter().
+ */
+function svksk_service_menu_links_discovered_alter(&$links) {
+  // Remove Service content-type from a list.
+  if (isset($links['node.add.service'])) {
+    unset($links['node.add.service']);
+  }
+  if (isset($links['admin_toolbar_tools.extra_links:node.add.service'])) {
+    unset($links['admin_toolbar_tools.extra_links:node.add.service']);
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_create_access().
+ */
+function svksk_service_node_create_access(AccountInterface $account, array $context, $entity_bundle) {
+  if ($entity_bundle === 'service') {
+    return AccessResult::forbidden();
+  }
+  return AccessResult::neutral();
+}

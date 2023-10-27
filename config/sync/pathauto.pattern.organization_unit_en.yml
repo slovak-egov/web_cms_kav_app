@@ -1,0 +1,33 @@
+uuid: ba2055f6-03d0-4142-a349-027f4067dde6
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: organization_unit_en
+label: 'Organization Unit'
+type: 'canonical_entities:node'
+pattern: '/offices-institutions/[node:title]'
+selection_criteria:
+  9e095e84-b30b-4192-be59-961192de9b0a:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 9e095e84-b30b-4192-be59-961192de9b0a
+    context_mapping:
+      node: node
+    bundles:
+      organization: organization
+  1319adf3-ae16-4660-bd05-6a55f3c927b2:
+    id: language
+    negate: false
+    uuid: 1319adf3-ae16-4660-bd05-6a55f3c927b2
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

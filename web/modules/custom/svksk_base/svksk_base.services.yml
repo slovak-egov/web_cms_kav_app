@@ -1,0 +1,11 @@
+services:
+  entity_schema_manager:
+    class: Drupal\svksk_base\EntitySchemaManager
+    arguments: [ '@database', '@entity_type.manager', '@entity.definition_update_manager' ]
+  svksk_base.frontend_rebuild_manager:
+    class: Drupal\svksk_base\FrontendRebuildManager
+    arguments: [ '@entity_type.manager', '@http_client', '@current_user', '@keyvalue' ]
+  svksk_base.language_switcher:
+    class: Drupal\svksk_base\LanguageSwitcher
+    arguments:
+      [ '@language_manager', '@path.matcher' ]

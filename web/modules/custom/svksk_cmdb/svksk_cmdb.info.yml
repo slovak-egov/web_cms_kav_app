@@ -1,0 +1,9 @@
+name: CMDB
+type: module
+description: Integration module for CMDB APIs
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:svksk_api_client
+  - drupal:svksk_base

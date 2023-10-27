@@ -1,0 +1,9 @@
+access archived content:
+  title: 'Access archived content'
+  description: 'Allow to access archived content in admin lists.'
+access faq list:
+  title: 'Access FAQ list'
+  description: 'Allow user to access FAQ list and change the order of FAQ nodes.'
+administer media author:
+  title: 'Administer Media Author'
+  description: 'Allow user to change author on media entity.'

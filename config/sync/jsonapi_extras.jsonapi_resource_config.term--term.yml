@@ -1,0 +1,75 @@
+uuid: b2923f61-dd68-4d59-a3e1-4a264147396f
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_term
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: term--term
+disabled: false
+path: term/term
+resourceType: term--term
+resourceFields:
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  name:
+    disabled: false
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+  description:
+    disabled: false
+    fieldName: description
+    publicName: description
+    enhancer:
+      id: ''
+  category:
+    disabled: false
+    fieldName: category
+    publicName: category
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  published:
+    disabled: false
+    fieldName: published
+    publicName: published
+    enhancer:
+      id: ''

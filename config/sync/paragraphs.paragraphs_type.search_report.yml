@@ -1,0 +1,10 @@
+uuid: 516dad88-93d4-4bed-b5c4-feb2fc35f463
+langcode: sk
+status: true
+dependencies: {  }
+id: search_report
+label: 'Vyhľadávanie reportu'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

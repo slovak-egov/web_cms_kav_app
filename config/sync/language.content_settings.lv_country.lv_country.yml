@@ -1,0 +1,11 @@
+uuid: d3f7b1c6-8230-465c-9881-a02901833631
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_country.lv_country
+target_entity_type_id: lv_country
+target_bundle: lv_country
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,19 @@
+uuid: ed6dea02-d2d2-40dc-9cb2-db2efcdd84cc
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sent_email
+    - paragraphs.paragraphs_type.frontend_form
+id: paragraph.frontend_form.field_sent_email
+field_name: field_sent_email
+entity_type: paragraph
+bundle: frontend_form
+label: 'Email na odoslanie'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

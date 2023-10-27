@@ -1,0 +1,42 @@
+uuid: ad114138-fd6e-40d2-b523-e10c31cfbf29
+langcode: sk
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - filter
+    - media
+    - paragraphs_type_permissions
+    - system
+_core:
+  default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
+id: anonymous
+label: 'Anonymný používateľ'
+weight: -10
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'post comments'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view paragraph content accordion'
+  - 'view paragraph content attachments'
+  - 'view paragraph content content'
+  - 'view paragraph content faq'
+  - 'view paragraph content frontend_form'
+  - 'view paragraph content heading'
+  - 'view paragraph content image'
+  - 'view paragraph content info_banner'
+  - 'view paragraph content layout_section'
+  - 'view paragraph content link'
+  - 'view paragraph content organization_search'
+  - 'view paragraph content related_content'
+  - 'view paragraph content search_report'
+  - 'view paragraph content signpost'
+  - 'view paragraph content table'
+  - 'view paragraph content text'
+  - 'view paragraph content video'
+  - 'view paragraph content view'

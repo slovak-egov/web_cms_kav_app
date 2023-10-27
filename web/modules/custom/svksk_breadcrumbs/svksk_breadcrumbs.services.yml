@@ -1,0 +1,6 @@
+services:
+  svksk.breadcrumb:
+    class: Drupal\svksk_breadcrumbs\Breadcrumb\BreadcrumbBuilder
+    arguments: [ '@config.factory', '@language_manager', '@entity_type.manager', '@path_alias.manager', '@plugin.manager.menu.link', '@entity.repository', '@router.admin_context']
+    tags:
+      - { name: breadcrumb_builder, priority: 1007 }

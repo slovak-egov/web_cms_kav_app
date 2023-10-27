@@ -1,0 +1,21 @@
+uuid: bd1f94fe-334c-4bac-8c00-f863adadeab7
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.organization
+  module:
+    - metatag
+id: node.organization.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: organization
+label: Metatagy
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

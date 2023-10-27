@@ -1,0 +1,45 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          exposed_sorts_label: 'Zoradiť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+      pager:
+        options:
+          tags:
+            first: '« Prvá'
+            last: 'Posledná »'
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+      fields:
+        node_bulk_form:
+          action_title: Akcia
+        title:
+          label: Názov
+        type:
+          label: 'Typ obsahu'
+        operations:
+          label: Operácie
+      filters:
+        status:
+          expose:
+            label: 'Stav zverejnenia'
+          group_info:
+            label: 'Stav zverejnenia'
+            group_items:
+              1:
+                title: Zverejnené
+              2:
+                title: Nezverejnené
+        type:
+          expose:
+            label: 'Typ obsahu'
+        title:
+          expose:
+            label: Názov
+  page_1:
+    display_title: Stránka

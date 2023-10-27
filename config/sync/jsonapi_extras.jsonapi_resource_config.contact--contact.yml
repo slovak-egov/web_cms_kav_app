@@ -1,0 +1,87 @@
+uuid: b0f7eb1f-869f-4e35-97b4-10a2f8aae9e4
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_contact
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: contact--contact
+disabled: false
+path: contact/contact
+resourceType: contact--contact
+resourceFields:
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type_id:
+    disabled: false
+    fieldName: type_id
+    publicName: type_id
+    enhancer:
+      id: ''
+  contact_text:
+    disabled: false
+    fieldName: contact_text
+    publicName: contact_text
+    enhancer:
+      id: ''
+  description:
+    disabled: false
+    fieldName: description
+    publicName: description
+    enhancer:
+      id: ''
+  primary:
+    disabled: false
+    fieldName: primary
+    publicName: primary
+    enhancer:
+      id: ''
+  data_source_type_id:
+    disabled: false
+    fieldName: data_source_type_id
+    publicName: data_source_type_id
+    enhancer:
+      id: ''
+  confirmed:
+    disabled: false
+    fieldName: confirmed
+    publicName: confirmed
+    enhancer:
+      id: ''
+  confirmed_at:
+    disabled: false
+    fieldName: confirmed_at
+    publicName: confirmed_at
+    enhancer:
+      id: ''
+  confirmed_by:
+    disabled: false
+    fieldName: confirmed_by
+    publicName: confirmed_by
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''

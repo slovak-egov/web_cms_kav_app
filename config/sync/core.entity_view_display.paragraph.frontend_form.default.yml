@@ -1,0 +1,31 @@
+uuid: 91fcdb32-9480-4ed5-861c-b4b6c2cf0b4b
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.frontend_form.field_form_type
+    - field.field.paragraph.frontend_form.field_sent_email
+    - paragraphs.paragraphs_type.frontend_form
+  module:
+    - options
+id: paragraph.frontend_form.default
+targetEntityType: paragraph
+bundle: frontend_form
+mode: default
+content:
+  field_form_type:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_sent_email:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -1,0 +1,26 @@
+uuid: 7a104f4f-ecb0-48cf-8a57-eeddc9e416f8
+langcode: sk
+status: true
+dependencies:
+  config:
+    - crop.type.default
+  module:
+    - crop
+name: og
+label: 'OG (1200×630)'
+effects:
+  ddd73aa7-4bd6-4c85-b600-bdf2b1628d1e:
+    uuid: ddd73aa7-4bd6-4c85-b600-bdf2b1628d1e
+    id: image_scale
+    weight: -9
+    data:
+      width: 1200
+      height: 630
+      upscale: false
+  b6e4b626-9358-4df1-9d94-df476502074e:
+    uuid: b6e4b626-9358-4df1-9d94-df476502074e
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: default
+      automatic_crop_provider: null

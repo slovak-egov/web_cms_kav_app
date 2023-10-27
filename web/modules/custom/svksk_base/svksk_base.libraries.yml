@@ -1,0 +1,6 @@
+frontend_rebuild_form:
+  js:
+    assets/js/frontend_rebuild_form.js: { }
+  dependencies:
+    - core/jquery
+    - core/once

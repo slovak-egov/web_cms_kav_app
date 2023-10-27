@@ -1,0 +1,19 @@
+uuid: 588ce475-c3e5-4267-ac7f-d9bd7fabbfa1
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.table
+id: paragraph.table.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: table
+label: Nadpis
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

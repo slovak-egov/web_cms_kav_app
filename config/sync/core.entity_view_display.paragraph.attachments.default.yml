@@ -1,0 +1,23 @@
+uuid: 44856734-f537-4a5d-baab-0ad18d693f2e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.attachments.field_attachment_media
+    - paragraphs.paragraphs_type.attachments
+id: paragraph.attachments.default
+targetEntityType: paragraph
+bundle: attachments
+mode: default
+content:
+  field_attachment_media:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

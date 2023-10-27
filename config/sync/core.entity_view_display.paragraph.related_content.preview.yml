@@ -1,0 +1,40 @@
+uuid: da103011-d6d1-48ef-960a-d3ad9bf55cb1
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.related_content.field_node_reference
+    - field.field.paragraph.related_content.field_related_display_mode
+    - field.field.paragraph.related_content.field_title
+    - paragraphs.paragraphs_type.related_content
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.related_content.preview
+targetEntityType: paragraph
+bundle: related_content
+mode: preview
+content:
+  field_node_reference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_related_display_mode: true
+  search_api_excerpt: true

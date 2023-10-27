@@ -1,0 +1,28 @@
+<?php
+
+/**
+ * @file
+ * Contains svksk_jsonapi_language_access.module.
+ */
+
+/**
+ * Implements hook_query_TAG_alter().
+ */
+function svksk_jsonapi_language_access_query_node_access_alter(Drupal\Core\Database\Query\AlterableInterface $query) {
+  $langcode = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $default_langcode = \Drupal::languageManager()->getDefaultLanguage()->getId();
+  $router_match = \Drupal::routeMatch();
+  $resource_type = $router_match->getParameter('resource_type');
+  if (strpos($router_match->getRouteName(), 'jsonapi') !== 0 ||
+    !($resource_type && $resource_type->getEntityTypeId() === 'node')) {
+    return;
+  }
+
+  /*
+    Fix node grants check by providing correct language code to query metadata
+    to avoid checking grant records with fallback = 1 value which fallbacks to
+    default language and returns incorrect results.
+    see. core/modules/node/src/NodeGrantDatabaseStorage.php:189
+  */
+  $query->addMetaData('langcode', $langcode);
+}

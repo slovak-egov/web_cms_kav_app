@@ -1,0 +1,11 @@
+uuid: d3494cd8-4359-4aa0-a35f-8b16c5b68fbc
+langcode: sk
+status: true
+dependencies: {  }
+id: svksk_front
+label: 'Slovensko.sk Frontend'
+base_url: 'https://www.slovensko.sk'
+preview_url: 'https://www.slovensko.sk/api/preview'
+preview_secret: c2d8fb87e0f39585f43dc64862dbd5e3
+revalidate_url: 'https://www.slovensko.sk/api/revalidate'
+revalidate_secret: c2d8fb87e0f39585f43dc64862dbd5e3

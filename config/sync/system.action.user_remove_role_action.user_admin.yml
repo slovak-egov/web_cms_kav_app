@@ -1,0 +1,14 @@
+uuid: cad8ac27-753c-466f-9160-5403b5586211
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.user_admin
+  module:
+    - user
+id: user_remove_role_action.user_admin
+label: 'Odobrať rolu Správca oprávnení vybraným používateľom'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: user_admin

@@ -1,0 +1,14 @@
+uuid: d885626b-2d9f-4a09-bcd5-c3d0a549bdbe
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.search_report
+id: paragraph.search_report.default
+targetEntityType: paragraph
+bundle: search_report
+mode: default
+content: {  }
+hidden:
+  created: true
+  status: true

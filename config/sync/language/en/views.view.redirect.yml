@@ -1,0 +1,45 @@
+label: Presmerovania
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filtrovať
+          exposed_sorts_label: 'Zoradiť podľa'
+          sort_asc_label: Vzostupne
+          sort_desc_label: Zostupne
+      pager:
+        options:
+          tags:
+            previous: '‹ predchádzajúca'
+            next: 'nasledujúca ›'
+            first: '« prvá'
+            last: 'posledná »'
+          expose:
+            items_per_page_label: 'Položiek na stránku'
+            items_per_page_options_all_label: '- Všetko -'
+      fields:
+        redirect_bulk_form:
+          action_title: Akcia
+        redirect_source__path:
+          label: 'Presmerovať z'
+        created:
+          label: Vytvorené
+      filters:
+        redirect_source__path:
+          expose:
+            label: 'Presmerovať z'
+        status_code:
+          expose:
+            label: 'Stavový kód'
+          group_info:
+            label: 'Stavový kód'
+        language:
+          expose:
+            label: 'Jazyk presmerovania'
+      title: Presmerovania
+      empty:
+        area_text_custom:
+          content: 'Nie sú žiadne presmerovania.'
+  page_1:
+    display_title: Stránka

@@ -1,0 +1,26 @@
+uuid: d2e87f70-9079-470d-9ab3-b478d38e34a5
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organizational_unit
+    - node.type.news
+id: node.news.field_organizational_unit
+field_name: field_organizational_unit
+entity_type: node
+bundle: news
+label: Gestor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:organizational_unit'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

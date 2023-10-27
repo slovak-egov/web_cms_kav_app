@@ -1,0 +1,23 @@
+uuid: a64f0d85-4e95-4a66-8e87-d77ebf96380b
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_of_article
+    - node.type.article
+  module:
+    - options
+id: node.article.field_type_of_article
+field_name: field_type_of_article
+entity_type: node
+bundle: article
+label: 'Typ článku'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: article
+default_value_callback: ''
+settings: {  }
+field_type: list_string

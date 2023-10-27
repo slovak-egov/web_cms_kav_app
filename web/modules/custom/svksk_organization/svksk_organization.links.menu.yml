@@ -1,0 +1,11 @@
+entity.svksk_organization.corporate_body_collection:
+  title: 'Corporate body'
+  route_name: entity.corporate_body.collection
+  parent: svksk_base.admin
+  weight: 120
+
+entity.svksk_organization.organizational_unit_collection:
+  title: 'Organizational units'
+  route_name: entity.organizational_unit.collection
+  parent: svksk_base.admin
+  weight: 121

@@ -1,0 +1,26 @@
+# Slovak translation of Image Style Warmer (8.x-1.2)
+# Copyright (c) 2023 by the Slovak translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Image Style Warmer (8.x-1.2)\n"
+"POT-Creation-Date: 2023-06-07 06:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Slovak\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1)?(0):(((n>=2)&&(n<=4))?(1):2));\n"
+
+msgid "Performance"
+msgstr "Výkon"
+msgid "About"
+msgstr "Informácie o"
+msgid "Uses"
+msgstr "Používa"
+msgid "Image styles"
+msgstr "Štýly obrázkov"
+msgid "An error occurred while processing @operation with arguments : @args"
+msgstr ""
+"Pri spracovaní operácie @operation s argumentmi došlo k chybe : "
+"@args"

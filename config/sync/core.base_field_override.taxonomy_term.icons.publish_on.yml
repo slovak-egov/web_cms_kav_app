@@ -1,0 +1,18 @@
+uuid: 96d0b5ba-8b7d-4e0f-ba9a-7377db26be24
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+id: taxonomy_term.icons.publish_on
+field_name: publish_on
+entity_type: taxonomy_term
+bundle: icons
+label: Publikovať
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

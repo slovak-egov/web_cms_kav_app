@@ -1,0 +1,23 @@
+global-styling:
+  js:
+    assets/js/scripts.js: { }
+  css:
+    theme:
+      assets/css/styles.css: { }
+  dependencies:
+    - svksk_admin/status_messages
+    - svksk_admin/select2.theme
+
+status_messages:
+  js:
+    assets/js/messages.js: { }
+  dependencies:
+    - core/jquery.once
+
+select2.theme:
+  css:
+    theme:
+      assets/css/select2.css: { }
+  dependencies:
+    - select2/select2
+    - gin/select2.theme

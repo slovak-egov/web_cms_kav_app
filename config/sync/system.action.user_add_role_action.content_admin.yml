@@ -1,0 +1,14 @@
+uuid: 16fca8ef-f691-4003-b5bc-7c697cf3cdd4
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.content_admin
+  module:
+    - user
+id: user_add_role_action.content_admin
+label: 'Pridať rolu Správca obsahu vybraným používateľom'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: content_admin

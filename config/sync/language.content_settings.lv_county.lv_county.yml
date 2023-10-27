@@ -1,0 +1,11 @@
+uuid: cd947214-9c37-45c6-a8ac-7a03bd227b0c
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_county.lv_county
+target_entity_type_id: lv_county
+target_bundle: lv_county
+default_langcode: site_default
+language_alterable: false

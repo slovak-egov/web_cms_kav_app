@@ -1,0 +1,30 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Filter
+          exposed_sorts_label: 'Sort by'
+      fields:
+        operations:
+          label: Operations
+        machine_name:
+          label: Key
+        status:
+          label: Published
+      title: 'UI Translations'
+      pager:
+        options:
+          tags:
+            first: '« First'
+            last: 'Last »'
+          expose:
+            items_per_page_label: 'Items per page'
+            items_per_page_options_all_label: '- All -'
+      filters:
+        machine_name:
+          expose:
+            label: Key
+        status_1:
+          expose:
+            label: Published

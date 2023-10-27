@@ -1,0 +1,24 @@
+diff --git a/core/modules/views/src/Plugin/views/exposed_form/ExposedFormPluginBase.php b/core/modules/views/src/Plugin/views/exposed_form/ExposedFormPluginBase.php
+index d986a97d05..abdc9874f8 100644
+--- a/core/modules/views/src/Plugin/views/exposed_form/ExposedFormPluginBase.php
++++ b/core/modules/views/src/Plugin/views/exposed_form/ExposedFormPluginBase.php
+@@ -263,9 +263,17 @@ public function exposedFormAlter(&$form, FormStateInterface $form_state) {
+       $all_exposed = array_merge($exposed_sorts, $exposed_filters);
+
+       // Set the access to FALSE if there is no exposed input.
+-      if (!array_intersect_key($all_exposed, $this->view->getExposedInput())) {
+-        $form['actions']['reset']['#access'] = FALSE;
++      $access = FALSE;
++      if ($filters = array_intersect_key($all_exposed, $this->view->getExposedInput())) {
++        $input = $form_state->getUserInput();
++        foreach (array_keys($filters) as $filter) {
++          if (isset($input[$filter]) && $input[$filter] !== 'All' && !empty($input[$filter])) {
++            $access = TRUE;
++          }
++        }
+       }
++
++      $form['actions']['reset']['#access'] = $access;
+     }
+
+     $pager = $this->view->display_handler->getPlugin('pager');

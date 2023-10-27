@@ -1,0 +1,23 @@
+uuid: e11a78f6-009c-4f0c-aa96-0885690549e4
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_farba
+    - taxonomy.vocabulary.tags
+  module:
+    - options
+id: taxonomy_term.tags.field_farba
+field_name: field_farba
+entity_type: taxonomy_term
+bundle: tags
+label: Farba
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: default
+default_value_callback: ''
+settings: {  }
+field_type: list_string

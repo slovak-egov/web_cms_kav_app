@@ -1,0 +1,54 @@
+uuid: c379aa99-4d2e-4c86-a1ee-618624e5c31a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view.field_content_type
+    - field.field.paragraph.view.field_items_per_page
+    - paragraphs.paragraphs_type.view
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_list:
+      children:
+        - field_content_type
+        - field_items_per_page
+      label: Zoznam
+      region: content
+      parent_name: ''
+      weight: 2
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: true
+        description: ''
+        required_fields: true
+id: paragraph.view.default
+targetEntityType: paragraph
+bundle: view
+mode: default
+content:
+  field_content_type:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_items_per_page:
+    type: number
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,12 @@
+uuid: 43c5a5f4-bd7b-4514-a617-1ea403d86d26
+langcode: sk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: MvQPTbQx0Vxwy0ordSHyixdZmLCMpvMdLD69dlwkrKc
+id: user
+label: Používateľ
+tags:
+  canonical_url: '[user:url]'
+  description: '[site:name]'
+  title: '[user:display-name] | [site:name]'

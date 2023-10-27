@@ -1,0 +1,17 @@
+uuid: 59501092-3169-4a72-9dfd-7cc5e723fa0e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - content_translation
+    - svksk_organization
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: time_interval.time_interval
+target_entity_type_id: time_interval
+target_bundle: time_interval
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,16 @@
+uuid: a5698e47-7f6e-4127-8d0d-112c91bc3e5b
+langcode: sk
+status: true
+dependencies:
+  module:
+    - consumers
+    - google_analytics
+    - media
+id: authenticated
+label: 'Prihlásený používateľ'
+weight: -2
+is_admin: null
+permissions:
+  - 'opt-in or out of google analytics tracking'
+  - 'view media'
+  - 'view own consumer entities'

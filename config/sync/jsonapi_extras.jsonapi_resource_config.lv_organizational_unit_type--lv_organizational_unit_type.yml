@@ -1,0 +1,45 @@
+uuid: e856b7c8-7f2a-4236-b72d-8da0c6edd468
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_list_values
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: lv_organizational_unit_type--lv_organizational_unit_type
+disabled: false
+path: lv_organizational_unit_type/lv_organizational_unit_type
+resourceType: lv_organizational_unit_type--lv_organizational_unit_type
+resourceFields:
+  code:
+    disabled: false
+    fieldName: code
+    publicName: code
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  name:
+    disabled: false
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''

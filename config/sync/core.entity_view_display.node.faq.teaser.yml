@@ -1,0 +1,41 @@
+uuid: 29bb15d2-0145-4d5a-869d-0e713291370e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.faq.ci_id
+    - field.field.node.faq.field_category
+    - field.field.node.faq.field_faq_answer
+    - field.field.node.faq.field_faq_question
+    - field.field.node.faq.field_metatags
+    - field.field.node.faq.field_migrated
+    - field.field.node.faq.field_tags
+    - node.type.faq
+  module:
+    - user
+id: node.faq.teaser
+targetEntityType: node
+bundle: faq
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  ci_id: true
+  field_category: true
+  field_faq_answer: true
+  field_faq_question: true
+  field_metatags: true
+  field_migrated: true
+  field_tags: true
+  langcode: true
+  search_api_excerpt: true

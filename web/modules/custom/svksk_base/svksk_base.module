@@ -1,0 +1,88 @@
+<?php
+
+/**
+ * @file
+ * Contains svksk_base.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\svksk_base\ComputedField\IconFileContent;
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function svksk_base_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if (($entity_type->id() === 'paragraph') && ($bundle === 'related_content')) {
+    if (isset($fields['field_node_reference'])) {
+      $fields['field_node_reference']->addConstraint('ExcludeSelfReference', []);
+    }
+  }
+
+  if ($entity_type->id() === 'taxonomy_term' && $bundle === 'icons') {
+    $fields['computed_file_content'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('SVG icon'))
+      ->setName('SVG icon')
+      ->setComputed(TRUE)
+      ->setTargetEntityTypeId('taxonomy_term')
+      ->setCardinality(1)
+      ->setClass(IconFileContent::class);
+  }
+}
+
+/**
+ * Implements hook_toolbar().
+ */
+function svksk_base_toolbar() {
+  return \Drupal::service('svksk_base.language_switcher')->build();
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter()
+ */
+function svksk_base_menu_local_tasks_alter(&$data, $route_name) {
+  // Hide this tab on user route
+  unset($data['tabs'][0]['role_delegation.edit_form']);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function svksk_base_form_user_form_alter(&$form, FormStateInterface $form_state) {
+  $form['account']['mail']['#required'] = TRUE;
+}
+
+/**
+ * Implements hook_ENTITY_ID_presave().
+ */
+function svksk_base_media_presave(EntityInterface $entity) {
+  switch ($entity->bundle()) {
+    case 'image':
+      $entity_manager = \Drupal::entityTypeManager();
+      $config = \Drupal::config('jsonapi_image_styles.settings');
+
+      $original_image = $entity->get('field_media_image')->entity->getFileUri();
+
+      // Force jsonapi image styles generate, to pre-create them on s3
+      foreach ($config->get('image_styles') as $image_style_name) {
+        if ($style = $entity_manager->getStorage('image_style')
+          ->load($image_style_name)) {
+          $destination = $style->buildUri($original_image);
+
+          if (!file_exists($destination)) {
+            $style->createDerivative($original_image, $destination);
+          }
+        }
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function svksk_base_form_alter(array &$form, FormStateInterface $form_state) {
+  $form['#attributes']['novalidate'] = 'novalidate';
+}

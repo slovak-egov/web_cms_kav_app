@@ -1,0 +1,28 @@
+uuid: 96fd5903-aa2d-4d5d-a75f-2024ec533c68
+langcode: sk
+status: true
+dependencies:
+  module:
+    - scheduler
+    - taxonomy_unique
+third_party_settings:
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+  taxonomy_unique:
+    enabled: false
+    message: 'Term "%term" already exists in vocabulary "%vocabulary".'
+name: Značky
+vid: tags
+description: ''
+weight: 0

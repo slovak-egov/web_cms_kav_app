@@ -1,0 +1,18 @@
+uuid: fc37cf5d-0249-4278-b30e-a2d422aab89b
+langcode: sk
+status: true
+dependencies:
+  config:
+    - node.type.article
+id: node.article.title
+field_name: title
+entity_type: node
+bundle: article
+label: Titulok
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: b9b1f139-f74c-4937-b165-8f41ef45616d
+langcode: sk
+status: true
+dependencies:
+  config:
+    - crop.type.default
+  module:
+    - crop
+  enforced:
+    module:
+      - media_library
+_core:
+  default_config_hash: 7qJqToD1OQLAyeswpmg7M0LRxQlw1URQkJDWUJCnmR8
+name: media_library
+label: 'Media Library thumbnail (220×220)'
+effects:
+  75b076a8-1234-4b42-85db-bf377c4d8d5f:
+    uuid: 75b076a8-1234-4b42-85db-bf377c4d8d5f
+    id: image_scale
+    weight: -9
+    data:
+      width: 220
+      height: 220
+      upscale: false
+  2421357e-0cbe-41a2-ac79-d8c216cc4f43:
+    uuid: 2421357e-0cbe-41a2-ac79-d8c216cc4f43
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: default
+      automatic_crop_provider: null

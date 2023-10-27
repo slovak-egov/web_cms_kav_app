@@ -1,0 +1,24 @@
+langcode: sk
+egov_header_trigger_link_1: 'Oficiálna stránka'
+egov_header_trigger_link_2: 'verejnej správy'
+egov_header_title_1: 'Doména gov.sk je oficiálna'
+egov_header_text_1:
+  value: "<p>Toto je oficiálna webová stránka orgánu verejnej moci Slovenskej republiky. Oficiálne stránky využívajú najmä doménu gov.sk. <a href=\"https://www.slovensko.sk/sk/agendy/agenda/_organy-verejnej-moci\">Odkazy na jednotlivé webové sídla orgánov verejnej moci nájdete na tomto odkaze.</a></p>\r\n"
+  format: basic_html
+egov_header_title_2: 'Táto stránka je zabezpečená'
+egov_header_text_2:
+  value: "<p>Buďte pozorní a vždy sa uistite, že zdieľate informácie iba cez zabezpečenú webovú stránku verejnej správy SR. Zabezpečená stránka vždy začína https:// pred názvom domény webového sídla.</p>\r\n"
+  format: basic_html
+footer_claim:
+  value: "<p><span>Prevádzkovateľom služby je Ministerstvo investícií, regionálneho rozvoja a informatizácie SR.</span></p>\r\n\r\n<p><span>Vytvorené v súlade s Jednotným dizajn manuálom elektronických služieb.</span></p>\r\n"
+  format: basic_html
+footer_logo: {  }
+header_logo: {  }
+egov_header_trigger_link_1_short: 'SK'
+egov_header_trigger_link_2_short: 'e-Gov'
+header_logo_mobile: {  }
+header_logo_title: Slovensko.sk
+header_logo_subtitle: 'Ústredný portál verejnej správy'
+header_logo_title_short: SK
+header_logo_subtitle_short: UPVS
+front_page_node: ''

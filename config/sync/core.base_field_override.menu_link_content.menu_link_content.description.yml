@@ -1,0 +1,18 @@
+uuid: 1908af0a-4e40-4ff2-aa5c-fa64beeec1cd
+langcode: sk
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.menu_link_content.description
+field_name: description
+entity_type: menu_link_content
+bundle: menu_link_content
+label: Popis
+description: 'Zobrazí sa pri nájazde myšou nad odkaz v menu.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

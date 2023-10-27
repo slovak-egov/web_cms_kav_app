@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Codelist>
+    <CodelistCode>CL000024</CodelistCode>
+    <CodelistName effectiveFrom="2008-10-01T00:00:00+02:00" language="sk">Lokálna štatistická územná jednotka 1 – okres</CodelistName>
+    <CodelistName effectiveFrom="2008-10-01T00:00:00+02:00" language="en">Local statistical territorial unit 1 - district  </CodelistName>
+    <CodelistManager managerType="major" effectiveFrom="2008-10-01T00:00:00+02:00">d2e6852f-2f1d-4e48-8f9d-e605e830a03b-88027af4-7459-44fa-922a-317ac7dccdfb</CodelistManager>
+    <SourceCodelist>Číselník Štatistického úradu Slovenskej republiky č. 0024.</SourceCodelist>
+    <ValidFrom>2008-09-08T00:00:00+02:00</ValidFrom>
+    <EffectiveFrom>2008-10-01T00:00:00+02:00</EffectiveFrom>
+    <EffectiveTo xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <IsBasic>true</IsBasic>
+    <Note language="sk">Platnosť a účinnosť základného číselníka nadobudnutá na základe výnosu Ministerstva financií SR č. MF/013261/2008-132 o štandardoch pre informačné systémy verejnej správy.
+V atribúte pre doplňujúci obsah položky je kód okresu podľa číselníka Štatistického úradu SR č. 0048. 
+</Note>
+    <Note language="sk">Právny rámec pre vytvorenie číselníka: Nariadenie č. 1059/2003 Ú. v. EÚ o zostavení spoločnej nomenklatúry štatistických územných jednotiek (NUTS); Vyhláška č. 438/2004 Z. z., ktorou sa vydáva klasifikácia štatistických územných jednotiek.
+</Note>
+    <ContactPerson>
+        <firstName>Sylvia</firstName>
+        <lastName>Jenovčíková</lastName>
+        <phoneNumber>+421 2 50236 229</phoneNumber>
+        <email>sylvia.jenovcikova@statistics.sk</email>
+    </ContactPerson>
+    <CodelistItem>
+        <ItemCode>SK0101</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava I</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava I</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava I</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava I</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava I</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava I</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">101</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">101</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0102</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava II</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava II</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava II</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava II</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava II</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava II</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">102</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">102</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0103</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava III</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava III</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava III</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava III</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava III</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava III</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">103</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">103</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0104</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava IV</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava IV</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava IV</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava IV</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava IV</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava IV</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">104</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">104</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0105</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava V</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava V</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bratislava V</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bratislava V</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava V</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislava V</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">105</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">105</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0106</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Malacky</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Malacky</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Malacky</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Malacky</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Malacky</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Malacky</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">106</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">106</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0107</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Pezinok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Pezinok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Pezinok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Pezinok</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Pezinok</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Pezinok</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">107</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">107</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0108</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Senec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Senec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Senec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Senec</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Senec</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Senec</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">108</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">108</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0211</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Dunajská Streda</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Dunajská Streda</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Dunajská Streda</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Dunajská Streda</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Dunajská Streda</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Dunajská Streda</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">201</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">201</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0212</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Galanta</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Galanta</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Galanta</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Galanta</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Galanta</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Galanta</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">202</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">202</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0213</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Hlohovec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Hlohovec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Hlohovec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Hlohovec</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Hlohovec</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Hlohovec</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">203</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">203</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0214</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Piešťany</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Piešťany</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Piešťany</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Piešťany</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Piešťany</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Piešťany</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">204</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">204</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0215</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Senica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Senica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Senica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Senica</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Senica</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Senica</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">205</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">205</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0216</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Skalica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Skalica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Skalica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Skalica</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Skalica</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Skalica</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">206</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">206</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0217</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Trnava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Trnava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Trnava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Trnava</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trnava</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trnava</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">207</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">207</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0221</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bánovce nad Bebravou</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bánovce nad Bebravou</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bánovce nad Bebravou</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bánovce nad Bebravou</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bánovce nad Bebravou</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bánovce nad Bebravou</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">301</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">301</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0222</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Ilava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Ilava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Ilava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Ilava</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Ilava</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Ilava</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">302</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">302</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0223</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Myjava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Myjava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Myjava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Myjava</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Myjava</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Myjava</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">303</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">303</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0224</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Nové Mesto nad Váhom</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Nové Mesto nad Váhom</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Nové Mesto nad Váhom</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Nové Mesto nad Váhom</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nové Mesto nad Váhom</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nové Mesto nad Váhom</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">304</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">304</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0225</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Partizánske</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Partizánske</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Partizánske</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Partizánske</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Partizánske</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Partizánske</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">305</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">305</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0226</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Považská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Považská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Považská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Považská Bystrica</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Považská Bystrica</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Považská Bystrica</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">306</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">306</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0227</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Prievidza</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Prievidza</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Prievidza</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Prievidza</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prievidza</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prievidza</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">307</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">307</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0228</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Púchov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Púchov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Púchov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Púchov</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Púchov</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Púchov</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">308</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">308</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0229</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Trenčín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Trenčín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Trenčín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Trenčín</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trenčín</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trenčín</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">309</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">309</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0231</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Komárno</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Komárno</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Komárno</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Komárno</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Komárno</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Komárno</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">401</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">401</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0232</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Levice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Levice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Levice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Levice</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Levice</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Levice</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">402</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">402</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0233</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Nitra</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Nitra</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Nitra</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Nitra</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nitra</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nitra</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">403</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">403</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0234</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Nové Zámky</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Nové Zámky</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Nové Zámky</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Nové Zámky</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nové Zámky</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nové Zámky</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">404</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">404</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0235</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Šaľa</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Šaľa</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Šaľa</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Šaľa</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Šaľa</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Šaľa</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">405</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">405</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0236</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Topoľčany</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Topoľčany</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Topoľčany</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Topoľčany</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Topoľčany</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Topoľčany</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">406</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">406</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0237</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Zlaté Moravce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Zlaté Moravce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Zlaté Moravce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Zlaté Moravce</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Zlaté Moravce</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Zlaté Moravce</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">407</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">407</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK031A</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Tvrdošín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Tvrdošín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Tvrdošín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Tvrdošín</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Tvrdošín</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Tvrdošín</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">510</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">510</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK031B</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Žilina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Žilina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Žilina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Žilina</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žilina</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žilina</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">511</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">511</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0311</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bytča</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bytča</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bytča</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bytča</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bytča</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bytča</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">501</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">501</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0312</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Čadca</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Čadca</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Čadca</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Čadca</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Čadca</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Čadca</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">502</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">502</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0313</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Dolný Kubín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Dolný Kubín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Dolný Kubín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Dolný Kubín</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Dolný Kubín</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Dolný Kubín</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">503</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">503</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0314</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Kysucké Nové Mesto</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Kysucké Nové Mesto</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Kysucké Nové Mesto</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Kysucké Nové Mesto</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Kysucké Nové Mesto</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Kysucké Nové Mesto</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">504</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">504</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0315</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Liptovský Mikuláš</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Liptovský Mikuláš</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Liptovský Mikuláš</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Liptovský Mikuláš</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Liptovský Mikuláš</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Liptovský Mikuláš</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">505</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">505</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0316</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Martin</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Martin</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Martin</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Martin</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Martin</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Martin</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">506</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">506</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0317</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Námestovo</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Námestovo</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Námestovo</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Námestovo</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Námestovo</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Námestovo</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">507</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">507</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0318</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Ružomberok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Ružomberok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Ružomberok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Ružomberok</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Ružomberok</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Ružomberok</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">508</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">508</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0319</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Turčianske Teplice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Turčianske Teplice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Turčianske Teplice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Turčianske Teplice</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Turčianske Teplice</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Turčianske Teplice</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">509</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">509</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK032A</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Veľký Krtíš</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Veľký Krtíš</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Veľký Krtíš</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Veľký Krtíš</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Veľký Krtíš</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Veľký Krtíš</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">610</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">610</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK032B</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Zvolen</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Zvolen</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Zvolen</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Zvolen</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Zvolen</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Zvolen</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">611</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">611</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK032C</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Žarnovica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Žarnovica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Žarnovica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Žarnovica</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žarnovica</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žarnovica</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">612</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">612</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK032D</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Žiar nad Hronom</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Žiar nad Hronom</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Žiar nad Hronom</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Žiar nad Hronom</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žiar nad Hronom</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žiar nad Hronom</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">613</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">613</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0321</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Banská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Banská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Banská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Banská Bystrica</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banská Bystrica</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banská Bystrica</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">601</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">601</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0322</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Banská Štiavnica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Banská Štiavnica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Banská Štiavnica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Banská Štiavnica</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banská Štiavnica</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banská Štiavnica</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">602</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">602</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0323</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Brezno</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Brezno</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Brezno</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Brezno</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Brezno</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Brezno</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">603</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">603</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0324</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Detva</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Detva</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Detva</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Detva</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Detva</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Detva</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">604</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">604</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0325</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Krupina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Krupina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Krupina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Krupina</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Krupina</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Krupina</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">605</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">605</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0326</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Lučenec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Lučenec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Lučenec</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Lučenec</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Lučenec</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Lučenec</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">606</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">606</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0327</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Poltár</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Poltár</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Poltár</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Poltár</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Poltár</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Poltár</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">607</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">607</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0328</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Revúca</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Revúca</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Revúca</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Revúca</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Revúca</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Revúca</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">608</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">608</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0329</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Rimavská Sobota</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Rimavská Sobota</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Rimavská Sobota</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Rimavská Sobota</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Rimavská Sobota</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Rimavská Sobota</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">609</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">609</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK041A</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Stará Ľubovňa</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Stará Ľubovňa</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Stará Ľubovňa</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Stará Ľubovňa</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Stará Ľubovňa</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Stará Ľubovňa</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">710</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">710</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK041B</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Stropkov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Stropkov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Stropkov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Stropkov</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Stropkov</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Stropkov</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">711</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">711</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK041C</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Svidník</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Svidník</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Svidník</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Svidník</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Svidník</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Svidník</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">712</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">712</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK041D</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Vranov nad Topľou</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Vranov nad Topľou</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Vranov nad Topľou</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Vranov nad Topľou</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Vranov nad Topľou</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Vranov nad Topľou</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">713</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">713</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0411</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bardejov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bardejov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Bardejov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Bardejov</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bardejov</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bardejov</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">701</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">701</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0412</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Humenné</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Humenné</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Humenné</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Humenné</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Humenné</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Humenné</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">702</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">702</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0413</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Kežmarok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Kežmarok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Kežmarok</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Kežmarok</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Kežmarok</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Kežmarok</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">703</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">703</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0414</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Levoča</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Levoča</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Levoča</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Levoča</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Levoča</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Levoča</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">704</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">704</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0415</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Medzilaborce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Medzilaborce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Medzilaborce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Medzilaborce</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Medzilaborce</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Medzilaborce</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">705</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">705</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0416</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Poprad</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Poprad</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Poprad</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Poprad</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Poprad</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Poprad</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">706</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">706</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0417</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Prešov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Prešov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Prešov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Prešov</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prešov</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prešov</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">707</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">707</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0418</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Sabinov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Sabinov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Sabinov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Sabinov</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Sabinov</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Sabinov</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">708</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">708</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0419</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Snina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Snina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Snina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Snina</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Snina</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Snina</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">709</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">709</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK042A</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Spišská Nová Ves</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Spišská Nová Ves</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Spišská Nová Ves</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Spišská Nová Ves</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Spišská Nová Ves</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Spišská Nová Ves</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">810</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">810</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK042B</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Trebišov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Trebišov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Trebišov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Trebišov</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trebišov</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trebišov</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">811</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">811</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0421</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Gelnica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Gelnica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Gelnica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Gelnica</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Gelnica</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Gelnica</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">801</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">801</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0422</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice I</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice I</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice I</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice I</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice I</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice I</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">802</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">802</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0423</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice II</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice II</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice II</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice II</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice II</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice II</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">803</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">803</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0424</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice III</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice III</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice III</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice III</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice III</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice III</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">804</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">804</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0425</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice IV</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice IV</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice IV</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice IV</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice IV</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice IV</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">805</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">805</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0426</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice - okolie</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice - okolie</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Košice - okolie</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Košice - okolie</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice - okolie</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košice - okolie</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">806</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">806</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0427</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Michalovce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Michalovce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Michalovce</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Michalovce</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Michalovce</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Michalovce</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">807</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">807</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0428</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Rožňava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Rožňava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Rožňava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Rožňava</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Rožňava</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Rožňava</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">808</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">808</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK0429</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Sobrance</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Sobrance</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">District of Sobrance</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Okres Sobrance</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Sobrance</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Sobrance</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">809</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">809</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SKZZZ</ItemCode>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemShortenedName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ValidFrom>2013-12-06T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="2013-12-06T00:00:00+01:00">
+            <EffectiveFrom>2013-01-01T00:00:00+01:00</EffectiveFrom>
+            <EffectiveTo>2014-09-22T00:00:00+02:00</EffectiveTo>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2013-12-06T00:00:00+01:00">
+            <EffectiveFrom>2013-01-01T00:00:00+01:00</EffectiveFrom>
+            <EffectiveTo>2014-09-22T00:00:00+02:00</EffectiveTo>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SKZZZZ</ItemCode>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemShortenedName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ValidFrom>2014-09-22T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2014-09-22T00:00:00+02:00">
+            <EffectiveFrom>2014-09-23T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2014-09-22T00:00:00+02:00">
+            <EffectiveFrom>2014-09-23T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2014-09-23T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2014-09-23T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+</Codelist>

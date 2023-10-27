@@ -1,0 +1,12 @@
+uuid: 9170649e-168d-4220-9084-096619ff784e
+langcode: sk
+status: true
+dependencies: {  }
+label: Default
+id: default
+description: ''
+aspect_ratio: '3:2'
+soft_limit_width: 1120
+soft_limit_height: 746
+hard_limit_width: 300
+hard_limit_height: 200

@@ -1,0 +1,27 @@
+uuid: 577f81d4-0a16-4916-9eec-2b6fd5e4460e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_signpost_append
+field_name: field_signpost_append
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: icon
+      label: Ikona
+    -
+      value: image
+      label: Obrázok
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

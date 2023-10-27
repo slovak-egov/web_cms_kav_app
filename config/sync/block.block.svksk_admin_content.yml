@@ -1,0 +1,22 @@
+uuid: 150a3167-dd0b-419b-b39b-75f84e2645fe
+langcode: sk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - svksk_admin
+_core:
+  default_config_hash: hBHXB7hC05XU7pDYzETt-GUcpFlogK1gkjyAsg0Ym58
+id: svksk_admin_content
+theme: svksk_admin
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Hlavný obsah stránky'
+  label_display: '0'
+  provider: system
+visibility: {  }

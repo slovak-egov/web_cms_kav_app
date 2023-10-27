@@ -1,0 +1,23 @@
+uuid: 84cfdfc1-2063-4652-9509-06bcc07f6a68
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migrated
+    - node.type.article
+id: node.article.field_migrated
+field_name: field_migrated
+entity_type: node
+bundle: article
+label: 'Migrovaný obsah'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Áno
+  off_label: Nie
+field_type: boolean

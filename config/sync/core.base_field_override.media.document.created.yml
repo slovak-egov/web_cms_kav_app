@@ -1,0 +1,18 @@
+uuid: 83236931-e2b1-4e2e-856c-d14f3a989189
+langcode: sk
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.created
+field_name: created
+entity_type: media
+bundle: document
+label: 'Napísané dňa'
+description: 'Čas, kedy bola položka v médiách vytvorená.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getRequestTime'
+settings: {  }
+field_type: created

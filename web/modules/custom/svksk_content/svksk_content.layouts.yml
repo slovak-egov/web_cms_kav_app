@@ -1,0 +1,66 @@
+svksk_layout_onecol:
+  label: '1 Column'
+  path: layouts/onecol_section
+  template: layout--onecol-section
+  class: '\Drupal\svksk_content\Plugin\Layout\OneColumnLayout'
+  category: 'Slovensko.sk'
+  default_region: content
+  icon_map:
+    - [content]
+  regions:
+    content:
+      label: Content
+
+svksk_layout_twocol:
+  label: '2 Columns'
+  path: layouts/twocol_section
+  template: layout--twocol-section
+  library: layout_builder/twocol_section
+  class: '\Drupal\svksk_content\Plugin\Layout\TwoColumnLayout'
+  category: 'Slovensko.sk'
+  default_region: first
+  icon_map:
+    - [first, second]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+
+svksk_layout_threecol:
+  label: '3 Columns'
+  path: layouts/threecol_section
+  template: layout--threecol-section
+  library: layout_builder/threecol_section
+  class: '\Drupal\svksk_content\Plugin\Layout\ThreeColumnLayout'
+  category: 'Slovensko.sk'
+  default_region: first
+  icon_map:
+    - [first, second, third]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+
+svksk_layout_fourcol:
+  label: '4 Columns'
+  path: layouts/fourcol_section
+  template: layout--fourcol-section
+  library: layout_builder/fourcol_section
+  class: '\Drupal\svksk_content\Plugin\Layout\FourColumnLayout'
+  category: 'Slovensko.sk'
+  default_region: first
+  icon_map:
+    - [first, second, third, forth]
+  regions:
+    first:
+      label: First
+    second:
+      label: Second
+    third:
+      label: Third
+    forth:
+      label: Forth

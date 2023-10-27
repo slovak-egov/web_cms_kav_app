@@ -1,0 +1,21 @@
+uuid: 782c3433-fdf1-4d39-9022-d0fba0a5bd8e
+langcode: sk
+status: true
+dependencies: {  }
+name: blurry_pico
+label: 'Blurry (10px)'
+effects:
+  a2ded000-ad12-4cca-8a65-e9d8cbe19003:
+    uuid: a2ded000-ad12-4cca-8a65-e9d8cbe19003
+    id: image_scale
+    weight: 1
+    data:
+      width: 10
+      height: null
+      upscale: false
+  f7fe9ac2-2dc4-4aea-99f8-b021f25fe46a:
+    uuid: f7fe9ac2-2dc4-4aea-99f8-b021f25fe46a
+    id: image_convert
+    weight: 2
+    data:
+      extension: png

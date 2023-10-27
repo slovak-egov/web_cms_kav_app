@@ -1,0 +1,20 @@
+diff --git a/src/EventSubscriber/RedirectPathTranslatorSubscriber.php b/src/EventSubscriber/RedirectPathTranslatorSubscriber.php
+index 246f7e4..8b9fcff 100644
+--- a/src/EventSubscriber/RedirectPathTranslatorSubscriber.php
++++ b/src/EventSubscriber/RedirectPathTranslatorSubscriber.php
+@@ -61,7 +61,14 @@ class RedirectPathTranslatorSubscriber extends RouterPathTranslatorSubscriber {
+       $redirect = $redirect_storage->load($rid);
+       $response->addCacheableDependency($redirect);
+       $uri = $redirect->get('redirect_redirect')->uri;
+-      $url = Url::fromUri($uri)->toString(TRUE);
++      $redirect_langcode = $redirect->get('language')->value;
++      // SKIT patch: Always load redirect destination in configured language for Redirect
++      if ($redirect_langcode !== 'und') {
++        $redirect_language = \Drupal::languageManager()->getLanguage($redirect_langcode);
++        $url = Url::fromUri($uri)->setOption('language', $redirect_language)->toString(TRUE);
++      } else {
++        $url = Url::fromUri($uri)->toString(TRUE);
++      }
+       $redirects_trace[] = [
+         'from' => $this->makeRedirectUrl($destination, $original_query_string),
+         'to' => $this->makeRedirectUrl($url->getGeneratedUrl(), $original_query_string),

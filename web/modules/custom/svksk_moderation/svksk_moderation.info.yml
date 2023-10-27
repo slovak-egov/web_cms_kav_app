@@ -1,0 +1,9 @@
+name: Moderation
+type: module
+description: Moderation content
+package: Slovensko.sk
+core_version_requirement: ^8 || ^9 || ^10
+'interface translation project': svksk_moderation
+'interface translation server pattern': modules/custom/svksk_moderation/translations/%project.%language.po
+dependencies:
+  - drupal:scheduler

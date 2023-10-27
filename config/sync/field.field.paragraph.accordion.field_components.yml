@@ -1,0 +1,97 @@
+uuid: a64bf71d-ddde-49cf-ab3c-af78a28e86f6
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_components
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.attachments
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.info_banner
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_components
+field_name: field_components
+entity_type: paragraph
+bundle: accordion
+label: Komponenty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+      attachments: attachments
+      faq: faq
+      heading: heading
+      image: image
+      info_banner: info_banner
+      link: link
+      text: text
+      video: video
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 19
+        enabled: true
+      attachments:
+        weight: 20
+        enabled: true
+      faq:
+        weight: 21
+        enabled: true
+      heading:
+        weight: 22
+        enabled: true
+      image:
+        weight: 23
+        enabled: true
+      info_banner:
+        weight: 24
+        enabled: true
+      layout_section:
+        weight: 25
+        enabled: false
+      life_event_categories:
+        weight: 26
+        enabled: false
+      life_event_step:
+        weight: 27
+        enabled: false
+      life_event_step_heading:
+        weight: 28
+        enabled: false
+      link:
+        weight: 29
+        enabled: true
+      organization_search:
+        weight: 30
+        enabled: false
+      related_content:
+        weight: 31
+        enabled: false
+      search_service:
+        weight: 32
+        enabled: false
+      signpost:
+        weight: 33
+        enabled: false
+      text:
+        weight: 34
+        enabled: true
+      video:
+        weight: 35
+        enabled: true
+      view:
+        weight: 36
+        enabled: false
+field_type: entity_reference_revisions

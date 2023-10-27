@@ -1,0 +1,21 @@
+uuid: 1d7d3ef8-9ac7-4fdf-a50c-6f649f708292
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_type
+    - paragraphs.paragraphs_type.info_banner
+  module:
+    - options
+id: paragraph.info_banner.field_type
+field_name: field_type
+entity_type: paragraph
+bundle: info_banner
+label: Typ
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

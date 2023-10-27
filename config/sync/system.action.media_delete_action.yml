@@ -1,0 +1,13 @@
+uuid: 4eb66376-b34c-499d-af8c-4574ec28c179
+langcode: sk
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: FrZy1tmuXJcOxhXlBoI1Hsnen5TT-9OCC1iolWH84go
+id: media_delete_action
+label: 'Odstrániť médiá'
+type: media
+plugin: 'entity:delete_action:media'
+configuration: {  }

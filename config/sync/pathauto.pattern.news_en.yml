@@ -1,0 +1,33 @@
+uuid: 117710c2-7327-4a86-946b-fad53525962f
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: news_en
+label: news
+type: 'canonical_entities:node'
+pattern: '[node:organization:alias]/news/[node:title]'
+selection_criteria:
+  16ce88c2-14d6-4ed1-97ef-ea3bab16ba0f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 16ce88c2-14d6-4ed1-97ef-ea3bab16ba0f
+    context_mapping:
+      node: node
+    bundles:
+      news: news
+  9bcb6b37-777b-4688-a823-e983152671fe:
+    id: language
+    negate: false
+    uuid: 9bcb6b37-777b-4688-a823-e983152671fe
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

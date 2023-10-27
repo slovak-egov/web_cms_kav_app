@@ -1,0 +1,20 @@
+uuid: 2e2822e8-61e9-4574-bf7b-f80715eca8de
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_categories
+  module:
+    - path
+id: taxonomy_term.media_categories.path
+field_name: path
+entity_type: taxonomy_term
+bundle: media_categories
+label: 'Alias URL adresy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

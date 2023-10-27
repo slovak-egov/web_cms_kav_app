@@ -1,0 +1,21 @@
+uuid: cc1e690e-35c1-43cb-9279-c7bf8fc131f2
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_type
+    - paragraphs.paragraphs_type.signpost
+  module:
+    - options
+id: paragraph.signpost.field_link_type
+field_name: field_link_type
+entity_type: paragraph
+bundle: signpost
+label: 'Typ odkazu'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,4 @@
+entity.node.comments_tab:
+  route_name: entity.node.comments
+  base_route: entity.node.canonical
+  title: 'Comments'

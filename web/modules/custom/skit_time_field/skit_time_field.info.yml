@@ -1,0 +1,7 @@
+name: 'Time Field'
+type: module
+description: 'Provides "Time Field".'
+package: 'Field types'
+dependencies:
+  - drupal:datetime
+core_version_requirement: ^9 || ^10

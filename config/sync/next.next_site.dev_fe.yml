@@ -1,0 +1,11 @@
+uuid: a333b5c5-f390-496c-9534-32b1cb3bc305
+langcode: sk
+status: true
+dependencies: {  }
+id: dev_fe
+label: 'Dev FE'
+base_url: '//host.docker.internal:3000'
+preview_url: '//host.docker.internal:3000/api/preview'
+preview_secret: SECRET
+revalidate_url: '//host.docker.internal:3000/api/revalidate'
+revalidate_secret: SECRET

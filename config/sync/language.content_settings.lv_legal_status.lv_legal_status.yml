@@ -1,0 +1,11 @@
+uuid: 9e9204aa-8487-4217-8d6f-2524dc59be17
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_legal_status.lv_legal_status
+target_entity_type_id: lv_legal_status
+target_bundle: lv_legal_status
+default_langcode: site_default
+language_alterable: false

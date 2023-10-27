@@ -1,0 +1,74 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  svksk_contact.info.yml: n/a
+#  svksk_contact.permissions.yml: n/a
+#  src/Entity/Contact.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2022-09-14 13:43+0200\n"
+"PO-Revision-Date: 2022-09-14 13:43+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_contact.info.yml:0
+msgid "Slovensko.sk Contact"
+msgstr "Slovensko.sk Kontakt"
+
+#: svksk_contact.info.yml:0
+msgid "Contact entities"
+msgstr "Zoznam kontaktov"
+
+#: svksk_contact.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_contact.permissions.yml:0
+msgid "Administer contact entities"
+msgstr "Spravovať záznamy kontaktov"
+
+#: svksk_contact.permissions.yml:0
+msgid "Allow to access the administration form to configure contact entities."
+msgstr ""
+
+#: src/Entity/Contact.php:49
+msgid "Contact Type"
+msgstr "Typ kontaktu"
+
+#: src/Entity/Contact.php:58
+msgid "Contact text"
+msgstr "Text kontaktu"
+
+#: src/Entity/Contact.php:71
+msgid "Description"
+msgstr "Popis"
+
+#: src/Entity/Contact.php:84
+msgid "Primary"
+msgstr "Primárny"
+
+#: src/Entity/Contact.php:92
+msgid "Data Source Type"
+msgstr "Zdroj dát"
+
+#: src/Entity/Contact.php:101
+msgid "Confirmed"
+msgstr "Overený"
+
+#: src/Entity/Contact.php:113
+msgid "Confirmed by"
+msgstr "Overený kým"
+
+#: src/Entity/Contact.php:13
+msgid "Contact"
+msgstr "Kontakt"
+

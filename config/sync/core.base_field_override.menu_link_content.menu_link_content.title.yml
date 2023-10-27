@@ -1,0 +1,18 @@
+uuid: 9f07ba3f-c767-43e8-8e4d-c43fded41efe
+langcode: sk
+status: true
+dependencies:
+  module:
+    - menu_link_content
+id: menu_link_content.menu_link_content.title
+field_name: title
+entity_type: menu_link_content
+bundle: menu_link_content
+label: 'Názov odkazu v menu'
+description: 'Text, ktorý bude použitý pre tento odkaz v menu.'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

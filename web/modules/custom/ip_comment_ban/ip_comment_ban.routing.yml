@@ -1,0 +1,48 @@
+ip_comment_ban.admin_page:
+  path: '/admin/config/people/ip_comment_ban'
+  defaults:
+    _form: '\Drupal\ip_comment_ban\Form\IPCommentBanAdmin'
+    _title: 'Advanced IP address bans'
+    ban_id: NULL
+  requirements:
+    _permission: 'advanced ban IP addresses'
+
+ip_comment_ban.delete:
+  path: '/admin/config/people/ip_comment_ban/delete/{ban_id}'
+  defaults:
+    _form: '\Drupal\ip_comment_ban\Form\IPCommentBanDelete'
+    _title: 'Delete IP address'
+  requirements:
+    _permission: 'advanced ban IP addresses'
+
+ip_comment_ban.edit:
+  path: '/admin/config/people/ip_comment_ban/edit/{ban_id}'
+  defaults:
+    _form: '\Drupal\ip_comment_ban\Form\IPCommentBanEdit'
+    _title: 'Edit the banned IP address'
+  requirements:
+    _permission: 'advanced ban IP addresses'
+
+ip_comment_ban.delete_all:
+  path: '/admin/config/people/ip_comment_ban/delete_all'
+  defaults:
+    _form: '\Drupal\ip_comment_ban\Form\IPCommentBanDeleteAll'
+    _title: 'Delete All IP addresses'
+  requirements:
+    _permission: 'advanced ban IP addresses'
+
+ip_comment_ban.settings:
+  path: '/admin/config/people/ip_comment_ban/settings'
+  defaults:
+    _form: '\Drupal\ip_comment_ban\Form\IPCommentBanSettingsForm'
+    _title: 'Advanced ban settings'
+  requirements:
+    _permission: 'advanced ban IP addresses'
+
+ip_comment_ban.search:
+  path: '/admin/config/people/ip_comment_ban/search'
+  defaults:
+    _form: '\Drupal\ip_comment_ban\Form\IPCommentBanSearchForm'
+    _title: 'Search IP'
+  requirements:
+    _permission: 'advanced ban IP addresses'

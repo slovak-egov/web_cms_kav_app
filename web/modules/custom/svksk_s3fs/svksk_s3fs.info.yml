@@ -1,0 +1,11 @@
+name: S3 File System
+type: module
+description: S3 filesystem extensions and overrides.
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:s3fs
+
+'interface translation project': svksk_s3fs
+'interface translation server pattern': modules/custom/svksk_s3fs/translations/%project.%language.po

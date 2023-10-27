@@ -1,0 +1,4 @@
+administer term entities:
+  title: 'Administer Term entities'
+  description: 'Allow to access the administration form to configure Term entities.'
+  restrict access: true

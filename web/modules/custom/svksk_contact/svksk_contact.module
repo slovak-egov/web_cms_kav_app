@@ -1,0 +1,38 @@
+<?php
+
+/**
+ * @file
+ * Contains svksk_contqct.module.
+ */
+
+use Drupal\Core\Datetime\DrupalDateTime;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function svksk_contact_contact_presave(EntityInterface $entity) {
+  if (($entity->isNew() || ($entity->original && !$entity->original->get('confirmed')->value)) &&
+    $entity->get('confirmed')->value) {
+    // Set current datetime as time of contract confirmation
+    $date = new DrupalDateTime('now'); // grab current dateTime using NON static
+    $entity->set('confirmed_at', $date->format('Y-m-d\TH:i:s'));
+
+    // Set current user account as confirmer
+    $account = \Drupal::currentUser();
+    $entity->set('confirmed_by', $account->id());
+  }
+}
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ */
+function svksk_contact_inline_entity_form_table_fields_alter(array &$fields, array $context) {
+  if ($context['entity_type'] === 'contact') {
+    $fields['description'] = [
+      'type' => 'field',
+      'label' => t('Description'),
+      'weight' => 2,
+    ];
+  }
+}

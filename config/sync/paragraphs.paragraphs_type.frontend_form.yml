@@ -1,0 +1,10 @@
+uuid: 10eeff48-1a19-4a7c-b2e5-f91b8ffaa142
+langcode: sk
+status: true
+dependencies: {  }
+id: frontend_form
+label: 'frontend formular'
+icon_uuid: null
+icon_default: null
+description: 'Žiadosť o prístup k dátam / Žiadosť o prístup na interný portál'
+behavior_plugins: {  }

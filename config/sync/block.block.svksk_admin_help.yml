@@ -1,0 +1,22 @@
+uuid: 5ed8bba9-8dac-4994-bef4-e9f8af96ca8d
+langcode: sk
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - svksk_admin
+_core:
+  default_config_hash: 8nOAry2oKqJOr0zbrlJ3sZHDFJLIO6j-0vT0K_TYca4
+id: svksk_admin_help
+theme: svksk_admin
+region: help
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Pomoc
+  label_display: '0'
+  provider: help
+visibility: {  }

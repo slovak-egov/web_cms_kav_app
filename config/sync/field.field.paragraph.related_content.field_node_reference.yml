@@ -1,0 +1,35 @@
+uuid: 547b1c7f-22eb-4b01-8cd1-06f9ce1eda5a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_node_reference
+    - node.type.article
+    - node.type.data_source
+    - node.type.faq
+    - node.type.news
+    - paragraphs.paragraphs_type.related_content
+id: paragraph.related_content.field_node_reference
+field_name: field_node_reference
+entity_type: paragraph
+bundle: related_content
+label: Obsah
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+      data_source: data_source
+      faq: faq
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

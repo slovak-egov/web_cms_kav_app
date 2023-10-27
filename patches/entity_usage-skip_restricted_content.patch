@@ -1,0 +1,24 @@
+diff --git a/src/Controller/ListUsageController.php b/src/Controller/ListUsageController.php
+index 038a7fa..e539981 100644
+--- a/src/Controller/ListUsageController.php
++++ b/src/Controller/ListUsageController.php
+@@ -333,7 +333,9 @@ class ListUsageController extends ControllerBase {
+   protected function getSourceEntityLink(EntityInterface $source_entity, $text = NULL) {
+     // Note that $paragraph_entity->label() will return a string of type:
+     // "{parent label} > {parent field}", which is actually OK for us.
+-    $entity_label = $source_entity->access('view label') ? $source_entity->label() : $this->t('- Restricted access -');
++    if (!$source_entity->access('view label')) {
++      return NULL;
++    }
+
+     $rel = NULL;
+     if ($source_entity->hasLinkTemplate('revision')) {
+@@ -348,7 +350,7 @@ class ListUsageController extends ControllerBase {
+       $rel = NULL;
+     }
+
+-    $link_text = $text ?: $entity_label;
++    $link_text = $text ?: $source_entity->label();
+     if ($rel) {
+       // Prevent 404s by exposing the text unlinked if the user has no access
+       // to view the entity.

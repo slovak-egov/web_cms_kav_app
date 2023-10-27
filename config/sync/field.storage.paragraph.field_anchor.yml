@@ -1,0 +1,18 @@
+uuid: ded0ff35-8201-4efa-8684-81088fc35da4
+langcode: sk
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_anchor
+field_name: field_anchor
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

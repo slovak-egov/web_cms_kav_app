@@ -1,0 +1,23 @@
+uuid: b5d863fd-38cf-47c5-9e03-9c9d91260559
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.article
+  module:
+    - options
+id: node.article.field_content
+field_name: field_content
+entity_type: node
+bundle: article
+label: Obsah
+description: 'Vytvorí obsah článku na základe použitých komponentov heading.'
+required: false
+translatable: false
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

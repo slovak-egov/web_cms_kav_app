@@ -1,0 +1,8 @@
+services:
+  svksk_s3fs.route_subscriber:
+    class: Drupal\svksk_s3fs\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  svksk_s3fs.file_download_service:
+    class: Drupal\svksk_s3fs\S3FileDownloadService
+    arguments: ['@module_handler', '@stream_wrapper_manager']

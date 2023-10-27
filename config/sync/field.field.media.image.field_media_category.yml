@@ -1,0 +1,29 @@
+uuid: 00bdfed5-b15d-45f4-898f-2deee3e63507
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_category
+    - media.type.image
+    - taxonomy.vocabulary.media_categories
+id: media.image.field_media_category
+field_name: field_media_category
+entity_type: media
+bundle: image
+label: Adresár
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: taxonomy_unique
+  handler_settings:
+    target_bundles:
+      media_categories: media_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 843a3840-7ae4-4676-a6f1-60091a6e1e50
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.ci_id
+    - node.type.page
+id: node.page.ci_id
+field_name: ci_id
+entity_type: node
+bundle: page
+label: 'CI ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

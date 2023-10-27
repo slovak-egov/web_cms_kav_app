@@ -1,0 +1,11 @@
+uuid: 1151d5b8-7f6a-496e-8faf-76951b6d8595
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_size_corporate.lv_size_corporate
+target_entity_type_id: lv_size_corporate
+target_bundle: lv_size_corporate
+default_langcode: site_default
+language_alterable: false

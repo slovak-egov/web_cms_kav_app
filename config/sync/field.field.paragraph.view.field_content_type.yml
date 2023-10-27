@@ -1,0 +1,26 @@
+uuid: 538e1b15-085a-45f6-9a1d-cf849dc30268
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_type
+    - node.type.article
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.field_content_type
+field_name: field_content_type
+entity_type: paragraph
+bundle: view
+label: 'Typ obsahu'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: eae481d6-8485-4698-a4ed-c0425f197bd2
+default_value_callback: ''
+settings:
+  handler: 'default:node_type'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 60a12b50-c113-48e9-81c0-e11279f32397
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatags
+    - node.type.faq
+  module:
+    - metatag
+id: node.faq.field_metatags
+field_name: field_metatags
+entity_type: node
+bundle: faq
+label: Metatagy
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag

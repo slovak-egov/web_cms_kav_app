@@ -1,0 +1,11 @@
+uuid: db2a81c9-690a-446f-abed-e2a7f502e257
+langcode: sk
+status: true
+dependencies: {  }
+id: taxonomy_term.life_event_categories
+site_resolver: site_selector
+configuration:
+  sites:
+    svksk_front: svksk_front
+revalidator: null
+revalidator_configuration: {  }

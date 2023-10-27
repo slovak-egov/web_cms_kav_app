@@ -1,0 +1,32 @@
+uuid: d28bce8c-faec-4500-884a-c13f2fcb2339
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - paragraphs_type_permissions
+    - role_delegation
+    - system
+    - taxonomy
+    - toolbar
+id: user_admin
+label: 'Správca oprávnení'
+weight: -5
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'administer users'
+  - 'assign content_admin role'
+  - 'assign content_editor role'
+  - 'assign organization_editor role'
+  - 'assign user_admin role'
+  - 'change own username'
+  - 'create terms in tags'
+  - 'delete terms in tags'
+  - 'edit terms in tags'
+  - 'view paragraph content related_content'
+  - 'view the administration theme'
+  - 'view user email addresses'

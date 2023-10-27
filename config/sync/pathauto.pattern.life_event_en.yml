@@ -1,0 +1,33 @@
+uuid: a8ee2d27-ae6d-4a10-85ef-2449c5c56c53
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: life_event_en
+label: 'Life event'
+type: 'canonical_entities:node'
+pattern: '/life-events/[node:field_category]/[node:title]'
+selection_criteria:
+  bb73945a-72e9-4c81-8f55-8e5fbe1d22f5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: bb73945a-72e9-4c81-8f55-8e5fbe1d22f5
+    context_mapping:
+      node: node
+    bundles:
+      life_event: life_event
+  0af0e05d-2604-4746-8bc3-82af0827eb64:
+    id: language
+    negate: false
+    uuid: 0af0e05d-2604-4746-8bc3-82af0827eb64
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

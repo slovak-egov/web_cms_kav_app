@@ -1,0 +1,22 @@
+uuid: 31212130-6316-480d-8224-09ea64e30078
+langcode: sk
+status: true
+dependencies:
+  theme:
+    - svksk_admin
+_core:
+  default_config_hash: BCWhood0xXFQYqxFgL1spXdb9KeIuXH1YvTdjIEedDg
+id: svksk_admin_secondary_local_tasks
+theme: svksk_admin
+region: pre_content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Sekundárne karty'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,17 @@
+uuid: 20ee5230-758a-4dac-9b1b-a1d0d808f3c8
+langcode: sk
+status: true
+dependencies:
+  module:
+    - content_translation
+    - svksk_ui_translations
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: svksk_ui_translation.svksk_ui_translation
+target_entity_type_id: svksk_ui_translation
+target_bundle: svksk_ui_translation
+default_langcode: site_default
+language_alterable: true

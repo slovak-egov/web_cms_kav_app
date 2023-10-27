@@ -1,0 +1,21 @@
+parameters:
+  http_client_config.api_gw:
+    verify: '%env(bool:API_CLIENT_VERIFY)%'
+    ca: '%env(API_CLIENT_CA)%'
+  http_client_config.proxy:
+    proxy_http: '%env(DRUPAL_PROXY_HTTP)%'
+    proxy_https: '%env(DRUPAL_PROXY_HTTPS)%'
+    proxy_no: '%env(DRUPAL_PROXY_NO)%'
+
+services:
+  svksk_http_client_factory:
+    class: Drupal\svksk_http_client\HttpClientFactory
+    arguments: ['@http_handler_stack']
+  svksk_http_client.api_client:
+    class: GuzzleHttp\Client
+    arguments: [ '%http_client_config.api_gw%' ]
+    factory: [ '@svksk_http_client_factory', 'fromOptions' ]
+  svksk_http_client.proxy_client:
+    class: GuzzleHttp\Client
+    arguments: [ '%http_client_config.proxy%' ]
+    factory: [ '@svksk_http_client_factory', 'fromOptions' ]

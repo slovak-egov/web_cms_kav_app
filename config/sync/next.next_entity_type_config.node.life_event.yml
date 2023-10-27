@@ -1,0 +1,12 @@
+uuid: 0c1c5390-c7d2-42d7-9ccd-ff201b17f7f2
+langcode: sk
+status: true
+dependencies: {  }
+id: node.life_event
+site_resolver: site_selector
+configuration:
+  sites:
+    svksk_front: svksk_front
+  field_name: {  }
+revalidator: null
+revalidator_configuration: {  }

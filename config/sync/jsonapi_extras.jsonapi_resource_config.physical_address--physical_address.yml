@@ -1,0 +1,129 @@
+uuid: d7c58506-1278-4101-bbe8-14a705b86261
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_organization
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: physical_address--physical_address
+disabled: false
+path: physical_address/physical_address
+resourceType: physical_address--physical_address
+resourceFields:
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  address_type_id:
+    disabled: false
+    fieldName: address_type_id
+    publicName: address_type_id
+    enhancer:
+      id: ''
+  street_name:
+    disabled: false
+    fieldName: street_name
+    publicName: street_name
+    enhancer:
+      id: ''
+  building_number:
+    disabled: false
+    fieldName: building_number
+    publicName: building_number
+    enhancer:
+      id: ''
+  registration_number:
+    disabled: false
+    fieldName: registration_number
+    publicName: registration_number
+    enhancer:
+      id: ''
+  municipality_id:
+    disabled: false
+    fieldName: municipality_id
+    publicName: municipality_id
+    enhancer:
+      id: ''
+  zip_code:
+    disabled: false
+    fieldName: zip_code
+    publicName: zip_code
+    enhancer:
+      id: ''
+  country:
+    disabled: false
+    fieldName: country
+    publicName: country
+    enhancer:
+      id: ''
+  primary:
+    disabled: false
+    fieldName: primary
+    publicName: primary
+    enhancer:
+      id: ''
+  active:
+    disabled: false
+    fieldName: active
+    publicName: active
+    enhancer:
+      id: ''
+  region_id:
+    disabled: false
+    fieldName: region_id
+    publicName: region_id
+    enhancer:
+      id: ''
+  district_id:
+    disabled: false
+    fieldName: district_id
+    publicName: district_id
+    enhancer:
+      id: ''
+  county_id:
+    disabled: false
+    fieldName: county_id
+    publicName: county_id
+    enhancer:
+      id: ''
+  floor:
+    disabled: false
+    fieldName: floor
+    publicName: floor
+    enhancer:
+      id: ''
+  workplace_number:
+    disabled: false
+    fieldName: workplace_number
+    publicName: workplace_number
+    enhancer:
+      id: ''
+  formatted_address:
+    disabled: false
+    fieldName: formatted_address
+    publicName: formatted_address
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''

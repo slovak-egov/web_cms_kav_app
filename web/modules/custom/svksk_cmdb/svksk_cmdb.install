@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * The svksk_cmdb install file.
+ */
+
+
+/**
+ * Implements hook_install().
+ */
+function svksk_cmdb_install($is_syncing) {
+  /** @var \Drupal\svksk_cmdb\CmdbCIManager $cmdb_ci_manager */
+  $cmdb_ci_manager = \Drupal::service('svksk_cmdb.ci_manager');
+  $cmdb_ci_manager->prepareEntityCiIdField('node', 'article');
+}
+
+/**
+ * Force install modules skit_services_env_parameter and svksk_http_client.
+ */
+function svksk_cmdb_update_9001(&$sandbox) {
+  \Drupal::service('module_installer')->install([
+    'skit_services_env_parameter',
+    'svksk_http_client'
+  ]);
+}

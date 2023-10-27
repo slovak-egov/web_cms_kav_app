@@ -1,0 +1,19 @@
+uuid: fb932de2-c98c-4bbe-9760-f486c5ad5516
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.ci_id
+    - node.type.news
+id: node.news.ci_id
+field_name: ci_id
+entity_type: node
+bundle: news
+label: 'CI ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

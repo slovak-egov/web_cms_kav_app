@@ -1,0 +1,8 @@
+name: Service
+type: module
+description: Service content enhancements.
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:svksk_cmdb

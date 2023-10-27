@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Codelist>
+    <CodelistCode>CL010110</CodelistCode>
+    <CodelistName effectiveFrom="2015-07-01T00:00:00+02:00" language="en">Type of organization unit  </CodelistName>
+    <CodelistName effectiveFrom="2015-07-01T00:00:00+02:00" language="sk">Typ organizačnej jednotky</CodelistName>
+    <CodelistManager managerType="major" effectiveFrom="2015-07-01T00:00:00+02:00">d2e6852f-2f1d-4e48-8f9d-e605e830a03b-88027af4-7459-44fa-922a-317ac7dccdfb</CodelistManager>
+    <SourceCodelist>Číselník Štatistického úradu Slovenskej republiky č. CL010110.</SourceCodelist>
+    <ValidFrom>2015-06-08T00:00:00+02:00</ValidFrom>
+    <EffectiveFrom>2015-07-01T00:00:00+02:00</EffectiveFrom>
+    <EffectiveTo xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <IsBasic>true</IsBasic>
+    <Note language="sk">Platnosť a účinnosť základného číselníka nadobudnutá na základe výnosu Ministerstva financií SR č. 55/2014 Z. z. o štandardoch pre informačné systémy verejnej správy v znení neskorších predpisov.</Note>
+    <ContactPerson>
+        <firstName>Sylvia</firstName>
+        <lastName>Jenovčíková</lastName>
+        <phoneNumber>+421 2 50236 229</phoneNumber>
+        <email>sylvia.jenovcikova@statistics.sk</email>
+    </ContactPerson>
+    <CodelistItem>
+        <ItemCode>1</ItemCode>
+        <ItemName effectiveFrom="2015-04-23T00:00:00+02:00" language="en">Not specified</ItemName>
+        <ItemName effectiveFrom="2015-04-23T00:00:00+02:00" language="sk">Neurčené</ItemName>
+        <ItemName effectiveFrom="2015-04-23T00:00:00+02:00" language="en">Not specified</ItemName>
+        <ItemName effectiveFrom="2015-04-23T00:00:00+02:00" language="sk">Neurčené</ItemName>
+        <ValidFrom>2015-04-23T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-04-23T00:00:00+02:00">
+            <EffectiveFrom>2015-04-23T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-04-23T00:00:00+02:00">
+            <EffectiveFrom>2015-04-23T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-04-23T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-04-23T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>2</ItemCode>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Establishment</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Odštepný závod</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Establishment</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Odštepný závod</ItemName>
+        <Note language="sk">§ 7 ods. 1 zákona č. 513/1991 Obchodný zákonník</Note>
+        <Note language="sk">§ 7 ods. 1 zákona č. 513/1991 Obchodný zákonník</Note>
+        <ValidFrom>2015-02-23T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>3</ItemCode>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Local producing unit</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Prevádzkareň</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Local producing unit</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Prevádzkareň</ItemName>
+        <Note language="sk">§ 7 ods. 2 zákona č. 513/1991 Obchodný zákonník a § 17 ods. 1 a 2 zákona č. 455/1991 Zb. živnostenský zákon</Note>
+        <Note language="sk">§ 7 ods. 2 zákona č. 513/1991 Obchodný zákonník a § 17 ods. 1 a 2 zákona č. 455/1991 Zb. živnostenský zákon</Note>
+        <ValidFrom>2015-02-23T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>4</ItemCode>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Public authority (not legal entity)</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Orgán verejnej moci bez právnej subjektivity</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Public authority (not legal entity)</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Orgán verejnej moci bez právnej subjektivity</ItemName>
+        <ValidFrom>2015-02-23T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>5</ItemCode>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Another organizational unit (not legal entity)</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Iná organizačná zložka bez právnej subjektivity</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="en">Another organizational unit (not legal entity)</ItemName>
+        <ItemName effectiveFrom="2015-02-23T00:00:00+01:00" language="sk">Iná organizačná zložka bez právnej subjektivity</ItemName>
+        <Note language="sk">napr.: § 7 ods. 2 zákona č. 513/1991 Zb. Obchodný zákonník</Note>
+        <Note language="sk">napr.: § 7 ods. 2 zákona č. 513/1991 Zb. Obchodný zákonník</Note>
+        <ValidFrom>2015-02-23T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-02-23T00:00:00+01:00">
+            <EffectiveFrom>2015-02-23T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-02-23T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>8</ItemCode>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="en">Another organizational unit</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="sk">Iná organizačná zložka</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="en">Another organizational unit</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="sk">Iná organizačná zložka</ItemName>
+        <ValidFrom>2015-04-24T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-04-24T00:00:00+02:00">
+            <EffectiveFrom>2015-04-24T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-04-24T00:00:00+02:00">
+            <EffectiveFrom>2015-04-24T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-04-24T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-04-24T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>9</ItemCode>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="en">Enterprise of foreign person</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="sk">Podnik zahraničnej osoby</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="en">Enterprise of foreign person</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="sk">Podnik zahraničnej osoby</ItemName>
+        <ValidFrom>2015-04-24T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-04-24T00:00:00+02:00">
+            <EffectiveFrom>2015-04-24T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-04-24T00:00:00+02:00">
+            <EffectiveFrom>2015-04-24T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-04-24T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-04-24T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>10</ItemCode>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="en">Organizational unit of the enterprise of foreign person</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="sk">Organizačná zložka podniku zahraničnej osoby</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="en">Organizational unit of the enterprise of foreign person</ItemName>
+        <ItemName effectiveFrom="2015-04-24T00:00:00+02:00" language="sk">Organizačná zložka podniku zahraničnej osoby</ItemName>
+        <ValidFrom>2015-04-24T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2015-04-24T00:00:00+02:00">
+            <EffectiveFrom>2015-04-24T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2015-04-24T00:00:00+02:00">
+            <EffectiveFrom>2015-04-24T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2015-04-24T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2015-04-24T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+</Codelist>

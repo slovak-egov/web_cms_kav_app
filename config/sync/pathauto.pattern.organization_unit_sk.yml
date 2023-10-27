@@ -1,0 +1,33 @@
+uuid: 215b816f-a8a9-4305-9913-4bd086fb5bd6
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: organization_unit_sk
+label: 'Organization Unit'
+type: 'canonical_entities:node'
+pattern: '/urady-institucie/[node:title]'
+selection_criteria:
+  8ad20399-57ca-4de8-8222-4db963f024b5:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8ad20399-57ca-4de8-8222-4db963f024b5
+    context_mapping:
+      node: node
+    bundles:
+      organization: organization
+  c3225612-6516-4086-a618-e9dded1c6775:
+    id: language
+    negate: false
+    uuid: c3225612-6516-4086-a618-e9dded1c6775
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

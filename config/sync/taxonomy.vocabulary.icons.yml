@@ -1,0 +1,15 @@
+uuid: 5c54070f-5985-4f5d-86d0-3c370e4963c9
+langcode: sk
+status: true
+dependencies:
+  module:
+    - taxonomy_max_depth
+third_party_settings:
+  taxonomy_max_depth:
+    max_depth: 0
+_core:
+  default_config_hash: py1K5_xKzfVTT314A9SdRm7-4AKavjghxgBfY8BeAxo
+name: Ikony
+vid: icons
+description: ''
+weight: 0

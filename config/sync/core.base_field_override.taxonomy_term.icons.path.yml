@@ -1,0 +1,20 @@
+uuid: b60ba6bb-eae0-4caf-9a04-8165c919e20f
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+  module:
+    - path
+id: taxonomy_term.icons.path
+field_name: path
+entity_type: taxonomy_term
+bundle: icons
+label: 'Alias URL adresy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

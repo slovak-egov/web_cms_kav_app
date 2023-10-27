@@ -1,0 +1,23 @@
+uuid: 830c1e22-b664-4840-a814-d7afc269872c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_related_display_mode
+    - paragraphs.paragraphs_type.related_content
+  module:
+    - options
+id: paragraph.related_content.field_related_display_mode
+field_name: field_related_display_mode
+entity_type: paragraph
+bundle: related_content
+label: 'Štýl zobrazenia'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: list
+default_value_callback: ''
+settings: {  }
+field_type: list_string

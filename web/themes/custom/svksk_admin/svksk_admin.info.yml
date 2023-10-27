@@ -1,0 +1,24 @@
+name: SVKSK Admin Theme
+type: theme
+description: 'Gin child'
+core_version_requirement: ^8.9 || ^9 || ^10
+# Defines the base theme
+base theme: gin
+
+libraries:
+  - svksk_admin/global-styling
+
+# Regions
+regions:
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+  footer: 'Footer'
+regions_hidden:
+  - sidebar_first

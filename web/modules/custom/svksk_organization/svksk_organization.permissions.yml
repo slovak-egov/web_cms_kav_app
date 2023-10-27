@@ -1,0 +1,42 @@
+administer organizational unit entities:
+  title: 'Administer organizational unit entities'
+  description: 'Allow to access the administration form to configure Organizational unit entities.'
+  restrict access: true
+
+administer physical address entities:
+  title: 'Administer Physical address entities'
+  description: 'Allow to access the administration form to configure Physical address entities.'
+  restrict access: true
+
+administer cost center entities:
+  title: 'Administer Cost center entities'
+  description: 'Allow to access the administration form to configure Cost center entities.'
+  restrict access: true
+
+administer corporate body entities:
+  title: 'Administer Corporate body entities'
+  description: 'Allow to access the administration form to configure Corporate body entities.'
+  restrict access: true
+
+administer service hours entities:
+  title: 'Administer Service Hours entities'
+  description: 'Allow to access the administration form to configure Service Hours.'
+  restrict access: true
+
+administer service hours category entities:
+  title: 'Administer Service Hours category entities'
+  description: 'Allow to access the administration form to configure Service Hours category.'
+  restrict access: true
+
+administer time interval entities:
+  title: 'Administer Time Interval entities'
+  description: 'Allow to access the administration form to configure Time Interval category.'
+  restrict access: true
+
+change user organizational unit assignment:
+  title: 'Change user Organizational unit assignment'
+  description: 'Allow user to change Organization unit on users that have access to edit (including himself).'
+
+change content organizational unit assignment:
+  title: 'Change content Organizational unit assignment'
+  description: 'Allow user to change Organization unit on the content that have access to edit.'

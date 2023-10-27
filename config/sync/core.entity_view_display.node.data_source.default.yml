@@ -1,0 +1,56 @@
+uuid: 8d8659b3-1ae6-415b-8b41-8cb33b44ad94
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.node.data_source.field_data_category
+    - field.field.node.data_source.field_description
+    - field.field.node.data_source.field_parent_source
+    - field.field.node.data_source.field_typ
+    - node.type.data_source
+  module:
+    - user
+id: node.data_source.default
+targetEntityType: node
+bundle: data_source
+mode: default
+content:
+  field_data_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_parent_source:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_typ:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

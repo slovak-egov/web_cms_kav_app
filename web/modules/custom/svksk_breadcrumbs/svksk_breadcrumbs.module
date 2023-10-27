@@ -1,0 +1,85 @@
+<?php
+
+/**
+ * @file
+ * Allows to extend the functionalities of the decouple router.
+ */
+
+use Drupal\Core\Routing\RouteMatch;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+
+/**
+ * Implements hook_decoupled_router_info_alter().
+ */
+function svksk_breadcrumbs_decoupled_router_info_alter(&$output, $context) {
+
+  if ($output['entity'] && $context['entity']) {
+    $languageManager = \Drupal::languageManager();
+    $langcodes = array_keys($languageManager->getLanguages());
+    $currentLangcode = $output['entity']['langcode'] ?? $languageManager->getCurrentLanguage()->getId();
+    $aliasManager = \Drupal::service('path_alias.manager');
+    $entity = $context['entity'];
+    $url = $entity->toUrl();
+
+    $aliases = [];
+    foreach ($langcodes as $langcode) {
+      if ($entity->hasTranslation($langcode)) {
+        $aliases[$langcode] = $aliasManager->getAliasByPath('/' . $url->getInternalPath(), $langcode);
+      } else {
+        $aliases[$langcode] = Url::fromRoute('<front>', [], ['language' => $languageManager->getLanguage($langcode)])
+          ->toString(TRUE)->getGeneratedUrl();
+      }
+    }
+
+    $output['entity']['aliases'] = $aliases;
+
+    $route_provider = \Drupal::service('router.route_provider');
+    $route = $route_provider->getRouteByName($url->getRouteName());
+
+    $route_match = new RouteMatch($url->getRouteName(), $route, $url->getRouteParameters(), $url->getRouteParameters());
+    $breadcrumb = Drupal::service('svksk.breadcrumb')->setLangcode($currentLangcode)->build($route_match);
+    $breadcrumb->addCacheTags([
+      $entity->getEntityTypeId() . ':' . $entity->id(),
+      'language:' . $currentLangcode,
+    ]);
+    $breadcrumb->addCacheableDependency($entity);
+    $breadcrumb->addCacheContexts([]);
+
+    $breadcrumbLinks = $breadcrumb->getLinks();
+
+    $links = [];
+    foreach ($breadcrumbLinks as $breadcrumbLink) {
+      $breadcrumbUrl = $breadcrumbLink->getUrl();
+
+      $link = [
+        'title' => $breadcrumbLink->getText(),
+        'uri' => $breadcrumbUrl->toUriString(),
+        'alias' => !empty($breadcrumbUrl->getInternalPath()) ? $aliasManager->getAliasByPath('/' . $breadcrumbUrl->getInternalPath(), $currentLangcode) : '#',
+      ];
+
+      $routeName = $breadcrumbUrl->getRouteName();
+      if ($routeName === 'entity.node.canonical') {
+        $routeParameters = $breadcrumbUrl->getRouteParameters();
+
+        if (isset($routeParameters['node'])) {
+          $nodeId = $routeParameters['node'];
+          $node = Node::load($nodeId);
+
+          if ($node) {
+            $link['parameters'] = [
+              'nodeId' => $nodeId,
+              'type' => $node->getType(),
+              'uuid' => $node->uuid(),
+            ];
+          }
+        }
+      }
+
+      $links[] = $link;
+    }
+
+    $output['entity']['breadcrumbs'] = $links;
+  }
+
+}

@@ -1,0 +1,15 @@
+uuid: e63b110f-e427-485f-b34a-762f12a6452b
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: accordion
+label: Akordeón
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

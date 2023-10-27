@@ -1,0 +1,8 @@
+name: Request Access API
+description: Request Access API
+package: Custom
+type: module
+core_version_requirement: ^9 || ^10
+
+'interface translation project': request_access
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po

@@ -1,0 +1,41 @@
+uuid: 8fa7ec5d-ea2e-49e0-81d8-babcf0459bc7
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.base_field_override.taxonomy_term.tags.description
+    - field.field.taxonomy_term.tags.field_farba
+    - field.field.taxonomy_term.tags.layout_builder__layout
+    - taxonomy.vocabulary.tags
+  module:
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_farba:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  layout_builder__layout: true
+  search_api_excerpt: true

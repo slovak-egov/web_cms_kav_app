@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: sk
+uuid: de71f69c-0255-49ed-9ff2-00e83629fbaa
+name: 'KAV cms'
+mail: info@nases.gov.sk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /dashboard
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: sk
+mail_notification: ''

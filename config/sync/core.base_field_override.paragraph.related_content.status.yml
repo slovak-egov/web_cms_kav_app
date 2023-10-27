@@ -1,0 +1,22 @@
+uuid: 47bd07b7-55e1-47e3-8552-8e34dcefb70b
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.related_content
+id: paragraph.related_content.status
+field_name: status
+entity_type: paragraph
+bundle: related_content
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnúť
+  off_label: Vypnúť
+field_type: boolean

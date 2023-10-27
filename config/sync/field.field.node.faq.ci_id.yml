@@ -1,0 +1,19 @@
+uuid: 5009a620-2c4d-4160-8b0c-26f444885b86
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.ci_id
+    - node.type.faq
+id: node.faq.ci_id
+field_name: ci_id
+entity_type: node
+bundle: faq
+label: 'CI ID'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

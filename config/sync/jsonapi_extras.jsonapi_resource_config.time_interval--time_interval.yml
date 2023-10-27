@@ -1,0 +1,69 @@
+uuid: ee8968f5-2181-417c-a34a-6c0ccf68a0e5
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_organization
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: time_interval--time_interval
+disabled: false
+path: time_interval/time_interval
+resourceType: time_interval--time_interval
+resourceFields:
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  time_from:
+    disabled: false
+    fieldName: time_from
+    publicName: time_from
+    enhancer:
+      id: ''
+  time_to:
+    disabled: false
+    fieldName: time_to
+    publicName: time_to
+    enhancer:
+      id: ''
+  name:
+    disabled: false
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+  description:
+    disabled: false
+    fieldName: description
+    publicName: description
+    enhancer:
+      id: ''
+  interval_type:
+    disabled: false
+    fieldName: interval_type
+    publicName: interval_type
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''

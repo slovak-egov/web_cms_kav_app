@@ -1,0 +1,22 @@
+uuid: f573f4f2-2fdc-4271-9e95-5ce695aaabf1
+langcode: sk
+status: true
+dependencies:
+  config:
+    - node.type.news
+id: node.news.promote
+field_name: promote
+entity_type: node
+bundle: news
+label: 'Zobrazené na titulnej strane'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Zapnúť
+  off_label: Vypnúť
+field_type: boolean

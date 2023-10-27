@@ -1,0 +1,25 @@
+uuid: f65f49cd-6108-4287-90f5-120ca70f6261
+langcode: sk
+status: true
+dependencies:
+  module:
+    - crop
+    - svksk_media
+third_party_settings:
+  crop:
+    image_field: null
+_core:
+  default_config_hash: hIBTnDGgDKnCiP6HUZm1m7600DHUEpC6FN3LQ4sUgZ4
+id: remote_video
+label: 'Externé video'
+description: 'Externé video hostované na platforme YouTube.'
+source: oembed_youtube_proxy
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_oembed_video
+  thumbnails_directory: 'public://oembed_thumbnails/[date:custom:Y-m]'
+  providers:
+    - YouTube
+field_map:
+  title: name

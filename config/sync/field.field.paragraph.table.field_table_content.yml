@@ -1,0 +1,55 @@
+uuid: 55f2778c-182f-44db-802b-659f4ea7db55
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_table_content
+    - paragraphs.paragraphs_type.table
+  module:
+    - tablefield
+id: paragraph.table.field_table_content
+field_name: field_table_content
+entity_type: paragraph
+bundle: table
+label: Tabuľka
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    rebuild:
+      cols: '4'
+      rows: '3'
+    value:
+      0:
+        weight: '0'
+        0: ''
+        1: ''
+        2: ''
+        3: ''
+      1:
+        weight: '1'
+        0: ''
+        1: ''
+        2: ''
+        3: ''
+      2:
+        weight: '2'
+        0: ''
+        1: ''
+        2: ''
+        3: ''
+      caption: ''
+    format: null
+    caption: ''
+default_value_callback: ''
+settings:
+  export: false
+  restrict_rebuild: false
+  restrict_import: false
+  lock_values: false
+  cell_processing: 0
+  empty_rules:
+    ignore_table_structure: false
+    ignore_table_header: false
+field_type: tablefield

@@ -1,0 +1,6 @@
+services:
+  svksk_content.commands:
+    class: \Drupal\svksk_content\Commands\ContentCommands
+    arguments: ['@svksk_content_generator']
+    tags:
+      - { name: drush.command }

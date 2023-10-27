@@ -1,0 +1,23 @@
+uuid: f28f6f6b-a20d-466d-af95-ec74b05b431b
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_button_size
+    - paragraphs.paragraphs_type.link
+  module:
+    - options
+id: paragraph.link.field_button_size
+field_name: field_button_size
+entity_type: paragraph
+bundle: link
+label: 'Veľkosť tlačidla'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: m
+default_value_callback: ''
+settings: {  }
+field_type: list_string

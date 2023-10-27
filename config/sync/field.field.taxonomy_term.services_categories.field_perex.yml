@@ -1,0 +1,27 @@
+uuid: c1842dd4-a144-40f8-9be3-3794bbaeab42
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_perex
+    - taxonomy.vocabulary.services_categories
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - plain_text
+id: taxonomy_term.services_categories.field_perex
+field_name: field_perex
+entity_type: taxonomy_term
+bundle: services_categories
+label: Perex
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

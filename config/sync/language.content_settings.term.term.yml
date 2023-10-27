@@ -1,0 +1,11 @@
+uuid: 209453f6-e75b-4a67-8803-66727091e60e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_term
+id: term.term
+target_entity_type_id: term
+target_bundle: term
+default_langcode: site_default
+language_alterable: false

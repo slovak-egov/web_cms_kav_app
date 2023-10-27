@@ -1,0 +1,21 @@
+uuid: 224dec65-fa52-4a95-b27c-4161cb7ad8f9
+langcode: sk
+status: true
+dependencies: {  }
+name: blurry_nano
+label: 'Blurry (20px)'
+effects:
+  beb129c6-d25f-483b-805b-2a9c2b6664d8:
+    uuid: beb129c6-d25f-483b-805b-2a9c2b6664d8
+    id: image_scale
+    weight: 1
+    data:
+      width: 20
+      height: null
+      upscale: false
+  3debf722-85ef-4fa7-82d6-559c0c755f81:
+    uuid: 3debf722-85ef-4fa7-82d6-559c0c755f81
+    id: image_convert
+    weight: 2
+    data:
+      extension: png

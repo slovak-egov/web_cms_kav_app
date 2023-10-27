@@ -1,0 +1,11 @@
+uuid: 09196e00-55ef-4d9b-aa6a-0c51cb50f01a
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_corporate_body_type.lv_corporate_body_type
+target_entity_type_id: lv_corporate_body_type
+target_bundle: lv_corporate_body_type
+default_langcode: site_default
+language_alterable: false

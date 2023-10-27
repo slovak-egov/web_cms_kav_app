@@ -1,0 +1,33 @@
+uuid: 1e707328-a002-4052-8890-729f5292b82d
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: life_event_sk
+label: 'Life event'
+type: 'canonical_entities:node'
+pattern: '/zivotne-udalosti/[node:field_category]/[node:title]'
+selection_criteria:
+  b1521c7d-9e22-45d2-92a9-9d2bbdd90aa4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: b1521c7d-9e22-45d2-92a9-9d2bbdd90aa4
+    context_mapping:
+      node: node
+    bundles:
+      life_event: life_event
+  b9d5ce86-9e62-4147-b2c5-6dfd003ea789:
+    id: language
+    negate: false
+    uuid: b9d5ce86-9e62-4147-b2c5-6dfd003ea789
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

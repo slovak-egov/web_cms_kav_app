@@ -1,0 +1,11 @@
+uuid: f5437bae-77b0-4d8b-a580-f5b6cf063695
+langcode: sk
+status: true
+dependencies: {  }
+id: node.organization
+site_resolver: site_selector
+configuration:
+  sites:
+    svksk_front: svksk_front
+revalidator: null
+revalidator_configuration: {  }

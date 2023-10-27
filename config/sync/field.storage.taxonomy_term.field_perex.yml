@@ -1,0 +1,19 @@
+uuid: 48fcc1ec-68e4-43e0-85dc-07222ea33a52
+langcode: sk
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - text
+id: taxonomy_term.field_perex
+field_name: field_perex
+entity_type: taxonomy_term
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

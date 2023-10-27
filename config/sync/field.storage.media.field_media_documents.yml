@@ -1,0 +1,26 @@
+uuid: ca75afdc-4b3a-4802-b62a-c37c066d2320
+langcode: sk
+status: true
+dependencies:
+  module:
+    - file
+    - media
+  enforced:
+    module:
+      - media
+id: media.field_media_documents
+field_name: field_media_documents
+entity_type: media
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

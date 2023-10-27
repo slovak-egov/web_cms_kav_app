@@ -1,0 +1,14 @@
+uuid: 36e2d2f1-6285-4b61-a7a4-0701f5c92e8c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.content_editor
+  module:
+    - user
+id: user_add_role_action.content_editor
+label: 'Pridať rolu Tvorca obsahu vybraným používateľom'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: content_editor

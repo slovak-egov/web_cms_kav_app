@@ -1,0 +1,4 @@
+services:
+  svksk_list_values.import_manager:
+    class: Drupal\svksk_list_values\ImportManager
+    arguments: ['@entity_type.manager']

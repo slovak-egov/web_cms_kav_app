@@ -1,0 +1,286 @@
+# Slovak translation of Content locking (anti-concurrent editing) (8.x-2.3)
+# Copyright (c) 2022 by the Slovak translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Content locking (anti-concurrent editing) (8.x-2.3)\n"
+"POT-Creation-Date: 2022-11-14 12:46+0000\n"
+"PO-Revision-Date: 2023-09-07 08:28+0200\n"
+"Last-Translator: \n"
+"Language-Team: Slovak\n"
+"Language: sk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1)?(0):(((n>=2)&&(n<=4))?(1):2));\n"
+"X-Generator: Poedit 3.3.1\n"
+
+msgid "Title"
+msgstr "Nadpis"
+
+msgid "Operations"
+msgstr "Operácie"
+
+msgid "Content"
+msgstr "Obsah"
+
+msgid "Value"
+msgstr "Hodnota"
+
+msgid "Disabled"
+msgstr "Zakázané"
+
+msgid "Action"
+msgstr "Akcia"
+
+msgid "Reset"
+msgstr "Reset"
+
+msgid "Types"
+msgstr "Typy"
+
+msgid "Content type"
+msgstr "Typ obsahu"
+
+msgid "All"
+msgstr "Všetko"
+
+msgid "Page"
+msgstr "Stránka"
+
+msgid "Published"
+msgstr "Zverejnené"
+
+msgid ", "
+msgstr ", "
+
+msgid "Desc"
+msgstr "Zostupne"
+
+msgid "General"
+msgstr "Všeobecné"
+
+msgid "Verbose"
+msgstr "Sledovanie zmien"
+
+msgid "Configuration"
+msgstr "Konfigurácia"
+
+msgid "Sort by"
+msgstr "Zoradiť podľa"
+
+msgid "Unpublished"
+msgstr "Nezverejnené"
+
+msgid "disable"
+msgstr "vypnúť"
+
+msgid "Apply"
+msgstr "Použiť"
+
+msgid "Offset"
+msgstr "Zobraziť od"
+
+msgid "About"
+msgstr "Informácie o"
+
+msgid "Entity type"
+msgstr "Typ entity"
+
+msgid "Items per page"
+msgstr "Položiek na stránku"
+
+msgid "‹‹"
+msgstr "‹‹"
+
+msgid "››"
+msgstr "››"
+
+msgid "- All -"
+msgstr "- Všetko -"
+
+msgid "« First"
+msgstr "« Prvý"
+
+msgid "Last »"
+msgstr "Koniec"
+
+msgid "Published status"
+msgstr "Stav zverejnenia"
+
+msgid "Asc"
+msgstr "Vzostupne"
+
+msgid "Master"
+msgstr "Master"
+
+msgid "Entity types"
+msgstr "Typy entít"
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:195
+msgid ""
+"This content translation is being edited by the user @name and is therefore "
+"locked to prevent other users changes. This lock is in place since @date."
+msgstr ""
+"Tento preklad obsahu upravuje používateľ @name, a preto je uzamknutý, aby sa "
+"zabránilo zmenám iných používateľov. Toto uzamknutie je v platnosti od @date."
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:201
+msgid ""
+"This content is being edited by the user @name and is therefore locked to "
+"prevent other users changes. This lock is in place since @date."
+msgstr ""
+"Tento obsah upravuje používateľ @name, a preto je uzamknutý, aby sa "
+"zabránilo zmenám iných používateľov. Toto uzamknutie je v platnosti od @date."
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:426
+msgid ""
+"This content translation is now locked against simultaneous editing. This "
+"content translation will remain locked if you navigate away from this page "
+"without saving or unlocking it."
+msgstr ""
+"Tento preklad obsahu je teraz uzamknutý proti súčasným úpravám viacerými "
+"používateľmi a zostane uzamknutý aj v prípade, ak prejdete z tejto stránky "
+"preč bez uloženia alebo odomknutia."
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:429
+msgid ""
+"This content is now locked against simultaneous editing. This content will "
+"remain locked if you navigate away from this page without saving or "
+"unlocking it."
+msgstr ""
+"Tento obsah je teraz uzamknutý proti súčasným úpravám viacerými používateľmi "
+"a zostane uzamknutý aj v prípade, ak prejdete z tejto stránky preč bez "
+"uloženia alebo odomknutia."
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:458
+msgid "Break lock"
+msgstr "Odomknúť obsah"
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:469
+msgid "Click here to @link"
+msgstr "Kliknite na @link"
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:482
+msgid ""
+"This content translation is now locked by you against simultaneous editing. "
+"This content translation will remain locked if you navigate away from this "
+"page without saving or unlocking it."
+msgstr ""
+"Tento preklad obsahu je teraz pre ostatných používateľov uzamknutý proti "
+"súčasným úpravám a zostane uzamknutý aj v prípade, ak prejdete z tejto "
+"stránky preč bez uloženia alebo odomknutia."
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:485
+msgid ""
+"This content is now locked by you against simultaneous editing. This content "
+"will remain locked if you navigate away from this page without saving or "
+"unlocking it."
+msgstr ""
+"Tento obsah je teraz pre ostatných používateľov uzamknutý proti súčasným "
+"úpravám a zostane uzamknutý aj v prípade, ak prejdete z tejto stránky preč "
+"bez uloženia alebo odomknutia."
+
+#: web/modules/contrib/content_lock/ContentLock/ContentLock.php:583
+msgid "Unlock"
+msgstr "Odomknúť"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:89
+msgid ""
+"Enable this option to display a message to the user when they lock a content "
+"item by editing it."
+msgstr ""
+"Zapnutím tejto možnosti zobrazíte používateľovi správu, keď uzamkne položku "
+"obsahu jej úpravou."
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:90
+msgid ""
+"Users trying to edit a content locked still see the content lock message."
+msgstr ""
+"Používatelia, ktorí sa pokúšajú upraviť uzamknutý obsah, stále vidia správu "
+"o uzamknutí obsahu."
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:98
+msgid "Entity type protected"
+msgstr "Chránený typ entity"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:161
+msgid "Select the bundles on which enable content lock"
+msgstr "Vyberte skupiny, na ktorých povolíte uzamknutie obsahu"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:169
+msgid "Lock only on entity translation level."
+msgstr "Uzamknutie len na úrovni prekladu entít."
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:171
+msgid ""
+"Activating this options allows users to edit multiple translations "
+"concurrently"
+msgstr ""
+"Aktivácia tejto možnosti umožňuje používateľom upravovať viacero prekladov "
+"súčasne"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:177
+msgid ""
+"To allow editing multiple translations concurrently you need to install "
+"%module"
+msgstr ""
+"Aby ste mohli upravovať viacero prekladov súčasne, musíte nainštalovať modul "
+"%module"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:187
+msgid "Lock form using JS."
+msgstr "Uzamknúť formulár pomocou JS."
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:189
+msgid ""
+"Activating this options activates the lock when the user is on the form. "
+"This helps if modules interacting with form without a user interacting with "
+"the form, like the prefetch_cache module."
+msgstr ""
+"Aktivácia tejto možnosti aktivuje zámok, keď je používateľ na formulári. To "
+"pomáha, ak moduly interagujú s formulárom bez toho, aby používateľ pracoval "
+"s formulárom, ako napríklad modul prefetch_cache."
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:198
+msgid "Lock only on entity form operation level."
+msgstr "Uzamknúť iba na úrovni operácie formulára entity"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:201
+msgid "Enable lock for selected form operations"
+msgstr "Povoliť uzamknutie formulára pre vybrané operácie"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:202
+msgid "Disable lock for selected form operations"
+msgstr "Zakázať uzamknutie formulára pre vybrané operácie"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:205
+msgid ""
+"Activating this options allows users to edit different entity forms "
+"concurrently"
+msgstr ""
+"Aktivácia tejto možnosti umožňuje používateľom súbežne upravovať rôzne "
+"formuláre entít"
+
+#: web/modules/contrib/content_lock/Form/ContentLockSettingsForm.php:212
+msgid "Form operations"
+msgstr "Formulárové operácie"
+
+#: web/modules/contrib/content_lock/Form/EntityBreakLockForm.php:81
+msgid "Lock broken. Anyone can now edit this content translation."
+msgstr ""
+"Uzamknutie bolo odstránené. Ktokoľvek môže teraz upravovať preklad tohto "
+"obsahu."
+
+#: web/modules/contrib/content_lock/Form/EntityBreakLockForm.php:84
+msgid "Lock broken. Anyone can now edit this content."
+msgstr ""
+"Uzamknutie bolo odstránené. Ktokoľvek môže teraz upravovať tento obsah."
+
+#: web/modules/contrib/content_lock/Form/EntityBreakLockForm.php:125
+msgid "Break Lock for content @label"
+msgstr "Odstrániť uzamknutie pre obsah @label"
+
+#: web/modules/contrib/content_lock/Form/EntityBreakLockForm.php:144
+msgid "Confirm break lock"
+msgstr "Potvrďte odstránenie uzamknutia"

@@ -1,0 +1,8 @@
+name: IP Comment Ban
+type: module
+description: 'Advanced banning of IP addresses.'
+core_version_requirement: ^8.8 || ^9 || ^10
+configure: ip_comment_ban.admin_page
+
+'interface translation project': ip_comment_ban
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po

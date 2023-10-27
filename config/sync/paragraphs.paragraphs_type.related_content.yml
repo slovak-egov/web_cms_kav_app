@@ -1,0 +1,15 @@
+uuid: f8c1fe89-f121-4c8c-937f-e07d944f5bd8
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: related_content
+label: 'Súvisiaci obsah'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

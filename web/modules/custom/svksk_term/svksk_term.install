@@ -1,0 +1,23 @@
+<?php
+
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Update term fields definition.
+ */
+function svksk_term_update_8001() {
+  $manager = \Drupal::entityDefinitionUpdateManager();
+  $field = BaseFieldDefinition::create('boolean')
+    ->setLabel(new TranslatableMarkup('Published'))
+    ->setInitialValue(1)
+    ->setRevisionable(TRUE)
+    ->setTranslatable(TRUE)
+    ->setDefaultValue(TRUE)->setDisplayOptions('form', [
+      'type' => 'boolean_checkbox',
+      'weight' => 10,
+    ]);
+
+  // Install the new definition.
+  $manager->installFieldStorageDefinition('published', 'term', 'term', $field);
+}

@@ -1,0 +1,19 @@
+uuid: 2e000b65-7494-4707-a353-949b25715fa4
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_table_footer
+    - paragraphs.paragraphs_type.table
+id: paragraph.table.field_table_footer
+field_name: field_table_footer
+entity_type: paragraph
+bundle: table
+label: Pätička
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

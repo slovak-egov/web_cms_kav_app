@@ -1,0 +1,23 @@
+uuid: 2e06ec77-c9d9-4741-a56a-21b8d5ce4e7f
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_image_style
+    - paragraphs.paragraphs_type.image
+  module:
+    - options
+id: paragraph.image.field_image_style
+field_name: field_image_style
+entity_type: paragraph
+bundle: image
+label: Štýl
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: content
+default_value_callback: ''
+settings: {  }
+field_type: list_string

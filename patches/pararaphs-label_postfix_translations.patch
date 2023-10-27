@@ -1,0 +1,13 @@
+diff --git a/src/Entity/Paragraph.php b/src/Entity/Paragraph.php
+index 702b78d..55ccee9 100644
+--- a/src/Entity/Paragraph.php
++++ b/src/Entity/Paragraph.php
+@@ -154,7 +154,7 @@ class Paragraph extends ContentEntityBase implements ParagraphInterface {
+       $field = $parent->get($parent_field);
+       $label = $parent->label() . ' > ' . $field->getFieldDefinition()->getLabel();
+       // A previous or draft revision or a deleted stale Paragraph.
+-      $postfix = ' (previous revision)';
++      $postfix = ' (' . $this->t('previous revision') . ')';
+       foreach ($field as $value) {
+         if ($value->entity && $value->entity->getRevisionId() == $this->getRevisionId()) {
+           $postfix = '';

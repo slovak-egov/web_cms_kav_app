@@ -1,0 +1,20 @@
+uuid: c56e8a06-8b57-4fd9-83f9-a211c9d515ef
+langcode: sk
+status: true
+dependencies:
+  theme:
+    - svksk_admin
+_core:
+  default_config_hash: HLQY2xgby8K3vN_98hiOSasOhm9pdCsH234-s0duJ8Q
+id: svksk_admin_page_title
+theme: svksk_admin
+region: header
+weight: -30
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Názov stránky'
+  label_display: '0'
+  provider: core
+visibility: {  }

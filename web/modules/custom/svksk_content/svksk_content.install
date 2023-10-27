@@ -1,0 +1,274 @@
+<?php
+
+/**
+ * @file
+ * The svksk_content install file.
+ */
+
+use Drupal\Core\Site\Settings;
+use Drupal\Core\Config\FileStorage;
+use Drupal\Core\Utility\UpdateException;
+use Drupal\pathauto\AliasTypeBatchUpdateInterface;
+use Drupal\pathauto\Entity\PathautoPattern;
+use Drupal\pathauto\Form\PathautoBulkUpdateForm;
+
+/**
+ * Implements hook_schema().
+ */
+function svksk_content_schema() {
+  $schema['content_entity_references'] = [
+    'fields' => [
+      'entity_type' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'entity_id' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'reference_entity_type' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'reference_entity_bundle' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+        'default' => '',
+      ],
+      'reference_entity_id' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+    ],
+    'indexes' => [
+      'uuid' => ['reference_entity_id', 'reference_entity_type'],
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * Install node_references table.
+ */
+function svksk_content_update_9001() {
+  $schema = svksk_content_schema();
+
+  \Drupal::database()->schema()->createTable('node_references', $schema['content_entity_references']);
+}
+
+/**
+ * Remove node_references table. Installs content_entity_references.
+ */
+function svksk_content_update_9002() {
+  $schema = svksk_content_schema();
+
+  \Drupal::database()->schema()->dropTable('node_references');
+  \Drupal::database()->schema()->createTable('content_entity_references', $schema['content_entity_references']);
+}
+
+/**
+ * Change URL alias patterns.
+ */
+function svksk_content_update_9003() {
+  PathautoPattern::load('article_en')
+    ->setPattern('articles/[node:title]')
+    ->save();
+  PathautoPattern::load('article_sk')
+    ->setPattern('clanky/[node:title]')
+    ->save();
+}
+
+/**
+ * Regenerate URL aliases for all nodes.
+ */
+function svksk_content_update_9004() {
+  $aliasTypeManager = \Drupal::service('plugin.manager.alias_type');
+  $aliasTypeInstance = $aliasTypeManager->createInstance('canonical_entities:node');
+
+  if ($aliasTypeInstance instanceof AliasTypeBatchUpdateInterface) {
+    $context = ['results' => ['updates' => 0]];
+    $aliasTypeInstance->batchUpdate(PathautoBulkUpdateForm::ACTION_ALL, $context);
+
+    if (isset($context['message'])) {
+      \Drupal::logger('update')->notice($context['message']);
+    };
+  }
+}
+
+/**
+ * Set default link paragraph style (schema)
+ */
+function svksk_content_update_9005() {
+  /** @var \Drupal\Core\Entity\EntityTypeInterface $entity_manager */
+  $entity_manager = \Drupal::entityTypeManager();
+  /** @var \Drupal\Core\Config\ConfigManager $config_manager */
+  $config_manager = \Drupal::service('config.manager');
+
+  $paragraphs = $entity_manager->getStorage('paragraph')
+    ->loadByProperties(['type' => 'link']);
+
+  if (empty($paragraphs)) {
+    return;
+  }
+
+  /** @var \Drupal\Core\Config\FileStorage $config_storage */
+  $config_storage = new FileStorage(Settings::get('config_sync_directory'));
+
+  $fields = [
+    'field.storage.paragraph.field_link_style',
+    'field.field.paragraph.link.field_link_style',
+  ];
+
+  foreach ($fields as $config_name) {
+    if ($config_record = $config_storage->read($config_name)) {
+      $entity_type = $config_manager->getEntityTypeIdByName($config_name);
+      /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $storage */
+      $storage = $entity_manager->getStorage($entity_type);
+      $entity = $storage->createFromStorageRecord($config_record);
+      $entity->save();
+    }
+    else {
+      throw new UpdateException("Missing configuration for {{$config_name}}: ");
+    }
+  }
+
+  drupal_flush_all_caches();
+}
+
+/**
+ * Set default link paragraph style (content)
+ */
+function svksk_content_update_9006() {
+  /** @var \Drupal\Core\Entity\EntityTypeManager $entity_manager */
+  $entity_manager = \Drupal::entityTypeManager();
+  $paragraphs = $entity_manager->getStorage('paragraph')
+    ->loadByProperties(['type' => 'link']);
+
+  if (empty($paragraphs)) {
+    return;
+  }
+
+  foreach ($paragraphs as $paragraph) {
+    $paragraph->set('field_link_style', 'default');
+    $paragraph->save();
+  }
+}
+
+/**
+ * Update event publishing fields.
+ */
+function svksk_content_update_9007() {
+  $nodes = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'event']);
+  foreach ($nodes as $node) {
+    if (!$node->get('field_publish_on')->isEmpty()) {
+      $node->set('publish_on', strtotime($node->get('field_publish_on')->value));
+    }
+    if (!$node->get('field_unpublish_on')->isEmpty()) {
+      $node->set('unpublish_on', strtotime($node->get('field_unpublish_on')->value));
+    }
+    $node->save();
+  }
+}
+
+/**
+ * Set default selection type in faq paragraph (schema)
+ */
+function svksk_content_update_9008() {
+  /** @var \Drupal\Core\Entity\EntityTypeInterface $entity_manager */
+  $entity_manager = \Drupal::entityTypeManager();
+  /** @var \Drupal\Core\Config\ConfigManager $config_manager */
+  $config_manager = \Drupal::service('config.manager');
+
+  $paragraphs = $entity_manager->getStorage('paragraph')
+    ->loadByProperties(['type' => 'faq']);
+
+  if (empty($paragraphs)) {
+    return;
+  }
+
+  /** @var \Drupal\Core\Config\FileStorage $config_storage */
+  $config_storage = new FileStorage(Settings::get('config_sync_directory'));
+
+  $fields = [
+    'field.storage.paragraph.field_selection_type',
+    'field.field.paragraph.faq.field_selection_type',
+  ];
+
+  foreach ($fields as $config_name) {
+    if ($config_record = $config_storage->read($config_name)) {
+      $entity_type = $config_manager->getEntityTypeIdByName($config_name);
+      /** @var \Drupal\Core\Config\Entity\ConfigEntityStorageInterface $storage */
+      $storage = $entity_manager->getStorage($entity_type);
+      $entity = $storage->createFromStorageRecord($config_record);
+      $entity->save();
+    }
+    else {
+      throw new UpdateException("Missing configuration for {{$config_name}}: ");
+    }
+  }
+
+  drupal_flush_all_caches();
+}
+
+/**
+ * Set default selection type in faq paragraph (content)
+ */
+function svksk_content_update_9009() {
+  /** @var \Drupal\Core\Entity\EntityTypeManager $entity_manager */
+  $entity_manager = \Drupal::entityTypeManager();
+  $paragraphs = $entity_manager->getStorage('paragraph')
+    ->loadByProperties(['type' => 'faq']);
+
+  if (empty($paragraphs)) {
+    return;
+  }
+
+  foreach ($paragraphs as $paragraph) {
+    $paragraph->set('field_selection_type', 'category');
+    $paragraph->save();
+  }
+}
+
+/**
+ * Set default format for content field in text paragraph
+ */
+function svksk_content_update_9010() {
+  /** @var \Drupal\Core\Entity\EntityTypeManager $entity_manager */
+  $entity_manager = \Drupal::entityTypeManager();
+  $paragraphs = $entity_manager->getStorage('paragraph')
+    ->loadByProperties(['type' => 'text']);
+
+  if (empty($paragraphs)) {
+    return;
+  }
+
+  foreach ($paragraphs as $paragraph) {
+    $paragraph->set('field_content', [
+      'value' => $paragraph->get('field_content')->value,
+      'format' => 'basic_html',
+    ]);
+    $paragraph->save();
+  }
+}
+
+/**
+ * Delete all media of the video type.
+ */
+function svksk_content_update_9011() {
+  $video_media = \Drupal::entityTypeManager()->getStorage('media')
+    ->loadByProperties(['bundle' => 'video']);
+
+  foreach ($video_media as $media) {
+    $media->delete();
+  }
+
+  \Drupal::logger('custom_delete_videos')->notice('@count videos of type "video" have been successfully deleted.', ['@count' => count($video_media)]);
+}

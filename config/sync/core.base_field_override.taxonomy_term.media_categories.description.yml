@@ -1,0 +1,21 @@
+uuid: daf61ddf-1b50-42ed-93e3-3943bbb3b14a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_categories
+  module:
+    - text
+id: taxonomy_term.media_categories.description
+field_name: description
+entity_type: taxonomy_term
+bundle: media_categories
+label: Popis
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,37 @@
+diff --git a/js/builder.es6.js b/js/builder.es6.js
+index 65bab82..1fcc01b 100644
+--- a/js/builder.es6.js
++++ b/js/builder.es6.js
+@@ -501,11 +501,17 @@
+         '.layout-paragraphs-component-form > .form-actions input[type=submit], .layout-paragraphs-component-form > .form-actions a.button',
+       );
+       $buttons.each((_i, el) => {
+-        const $originalButton = $(el).css({ display: 'none' });
++        let $originalButton = $(el).css({ display: 'none' });
+         buttons.push({
+           text: $originalButton.html() || $originalButton.attr('value'),
+           class: $originalButton.attr('class'),
+           click(e) {
++            // If validation of the form fails the ajax callback overwrites the
++            // button, so it will have a different id. Find the button by
++            // excluding the randomly generated part of the id.
++            var originalId = $originalButton.attr('id');
++            var buttonId = originalId.substring(0, originalId.indexOf('--'));
++            $originalButton = $dialog.find("[id^='" + buttonId + "']");
+             // If the original button is an anchor tag, triggering the "click"
+             // event will not simulate a click. Use the click method instead.
+             if ($originalButton.is('a')) {
+diff --git a/js/builder.js b/js/builder.js
+index 28bb378..6e0e66b 100644
+--- a/js/builder.js
++++ b/js/builder.js
+@@ -396,6 +396,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+           text: $originalButton.html() || $originalButton.attr('value'),
+           class: $originalButton.attr('class'),
+           click: function click(e) {
++            var originalId = $originalButton.attr('id');
++            var buttonId = originalId.substring(0, originalId.indexOf('--'));
++            $originalButton = $dialog.find("[id^='" + buttonId + "']");
+             if ($originalButton.is('a')) {
+               $originalButton[0].click();
+             } else {

@@ -1,0 +1,23 @@
+uuid: 598262a2-bfef-4865-8e85-490bd2dcb02b
+langcode: sk
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.storage.comment.field_comment_state
+  module:
+    - options
+id: comment.comment.field_comment_state
+field_name: field_comment_state
+entity_type: comment
+bundle: comment
+label: 'Status komentára'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: correct
+default_value_callback: ''
+settings: {  }
+field_type: list_string

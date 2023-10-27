@@ -1,0 +1,109 @@
+uuid: 26e38180-c867-4fff-8516-77e4bbad6b27
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.node.article.ci_id
+    - field.field.node.article.comment
+    - field.field.node.article.field_components
+    - field.field.node.article.field_content
+    - field.field.node.article.field_image
+    - field.field.node.article.field_metatags
+    - field.field.node.article.field_migrated
+    - field.field.node.article.field_perex
+    - field.field.node.article.field_rss
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_type_of_article
+    - image.style.medium
+    - node.type.article
+  module:
+    - entity_reference_revisions
+    - media
+    - metatag
+    - options
+    - text
+    - user
+_core:
+  default_config_hash: b4RQ-Nfz-gOoG_jjftd_qDIz4lf_-OzlxoLHkRXjfrE
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_content:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 8
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_perex:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_rss:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_type_of_article:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+hidden:
+  ci_id: true
+  comment: true
+  field_migrated: true
+  field_organizational_unit: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

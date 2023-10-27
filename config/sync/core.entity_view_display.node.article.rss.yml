@@ -1,0 +1,50 @@
+uuid: 0b99fea4-0e0d-4fa6-be49-bf0efbf35267
+langcode: sk
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.rss
+    - field.field.node.article.ci_id
+    - field.field.node.article.comment
+    - field.field.node.article.field_components
+    - field.field.node.article.field_content
+    - field.field.node.article.field_image
+    - field.field.node.article.field_metatags
+    - field.field.node.article.field_migrated
+    - field.field.node.article.field_perex
+    - field.field.node.article.field_rss
+    - field.field.node.article.field_tags
+    - field.field.node.article.field_type_of_article
+    - node.type.article
+  module:
+    - user
+_core:
+  default_config_hash: 2rIr6K5Q0UQ9khg0zE_CK-PtJH76UL-BDDZcZnZzwCc
+id: node.article.rss
+targetEntityType: node
+bundle: article
+mode: rss
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  ci_id: true
+  comment: true
+  field_components: true
+  field_content: true
+  field_image: true
+  field_metatags: true
+  field_migrated: true
+  field_organizational_unit: true
+  field_perex: true
+  field_rss: true
+  field_tags: true
+  field_type_of_article: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,17 @@
+svksk_base.admin:
+  parent: system.admin
+  title: 'Slovensko.sk'
+  route_name: svksk_base.admin
+  weight: -9
+
+svksk_base.admin_config:
+  title: 'General settings'
+  parent: svksk_base.admin
+  route_name: svksk_base.general_settings
+  weight: 100
+
+svksk_base.frontend_rebuild:
+  title: 'Frontend rebuild'
+  parent: svksk_base.admin
+  route_name: svksk_base.frontend_rebuild
+  weight: 101

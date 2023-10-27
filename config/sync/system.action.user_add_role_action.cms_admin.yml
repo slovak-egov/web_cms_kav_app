@@ -1,0 +1,14 @@
+uuid: ab51b44a-3ea8-4b88-a3b6-30cc4b86e917
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.cms_admin
+  module:
+    - user
+id: user_add_role_action.cms_admin
+label: 'Pridať rolu Správca aplikácie vybraným používateľom'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: cms_admin

@@ -1,0 +1,33 @@
+uuid: 44a74096-6ad5-4285-adc7-4d9baadce640
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: notice
+label: Notice
+type: 'canonical_entities:node'
+pattern: '[node:organization:alias]/oznamy/[node:title]'
+selection_criteria:
+  551ca524-127f-4683-89f5-f4a0c42ab5c0:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 551ca524-127f-4683-89f5-f4a0c42ab5c0
+    context_mapping:
+      node: node
+    bundles:
+      notice: notice
+  300fd460-cd84-4063-9730-269b964a7c3a:
+    id: language
+    negate: false
+    uuid: 300fd460-cd84-4063-9730-269b964a7c3a
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

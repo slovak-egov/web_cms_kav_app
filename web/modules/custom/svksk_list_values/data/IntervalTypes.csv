@@ -1,0 +1,4 @@
+code;name;description
+1;Práca;Pracovný časový interval. Je využiteľný napr. pri reportoch o úradných hodinách pre občanov.
+2;Obed;Nepracovný časový interval. Pri reportoch sa nebude zarátavať medzi pracovné intervaly.
+3;Prestávka;Nepracovný časový interval. Pri reportoch sa nebude zarátavať medzi pracovné intervaly.

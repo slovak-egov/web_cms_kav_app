@@ -1,0 +1,12 @@
+uuid: 5672892c-fa8f-44c4-b0cf-0ea718530f98
+langcode: sk
+status: false
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: mQIF_foYjmnVSr9MpcD4CTaJE_FpO1AyDd_DskztGhM
+id: user.full
+label: 'Používateľský účet'
+targetEntityType: user
+cache: true

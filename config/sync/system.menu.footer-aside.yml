@@ -1,0 +1,8 @@
+uuid: 0e0eb46f-afd0-4c3f-8bce-2c09e737d427
+langcode: sk
+status: true
+dependencies: {  }
+id: footer-aside
+label: 'Päta - dolná sekcia'
+description: ''
+locked: false

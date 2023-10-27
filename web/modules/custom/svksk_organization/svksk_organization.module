@@ -1,0 +1,352 @@
+<?php
+
+/**
+ * @file
+ * Contains svksk_organization.module.
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\node\NodeInterface;
+use Drupal\svksk_organization\ComputedField\OrganizationalUnitLabel;
+use Drupal\svksk_organization\ModuleEntityOperations;
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function svksk_organization_physical_address_presave(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityPhysicalAddressPresave($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function svksk_organization_time_interval_presave(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityTimeIntervalPresave($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function svksk_organization_service_hours_presave(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityServiceHoursPresave($entity);
+}
+
+/**
+ * Implements hook_node_grants().
+ */
+function svksk_organization_node_grants(AccountInterface $account, $op) {
+  $grants = [];
+
+  // Grant user permission to view and edit content with any organization
+  if ($account->hasPermission('administer organizational unit entities')) {
+    $grants['content_organization'] = [0];
+  }
+
+  // Grant user permission to view and edit only content in his organization
+  if ($account->isAuthenticated()) {
+    $user = \Drupal::entityTypeManager()->getStorage('user')->load($account->id());
+
+    if (!$user->get('field_organizational_unit')->isEmpty()) {
+      $grants['content_organization'] = [$user->get('field_organizational_unit')->target_id];
+    }
+  }
+
+  return $grants;
+}
+
+/**
+ * Implements hook_node_access_records().
+ */
+function svksk_organization_node_access_records(NodeInterface $node) {
+  $grants = [];
+  $languages = $node->getTranslationLanguages();
+
+  foreach ($languages as $language) {
+    $langcode = $language->getId();
+
+    if ($node->hasField('field_organizational_unit')) {
+      $grants[] = [
+        'realm' => 'content_organization',
+        'gid' => 0,
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'langcode' => $langcode,
+      ];
+
+      if (!$node->get('field_organizational_unit')->isEmpty()) {
+        $grants[] = [
+          'realm' => 'content_organization',
+          'gid' => $node->get('field_organizational_unit')->target_id,
+          'grant_view' => 1,
+          'grant_update' => 1,
+          'grant_delete' => 0,
+          'langcode' => $langcode,
+        ];
+      }
+    }
+  }
+
+  return $grants;
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function svksk_organization_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if (!($entity_type->id() === 'node' && isset($fields['field_organizational_unit']))) {
+    return;
+  }
+
+  $fields['computed_organizational_unit_label'] = BaseFieldDefinition::create('string')
+    ->setLabel(t('Organizational unit'))
+    ->setName('Computed organizational unit')
+    ->setComputed(TRUE)
+    ->setTargetEntityTypeId('organizational_unit')
+    ->setCardinality(1)
+    ->setClass(OrganizationalUnitLabel::class);
+}
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ */
+function svksk_organization_inline_entity_form_table_fields_alter(array &$fields, array $context) {
+  if ($context['entity_type'] === 'service_hours_category') {
+    $fields['description'] = [
+      'type' => 'field',
+      'label' => t('Description'),
+      'weight' => 2,
+    ];
+  } elseif ($context['entity_type'] === 'time_interval') {
+    $fields['interval_type'] = [
+      'type' => 'field',
+      'label' => t('Type'),
+      'weight' => -1,
+    ];
+    $fields['time_from'] = [
+      'type' => 'field',
+      'label' => t('Time from'),
+      'weight' => 2,
+    ];
+    $fields['time_to'] = [
+      'type' => 'field',
+      'label' => t('Time to'),
+      'weight' => 3,
+    ];
+  }
+}
+
+/**
+ * Implements hook_field_widget_single_element_form_alter().
+ */
+function svksk_organization_field_widget_single_element_form_alter(&$element, \Drupal\Core\Form\FormStateInterface $form_state, $context) {
+  /** @var \Drupal\Core\Field\FieldDefinitionInterface $field_definition */
+  $field_definition = $context['items']->getFieldDefinition();
+
+  if ($field_definition->getName() === 'service_hours_category_id') {
+    /** Restrict Service hours categories allowed options to those that belong to current organization */
+    $route_match = \Drupal::routeMatch();
+    $organizational_unit_id = $route_match->getParameter('organizational_unit');
+    if ($organizational_unit = \Drupal::entityTypeManager()->getStorage('organizational_unit')->load($organizational_unit_id)) {
+      $category_ids = $organizational_unit->getServiceHoursCategoriesIds();
+      foreach ($element['#options'] as $key => $value) {
+        if (is_numeric($key) && !in_array($key, $category_ids)) {
+          unset($element['#options'][$key]);
+        }
+      }
+    }
+  }
+
+  if ($field_definition->getName() === 'field_organizational_unit' && $field_definition->getTargetEntityTypeId() === 'user') {
+    /** Restrict access to content editor to change field_organizational_unit assignment */
+    /** @var \Drupal\Core\Session\AccountInterface $account */
+    $account = \Drupal::currentUser();
+    $element['#access'] = $account->hasPermission('change user organizational unit assignment');
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function svksk_organization_form_user_form_alter(&$form, FormStateInterface $form_state) {
+  $form['#validate'][] = 'svksk_organization_user_form_validate';
+}
+
+function svksk_organization_user_form_validate($form, FormStateInterface &$form_state) {
+  $input = $form_state->getUserInput();
+  $roles = $input['roles'] ?? $input['role_change'];
+  $organization_member = empty($roles) ? [] : array_filter($roles, function ($role) {
+    $organization_roles = array('organization_editor', 'organization_admin');
+    return in_array($role, $organization_roles);
+  });
+
+  if (empty($organization_member)) {
+    if (!empty($input['field_organizational_unit']) && $input['field_organizational_unit'] != '_none') {
+      $form_state->setErrorByName('field_organizational_unit', t('You cannot assign Organisation unit for this roles'));
+    }
+  }
+  else {
+    if (empty($input['field_organizational_unit']) || $input['field_organizational_unit'] == '_none') {
+      $form_state->setErrorByName('field_organizational_unit', t('You must assign Organisation unit for this roles'));
+    }
+  }
+}
+
+/**
+ * Implements hook_local_tasks_alter().
+ */
+function svksk_organization_local_tasks_alter(&$local_tasks) {
+  if (isset($local_tasks['content_translation.local_tasks:entity.organizational_unit.content_translation_overview'])) {
+    $local_task = &$local_tasks['content_translation.local_tasks:entity.organizational_unit.content_translation_overview'];
+    $local_task['base_route'] = 'entity.organizational_unit.edit_form';
+  }
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function svksk_organization_token_info() {
+
+  $info['types']['organization'] = [
+    'name' => t('Organization'),
+    'description' => t('Tokens related to organization.'),
+    'needs-data' => 'node',
+  ];
+
+  $info['tokens']['node']['organization'] = [
+    'name' => t('Organization'),
+    'description' => t('Entity reference'),
+    'needs-data' => 'node',
+    'type' => 'organization',
+  ];
+
+  $info['tokens']['organization']['alias'] = [
+    'name' => t('Organization Alias'),
+    'description' => t('The path component of the URL.'),
+    'needs-data' => 'node',
+  ];
+
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function svksk_organization_tokens($type, $tokens, array $data = [], array $options = []) {
+  $replacements = [];
+
+  if ($type == 'node' && !empty($data['node'])) {
+    $node = $data['node'];
+    $organizationTitle = '';
+    $organizationAlias = '';
+
+    if ($node->hasField('field_organizational_unit')
+      && !$node->get('field_organizational_unit')->isEmpty()) {
+      $languages = \Drupal::languageManager()->getLanguages();
+      $langcode = $node->language()->getId();
+      $organizationalUnitId = $node->get('field_organizational_unit')->target_id;
+
+      $organizations = \Drupal::entityTypeManager()
+        ->getStorage('node')
+        ->loadByProperties([
+          'type' => 'organization',
+          'field_organizational_unit' => $organizationalUnitId,
+        ]);
+
+      foreach ($organizations as $organization) {
+        if ($organization->isPublished()) {
+          $strLenLangcode = strlen($langcode);
+
+          if (!$node->isDefaultTranslation() && $organization->hasTranslation($langcode)) {
+            $translation = $organization->getTranslation($langcode);
+            $organizationTitle = $translation->getTitle();
+          }
+          else {
+            $organizationTitle = $organization->getTitle();
+          }
+
+          $organizationAlias = $organization->toUrl()
+            ->setOption('language', $languages[$langcode])
+            ->toString();
+
+          if (substr($organizationAlias, 0, $strLenLangcode + 2) === '/' . $langcode . '/') {
+            $organizationAlias = substr($organizationAlias, $strLenLangcode + 1);
+          }
+
+          break;
+        }
+      }
+    }
+
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        case 'organization':
+          $replacements[$original] = $organizationTitle;
+          break;
+        case 'organization:alias':
+          $replacements[$original] = $organizationAlias;
+          break;
+      }
+    }
+  }
+
+  return $replacements;
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_access()
+ */
+function svksk_organization_node_access(NodeInterface $node, $operation, AccountInterface $account)
+{
+  $access = AccessResult::neutral();
+  if(!$node->hasField('field_organizational_unit')) {
+    return $access;
+  }
+  $user = \Drupal::entityTypeManager()->getStorage('user')->load($account->id());
+  if (!$node->get('field_organizational_unit')->isEmpty() && $account->isAuthenticated()) {
+    switch ($operation) {
+      case 'update':
+      case 'delete':
+        $access = AccessResult::forbiddenIf(
+          $user->get('field_organizational_unit')->target_id
+          != $node->get('field_organizational_unit')->target_id);
+        break;
+      default:
+        break;
+    }
+  } elseif ($node->get('field_organizational_unit')->isEmpty() && !$user->get('field_organizational_unit')->isEmpty()) {
+    switch ($operation) {
+      case 'update':
+      case 'delete':
+        $access = AccessResult::forbidden();
+        break;
+      default:
+        break;
+    }
+  }
+
+  return $access;
+}
+
+function svksk_organization_node_presave(NodeInterface $node) {
+  $user = \Drupal::entityTypeManager()->getStorage('user')->load(\Drupal::currentUser()->id());
+  if($node->hasField('field_organizational_unit')) {
+    if(!$user->get('field_organizational_unit')->isEmpty()) {
+      $node_ou = $node->get('field_organizational_unit');
+      if($node->isNew() && $node_ou->isEmpty()) {
+        $node_ou->target_id = $user->get('field_organizational_unit')->target_id;
+      }
+    }
+  }
+}

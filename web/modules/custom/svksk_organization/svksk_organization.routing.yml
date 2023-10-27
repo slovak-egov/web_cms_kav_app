@@ -1,0 +1,7 @@
+entity.organizational_unit.service_hours:
+  path: '/admin/kav/organizational-unit/{organizational_unit}/service-hours'
+  defaults:
+    _title_callback: '\Drupal\Core\Entity\Controller\EntityController::editTitle'
+    _controller: '\Drupal\svksk_organization\Controller\OrganizationUnitController::serviceHours'
+  requirements:
+    _permission: 'administer service hours entities'

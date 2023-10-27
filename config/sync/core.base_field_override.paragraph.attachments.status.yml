@@ -1,0 +1,22 @@
+uuid: 242360c0-a80e-4abf-8522-cd475cfc8e66
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.attachments
+id: paragraph.attachments.status
+field_name: status
+entity_type: paragraph
+bundle: attachments
+label: Zverejnené
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnúť
+  off_label: Vypnúť
+field_type: boolean

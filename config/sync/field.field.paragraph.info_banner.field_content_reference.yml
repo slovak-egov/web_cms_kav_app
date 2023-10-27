@@ -1,0 +1,39 @@
+uuid: a0b825ba-9908-4083-9a7a-daadd0d7bdaa
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_reference
+    - node.type.article
+    - node.type.data_source
+    - node.type.faq
+    - node.type.news
+    - node.type.organization
+    - node.type.page
+    - paragraphs.paragraphs_type.info_banner
+id: paragraph.info_banner.field_content_reference
+field_name: field_content_reference
+entity_type: paragraph
+bundle: info_banner
+label: 'Interný odkaz'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+      data_source: data_source
+      faq: faq
+      organization: organization
+      page: page
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

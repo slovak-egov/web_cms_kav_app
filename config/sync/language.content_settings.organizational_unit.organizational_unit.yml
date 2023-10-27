@@ -1,0 +1,17 @@
+uuid: c72508fb-fcc4-4594-bc83-b85b9f2976e3
+langcode: sk
+status: true
+dependencies:
+  module:
+    - content_translation
+    - svksk_organization
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: organizational_unit.organizational_unit
+target_entity_type_id: organizational_unit
+target_bundle: organizational_unit
+default_langcode: site_default
+language_alterable: true

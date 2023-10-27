@@ -1,0 +1,9 @@
+name:  SON:API language access
+type: module
+description: Fixing core issue with JSON:API langugage access. Requires to be standalone module due to module weights.
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:jsonapi
+  - drupal:node

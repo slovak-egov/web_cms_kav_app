@@ -1,0 +1,15 @@
+uuid: 690e32cd-66f2-4696-a5e2-edbfa6b42a4d
+langcode: sk
+status: true
+dependencies:
+  module:
+    - media
+  enforced:
+    module:
+      - media_library
+_core:
+  default_config_hash: Tdhz-aDHfDoV1Ul9umtItxGTrjkFzoNAkDw8FWXjYA0
+id: media.media_library
+label: 'Knižnica médií'
+targetEntityType: media
+cache: true

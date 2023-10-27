@@ -1,0 +1,8 @@
+name: UI Translations
+type: module
+description: UI Translations
+core_version_requirement: ^8 || ^9 || ^10
+package: Slovensko.sk
+
+'interface translation project': svksk_ui_translations
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po

@@ -1,0 +1,162 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for svksk moderation module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Component\Serialization\Json;
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityFormInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Link;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+use Drupal\Component\Utility\Html;
+use Drupal\node\NodeInterface;
+use Drupal\svksk_moderation\Entity;
+
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function svksk_moderation_field_widget_form_alter(&$element, FormStateInterface $form_state, $context) {
+  $field_definition = $context['items']->getFieldDefinition();
+  if ($field_definition->getName() == 'moderation_state') {
+    // Add button to open a modal with static image file representing preview of editorial process
+    $modal_url = Url::fromRoute('svksk_moderation.moderation_workflow_preview_modal');
+    $modal_url->setOptions([
+      'attributes' => [
+        'class' => ['use-ajax', 'button', 'button--small'],
+        'data-dialog-type' => 'modal',
+        'data-dialog-options' => Json::encode(['width' => 400]),
+      ]
+    ]);
+
+    $element['workflow_preview'] = [
+      '#type' => 'markup',
+      '#markup' => Link::fromTextAndUrl(t('Show preview of editorial process'), $modal_url)->toString(),
+      '#attached' => ['library' => ['core/drupal.dialog.ajax']]
+    ];
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function svksk_moderation_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (!$form_state->getFormObject() instanceof EntityFormInterface) {
+    return;
+  }
+
+  /** @var \Drupal\content_moderation\ModerationInformationInterface $moderation_info */
+  $moderation_info = Drupal::service('content_moderation.moderation_information');
+
+  /** @var \Drupal\core\Entity\ContentEntityInterface $entity */
+  $entity = $form_state->getFormObject()->getEntity();
+
+  if (!$moderation_info->isModeratedEntity($entity)) {
+    return;
+  }
+
+  /** @var \Drupal\Core\Session\AccountInterface $account */
+  $account = \Drupal::currentUser();
+
+  $form['#attached']['library'][] = 'svksk_moderation/drupal.svksk_moderation.disabled_form';
+  $form['#attached']['drupalSettings']['content_disabled'] = [
+    'form_id' => Html::cleanCssIdentifier($form_id),
+    'is_disabled' => (in_array($entity->moderation_state->value ?? '', [
+        'sent_for_assesment',
+        'approved',
+      ]) || ($entity->moderation_state->value === 'in_review' && !$account->hasPermission('access in review content'))),
+  ];
+}
+
+/**
+ * Implements hook_entity_access().
+ */
+function svksk_moderation_entity_access(EntityInterface $entity, $operation, AccountInterface $account) {
+  /** @var \Drupal\content_moderation\ModerationInformationInterface $moderation_info */
+  $moderation_info = Drupal::service('content_moderation.moderation_information');
+
+  if (!$entity->isNew() && $moderation_info->isModeratedEntity($entity) && $entity->moderation_state->value === 'deleted') {
+      return AccessResult::forbiddenIf(!$account->hasPermission('access archived content'));
+  }
+}
+
+/**
+ * Implements hook_scheduler_publish_action().
+ */
+function svksk_moderation_scheduler_publish_action(NodeInterface $node) {
+  /** @var \Drupal\content_moderation\ModerationInformationInterface $moderation_information */
+  $moderation_information = \Drupal::service('content_moderation.moderation_information');
+  if (!$moderation_information->isModeratedEntity($node)) {
+    return 0;
+  }
+
+  $moderation_state = $node->hasField('moderation_state') ? $node->get('moderation_state')->value : NULL;
+  if ($moderation_state === 'published') {
+    return 1; // Since entity is already in desired state, we will tell scheduler to consider this task as done
+  }
+
+  if ($moderation_state !== 'approved') {
+    return -1; // We allow to publish only approved nodes
+  }
+
+  // On scheduled publish action set moderation state to 'published'
+  $state = 'published';
+
+  /** @var \Drupal\content_moderation\Plugin\WorkflowType\ContentModerationInterface $type_plugin */
+  $type_plugin = $moderation_information->getWorkflowForEntity($node)->getTypePlugin();
+  try {
+    // If transition is not valid, throw exception.
+    $type_plugin->getTransitionFromStateToState($moderation_state, $state);
+    $node->set('moderation_state', $state);
+    $node->save();
+    return 1;
+  }
+  catch (\InvalidArgumentException $exception) {
+    return -1;
+  }
+}
+
+/**
+ * Implements hook_scheduler_unpublish_action().
+ */
+function svksk_moderation_scheduler_unpublish_action(NodeInterface $node) {
+  /** @var \Drupal\content_moderation\ModerationInformationInterface $moderation_information */
+  $moderation_information = \Drupal::service('content_moderation.moderation_information');
+  if (!$moderation_information->isModeratedEntity($node)) {
+    return 0;
+  }
+
+  $moderation_state = $node->hasField('moderation_state') ? $node->get('moderation_state')->value : NULL;
+  if (in_array($moderation_state, ['obsolete', 'deleted'])) {
+    return 1; // Since entity is already in desired state, we will tell scheduler to consider this task as done
+  }
+
+  if ($moderation_state !== 'published') {
+    return -1; // We allow to unpublish only published nodes
+  }
+
+  // On scheduled unpublished action set moderation state to 'obsolete'
+  $state = 'obsolete';
+
+  /** @var \Drupal\content_moderation\Plugin\WorkflowType\ContentModerationInterface $type_plugin */
+  $type_plugin = $moderation_information->getWorkflowForEntity($node)->getTypePlugin();
+  try {
+    // If transition is not valid, throw exception.
+    $type_plugin->getTransitionFromStateToState($moderation_state, $state);
+    $node->set('moderation_state', $state);
+    $node->save();
+    return 1;
+  }
+  catch (\InvalidArgumentException $exception) {
+    return -1;
+  }
+}

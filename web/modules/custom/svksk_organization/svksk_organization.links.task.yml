@@ -1,0 +1,9 @@
+entity.organizational_unit.edit_form:
+  route_name: entity.organizational_unit.edit_form
+  base_route: entity.organizational_unit.edit_form
+  title: 'Organizational unit'
+
+entity.organizational_unit.service_hours:
+  route_name: entity.organizational_unit.service_hours
+  base_route: entity.organizational_unit.edit_form
+  title: 'Service hours'

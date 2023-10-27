@@ -1,0 +1,5 @@
+svksk_base.general_settings:
+  title: 'General settings'
+  base_route_name: svksk_base.general_settings
+  names:
+    - svksk_base.general_settings

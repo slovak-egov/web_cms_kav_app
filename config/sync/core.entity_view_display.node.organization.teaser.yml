@@ -1,0 +1,34 @@
+uuid: f19e3b51-3e1c-4962-906e-a818f9b48769
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.organization.field_metatags
+    - field.field.node.organization.field_perex
+    - field.field.node.organization.field_rss
+    - node.type.organization
+  module:
+    - user
+id: node.organization.teaser
+targetEntityType: node
+bundle: organization
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_metatags: true
+  field_organizational_unit: true
+  field_perex: true
+  field_rss: true
+  langcode: true
+  search_api_excerpt: true

@@ -1,0 +1,153 @@
+uuid: ff4fa19e-0887-4e47-9d98-9b0f93695453
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_organization
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: corporate_body--corporate_body
+disabled: false
+path: corporate_body/corporate_body
+resourceType: corporate_body--corporate_body
+resourceFields:
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  revision_id:
+    disabled: false
+    fieldName: revision_id
+    publicName: revision_id
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  alternate_name:
+    disabled: false
+    fieldName: alternate_name
+    publicName: alternate_name
+    enhancer:
+      id: ''
+  code:
+    disabled: false
+    fieldName: code
+    publicName: code
+    enhancer:
+      id: ''
+  type_id:
+    disabled: false
+    fieldName: type_id
+    publicName: type_id
+    enhancer:
+      id: ''
+  category_id:
+    disabled: false
+    fieldName: category_id
+    publicName: category_id
+    enhancer:
+      id: ''
+  fullname:
+    disabled: false
+    fieldName: fullname
+    publicName: fullname
+    enhancer:
+      id: ''
+  name:
+    disabled: false
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+  legal_form_id:
+    disabled: false
+    fieldName: legal_form_id
+    publicName: legal_form_id
+    enhancer:
+      id: ''
+  legal_status_id:
+    disabled: false
+    fieldName: legal_status_id
+    publicName: legal_status_id
+    enhancer:
+      id: ''
+  size_id:
+    disabled: false
+    fieldName: size_id
+    publicName: size_id
+    enhancer:
+      id: ''
+  tin:
+    disabled: false
+    fieldName: tin
+    publicName: tin
+    enhancer:
+      id: ''
+  cin:
+    disabled: false
+    fieldName: cin
+    publicName: cin
+    enhancer:
+      id: ''
+  vat:
+    disabled: false
+    fieldName: vat
+    publicName: vat
+    enhancer:
+      id: ''
+  legal_predecessor_id:
+    disabled: false
+    fieldName: legal_predecessor_id
+    publicName: legal_predecessor_id
+    enhancer:
+      id: ''
+  legal_successor_id:
+    disabled: false
+    fieldName: legal_successor_id
+    publicName: legal_successor_id
+    enhancer:
+      id: ''
+  established:
+    disabled: false
+    fieldName: established
+    publicName: established
+    enhancer:
+      id: ''
+  terminated:
+    disabled: false
+    fieldName: terminated
+    publicName: terminated
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: false
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''

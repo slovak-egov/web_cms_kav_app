@@ -1,0 +1,13 @@
+uuid: fb7c08dc-1e6d-435b-ba95-a6d0ca0ba818
+langcode: sk
+status: true
+dependencies:
+  module:
+    - taxonomy_max_depth
+third_party_settings:
+  taxonomy_max_depth:
+    max_depth: 0
+name: 'Kategórie pojmov'
+vid: term_categories
+description: ''
+weight: 0

@@ -1,0 +1,11 @@
+name: HTTP Client
+type: module
+description: General Drupal customizations
+core_version_requirement: ^8 || ^9 || ^10
+package: Slovensko.sk
+
+'interface translation project': svksk_http_client
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po
+
+dependencies:
+  - drupal:skit_services_env_parameter

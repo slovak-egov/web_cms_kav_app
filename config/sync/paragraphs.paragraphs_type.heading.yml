@@ -1,0 +1,15 @@
+uuid: b4261ffe-ce82-4eea-a299-1b2f4c619e14
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: heading
+label: Nadpis
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,18 @@
+uuid: 1865e4ac-9f31-47fd-8840-5518fd1342d9
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.signpost
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.signpost
+target_entity_type_id: paragraph
+target_bundle: signpost
+default_langcode: site_default
+language_alterable: true

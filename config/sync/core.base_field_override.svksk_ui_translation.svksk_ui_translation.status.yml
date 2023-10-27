@@ -1,0 +1,22 @@
+uuid: 7d45d0c7-fb9f-49fa-8603-4147a7f8397a
+langcode: en
+status: true
+dependencies:
+  module:
+    - svksk_ui_translations
+id: svksk_ui_translation.svksk_ui_translation.status
+field_name: status
+entity_type: svksk_ui_translation
+bundle: svksk_ui_translation
+label: Published
+description: 'A boolean indicating whether the Translated string is published.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

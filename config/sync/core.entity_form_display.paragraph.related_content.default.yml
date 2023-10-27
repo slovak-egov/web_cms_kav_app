@@ -1,0 +1,48 @@
+uuid: ffc04bfb-7a2f-493c-91b6-1f375c462a1a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.related_content.field_node_reference
+    - field.field.paragraph.related_content.field_related_display_mode
+    - field.field.paragraph.related_content.field_title
+    - paragraphs.paragraphs_type.related_content
+  module:
+    - select2
+id: paragraph.related_content.default
+targetEntityType: paragraph
+bundle: related_content
+mode: default
+content:
+  field_node_reference:
+    type: select2_entity_reference
+    weight: 2
+    region: content
+    settings:
+      width: 100%
+      autocomplete: false
+      match_operator: CONTAINS
+      match_limit: 10
+    third_party_settings: {  }
+  field_related_display_mode:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Súvisiaci obsah'
+    third_party_settings: {  }
+  translation:
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,21 @@
+uuid: 0b65d24c-4b98-4484-8f3a-2187a0eae67a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_linked_content
+    - paragraphs.paragraphs_type.link
+id: paragraph.link.field_linked_content
+field_name: field_linked_content
+entity_type: paragraph
+bundle: link
+label: 'Linkovaný obsah'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

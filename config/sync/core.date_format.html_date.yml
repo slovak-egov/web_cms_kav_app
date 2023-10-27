@@ -1,0 +1,10 @@
+uuid: 12fb5b57-8718-47fe-b35c-f00e4d3066a4
+langcode: sk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EOQltUQPmgc6UQ2rcJ4Xi_leCEJj5ui0TR-12duS-Tk
+id: html_date
+label: 'HTML Date'
+locked: true
+pattern: Y-m-d

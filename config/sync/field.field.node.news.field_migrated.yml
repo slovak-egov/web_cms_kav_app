@@ -1,0 +1,23 @@
+uuid: a956cbee-f8c5-43ac-ae8c-42078e20910a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migrated
+    - node.type.news
+id: node.news.field_migrated
+field_name: field_migrated
+entity_type: node
+bundle: news
+label: 'Migrovaný obsah'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Áno
+  off_label: Nie
+field_type: boolean

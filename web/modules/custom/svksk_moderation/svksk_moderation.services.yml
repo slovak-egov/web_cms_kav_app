@@ -1,0 +1,5 @@
+services:
+  svksk_moderation.scheduler_event_subscriber:
+    class: Drupal\svksk_moderation\EventSubscriber\SchedulerEventSubscriber
+    tags:
+    - { name: 'event_subscriber' }

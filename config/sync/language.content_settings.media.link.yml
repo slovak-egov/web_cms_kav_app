@@ -1,0 +1,11 @@
+uuid: 2f16dfb1-6dd9-4e67-85bf-e08ee08debaa
+langcode: sk
+status: true
+dependencies:
+  config:
+    - media.type.link
+id: media.link
+target_entity_type_id: media
+target_bundle: link
+default_langcode: site_default
+language_alterable: false

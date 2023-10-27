@@ -1,0 +1,11 @@
+entity.organizational_unit.add_form:
+  route_name: entity.organizational_unit.add_form
+  title: 'Add Organizational unit'
+  appears_on:
+    - entity.organizational_unit.collection
+
+entity.corporate_body.add_form:
+  route_name: entity.corporate_body.add_form
+  title: 'Add Corporate body'
+  appears_on:
+    - entity.corporate_body.collection

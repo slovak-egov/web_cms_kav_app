@@ -1,0 +1,76 @@
+uuid: 47ab70d8-3193-49b7-a259-b8731c59ae56
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.news.ci_id
+    - field.field.node.news.comment
+    - field.field.node.news.field_components
+    - field.field.node.news.field_image
+    - field.field.node.news.field_metatags
+    - field.field.node.news.field_migrated
+    - field.field.node.news.field_perex
+    - field.field.node.news.field_rss
+    - field.field.node.news.field_tags
+    - image.style.medium
+    - node.type.news
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - media
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.search_index
+targetEntityType: node
+bundle: news
+mode: search_index
+content:
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_perex:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  ci_id: true
+  comment: true
+  content_moderation_control: true
+  field_metatags: true
+  field_migrated: true
+  field_organizational_unit: true
+  field_rss: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

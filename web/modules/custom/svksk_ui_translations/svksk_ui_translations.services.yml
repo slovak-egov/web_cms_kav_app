@@ -1,0 +1,5 @@
+services:
+  svksk_ui_translations.commands:
+    class: \Drupal\svksk_ui_translations\Commands\DrushCommands
+    tags:
+      - { name: drush.command }

@@ -1,0 +1,13 @@
+name: Media
+type: module
+description: Media related stuff.
+core_version_requirement: ^8 || ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:media
+  - drupal:media_library
+  - drupal:svksk_http_client
+
+'interface translation project': svksk_media
+'interface translation server pattern': modules/custom/svksk_media/translations/%project.%language.po

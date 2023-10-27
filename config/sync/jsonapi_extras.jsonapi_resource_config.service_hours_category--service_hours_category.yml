@@ -1,0 +1,57 @@
+uuid: ad2a7886-08ee-471e-b780-5efb37643f96
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_organization
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: service_hours_category--service_hours_category
+disabled: false
+path: service_hours_category/service_hours_category
+resourceType: service_hours_category--service_hours_category
+resourceFields:
+  id:
+    disabled: false
+    fieldName: id
+    publicName: id
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  service_hours_type_id:
+    disabled: false
+    fieldName: service_hours_type_id
+    publicName: service_hours_type_id
+    enhancer:
+      id: ''
+  name:
+    disabled: false
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+  description:
+    disabled: false
+    fieldName: description
+    publicName: description
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''

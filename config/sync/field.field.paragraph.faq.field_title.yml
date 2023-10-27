@@ -1,0 +1,19 @@
+uuid: 989192a6-10b9-488d-bdce-05e6bcea571e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.faq
+id: paragraph.faq.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: faq
+label: 'Nadpis komponentu'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

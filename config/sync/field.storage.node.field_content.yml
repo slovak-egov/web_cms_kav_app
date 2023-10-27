@@ -1,0 +1,30 @@
+uuid: 2479232c-5675-4a18-8f15-ec9ab14e757b
+langcode: sk
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_content
+field_name: field_content
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: none
+      label: Nepridávať
+    -
+      value: right
+      label: Vpravo
+    -
+      value: left
+      label: Vľavo
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

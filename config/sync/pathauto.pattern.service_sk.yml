@@ -1,0 +1,33 @@
+uuid: f6915755-e8c0-4b1c-85b9-b831af586808
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: service_sk
+label: Service
+type: 'canonical_entities:node'
+pattern: '/sluzby/[node:field_category]/[node:title]'
+selection_criteria:
+  233a53e5-851a-4568-9653-6265e6c0e524:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 233a53e5-851a-4568-9653-6265e6c0e524
+    context_mapping:
+      node: node
+    bundles:
+      service: service
+  2b9c079f-e749-4b36-baf7-9753beaab845:
+    id: language
+    negate: false
+    uuid: 2b9c079f-e749-4b36-baf7-9753beaab845
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

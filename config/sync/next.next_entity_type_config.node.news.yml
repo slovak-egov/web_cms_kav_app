@@ -1,0 +1,11 @@
+uuid: 7a5a17a9-3e5c-4adb-b876-0ef8907c2af6
+langcode: sk
+status: true
+dependencies: {  }
+id: node.news
+site_resolver: site_selector
+configuration:
+  sites:
+    svksk_front: svksk_front
+revalidator: null
+revalidator_configuration: {  }

@@ -1,0 +1,13 @@
+uuid: dfcd1c08-28bc-47ec-8489-bd4473a574a7
+langcode: sk
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: CsK6TseQ2DatEbZgbd30swOlZ28_HHwAESU2LvEnWq0
+id: media_unpublish_action
+label: 'Zrušiť publikáciu médií'
+type: media
+plugin: 'entity:unpublish_action:media'
+configuration: {  }

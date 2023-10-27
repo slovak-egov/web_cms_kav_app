@@ -1,0 +1,5 @@
+code;name;description
+1;Mikro podnik;Mikro podnik má menej ako 10 zamestnancov (a ročný obrat menej ako 2 mil. Eur).
+2;Malý podnik;Malý podnik má menej ako 50 zamestnancov (a ročný obrat menej ako 10 mil. Eur).
+3;Stredný podnik;Stredný podnik má menej ako 250 zamestnancov (a ročný obrat menej ako 50 mil. Eur).
+4;Veľký podnik;Veľký podnik má viac ako 250 zamestnancov (a ročný obrat viac ako 50 mil. Eur).

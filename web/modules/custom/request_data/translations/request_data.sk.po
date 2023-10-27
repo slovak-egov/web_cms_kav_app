@@ -1,0 +1,20 @@
+msgid "Data request"
+msgstr "Žiadosť o prístup k dátam"
+
+msgid "New Data request"
+msgstr "Nová žiadosť o prístup k dátam"
+
+msgid "Requests notification mail is not configured"
+msgstr "Notifikačný e-mail pre žiadosti nie je nakonfigurovaný"
+
+msgid "Request has been noted"
+msgstr "Žiadosť bola odoslaná"
+
+msgid "PhoneNumber"
+msgstr "Telefónne číslo"
+
+msgid "InterestArea"
+msgstr "Oblasť záujmu"
+
+msgid "Request"
+msgstr "Žiadosť"

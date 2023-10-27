@@ -1,0 +1,15 @@
+uuid: 4242761b-8f95-402c-be72-deafd329b01c
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: link
+label: Odkaz
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,33 @@
+uuid: 31ba8a03-b7f0-4500-aa8e-56164c680b0f
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: life_event_categories_sk
+label: 'Life Event - Categories'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/zivotne-udalosti/[term:name]'
+selection_criteria:
+  21916c71-cbdb-4959-a9ed-b17c2427c52c:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 21916c71-cbdb-4959-a9ed-b17c2427c52c
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      life_event_categories: life_event_categories
+  f9e83107-692a-4f5a-b2cd-476b2f5ff344:
+    id: language
+    negate: false
+    uuid: f9e83107-692a-4f5a-b2cd-476b2f5ff344
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Jazyk

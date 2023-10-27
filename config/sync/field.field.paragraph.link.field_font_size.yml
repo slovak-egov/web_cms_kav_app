@@ -1,0 +1,23 @@
+uuid: cd9c3bfa-94af-4efd-856f-60896c65256e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_font_size
+    - paragraphs.paragraphs_type.link
+  module:
+    - options
+id: paragraph.link.field_font_size
+field_name: field_font_size
+entity_type: paragraph
+bundle: link
+label: 'Veľkosť fontu'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: m
+default_value_callback: ''
+settings: {  }
+field_type: list_string

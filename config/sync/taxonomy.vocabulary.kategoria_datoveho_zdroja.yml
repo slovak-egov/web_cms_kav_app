@@ -1,0 +1,28 @@
+uuid: 2542b676-048d-46a4-a7e9-d87195384760
+langcode: sk
+status: true
+dependencies:
+  module:
+    - scheduler
+    - taxonomy_unique
+third_party_settings:
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_past_date_created: false
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    show_message_after_update: true
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+  taxonomy_unique:
+    enabled: false
+    message: 'Term "%term" already exists in vocabulary "%vocabulary".'
+name: 'Kategória dátového zdroja'
+vid: kategoria_datoveho_zdroja
+description: ''
+weight: 0

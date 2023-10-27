@@ -1,0 +1,18 @@
+uuid: 1a046575-f873-4e4e-b4a0-ea4133edbe1c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - media.type.image
+id: media.image.publish_on
+field_name: publish_on
+entity_type: media
+bundle: image
+label: Publikovať
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

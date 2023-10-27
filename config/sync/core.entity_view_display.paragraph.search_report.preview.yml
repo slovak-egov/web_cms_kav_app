@@ -1,0 +1,20 @@
+uuid: ea244960-f277-404d-b96c-f1026e77b5b8
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - paragraphs.paragraphs_type.search_report
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.search_report.preview
+targetEntityType: paragraph
+bundle: search_report
+mode: preview
+content: {  }
+hidden:
+  search_api_excerpt: true

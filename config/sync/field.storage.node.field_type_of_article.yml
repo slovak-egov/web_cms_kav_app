@@ -1,0 +1,27 @@
+uuid: 359f2107-fee4-481c-96d4-4cb75e5c1ee0
+langcode: sk
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_type_of_article
+field_name: field_type_of_article
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: article
+      label: Článok
+    -
+      value: report
+      label: Report
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

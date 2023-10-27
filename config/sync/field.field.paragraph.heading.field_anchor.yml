@@ -1,0 +1,23 @@
+uuid: 5848c710-b7a8-4cf1-8dd1-6eba18239399
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_anchor
+    - paragraphs.paragraphs_type.heading
+id: paragraph.heading.field_anchor
+field_name: field_anchor
+entity_type: paragraph
+bundle: heading
+label: 'Odkaz na kotvu'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Tento nadpis bude kotviaci odkaz'
+  off_label: 'Tento nadpis nebude odkazom na kotvu'
+field_type: boolean

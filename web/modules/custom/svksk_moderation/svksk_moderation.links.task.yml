@@ -1,0 +1,19 @@
+svksk_moderation.verification:
+  title: 'Content waiting for approval'
+  route_name: view.verification_content.moderated_content
+  class: Drupal\svksk_moderation\Plugin\Menu\LocalTask\VerificationContent
+  parent_id: system.admin_content
+  weight: 1
+  cache_tags:
+    - node_list
+
+svksk_moderation.amendment:
+  title: 'Content waiting for amendment'
+  route_name: view.amendment_content.moderated_content
+  class: Drupal\svksk_moderation\Plugin\Menu\LocalTask\AmendmentContent
+  parent_id: system.admin_content
+  weight: 2
+  cache_contexts:
+    - user
+  cache_tags:
+    - node_list

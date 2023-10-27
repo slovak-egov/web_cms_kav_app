@@ -1,0 +1,457 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  svksk_organization.module: n/a
+#  src/ServiceHoursEntityListBuilder.php: n/a
+#  src/Entity/CostCenter.php: n/a
+#  src/Entity/OrganizationalUnit.php: n/a
+#  src/Entity/ServiceHours.php: n/a
+#  src/Entity/ServiceHoursCategory.php: n/a
+#  src/Entity/TimeInterval.php: n/a
+#  svksk_organization.install: n/a
+#  svksk_organization.links.menu.yml: n/a
+#  svksk_organization.info.yml: n/a
+#  svksk_organization.links.action.yml: n/a
+#  svksk_organization.links.task.yml: n/a
+#  svksk_organization.permissions.yml: n/a
+#  src/CorporateBodyEntityListBuilder.php: n/a
+#  src/OrganizationalUnitEntityListBuilder.php: n/a
+#  src/Entity/CorporateBody.php: n/a
+#  src/AllowedValues/DaysOfWeekAllowedValues.php: n/a
+#  src/Controller/OrganizationUnitController.php: n/a
+#  src/Plugin/Field/FieldWidget/OrganizationalUnitWidget.php: n/a
+#  src/Entity/PhysicalAddress.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2022-10-26 08:18+0200\n"
+"PO-Revision-Date: 2022-10-26 08:18+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_organization.module:95 src/ServiceHoursEntityListBuilder.php:45 src/Entity/CostCenter.php:77 src/Entity/OrganizationalUnit.php:192 src/Entity/ServiceHours.php:107 src/Entity/ServiceHoursCategory.php:99 src/Entity/TimeInterval.php:111
+msgid "Description"
+msgstr "Popis"
+
+#: svksk_organization.module:101 src/Entity/TimeInterval.php:63
+msgid "Time from"
+msgstr "Čas od"
+
+#: svksk_organization.module:106 src/Entity/TimeInterval.php:82
+msgid "Time to"
+msgstr "Čas do"
+
+#: svksk_organization.module:157
+msgid "You cannot assign Organisation unit for this roles"
+msgstr "Vybrané kategórie používateľov nedovoľujú mať vyplnenú Organizačnú jednotku"
+
+#: svksk_organization.module:162
+msgid "You must assign Organisation unit for this roles"
+msgstr "Vybrané kategórie používateľov musia mať vyplnenú Organizačnú jednotku"
+
+#: svksk_organization.install:52 src/Entity/OrganizationalUnit.php:145
+msgctxt "organizational unit"
+msgid "Corporate body"
+msgstr "Organizácia"
+
+#: svksk_organization.links.menu.yml:0
+msgid "Corporate body"
+msgstr "Organizácia"
+
+#: svksk_organization.install:78;89 src/Entity/OrganizationalUnit.php:236
+msgid "Service hours categories"
+msgstr "Kategórie úradných hodín"
+
+#: svksk_organization.install:88
+msgid "Service hours category"
+msgstr "Kategória úradných hodín"
+
+#: svksk_organization.info.yml:0
+msgid "Slovensko.sk Organization"
+msgstr ""
+
+#: svksk_organization.info.yml:0
+msgid "Organization entities"
+msgstr ""
+
+#: svksk_organization.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_organization.links.action.yml:0
+msgid "Add Organizational unit"
+msgstr "Pridať Organizačnú jednotku"
+
+#: svksk_organization.links.action.yml:0
+msgid "Add Corporate body"
+msgstr "Pridať Organizáciu"
+
+#: svksk_organization.links.menu.yml:0
+msgid "Organizational units"
+msgstr "Organizačné jednotky"
+
+#: svksk_organization.links.task.yml:0
+msgid "Organizational unit"
+msgstr "Organizačná jednotka"
+
+#: svksk_organization.links.task.yml:0
+msgid "Service hours"
+msgstr "Úradné hodiny"
+
+#: svksk_organization.permissions.yml:0
+msgid "Administer organizational unit entities"
+msgstr "Spravovať Organizačné jednotky"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow to access the administration form to configure Organizational unit entities."
+msgstr ""
+
+#: svksk_organization.permissions.yml:0
+msgid "Administer Physical address entities"
+msgstr "Spravovať Fyzické adresy"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow to access the administration form to configure Physical address entities."
+msgstr ""
+
+#: svksk_organization.permissions.yml:0
+msgid "Administer Cost center entities"
+msgstr "Spravovať Nákladové strediská"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow to access the administration form to configure Cost center entities."
+msgstr ""
+
+#: svksk_organization.permissions.yml:0
+msgid "Administer Corporate body entities"
+msgstr "Spravovať Organizácie"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow to access the administration form to configure Corporate body entities."
+msgstr ""
+
+#: svksk_organization.permissions.yml:0
+msgid "Administer Service Hours entities"
+msgstr "Spravovať Úradné hodiny"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow to access the administration form to configure Service Hours."
+msgstr ""
+
+#: svksk_organization.permissions.yml:0
+msgid "Administer Service Hours category entities"
+msgstr "Spravovať Kategórie úradných hodín"
+
+#: svksk_organization.permissions.yml:0
+msgid "Administer Time Interval entities"
+msgstr "Spravovať Časové intervaly"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow to access the administration form to configure Service Hours category."
+msgstr ""
+
+#: svksk_organization.permissions.yml:0
+msgid "Change user Organizational unit assignment"
+msgstr "Zmeniť priradenie používateľa k Organizačnej jednotke"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow user to change Organization unit on users that have access to edit (including himself)."
+msgstr "Povoliť používateľovi zmeniť organizačnú jednotku na používateľoch ku ktorým majú prístup k editácii (vrátane jeho samotného)."
+
+#: svksk_organization.permissions.yml:0
+msgid "Change content Organizational unit assignment"
+msgstr "Zmeniť priradenie obsahu k Organizačnej jednotke"
+
+#: svksk_organization.permissions.yml:0
+msgid "Allow user to change Organization unit on the content that have access to edit."
+msgstr "Povoliť používateľovi zmeniť organizačnú jednotku v obsahu ku ktorému má prístup na úpravy."
+
+#: src/CorporateBodyEntityListBuilder.php:20 src/OrganizationalUnitEntityListBuilder.php:20 src/ServiceHoursEntityListBuilder.php:44 src/Entity/CostCenter.php:64 src/Entity/OrganizationalUnit.php:179 src/Entity/ServiceHours.php:94 src/Entity/ServiceHoursCategory.php:86 src/Entity/TimeInterval.php:98
+msgid "Name"
+msgstr "Názov"
+
+#: src/Entity/CorporateBody.php:143
+msgctxt "corporate body"
+msgid "Name"
+msgstr "Názov"
+
+#: src/ServiceHoursEntityListBuilder.php:43 src/Entity/ServiceHours.php:70
+msgid "Category"
+msgstr "Kategória"
+
+#: src/Entity/CorporateBody.php:113
+msgctxt "corporate body"
+msgid "Category"
+msgstr "Kategória"
+
+#: src/AllowedValues/DaysOfWeekAllowedValues.php:14
+msgid "Monday"
+msgstr "pondelok"
+
+#: src/AllowedValues/DaysOfWeekAllowedValues.php:15
+msgid "Tuesday"
+msgstr "utorok"
+
+#: src/AllowedValues/DaysOfWeekAllowedValues.php:16
+msgid "Wednesday"
+msgstr "streda"
+
+#: src/AllowedValues/DaysOfWeekAllowedValues.php:17
+msgid "Thursday"
+msgstr "štvrtok"
+
+#: src/AllowedValues/DaysOfWeekAllowedValues.php:18
+msgid "Friday"
+msgstr "piatok"
+
+#: src/AllowedValues/DaysOfWeekAllowedValues.php:19
+msgid "Saturday"
+msgstr "sobota"
+
+#: src/AllowedValues/DaysOfWeekAllowedValues.php:20
+msgid "Sunday"
+msgstr "nedeľa"
+
+#: src/Controller/OrganizationUnitController.php:58
+msgid "Add new Service Hours"
+msgstr "Pridať nové Úradné hodiny"
+
+#: src/Entity/CorporateBody.php:296 src/Entity/OrganizationalUnit.php:252
+msgid "Created"
+msgstr "Vytvorené"
+
+#: src/Entity/CorporateBody.php:297 src/Entity/OrganizationalUnit.php:253
+msgid "The time that the entity was created."
+msgstr ""
+
+#: src/Entity/CorporateBody.php:300 src/Entity/OrganizationalUnit.php:256
+msgid "Changed"
+msgstr "Zmenené"
+
+#: src/Entity/CorporateBody.php:301 src/Entity/OrganizationalUnit.php:257
+msgid "The time that the entity was changed."
+msgstr ""
+
+#: src/Entity/CorporateBody.php:73
+msgctxt "corporate body"
+msgid "Alternate name"
+msgstr "Skrátený názov organizácie"
+
+#: src/Entity/CorporateBody.php:86
+msgctxt "corporate body"
+msgid "Code"
+msgstr "Kód"
+
+#: src/Entity/CostCenter.php:51 src/Entity/OrganizationalUnit.php:84
+msgid "Code"
+msgstr "Kód"
+
+#: src/Entity/CorporateBody.php:99
+msgctxt "corporate body"
+msgid "Type"
+msgstr "Typ"
+
+#: src/Entity/OrganizationalUnit.php:97 src/Entity/ServiceHoursCategory.php:71 src/Entity/TimeInterval.php:124
+msgid "Type"
+msgstr "Typ"
+
+#: src/Entity/CorporateBody.php:130
+msgctxt "corporate body"
+msgid "Full name"
+msgstr "Celý názov organizácie"
+
+#: src/Entity/CorporateBody.php:156
+msgctxt "corporate body"
+msgid "Legal form"
+msgstr "Právna forma"
+
+#: src/Entity/CorporateBody.php:173
+msgctxt "corporate body"
+msgid "Legal status"
+msgstr "Právny stav organizácie"
+
+#: src/Entity/CorporateBody.php:190
+msgctxt "corporate body"
+msgid "Size"
+msgstr "Veľkosť"
+
+#: src/Entity/CorporateBody.php:205
+msgctxt "corporate body"
+msgid "TIN"
+msgstr "DIČ"
+
+#: src/Entity/CorporateBody.php:218
+msgctxt "corporate body"
+msgid "CIN"
+msgstr "IČO"
+
+#: src/Entity/CorporateBody.php:231
+msgctxt "corporate body"
+msgid "VAT"
+msgstr "IČ DPH"
+
+#: src/Entity/CorporateBody.php:244
+msgctxt "corporate body"
+msgid "Legal predecessor"
+msgstr "Právny predchodca"
+
+#: src/Entity/CorporateBody.php:261
+msgctxt "corporate body"
+msgid "Legal successor"
+msgstr "Právny nástupca"
+
+#: src/Entity/CorporateBody.php:278
+msgid "Established"
+msgstr "Dátum vzniku organizácie"
+
+#: src/Entity/CorporateBody.php:287
+msgid "Terminated"
+msgstr "Dátum zániku organizácie"
+
+#: src/Entity/CorporateBody.php:16
+msgid "Corporate Body"
+msgstr "Organizácia"
+
+#: src/Entity/CostCenter.php:13
+msgid "Organization Cost Center"
+msgstr "Nákladové stredisko organizácie"
+
+#: src/Entity/OrganizationalUnit.php:111
+msgctxt "organizational unit"
+msgid "Master unit"
+msgstr "Hlavná organizačná jednotka organizácie "
+
+#: src/Entity/OrganizationalUnit.php:128
+msgctxt "organizational unit"
+msgid "Parent unit"
+msgstr "Hlavná organizačná jednotka"
+
+#: src/Entity/OrganizationalUnit.php:162
+msgctxt "organizational unit"
+msgid "Cost center"
+msgstr "Nákladové stredisko"
+
+#: src/Entity/OrganizationalUnit.php:204
+msgid "Physical address"
+msgstr "Adresa"
+
+#: src/Entity/OrganizationalUnit.php:220
+msgid "Contact"
+msgstr "Kontakt"
+
+#: src/Entity/OrganizationalUnit.php:16 src/Plugin/Field/FieldWidget/OrganizationalUnitWidget.php:9
+msgid "Organizational Unit"
+msgstr "Organizačná jednotka"
+
+#: src/Entity/PhysicalAddress.php:53
+msgctxt "physical address"
+msgid "Address Type"
+msgstr "Typ adresy"
+
+#: src/Entity/PhysicalAddress.php:67
+msgctxt "physical address"
+msgid "Street name"
+msgstr "Ulica"
+
+#: src/Entity/PhysicalAddress.php:80
+msgctxt "physical address"
+msgid "Building number"
+msgstr "Číslo"
+
+#: src/Entity/PhysicalAddress.php:93
+msgctxt "physical address"
+msgid "Registration number"
+msgstr "Registračné číslo"
+
+#: src/Entity/PhysicalAddress.php:106
+msgctxt "physical address"
+msgid "Municipality"
+msgstr "Obec"
+
+#: src/Entity/PhysicalAddress.php:124
+msgctxt "physical address"
+msgid "ZIP Code"
+msgstr "PSČ"
+
+#: src/Entity/PhysicalAddress.php:142
+msgctxt "physical address"
+msgid "Country"
+msgstr "Krajina"
+
+#: src/Entity/PhysicalAddress.php:160
+msgctxt "physical address"
+msgid "Primary address"
+msgstr "Hlavná adresa"
+
+#: src/Entity/PhysicalAddress.php:168
+msgctxt "physical address"
+msgid "Active"
+msgstr "Aktívny"
+
+#: src/Entity/PhysicalAddress.php:176
+msgctxt "physical address"
+msgid "Region"
+msgstr "Umiestnenie"
+
+#: src/Entity/PhysicalAddress.php:194
+msgctxt "physical address"
+msgid "District"
+msgstr "Časť obce"
+
+#: src/Entity/PhysicalAddress.php:212
+msgctxt "physical address"
+msgid "County"
+msgstr "Okres"
+
+#: src/Entity/PhysicalAddress.php:230
+msgctxt "physical address"
+msgid "Floor"
+msgstr "Poschodie"
+
+#: src/Entity/PhysicalAddress.php:243
+msgctxt "physical address"
+msgid "Workplace number"
+msgstr "Číslo pracoviska"
+
+#: src/Entity/PhysicalAddress.php:256
+msgctxt "physical address"
+msgid "GPS Coordinates"
+msgstr "GPS poloha"
+
+#: src/Entity/PhysicalAddress.php:269
+msgctxt "physical address"
+msgid "Formatted Address"
+msgstr "Formátovaná adresa"
+
+#: src/Entity/PhysicalAddress.php:13
+msgid "Organization Physical Address"
+msgstr "Adresa organizácie"
+
+#: src/Entity/ServiceHours.php:85
+msgid "Day of Week"
+msgstr "Deň v týždni"
+
+#: src/Entity/ServiceHours.php:120
+msgid "Time intervals"
+msgstr "Časové intervaly"
+
+#: src/Entity/ServiceHours.php:14
+msgid "Service Hours"
+msgstr "Úradné hodiny"
+
+#: src/Entity/ServiceHoursCategory.php:13
+msgid "Service Hours Category"
+msgstr "Kategória úradných hodín"
+
+#: src/Entity/TimeInterval.php:13
+msgid "Time Interval"
+msgstr "Časový interval"
+

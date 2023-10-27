@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Slovensko.sk S3fs module.
+ */
+
+/**
+ * Implements hook_file_download().
+ */
+function svksk_s3fs_file_download($uri) {
+  // This hook is only to mangage headers for public files.
+  if (strpos($uri, 'public://') !== 0) {
+    return NULL;
+  }
+
+  if (preg_match('/^public:\/\/languages\/\w+\.js$/', $uri)) {
+    $headers = [
+      'Content-Type' => 'application/javascript',
+    ];
+  } else {
+    // Get the file record based on the URI. If not in the database just return.
+    /** @var \Drupal\file\FileRepositoryInterface $file_repository */
+    $file_repository = \Drupal::service('file.repository');
+    $file = $file_repository->loadByUri($uri);
+    if (!$file) {
+      return NULL;
+    }
+    $headers = file_get_content_headers($file);
+  }
+
+  $headers['Cache-Control'] = 'public, max-age=604800';
+
+  return $headers;
+}

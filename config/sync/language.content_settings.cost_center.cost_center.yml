@@ -1,0 +1,11 @@
+uuid: 34e1ff55-9a1b-4b50-b727-9e3eb7014338
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_organization
+id: cost_center.cost_center
+target_entity_type_id: cost_center
+target_bundle: cost_center
+default_langcode: site_default
+language_alterable: false

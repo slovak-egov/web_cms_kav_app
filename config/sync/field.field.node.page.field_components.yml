@@ -1,0 +1,134 @@
+uuid: 6bbf9b27-734b-48fe-b05f-fe30e1a85aa3
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.page
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.attachments
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.frontend_form
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.info_banner
+    - paragraphs.paragraphs_type.layout_section
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.organization_search
+    - paragraphs.paragraphs_type.related_content
+    - paragraphs.paragraphs_type.search_report
+    - paragraphs.paragraphs_type.signpost
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+    - paragraphs.paragraphs_type.view
+  module:
+    - entity_reference_revisions
+id: node.page.field_components
+field_name: field_components
+entity_type: node
+bundle: page
+label: Komponenty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      layout_section: layout_section
+      heading: heading
+      text: text
+      image: image
+      video: video
+      attachments: attachments
+      related_content: related_content
+      view: view
+      faq: faq
+      organization_search: organization_search
+      signpost: signpost
+      link: link
+      accordion: accordion
+      info_banner: info_banner
+      content: content
+      frontend_form: frontend_form
+      search_report: search_report
+      table: table
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 19
+        enabled: true
+      attachments:
+        weight: -28
+        enabled: true
+      content:
+        weight: 26
+        enabled: true
+      custom_para:
+        weight: 28
+        enabled: false
+      faq:
+        weight: -25
+        enabled: true
+      frontend_form:
+        weight: 30
+        enabled: true
+      heading:
+        weight: -32
+        enabled: true
+      image:
+        weight: -30
+        enabled: true
+      info_banner:
+        weight: 22
+        enabled: true
+      layout_section:
+        weight: -33
+        enabled: true
+      life_event_categories:
+        weight: -24
+        enabled: true
+      life_event_step:
+        weight: -22
+        enabled: false
+      life_event_step_heading:
+        weight: -23
+        enabled: false
+      link:
+        weight: -18
+        enabled: true
+      organization_search:
+        weight: -21
+        enabled: true
+      related_content:
+        weight: -27
+        enabled: true
+      search_report:
+        weight: 35
+        enabled: true
+      search_service:
+        weight: -20
+        enabled: true
+      service:
+        weight: 35
+        enabled: true
+      signpost:
+        weight: -19
+        enabled: true
+      table:
+        weight: 35
+        enabled: true
+      text:
+        weight: -31
+        enabled: true
+      video:
+        weight: -29
+        enabled: true
+      view:
+        weight: -26
+        enabled: true
+field_type: entity_reference_revisions

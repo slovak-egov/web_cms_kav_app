@@ -1,0 +1,12 @@
+uuid: 87c0f98f-83bd-4de6-8b17-a9c8c5556091
+langcode: sk
+status: false
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: K7eNlfU7NEUajz01wItywZklr2oaPgL6s1_97fmDXLA
+id: comment.full
+label: 'Celý komentár'
+targetEntityType: comment
+cache: true

@@ -1,0 +1,8 @@
+uuid: df19e42e-5fa0-4fcd-b1bf-f270025f4338
+langcode: sk
+status: true
+dependencies: {  }
+name: 'Kategórie médií'
+vid: media_categories
+description: ''
+weight: 0

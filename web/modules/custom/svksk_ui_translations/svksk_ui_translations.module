@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * @file
+ * Contains svksk_ui_translations.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function svksk_ui_translations_form_svksk_ui_translation_edit_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (!\Drupal::currentUser()
+    ->hasPermission('administer translated string entities')) {
+    // Disable editing machine name for non-authorized user role
+    $form['machine_name']['widget'][0]['value']['#disabled'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function svksk_ui_translations_form_language_admin_add_form_alter(&$form, FormStateInterface $form_state) {
+  $form['predefined_submit']['#submit'][] = 'svksk_ui_translations_flush_all_caches';
+}
+
+/**
+ * Form submission handler for language_admin_add_form().
+ */
+function svksk_ui_translations_flush_all_caches($form, FormStateInterface $form_state) {
+  \Drupal::messenger()->addMessage(t('Caches cleared.'));
+  drupal_flush_all_caches();
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for views_exposed_form().
+ */
+function svksk_ui_translations_form_views_exposed_form_alter(&$form, FormStateInterface $form_state) {
+  if ($form_state->get('view')->id() === 'ui_translations') {
+    $form['status']['#options'][1] = t('Yes');
+  }
+}

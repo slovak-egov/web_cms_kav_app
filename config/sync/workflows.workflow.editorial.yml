@@ -1,0 +1,148 @@
+uuid: b1c9368e-3778-43e7-9176-c7898a3fbf00
+langcode: sk
+status: true
+dependencies:
+  config:
+    - node.type.article
+    - node.type.data_source
+    - node.type.faq
+    - node.type.news
+    - node.type.organization
+    - node.type.page
+  module:
+    - content_moderation
+_core:
+  default_config_hash: T7gMMyFbTYLalxpIOnzJebvek2OW0b1RgLVE9I2y228
+id: editorial
+label: 'Redakčný proces'
+type: content_moderation
+type_settings:
+  states:
+    amendment_needed:
+      label: 'Na doplnenie'
+      weight: -2
+      published: false
+      default_revision: false
+    approved:
+      label: Schválený
+      weight: -1
+      published: false
+      default_revision: false
+    deleted:
+      label: Zrušený
+      weight: 2
+      published: false
+      default_revision: true
+    draft:
+      label: Návrh
+      weight: -5
+      published: false
+      default_revision: false
+    in_review:
+      label: Posudzovaný
+      weight: -3
+      published: false
+      default_revision: false
+    new:
+      label: Nový
+      weight: -5
+      published: false
+      default_revision: false
+    obsolete:
+      label: Neplatný
+      weight: 1
+      published: false
+      default_revision: true
+    published:
+      label: Publikovaný
+      weight: 0
+      published: true
+      default_revision: true
+    sent_for_assesment:
+      label: 'Na posúdenie'
+      weight: -4
+      published: false
+      default_revision: false
+  transitions:
+    amendment:
+      label: Doplnenie
+      from:
+        - amendment_needed
+      to: sent_for_assesment
+      weight: -1
+    approval:
+      label: Schválenie
+      from:
+        - in_review
+      to: approved
+      weight: 0
+    cancel:
+      label: Zneplatnenie
+      from:
+        - approved
+        - obsolete
+        - published
+      to: obsolete
+      weight: 2
+    create_new:
+      label: 'Nová verzia'
+      from:
+        - new
+        - obsolete
+        - published
+        - sent_for_assesment
+      to: new
+      weight: -5
+    end:
+      label: Zrušenie
+      from:
+        - new
+        - sent_for_assesment
+        - amendment_needed
+        - in_review
+        - obsolete
+      to: deleted
+      weight: 3
+    publish:
+      label: Publikovanie
+      from:
+        - amendment_needed
+        - approved
+        - draft
+        - in_review
+        - new
+        - obsolete
+        - published
+        - sent_for_assesment
+      to: published
+      weight: 1
+    return_for_amendment:
+      label: 'Vrátenie na doplnenie'
+      from:
+        - in_review
+        - amendment_needed
+      to: amendment_needed
+      weight: -4
+    to_review:
+      label: 'Prevzatie na posúdenie'
+      from:
+        - in_review
+        - sent_for_assesment
+      to: in_review
+      weight: -2
+    to_verify:
+      label: 'Odoslanie na posúdenie'
+      from:
+        - new
+        - published
+      to: sent_for_assesment
+      weight: -3
+  entity_types:
+    node:
+      - article
+      - data_source
+      - faq
+      - news
+      - organization
+      - page
+  default_moderation_state: new

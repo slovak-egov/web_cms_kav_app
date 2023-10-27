@@ -1,0 +1,11 @@
+uuid: 603babcf-e4a4-4e14-b745-74f656865f5a
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_nace.lv_nace
+target_entity_type_id: lv_nace
+target_bundle: lv_nace
+default_langcode: site_default
+language_alterable: false

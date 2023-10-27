@@ -1,0 +1,19 @@
+uuid: c784ed31-2be6-487e-b123-e39f5b86bdcb
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.info_banner
+id: paragraph.info_banner.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: info_banner
+label: Nadpis
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

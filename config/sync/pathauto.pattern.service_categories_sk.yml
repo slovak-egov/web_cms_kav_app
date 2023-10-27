@@ -1,0 +1,33 @@
+uuid: 3b6227b2-28e7-489b-98b5-b974c956706f
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: service_categories_sk
+label: 'Service - Categories'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/sluzby/[term:name]'
+selection_criteria:
+  b6cfc8e2-3220-4f4a-8398-87512272eb53:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: b6cfc8e2-3220-4f4a-8398-87512272eb53
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      services_categories: services_categories
+  88f938cb-a1ef-4c2c-9e10-a6e6dacfe164:
+    id: language
+    negate: false
+    uuid: 88f938cb-a1ef-4c2c-9e10-a6e6dacfe164
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Jazyk

@@ -1,0 +1,20 @@
+uuid: 07a5cf0b-22ab-4e48-a9a8-82fe77c10448
+langcode: sk
+status: true
+dependencies:
+  config:
+    - media.type.remote_video
+id: media.remote_video.name
+field_name: name
+entity_type: media
+bundle: remote_video
+label: Name
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

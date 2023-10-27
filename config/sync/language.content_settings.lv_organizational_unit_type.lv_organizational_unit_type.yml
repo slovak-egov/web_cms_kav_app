@@ -1,0 +1,11 @@
+uuid: d5c82ff1-ff9d-4882-a7d6-8e736a5d366e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_organizational_unit_type.lv_organizational_unit_type
+target_entity_type_id: lv_organizational_unit_type
+target_bundle: lv_organizational_unit_type
+default_langcode: site_default
+language_alterable: false

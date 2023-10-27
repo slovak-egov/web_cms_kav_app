@@ -1,0 +1,7 @@
+entity.node.comments:
+  path: '/node/{node}/comments'
+  defaults:
+    _controller: '\Drupal\svksk_content\Controller\ContentController::comments'
+    _title: 'Comments'
+  requirements:
+    _custom_access: '\Drupal\svksk_content\Controller\ContentController::access'

@@ -1,0 +1,4 @@
+_core:
+  default_config_hash: In3MY-CuVp64RxCeU5X6rsEhR6jR4Si8OG6BX18DALg
+entity_saved_in_background_alert_message: 'Obsah bol upravený inde. V dôsledku toho bolo automatické ukladanie zrušené a automaticky ukladané stavy pre aktuálnu stránku odstránené. Automatické ukladanie sa znova aktivuje po opätovnom načítaní stránky.'
+langcode: sk

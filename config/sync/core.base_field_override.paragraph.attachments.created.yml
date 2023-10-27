@@ -1,0 +1,18 @@
+uuid: ab69ae83-883b-457c-ab75-fff9ee914934
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.attachments
+id: paragraph.attachments.created
+field_name: created
+entity_type: paragraph
+bundle: attachments
+label: 'Napísané dňa'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

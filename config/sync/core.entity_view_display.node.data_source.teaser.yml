@@ -1,0 +1,30 @@
+uuid: 1189b33e-f75d-4898-9e7e-8ef67eaf2c0e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.data_source.field_data_category
+    - field.field.node.data_source.field_description
+    - field.field.node.data_source.field_parent_source
+    - field.field.node.data_source.field_typ
+    - node.type.data_source
+  module:
+    - user
+id: node.data_source.teaser
+targetEntityType: node
+bundle: data_source
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_data_category: true
+  field_description: true
+  field_parent_source: true
+  field_typ: true
+  langcode: true
+  search_api_excerpt: true

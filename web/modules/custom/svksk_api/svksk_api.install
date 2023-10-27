@@ -1,0 +1,18 @@
+<?php
+
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Implements hook_install().
+ */
+function svksk_api_install($is_syncing) {
+  /** @var \Drupal\svksk_api\ConsumerManager $consumer_manager */
+  $consumer_manager = \Drupal::service('svksk_api.consumer_manager');
+  try {
+    $consumer_manager->restoreDefaultConsumerKeys();
+  } catch (\Exception $e) {
+    // We don't want to block module installation.
+  }
+}

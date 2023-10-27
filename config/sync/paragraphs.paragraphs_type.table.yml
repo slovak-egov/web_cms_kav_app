@@ -1,0 +1,10 @@
+uuid: 9669a552-3f70-44e2-b1d3-fbc7e4795e6c
+langcode: sk
+status: true
+dependencies: {  }
+id: table
+label: Tabuľka
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

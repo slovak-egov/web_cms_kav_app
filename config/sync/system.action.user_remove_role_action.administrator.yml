@@ -1,0 +1,14 @@
+uuid: b27524b1-64e8-4bb6-a0cc-154bb681f51a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.administrator
+  module:
+    - user
+id: user_remove_role_action.administrator
+label: 'Odobrať rolu Administrátor vybraným používateľom'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: administrator

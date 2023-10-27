@@ -1,0 +1,21 @@
+uuid: 6564048d-9785-4709-9e83-35f70d79ece0
+langcode: sk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: sL588ui1E_8-2c_UupwyYxcqX2OVyMFp3HTLbbFqvPc
+id: global
+label: Global
+tags:
+  abstract: Abstrakt
+  description: '[current-page:perex]'
+  geo_placename: Bratislava
+  geo_position: "'48.143889; 17.109722'"
+  geo_region: Bratislava
+  icbm: "'48.143889; 17.109722'"
+  keywords: KAV
+  og_site_name: www.KAV.sk
+  og_type: website
+  rights: KAV
+  robots: 'index, follow, max-image-preview:standard'
+  title: '[current-page:title] - KAV'

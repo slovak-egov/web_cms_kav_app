@@ -1,0 +1,144 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  svksk_ui_translations.info.yml: n/a
+#  svksk_ui_translations.links.menu.yml: n/a
+#  svksk_ui_translations.links.action.yml: n/a
+#  svksk_ui_translations.links.task.yml: n/a
+#  svksk_ui_translations.permissions.yml: n/a
+#  src/TranslationEntityListBuilder.php: n/a
+#  src/Entity/TranslationEntity.php: n/a
+#  src/Commands/DrushCommands.php: n/a
+#  src/Form/TranslationEntityForm.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2022-08-05 12:55+0200\n"
+"PO-Revision-Date: 2022-08-05 12:55+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_ui_translations.info.yml:0
+msgid "Slovensko.sk UI Translations"
+msgstr ""
+
+#: svksk_ui_translations.info.yml:0 svksk_ui_translations.links.menu.yml:0;0
+msgid "UI Translations"
+msgstr "UI Preklady"
+
+#: svksk_ui_translations.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_ui_translations.links.action.yml:0
+msgid "Add Translated string"
+msgstr "Pridať reťazec"
+
+#: svksk_ui_translations.links.menu.yml:0
+msgid "Configure Translated string entities"
+msgstr "Konfigurovať preklady"
+
+#: svksk_ui_translations.links.task.yml:0
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: svksk_ui_translations.links.task.yml:0
+msgid "View"
+msgstr "Zobraziť"
+
+#: svksk_ui_translations.links.task.yml:0
+msgid "Edit"
+msgstr "Upraviť"
+
+#: svksk_ui_translations.links.task.yml:0
+msgid "Delete"
+msgstr "Odstrániť"
+
+#: svksk_ui_translations.permissions.yml:0
+msgid "Create new Translated string entities"
+msgstr "Vytvoriť preklad"
+
+#: svksk_ui_translations.permissions.yml:0
+msgid "Administer Translated string entities"
+msgstr "Spravovať preklady"
+
+#: svksk_ui_translations.permissions.yml:0
+msgid "Allow to access the administration form to configure Translated string entities."
+msgstr ""
+
+#: svksk_ui_translations.permissions.yml:0
+msgid "Delete Translated string entities"
+msgstr "Odstrániť preklady"
+
+#: svksk_ui_translations.permissions.yml:0
+msgid "Edit Translated string entities"
+msgstr "Upraviť preklady"
+
+#: svksk_ui_translations.permissions.yml:0
+msgid "View published Translated string entities"
+msgstr ""
+
+#: svksk_ui_translations.permissions.yml:0
+msgid "View unpublished Translated string entities"
+msgstr ""
+
+#: src/TranslationEntityListBuilder.php:20 src/Entity/TranslationEntity.php:77
+msgid "Key"
+msgstr "ID"
+
+#: src/Commands/DrushCommands.php:34
+msgid "Nothing to export."
+msgstr ""
+
+#: src/Commands/DrushCommands.php:40
+msgid "There are @count translations to export. Do you wish to continue?"
+msgstr ""
+
+#: src/Commands/DrushCommands.php:70
+msgid "Exported @count translations"
+msgstr ""
+
+#: src/Commands/DrushCommands.php:89
+msgid "Nothing to import."
+msgstr ""
+
+#: src/Commands/DrushCommands.php:95
+msgid "There are @count translations in config file to process. Do you wish to continue?"
+msgstr ""
+
+#: src/Commands/DrushCommands.php:142
+msgid "Imported @count new translations"
+msgstr ""
+
+#: src/Entity/TranslationEntity.php:87
+msgid "Translated string"
+msgstr "Preklad"
+
+#: src/Entity/TranslationEntity.php:106
+msgid "Translated string - Plural"
+msgstr "Preklad - Plural"
+
+#: src/Entity/TranslationEntity.php:124
+msgid "A boolean indicating whether the Translated string is published."
+msgstr ""
+
+#: src/Entity/TranslationEntity.php:10
+msgid "UI Translation"
+msgstr "UI Preklad"
+
+#: src/Form/TranslationEntityForm.php:53
+msgid "Created the %label Translated string."
+msgstr ""
+
+#: src/Form/TranslationEntityForm.php:59
+msgid "Saved the %label Translated string."
+msgstr ""
+

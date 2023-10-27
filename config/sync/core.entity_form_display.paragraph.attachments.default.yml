@@ -1,0 +1,40 @@
+uuid: 38a9f598-d838-4c9d-a8cc-e56898512ede
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.attachments.field_attachment_media
+    - paragraphs.paragraphs_type.attachments
+  module:
+    - inline_entity_form
+id: paragraph.attachments.default
+targetEntityType: paragraph
+bundle: attachments
+mode: default
+content:
+  field_attachment_media:
+    type: inline_entity_form_complex
+    weight: 0
+    region: content
+    settings:
+      form_mode: default
+      override_labels: false
+      label_singular: ''
+      label_plural: ''
+      allow_new: true
+      allow_existing: true
+      match_operator: CONTAINS
+      allow_duplicate: false
+      collapsible: true
+      collapsed: true
+      revision: false
+      removed_reference: optional
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

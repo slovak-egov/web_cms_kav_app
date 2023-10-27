@@ -1,0 +1,30 @@
+uuid: ec40c531-ea14-494f-aa1a-3c942efb68de
+langcode: sk
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_font_size
+field_name: field_font_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: s
+      label: S
+    -
+      value: m
+      label: M
+    -
+      value: l
+      label: L
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,35 @@
+uuid: db055284-85a1-4e3d-9f41-f03d733e5720
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_content_reference
+    - node.type.article
+    - node.type.news
+    - node.type.organization
+    - node.type.page
+    - paragraphs.paragraphs_type.signpost
+id: paragraph.signpost.field_content_reference
+field_name: field_content_reference
+entity_type: paragraph
+bundle: signpost
+label: 'Odkazovaný obsah'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      news: news
+      organization: organization
+      page: page
+      article: article
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: null
+field_type: entity_reference

@@ -1,0 +1,80 @@
+uuid: 9d9c2ea0-88e5-4eae-86fe-6909ee3a65e6
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_components
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.related_content
+    - paragraphs.paragraphs_type.text
+    - taxonomy.vocabulary.services_categories
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.services_categories.field_components
+field_name: field_components
+entity_type: taxonomy_term
+bundle: services_categories
+label: Komponenty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      heading: heading
+      related_content: related_content
+      text: text
+    negate: 0
+    target_bundles_drag_drop:
+      attachments:
+        weight: 17
+        enabled: false
+      faq:
+        weight: 18
+        enabled: false
+      heading:
+        weight: 19
+        enabled: true
+      image:
+        weight: 20
+        enabled: false
+      layout_section:
+        weight: 21
+        enabled: false
+      life_event_categories:
+        weight: 22
+        enabled: false
+      life_event_step:
+        weight: 23
+        enabled: false
+      life_event_step_heading:
+        weight: 24
+        enabled: false
+      link:
+        weight: 25
+        enabled: false
+      organization_search:
+        weight: 26
+        enabled: false
+      related_content:
+        weight: 27
+        enabled: true
+      search_service:
+        weight: 28
+        enabled: false
+      signpost:
+        weight: 29
+        enabled: false
+      text:
+        weight: 30
+        enabled: true
+      video:
+        weight: 31
+        enabled: false
+      view:
+        weight: 32
+        enabled: false
+field_type: entity_reference_revisions

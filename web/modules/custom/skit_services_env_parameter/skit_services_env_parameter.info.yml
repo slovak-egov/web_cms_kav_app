@@ -1,0 +1,5 @@
+name: Services Environment Variable Parameters
+type: module
+description: 'Allows setting service parameters by environment variables.'
+package: skit
+core_version_requirement: ^9 || ^10

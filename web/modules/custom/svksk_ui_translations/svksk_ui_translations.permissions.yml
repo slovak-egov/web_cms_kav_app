@@ -1,0 +1,20 @@
+add translated string entities:
+  title: 'Create new Translated string entities'
+
+administer translated string entities:
+  title: 'Administer Translated string entities'
+  description: 'Allow to access the administration form to configure Translated string entities.'
+  restrict access: true
+
+delete translated string entities:
+  title: 'Delete Translated string entities'
+
+edit translated string entities:
+  title: 'Edit Translated string entities'
+
+view published translated string entities:
+  title: 'View published Translated string entities'
+
+view unpublished translated string entities:
+  title: 'View unpublished Translated string entities'
+

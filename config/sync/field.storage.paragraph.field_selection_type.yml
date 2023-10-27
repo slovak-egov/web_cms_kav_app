@@ -1,0 +1,27 @@
+uuid: bcbe4cfc-5b88-416f-8f32-e1f0901af5c6
+langcode: sk
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_selection_type
+field_name: field_selection_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: category
+      label: Kategória
+    -
+      value: reference
+      label: Referencia
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

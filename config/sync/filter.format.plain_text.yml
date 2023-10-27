@@ -1,0 +1,16 @@
+uuid: 2f742629-7126-4702-9a98-c0649d96de63
+langcode: sk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: NIKBt6kw_uPhNI0qtR2DnRf7mSOgAQdx7Q94SKMjXbQ
+name: 'Obyčajný text'
+format: plain_text
+weight: -7
+filters:
+  filter_html_escape:
+    id: filter_html_escape
+    provider: filter
+    status: true
+    weight: -10
+    settings: {  }

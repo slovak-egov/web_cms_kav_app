@@ -1,0 +1,33 @@
+uuid: 56b752fc-fb80-454d-91d0-1f1ff18793d9
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.view.field_content_type
+    - field.field.paragraph.view.field_items_per_page
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.default
+targetEntityType: paragraph
+bundle: view
+mode: default
+content:
+  field_content_type:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_items_per_page:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  embed_view: true
+  search_api_excerpt: true

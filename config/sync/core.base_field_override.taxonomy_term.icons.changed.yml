@@ -1,0 +1,18 @@
+uuid: 7245d184-4ae1-4441-906d-144b0ff64c9b
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+id: taxonomy_term.icons.changed
+field_name: changed
+entity_type: taxonomy_term
+bundle: icons
+label: Zmenené
+description: 'The time that the term was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

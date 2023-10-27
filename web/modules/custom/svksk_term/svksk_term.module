@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains svksk_term.module.
+ */
+
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_ENTITY_ID_presave().
+ */
+function svksk_term_term_presave(ContentEntityInterface $term) {
+  /** @var \Drupal\svksk_term\Helper $helper */
+  $helper = \Drupal::service('svksk_term.helper');
+  $helper->processTerm($term, $term->isNew() ? 'create': 'update');
+}
+
+/**
+ * Implements hook_ENTITY_ID_delete().
+ */
+function svksk_term_term_delete(ContentEntityInterface $term) {
+  /** @var \Drupal\svksk_term\Helper $helper */
+  $helper = \Drupal::service('svksk_term.helper');
+  $helper->processTerm($term, 'delete');
+}
+
+/**
+ * Implements hook_ENTITY_ID_presave().
+ */
+function svksk_term_node_presave(EntityInterface $node) {
+  /** @var \Drupal\svksk_term\Helper $helper */
+  $helper = \Drupal::service('svksk_term.helper');
+  $helper->processNode($node, 'update');
+}
+
+/**
+ * Implements hook_ENTITY_ID_presave().
+ */
+function svksk_term_paragraph_presave(EntityInterface $paragraph) {
+  /** @var \Drupal\svksk_term\Helper $helper */
+  $helper = \Drupal::service('svksk_term.helper');
+  $helper->processParagraph($paragraph, 'update');
+}

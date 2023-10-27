@@ -1,0 +1,11 @@
+uuid: b01ac007-063a-4447-ae50-5c681be948b2
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_address_type.lv_address_type
+target_entity_type_id: lv_address_type
+target_bundle: lv_address_type
+default_langcode: site_default
+language_alterable: false

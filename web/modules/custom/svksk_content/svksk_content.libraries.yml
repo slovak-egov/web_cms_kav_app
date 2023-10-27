@@ -1,0 +1,24 @@
+content_admin_datepicker:
+  js:
+    assets/js/content_admin_datepicker.js: { }
+  dependencies:
+    - core/drupal
+    - svksk_content/daterangepicker
+
+content_admin_view:
+  js:
+    assets/js/content_admin_view.js: { }
+  dependencies:
+    - core/drupal
+    - core/once
+
+daterangepicker:
+  css:
+    theme:
+      /libraries/daterangepicker/daterangepicker.css: { }
+      assets/css/daterangepicker.css: {}
+  js:
+    /libraries/moment/min/moment-with-locales.min.js: { minified: true }
+    /libraries/daterangepicker/daterangepicker.js: { }
+  dependencies:
+    - core/jquery

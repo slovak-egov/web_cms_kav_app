@@ -1,0 +1,27 @@
+uuid: 305c3392-8ef9-412f-bd74-729932ae0c3a
+langcode: sk
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_button_size
+field_name: field_button_size
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: m
+      label: M
+    -
+      value: l
+      label: L
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,13 @@
+uuid: 3498f641-2167-4b52-83ee-78727364f9ff
+langcode: sk
+status: true
+dependencies:
+  module:
+    - taxonomy_max_depth
+third_party_settings:
+  taxonomy_max_depth:
+    max_depth: 0
+name: 'Kategórie služieb'
+vid: services_categories
+description: ''
+weight: 0

@@ -1,0 +1,56 @@
+uuid: 636f75d2-a82b-4b41-ba53-e5d99275670e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.node.organization.field_metatags
+    - field.field.node.organization.field_perex
+    - field.field.node.organization.field_rss
+    - node.type.organization
+  module:
+    - metatag
+    - text
+    - user
+id: node.organization.default
+targetEntityType: node
+bundle: organization
+mode: default
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_metatags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_perex:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_rss:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_organizational_unit: true
+  langcode: true
+  search_api_excerpt: true

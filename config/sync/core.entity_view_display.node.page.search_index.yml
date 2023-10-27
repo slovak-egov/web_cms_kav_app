@@ -1,0 +1,49 @@
+uuid: 2e0f074f-c981-400f-94ed-8cb6b0f53295
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.page.field_components
+    - field.field.node.page.field_metatags
+    - field.field.node.page.field_perex
+    - field.field.node.page.field_rss
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.page.search_index
+targetEntityType: node
+bundle: page
+mode: search_index
+content:
+  field_components:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_perex:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  ci_id: true
+  content_moderation_control: true
+  field_metatags: true
+  field_rss: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,59 @@
+uuid: 98691aa2-ca7b-4617-bc61-9c5ab76bb23f
+langcode: und
+status: true
+dependencies:
+  config:
+    - field.field.media.link.field_media_description
+    - field.field.media.link.field_media_entity_link
+    - field.field.media.link.field_name
+    - media.type.link
+  module:
+    - link
+_core:
+  default_config_hash: id6U7YeAsfxc9xCBM6LhPY9lxLZkqd_B76lHGBX7EFQ
+id: media.link.default
+targetEntityType: media
+bundle: link
+mode: default
+content:
+  field_media_description:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_entity_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  search_api_excerpt: true
+  thumbnail: true
+  uid: true

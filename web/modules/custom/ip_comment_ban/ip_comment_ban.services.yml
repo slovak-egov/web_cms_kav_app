@@ -1,0 +1,6 @@
+services:
+  ip_comment_ban.ip_manager:
+    class: Drupal\ip_comment_ban\IPCommentBanIpManager
+    arguments: ['@database','@config.factory','@datetime.time']
+    tags:
+      - { name: backend_overridable }

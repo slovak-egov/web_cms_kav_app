@@ -1,0 +1,38 @@
+uuid: f7f64bc0-7ecd-4d65-8408-80f6ea10208e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_index
+    - field.field.node.organization.field_metatags
+    - field.field.node.organization.field_perex
+    - field.field.node.organization.field_rss
+    - node.type.organization
+  module:
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.organization.search_index
+targetEntityType: node
+bundle: organization
+mode: search_index
+content:
+  field_perex:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  content_moderation_control: true
+  field_metatags: true
+  field_organizational_unit: true
+  field_rss: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

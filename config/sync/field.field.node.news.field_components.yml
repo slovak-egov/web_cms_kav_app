@@ -1,0 +1,108 @@
+uuid: 56446aa3-57d0-4aca-aad0-d9661ab71651
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_components
+    - node.type.news
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.attachments
+    - paragraphs.paragraphs_type.faq
+    - paragraphs.paragraphs_type.heading
+    - paragraphs.paragraphs_type.image
+    - paragraphs.paragraphs_type.info_banner
+    - paragraphs.paragraphs_type.link
+    - paragraphs.paragraphs_type.related_content
+    - paragraphs.paragraphs_type.table
+    - paragraphs.paragraphs_type.text
+    - paragraphs.paragraphs_type.video
+  module:
+    - entity_reference_revisions
+id: node.news.field_components
+field_name: field_components
+entity_type: node
+bundle: news
+label: Komponenty
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      heading: heading
+      text: text
+      image: image
+      video: video
+      attachments: attachments
+      related_content: related_content
+      faq: faq
+      link: link
+      accordion: accordion
+      info_banner: info_banner
+      table: table
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 19
+        enabled: true
+      attachments:
+        weight: -28
+        enabled: true
+      faq:
+        weight: -25
+        enabled: true
+      heading:
+        weight: -32
+        enabled: true
+      image:
+        weight: -30
+        enabled: true
+      info_banner:
+        weight: 22
+        enabled: true
+      layout_section:
+        weight: -33
+        enabled: false
+      life_event_categories:
+        weight: -24
+        enabled: false
+      life_event_step:
+        weight: -22
+        enabled: false
+      life_event_step_heading:
+        weight: -23
+        enabled: false
+      link:
+        weight: -19
+        enabled: true
+      organization_search:
+        weight: -18
+        enabled: false
+      related_content:
+        weight: -27
+        enabled: true
+      search_service:
+        weight: -21
+        enabled: false
+      service:
+        weight: 35
+        enabled: true
+      signpost:
+        weight: -20
+        enabled: false
+      table:
+        weight: 35
+        enabled: true
+      text:
+        weight: -31
+        enabled: true
+      video:
+        weight: -29
+        enabled: true
+      view:
+        weight: -26
+        enabled: false
+field_type: entity_reference_revisions

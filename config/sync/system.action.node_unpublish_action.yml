@@ -1,0 +1,13 @@
+uuid: 8976b24d-d001-4f35-862c-ec08806b1b24
+langcode: sk
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: C7X8h9FWlwkQ9y5mnU2JzgaZICAdc6HFbPVbhvjlAYE
+id: node_unpublish_action
+label: 'Zrušiť zverejnenie obsahu'
+type: node
+plugin: 'entity:unpublish_action:node'
+configuration: {  }

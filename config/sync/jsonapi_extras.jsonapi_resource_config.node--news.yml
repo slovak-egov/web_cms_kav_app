@@ -1,0 +1,250 @@
+uuid: e7027c32-a65c-41a0-abac-59b5b906a262
+langcode: sk
+status: true
+dependencies:
+  config:
+    - node.type.news
+  module:
+    - jsonapi_defaults
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: node--news
+disabled: false
+path: node/news
+resourceType: node--news
+resourceFields:
+  nid:
+    disabled: false
+    fieldName: nid
+    publicName: nid
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  vid:
+    disabled: false
+    fieldName: vid
+    publicName: vid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  type:
+    disabled: false
+    fieldName: type
+    publicName: type
+    enhancer:
+      id: ''
+  revision_timestamp:
+    disabled: false
+    fieldName: revision_timestamp
+    publicName: revision_timestamp
+    enhancer:
+      id: ''
+  revision_uid:
+    disabled: false
+    fieldName: revision_uid
+    publicName: revision_uid
+    enhancer:
+      id: ''
+  revision_log:
+    disabled: false
+    fieldName: revision_log
+    publicName: revision_log
+    enhancer:
+      id: ''
+  status:
+    disabled: false
+    fieldName: status
+    publicName: status
+    enhancer:
+      id: ''
+  uid:
+    disabled: false
+    fieldName: uid
+    publicName: uid
+    enhancer:
+      id: ''
+  title:
+    disabled: false
+    fieldName: title
+    publicName: title
+    enhancer:
+      id: ''
+  created:
+    disabled: false
+    fieldName: created
+    publicName: created
+    enhancer:
+      id: ''
+  changed:
+    disabled: false
+    fieldName: changed
+    publicName: changed
+    enhancer:
+      id: ''
+  promote:
+    disabled: false
+    fieldName: promote
+    publicName: promote
+    enhancer:
+      id: ''
+  sticky:
+    disabled: false
+    fieldName: sticky
+    publicName: sticky
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''
+  revision_default:
+    disabled: false
+    fieldName: revision_default
+    publicName: revision_default
+    enhancer:
+      id: ''
+  revision_translation_affected:
+    disabled: false
+    fieldName: revision_translation_affected
+    publicName: revision_translation_affected
+    enhancer:
+      id: ''
+  moderation_state:
+    disabled: false
+    fieldName: moderation_state
+    publicName: moderation_state
+    enhancer:
+      id: ''
+  metatag:
+    disabled: false
+    fieldName: metatag
+    publicName: metatag
+    enhancer:
+      id: ''
+  content_translations:
+    disabled: false
+    fieldName: content_translations
+    publicName: content_translations
+    enhancer:
+      id: ''
+  path:
+    disabled: false
+    fieldName: path
+    publicName: path
+    enhancer:
+      id: ''
+  publish_on:
+    disabled: false
+    fieldName: publish_on
+    publicName: publish_on
+    enhancer:
+      id: ''
+  unpublish_on:
+    disabled: false
+    fieldName: unpublish_on
+    publicName: unpublish_on
+    enhancer:
+      id: ''
+  publish_state:
+    disabled: false
+    fieldName: publish_state
+    publicName: publish_state
+    enhancer:
+      id: ''
+  unpublish_state:
+    disabled: false
+    fieldName: unpublish_state
+    publicName: unpublish_state
+    enhancer:
+      id: ''
+  menu_link:
+    disabled: false
+    fieldName: menu_link
+    publicName: menu_link
+    enhancer:
+      id: ''
+  content_translation_source:
+    disabled: false
+    fieldName: content_translation_source
+    publicName: content_translation_source
+    enhancer:
+      id: ''
+  content_translation_outdated:
+    disabled: false
+    fieldName: content_translation_outdated
+    publicName: content_translation_outdated
+    enhancer:
+      id: ''
+  comment:
+    disabled: false
+    fieldName: comment
+    publicName: comment
+    enhancer:
+      id: ''
+  field_components:
+    disabled: false
+    fieldName: field_components
+    publicName: field_components
+    enhancer:
+      id: ''
+  field_image:
+    disabled: false
+    fieldName: field_image
+    publicName: field_image
+    enhancer:
+      id: ''
+  field_metatags:
+    disabled: false
+    fieldName: field_metatags
+    publicName: field_metatags
+    enhancer:
+      id: ''
+  field_migrated:
+    disabled: false
+    fieldName: field_migrated
+    publicName: field_migrated
+    enhancer:
+      id: ''
+  field_organizational_unit:
+    disabled: false
+    fieldName: field_organizational_unit
+    publicName: field_organizational_unit
+    enhancer:
+      id: ''
+  field_perex:
+    disabled: false
+    fieldName: field_perex
+    publicName: field_perex
+    enhancer:
+      id: ''
+  field_rss:
+    disabled: false
+    fieldName: field_rss
+    publicName: field_rss
+    enhancer:
+      id: ''
+  field_tags:
+    disabled: false
+    fieldName: field_tags
+    publicName: field_tags
+    enhancer:
+      id: ''
+  computed_organizational_unit_label:
+    disabled: false
+    fieldName: computed_organizational_unit_label
+    publicName: computed_organizational_unit_label
+    enhancer:
+      id: ''

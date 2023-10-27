@@ -1,0 +1,27 @@
+uuid: fe59de95-7744-4c44-909a-31e0c37a49f2
+langcode: sk
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_link_style
+field_name: field_link_style
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: default
+      label: Predvolený
+    -
+      value: button
+      label: Tlačidlo
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

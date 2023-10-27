@@ -1,0 +1,151 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  svksk_term.views.inc: n/a
+#  src/TermEntityListBuilder.php: n/a
+#  src/Entity/Term.php: n/a
+#  svksk_term.install: n/a
+#  svksk_term.info.yml: n/a
+#  svksk_term.links.action.yml: n/a
+#  svksk_term.links.menu.yml: n/a
+#  svksk_term.permissions.yml: n/a
+#  src/TermEntityForm.php: n/a
+#  src/Plugin/views/filter/TaxonomyIndexTid.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-06-09 11:19+0200\n"
+"PO-Revision-Date: 2023-06-09 11:19+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_term.views.inc:13
+msgid "Term reference."
+msgstr ""
+
+#: svksk_term.views.inc:16;20 src/TermEntityListBuilder.php:21 src/Entity/Term.php:105
+msgid "Category"
+msgstr "Kategória"
+
+#: svksk_term.install:12 src/TermEntityListBuilder.php:38
+msgid "Published"
+msgstr "Zverejnené"
+
+#: svksk_term.info.yml:0
+msgid "Slovensko.sk Term"
+msgstr ""
+
+#: svksk_term.info.yml:0
+msgid "Term entities"
+msgstr "Slovník pojmov"
+
+#: svksk_term.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_term.links.action.yml:0
+msgid "Add Term"
+msgstr "Pridať Pojem"
+
+#: svksk_term.links.menu.yml:0
+msgid "Terms"
+msgstr "Pojmy"
+
+#: svksk_term.permissions.yml:0
+msgid "Administer Term entities"
+msgstr "Spravovať Slovík pojmov"
+
+#: svksk_term.permissions.yml:0
+msgid "Allow to access the administration form to configure Term entities."
+msgstr "Umožniť prístup k administračnému formuláru na konfiguráciu Slovníka pojmov"
+
+#: src/TermEntityForm.php:40
+msgid "@type %info has been created."
+msgstr "@type %info bol vytvorený."
+
+#: src/TermEntityForm.php:45
+msgid "@type %info has been updated."
+msgstr "@type %info bol aktualizovaný."
+
+#: src/TermEntityForm.php:52
+msgid "The term could not be saved."
+msgstr "Pojem nebol uložený."
+
+#: src/TermEntityForm.php:38
+msgid "@type: added %info."
+msgstr "@type: pridaný pojem %info."
+
+#: src/TermEntityForm.php:43
+msgid "@type: updated %info."
+msgstr "@type: aktualizovaný pojem %info."
+
+#: src/TermEntityListBuilder.php:20 src/Entity/Term.php:71
+msgid "Name"
+msgstr "Názov"
+
+#: src/TermEntityListBuilder.php:22
+msgid "Status"
+msgstr "Stav"
+
+#: src/TermEntityListBuilder.php:38
+msgid "Unpublished"
+msgstr "Nezverejnené"
+
+#: src/Entity/Term.php:97
+msgid "Term description is limited to @limit characters, remaining: <strong>@remaining</strong>"
+msgstr ""
+"Popis pojmu je obmedzený na @limit znakov, zostáva: "
+"<strong>@remaining</strong>"
+
+#: src/Entity/Term.php:120
+msgid "Language code"
+msgstr "Kód jazyka"
+
+#: src/Entity/Term.php:121
+msgid "The language code."
+msgstr "Kód jazyka."
+
+#: src/Entity/Term.php:126
+msgid "Default Language code"
+msgstr ""
+
+#: src/Entity/Term.php:127
+msgid "Indicates if this is the default language."
+msgstr ""
+
+#: src/Entity/Term.php:135
+msgid "Created"
+msgstr "Vytvorené"
+
+#: src/Entity/Term.php:136
+msgid "The time that the entity was created."
+msgstr ""
+
+#: src/Entity/Term.php:139
+msgid "Changed"
+msgstr "Zmenené"
+
+#: src/Entity/Term.php:140
+msgid "The time that the entity was changed."
+msgstr ""
+
+#: src/Entity/Term.php:85
+msgid "Description"
+msgstr "Popis"
+
+#: src/Entity/Term.php:16
+msgid "Term"
+msgstr "Pojem"
+
+#: src/Plugin/views/filter/TaxonomyIndexTid.php:24
+msgid "Without category"
+msgstr "Bez kategórie"
+

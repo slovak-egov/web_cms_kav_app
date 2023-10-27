@@ -1,0 +1,38 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright 2023 <EMAIL@ADDRESS>
+# Generated from files:
+#  svksk_media.module: n/a
+#  svksk_media.info.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-06-13 11:04+0200\n"
+"PO-Revision-Date: 2023-06-13 11:04+0200\n"
+"Last-Translator: Tomáš Barej <tomas.barej@slovenskoit.sk>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_media.module:60
+msgctxt "media"
+msgid "Name"
+msgstr "Názov"
+
+#: svksk_media.info.yml:0
+msgid "Slovensko.sk Media"
+msgstr ""
+
+#: svksk_media.info.yml:0
+msgid "Media related stuff."
+msgstr ""
+
+#: svksk_media.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+

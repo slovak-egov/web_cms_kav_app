@@ -1,0 +1,18 @@
+uuid: 2dc3ea48-3f08-49f1-96dd-b08575a16d78
+langcode: sk
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: E1qmUI2SlozLlJ308jfMMFKT67l1p6PywE2LTRbeYS4
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content: {  }
+hidden:
+  field_organizational_unit: true
+  langcode: true
+  member_for: true
+  search_api_excerpt: true

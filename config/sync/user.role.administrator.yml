@@ -1,0 +1,11 @@
+uuid: 31119986-2e97-42fb-85e7-8bd32a068161
+langcode: sk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OeKGIkmZA_c-t6QLH81WNQx8gDCc1MRmxaTuQgxBByU
+id: administrator
+label: Administrátor
+weight: -3
+is_admin: true
+permissions: {  }

@@ -1,0 +1,16 @@
+uuid: 7bfb568b-4368-4ea2-b817-7cbe0b696c2d
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.kategoria_datoveho_zdroja
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+id: taxonomy_term.kategoria_datoveho_zdroja
+target_entity_type_id: taxonomy_term
+target_bundle: kategoria_datoveho_zdroja
+default_langcode: site_default
+language_alterable: true

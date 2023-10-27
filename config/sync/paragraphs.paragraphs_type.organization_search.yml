@@ -1,0 +1,15 @@
+uuid: 07e8f4de-868c-42b5-a89a-20217c472efa
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: organization_search
+label: 'Vyhľadávanie inštitúcií'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

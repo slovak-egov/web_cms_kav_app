@@ -1,0 +1,10 @@
+uuid: 4e6def24-bb57-4390-8d71-6b9e6aff61a2
+langcode: sk
+status: true
+dependencies:
+  module:
+    - node
+id: node.comments
+label: Kometáre
+targetEntityType: node
+cache: true

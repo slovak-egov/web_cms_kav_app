@@ -1,0 +1,13 @@
+
+# Translated string menu items definition
+entity.svksk_ui_translation.collection:
+  title: 'UI Translations'
+  route_name: entity.svksk_ui_translation.collection
+  parent: svksk_base.admin
+  weight: 199
+
+svksk_ui_translation.admin.structure.settings:
+  title: 'UI Translations'
+  description: 'Configure Translated string entities'
+  route_name: svksk_ui_translation.settings
+  parent: system.admin_structure

@@ -1,0 +1,12 @@
+services:
+  svksk_service.commands:
+    class: Drupal\svksk_service\Commands\ServiceDrushCommands
+    tags:
+      - { name: drush.command }
+    arguments: ['@entity_type.manager', '@logger.factory', '@cmdb_locator_api_client']
+  logger.channel.svksk_service:
+    parent: logger.channel_base
+    arguments: ["svksk_service"]
+  svksk_service.sync_manager:
+    class: Drupal\svksk_service\ServiceSyncManager
+    arguments: ['@entity_type.manager', '@logger.channel.svksk_service']

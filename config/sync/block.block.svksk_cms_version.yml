@@ -1,0 +1,20 @@
+uuid: 82cfb8ba-286b-4219-a93b-f756f0a0e618
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_base
+  theme:
+    - svksk_admin
+id: svksk_cms_version
+theme: svksk_admin
+region: footer
+weight: 0
+provider: null
+plugin: cms_version
+settings:
+  id: cms_version
+  label: Verzia
+  label_display: '0'
+  provider: svksk_base
+visibility: {  }

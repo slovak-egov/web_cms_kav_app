@@ -1,0 +1,26 @@
+uuid: 5a04bd49-1430-4d92-81e3-b4a9fa3ac4e7
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq_answer
+    - node.type.faq
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
+id: node.faq.field_faq_answer
+field_name: field_faq_answer
+entity_type: node
+bundle: faq
+label: Popis
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

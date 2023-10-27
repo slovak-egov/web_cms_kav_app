@@ -1,0 +1,33 @@
+uuid: 965750ae-8192-42ee-a310-23845e0e4b69
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: event
+label: Event
+type: 'canonical_entities:node'
+pattern: '/udalost/[node:title]'
+selection_criteria:
+  0df6e964-20ac-44bb-b972-f1aa181726cb:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 0df6e964-20ac-44bb-b972-f1aa181726cb
+    context_mapping:
+      node: node
+    bundles:
+      event: event
+  7634e56e-c304-45ba-8bba-f20ffc28d019:
+    id: language
+    negate: false
+    uuid: 7634e56e-c304-45ba-8bba-f20ffc28d019
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

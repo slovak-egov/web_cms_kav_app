@@ -1,0 +1,26 @@
+uuid: ec588718-812b-4328-a6c6-037f830d0e6a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_faq_question
+    - node.type.faq
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
+id: node.faq.field_faq_question
+field_name: field_faq_question
+entity_type: node
+bundle: faq
+label: 'Krátky názov'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

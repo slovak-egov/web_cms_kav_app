@@ -1,0 +1,42 @@
+.table--widget-entity_reference_browser_table_widget thead tr {
+  border: none;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container {
+  display: table-row;
+  cursor: default !important;
+  border: none;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container:not(:last-of-type) {
+  border-bottom: 1px solid var(--colorGinTableBorder);
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container td:first-child {
+  width: 14px;
+  padding: 0;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container .handle {
+  display: inline;
+  cursor: grab;
+  width: 14px;
+  height: 14px;
+  margin: -0.4em 0.5em 0;
+  padding: 0.5em 1em;
+  background: url(/core/themes/stable/images/core/icons/787878/move.svg) no-repeat 6px 7px;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container td {
+  width: 15%;
+  vertical-align: middle;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container td.title {
+  width: 36%;
+  word-break: break-word;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container td.author,
+.table--widget-entity_reference_browser_table_widget tr.item-container td.type {
+  min-width: 120px;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container td.date {
+  min-width: 185px;
+}
+.table--widget-entity_reference_browser_table_widget tr.item-container .handle:active {
+  cursor: grabbing;
+}

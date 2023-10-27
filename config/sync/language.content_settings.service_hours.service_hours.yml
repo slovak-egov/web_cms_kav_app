@@ -1,0 +1,17 @@
+uuid: 1b59a334-53e6-40e9-a3a3-a8377296fd84
+langcode: sk
+status: true
+dependencies:
+  module:
+    - content_translation
+    - svksk_organization
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '1'
+id: service_hours.service_hours
+target_entity_type_id: service_hours
+target_bundle: service_hours
+default_langcode: site_default
+language_alterable: true

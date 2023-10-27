@@ -1,0 +1,29 @@
+uuid: 2ec601ae-30b0-4706-bec6-79bf03f450e3
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.preview
+    - field.field.paragraph.attachments.field_attachment_media
+    - paragraphs.paragraphs_type.attachments
+  module:
+    - layout_builder
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.attachments.preview
+targetEntityType: paragraph
+bundle: attachments
+mode: preview
+content:
+  field_attachment_media:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

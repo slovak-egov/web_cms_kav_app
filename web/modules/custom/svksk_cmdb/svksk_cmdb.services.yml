@@ -1,0 +1,14 @@
+services:
+  cmdb_api_client:
+    class: Drupal\svksk_cmdb\ApiClient\ApiClientCmdb
+    arguments: [ '@svksk_http_client.api_client', '@uuid', '@logger.factory']
+  cmdb_locator_api_client:
+    class: Drupal\svksk_cmdb\ApiClient\ApiClientCmdbLocator
+    arguments: [ '@svksk_http_client.api_client', '@uuid', '@logger.factory' ]
+  svksk_cmdb.ci_manager:
+    class: Drupal\svksk_cmdb\CmdbCIManager
+    arguments: ['@entity_type.manager', '@cmdb_api_client', '@queue', '@logger.factory']
+  svksk_cmdb.commands:
+    class: \Drupal\svksk_cmdb\Commands\DrushCommands
+    tags:
+      - { name: drush.command }

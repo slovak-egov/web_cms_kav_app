@@ -1,0 +1,19 @@
+uuid: 935a4924-fc01-4e61-948a-50e9010e69b5
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_name
+    - media.type.image
+id: media.image.field_name
+field_name: field_name
+entity_type: media
+bundle: image
+label: Názov
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

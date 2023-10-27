@@ -1,0 +1,7 @@
+svksk_moderation.moderation_workflow_preview_modal:
+  path: 'moderation-workflow-preview/modal'
+  defaults:
+    _title: 'Preview of editorial process'
+    _controller: '\Drupal\svksk_moderation\Controller\WorkflowModalController::modal'
+  requirements:
+    _permission: 'access content'

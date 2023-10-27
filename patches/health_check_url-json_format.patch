@@ -1,0 +1,41 @@
+diff --git a/src/Controller/HealthCheckController.php b/src/Controller/HealthCheckController.php
+index fd90cfa..13b080d 100755
+--- a/src/Controller/HealthCheckController.php
++++ b/src/Controller/HealthCheckController.php
+@@ -36,8 +36,8 @@ class HealthCheckController extends ControllerBase {
+       "timestamp" => time(),
+       "string" => $this->string,
+       "stringWithTimestamp" => $this->string.' - ' . time(),
+-      "stringWithDateTime" => $this->string.' ' . strftime("at %T on %D"),
+-      "stringWithDateTimestamp" => $this->string.' ' . strftime("at %T on %D") . ' (' . time() . ')',
++      "stringWithDateTime" => $this->string . ' at ' . date('H:i:s', time()) .' on ' . date('m/d/y', time()),
++      "stringWithDateTimestamp" => $this->string . ' at ' . date('H:i:s', time()) .' on ' . date('m/d/y', time()) . ' (' . time() . ')',
+     ];
+     return $this->buildResponse($options[$this->type]);
+   }
+@@ -50,8 +50,8 @@ class HealthCheckController extends ControllerBase {
+    */
+   public function buildResponse($string) {
+     $response = new Response();
+-    $response->headers->set('Content-Type', 'text/plain');
+-    $response->setContent($string);
++    $response->headers->set('Content-Type', 'application/json');
++    $response->setContent(json_encode(['status' => $string]));
+     return $response;
+   }
+
+diff --git a/src/Form/HealthCheckSettingsForm.php b/src/Form/HealthCheckSettingsForm.php
+index 609464f..93230f1 100644
+--- a/src/Form/HealthCheckSettingsForm.php
++++ b/src/Form/HealthCheckSettingsForm.php
+@@ -35,8 +35,8 @@ class HealthCheckSettingsForm extends ConfigFormBase {
+       "timestamp" => time(),
+       "string" => $config->get('string'),
+       "stringWithTimestamp" => $config->get('string') .' - ' . time(),
+-      "stringWithDateTime" => $config->get('string') .' ' . strftime("at %T on %D"),
+-      "stringWithDateTimestamp" => $config->get('string') . ' ' . strftime("at %T on %D") . ' (' . time() . ')',
++      "stringWithDateTime" => $config->get('string') .' at ' . date('H:i:s', time()) .' on ' . date('m/d/y', time()),
++      "stringWithDateTimestamp" => $config->get('string') .' at ' . date('H:i:s', time()) .' on ' . date('m/d/y', time()) . ' (' . time() . ')',
+     ];
+     $form['type'] = [
+       '#title' => $this->t('Response Type'),

@@ -1,0 +1,4 @@
+administer contact entities:
+  title: 'Administer contact entities'
+  description: 'Allow to access the administration form to configure contact entities.'
+  restrict access: true

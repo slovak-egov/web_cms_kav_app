@@ -1,0 +1,3 @@
+administer list values:
+  title: 'Administer list values'
+  restrict access: true

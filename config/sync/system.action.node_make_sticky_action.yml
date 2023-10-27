@@ -1,0 +1,13 @@
+uuid: e87e524c-05d8-4fd3-9134-7a8d049e531b
+langcode: sk
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: sOb26JSy3fGpWkvR0WYN6_hMqj_6d1rvbvrkzp1yya0
+id: node_make_sticky_action
+label: 'Prilepiť obsah'
+type: node
+plugin: node_make_sticky_action
+configuration: {  }

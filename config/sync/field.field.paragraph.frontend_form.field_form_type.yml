@@ -1,0 +1,21 @@
+uuid: aa6aee89-ac11-4a72-8374-aec893555f0f
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_form_type
+    - paragraphs.paragraphs_type.frontend_form
+  module:
+    - options
+id: paragraph.frontend_form.field_form_type
+field_name: field_form_type
+entity_type: paragraph
+bundle: frontend_form
+label: 'typ formulara'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

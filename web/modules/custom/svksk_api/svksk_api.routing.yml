@@ -1,0 +1,20 @@
+svksk_api.jsonapi.general_config:
+  path: '/%jsonapi%/config/general'
+  defaults:
+    _jsonapi_resource: Drupal\svksk_api\Resource\GeneralConfig
+  requirements:
+    _permission: 'access content'
+
+svksk_api.jsonapi.languages:
+  path: '/%jsonapi%/language/enabled'
+  defaults:
+    _jsonapi_resource: Drupal\svksk_api\Resource\EnabledLanguage
+  requirements:
+    _permission: 'access content'
+
+svksk_api.jsonapi.ui_translations:
+  path: '/%jsonapi%/translations/ui'
+  defaults:
+    _jsonapi_resource: Drupal\svksk_api\Resource\Translations
+  requirements:
+    _permission: 'access content'

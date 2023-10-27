@@ -1,0 +1,33 @@
+uuid: 7a65d844-57f0-41f1-9c12-142c538cf6cb
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: service_categories_en
+label: 'Service - Categories'
+type: 'canonical_entities:taxonomy_term'
+pattern: '/services/[term:name]'
+selection_criteria:
+  794d3bad-3153-4718-8a94-6f56fc9828e8:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 794d3bad-3153-4718-8a94-6f56fc9828e8
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      services_categories: services_categories
+  58501bd1-32e6-4dd7-8c5a-41d0af87a4f5:
+    id: language
+    negate: false
+    uuid: 58501bd1-32e6-4dd7-8c5a-41d0af87a4f5
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Jazyk

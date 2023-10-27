@@ -1,0 +1,29 @@
+uuid: 1bb6b4ed-5286-4a47-8412-e5955e624a68
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.article
+    - taxonomy.vocabulary.tags
+id: node.article.field_tags
+field_name: field_tags
+entity_type: node
+bundle: article
+label: Značky
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: taxonomy_unique
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

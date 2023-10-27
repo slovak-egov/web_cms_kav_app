@@ -1,0 +1,170 @@
+= Konfiguračný manuál
+
+== Konfigurácia DRUPAL
+.Name: Zoznam premenných prostredia pre DRUPAL
+[cols="2,2,1,1,3"]
+|===
+|Parameter |Typ |Popis |Predvolená hodnota |Príklad
+
+
+|TZ
+|String
+|Nastavenie časovej zóny systému kontajnera v štandardizovanom formáte https://en.wikipedia.org/wiki/List_of_tz_database_time_zones.
+|
+|Europe/Bratislava
+
+|DEBUG
+|Boolean
+|Zapnutie ladiaceho logovania.
+|false
+|false
+
+|ADMIN_PASSWORD
+|String
+|Nastavenie hesla pre používateľa admin.
+|
+|admin
+
+|DB_HOST
+|String
+|Adresa databázového servera.
+|
+|postgres-server
+
+|DB_PORT
+|Integer
+|Port pre pripojenie k databázovému serveru.
+|
+|5432
+
+|DB_NAME
+|String
+|Meno databázy.
+|
+|slovensko_sk
+
+|DB_USER
+|String
+|Používateľské meno pre pripojenie do databázy.
+|
+|slovensko_sk
+
+|DB_PASSWORD
+|String
+|Používateľské heslo pre pripojenie do databázy.
+|
+|P4ssw0rd!
+
+|MIGRATE_HOST
+|String
+|Adresa databázového servera s migračnou databázou.
+|
+|postgres-server
+
+|MIGRATE_PORT
+|String
+|Port pre pripojenie k serveru s migračnou databázou.
+|
+|5432
+
+|MIGRATE_DATABASE
+|String
+|Meno migračnej databázy.
+|
+|
+
+|MIGRATE_USERNAME
+|String
+|Používateľské meno pre pripojenie do migračnej databázy.
+|
+|
+
+|MIGRATE_PASSWORD
+|String
+|Používateľské heslo pre pripojenie do migračnej databázy.
+|
+|
+
+|DRUPAL_HASH_SALT
+|String
+|Bezpečnostný kľúč nainštalovaného systému CMS Drupal. Náhodný reťazec s minimálnou dĺžkou 32 znakov.
+|
+|UoBu_skPrRpk1_n6RI07BvzpHGKDw9Vad0glJP55-ewrnhsQ0t4r5IHeribfvlwQWSrv7HkX8A
+
+|DRUPAL_REVERSE_PROXY
+|Boolean
+|Ak je pred Drupalom reverzný proxy server alebo API brána zapnite toto nastavenie aby sa správne vyhodnotil host na základe X-Forwarded HTTP hlavičiek.
+|false
+|false
+
+|DRUPAL_API_GATEWAY
+|String
+|URL API brány cez ktorú sa pripája front-end na Drupal. Táto hodnota sa použije len ak je `DRUPAL_REVERSE_PROXY` nastavené na `true` a prepíše hodnoty v prichádzajúcich X-Forwarded HTTP hlavičkách.
+|
+|https://gateway.slovensko.sk:8888
+
+|S3_HOSTNAME
+|String
+|Adresa cloudového objektového úložiska podporujúceho S3
+|
+|https://s3.example.com
+
+|S3_BUCKET
+|String
+|Názov bucket-u v S3 úložisku.
+|
+|CMS-SK
+
+|S3_ACCESS_KEY
+|String
+|Prístupový kľuč k S3 úložisku.
+|
+|10XXZY7XXAIPYXXX021Q
+
+|S3_SECRET_KEY
+|String
+|Tajný kľúč pre prístup k S3.
+|
+|ExAmLE123x123jO0zD0h3XXxXXXXxxxxXx0xéxx
+
+|NEXT_BASE_URL
+|String
+|Adresa Web Viewer-a.
+|
+|https://example.com
+
+|NEXT_PREVIEW_URL
+|String
+|Adresa Web Buildera pre zobrazenie náhľadu obsahu.
+|
+|https://web-builder.example.com/api/preview
+
+|NEXT_PREVIEW_SECRET
+|String
+|Tajný kľúč pre zobrazenie náhľadu obsahu na Web Builderi.
+|
+|93bb8198176700ff5bd964553db0435c
+
+|NEXT_REVALIDATE_URL
+|String
+|Adresa Web Buildera pre revalidáciu obsahu.
+|
+|https://web-builder.example.com/api/revalidate
+
+|NEXT_REBUILD_SECRET
+|String
+|Tajný kľúč pre spustenie znovu postavenia obsahu na Web Builderi.
+|
+|a9358b2ac2ca65f992aa4534c068e5a4
+
+|CONSUMER_CLIENT_ID
+|String
+|UUID Web Builder a Web Viewer API klienta
+|
+|a19b2f90-80a3-4dc6-9360-55c5d043414f
+
+|CONSUMER_CLIENT_SECRET
+|String
+|Tajný kľúč Web Builder a Web Viewer API klienta.
+|
+|0c3c7f25276363015ac21cd38c726e4a

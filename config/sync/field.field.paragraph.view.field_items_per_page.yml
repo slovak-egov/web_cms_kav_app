@@ -1,0 +1,25 @@
+uuid: d56d876f-1c34-48a7-9614-8661832f56d7
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_items_per_page
+    - paragraphs.paragraphs_type.view
+id: paragraph.view.field_items_per_page
+field_name: field_items_per_page
+entity_type: paragraph
+bundle: view
+label: 'Položiek na stranu'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 10
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

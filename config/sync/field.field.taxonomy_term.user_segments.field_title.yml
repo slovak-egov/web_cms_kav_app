@@ -1,0 +1,19 @@
+uuid: 1aa45533-74af-4fa9-811f-f35d16727f5c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_title
+    - taxonomy.vocabulary.user_segments
+id: taxonomy_term.user_segments.field_title
+field_name: field_title
+entity_type: taxonomy_term
+bundle: user_segments
+label: Nadpis
+description: 'Zobrazí sa v prehľade kategórií.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

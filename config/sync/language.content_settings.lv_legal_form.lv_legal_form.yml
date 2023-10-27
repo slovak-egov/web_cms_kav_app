@@ -1,0 +1,11 @@
+uuid: 406d5a7a-64d2-4d76-949e-62d5c7b45432
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_legal_form.lv_legal_form
+target_entity_type_id: lv_legal_form
+target_bundle: lv_legal_form
+default_langcode: site_default
+language_alterable: false

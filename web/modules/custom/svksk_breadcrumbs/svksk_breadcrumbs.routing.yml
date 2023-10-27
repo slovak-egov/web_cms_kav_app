@@ -1,0 +1,7 @@
+svksk_breadcrumbs.settings_form:
+  path: '/admin/config/system/svksk_breadcrumbs'
+  defaults:
+    _title: 'svksk breadcrumbs settings'
+    _form: 'Drupal\svksk_breadcrumbs\Form\SettingsForm'
+  requirements:
+    _permission: 'administer svksk_breadcrumbs configuration'

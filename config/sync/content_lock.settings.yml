@@ -1,0 +1,179 @@
+_core:
+  default_config_hash: 6Ka3T1c-CIjEUO1Q64NXKksLthkMhj53a6zy4RJBtkc
+langcode: sk
+verbose: 1
+types:
+  comment: {  }
+  consumer: {  }
+  content_moderation_state: {  }
+  file: {  }
+  media: {  }
+  menu_link_content: {  }
+  node:
+    '*': '*'
+  path_alias: {  }
+  shortcut: {  }
+  oauth2_token: {  }
+  svksk_ui_translation: {  }
+  taxonomy_term: {  }
+  user: {  }
+  paragraph: {  }
+  crop: {  }
+  search_api_task: {  }
+  contact: {  }
+  lv_region: {  }
+  lv_contact_type: {  }
+  lv_corporate_body_type: {  }
+  lv_legal_form: {  }
+  lv_district: {  }
+  lv_legal_status: {  }
+  lv_county: {  }
+  lv_country: {  }
+  lv_municipality: {  }
+  lv_address_type: {  }
+  lv_interval_type: {  }
+  lv_service_hour_type: {  }
+  lv_organizational_unit_type: {  }
+  lv_nace: {  }
+  lv_data_source_type: {  }
+  lv_size_corporate: {  }
+  service_hours_category: {  }
+  organizational_unit: {  }
+  physical_address: {  }
+  time_interval: {  }
+  service_hours: {  }
+  cost_center: {  }
+  corporate_body: {  }
+  term: {  }
+  redirect: {  }
+types_translation_lock:
+  - node
+types_js_lock: {  }
+form_op_lock:
+  comment:
+    mode: 0
+    values: {  }
+  consumer:
+    mode: 0
+    values: {  }
+  content_moderation_state:
+    mode: 0
+    values: {  }
+  file:
+    mode: 0
+    values: {  }
+  media:
+    mode: 0
+    values: {  }
+  menu_link_content:
+    mode: 0
+    values: {  }
+  node:
+    mode: 1
+    values:
+      edit: edit
+  path_alias:
+    mode: 0
+    values: {  }
+  shortcut:
+    mode: 0
+    values: {  }
+  oauth2_token:
+    mode: 0
+    values: {  }
+  svksk_ui_translation:
+    mode: 0
+    values: {  }
+  taxonomy_term:
+    mode: 0
+    values: {  }
+  user:
+    mode: 0
+    values: {  }
+  paragraph:
+    mode: 0
+    values: {  }
+  crop:
+    mode: 0
+    values: {  }
+  search_api_task:
+    mode: 0
+    values: {  }
+  contact:
+    mode: 0
+    values: {  }
+  lv_region:
+    mode: 0
+    values: {  }
+  lv_contact_type:
+    mode: 0
+    values: {  }
+  lv_corporate_body_type:
+    mode: 0
+    values: {  }
+  lv_legal_form:
+    mode: 0
+    values: {  }
+  lv_district:
+    mode: 0
+    values: {  }
+  lv_legal_status:
+    mode: 0
+    values: {  }
+  lv_county:
+    mode: 0
+    values: {  }
+  lv_country:
+    mode: 0
+    values: {  }
+  lv_municipality:
+    mode: 0
+    values: {  }
+  lv_address_type:
+    mode: 0
+    values: {  }
+  lv_interval_type:
+    mode: 0
+    values: {  }
+  lv_service_hour_type:
+    mode: 0
+    values: {  }
+  lv_organizational_unit_type:
+    mode: 0
+    values: {  }
+  lv_nace:
+    mode: 0
+    values: {  }
+  lv_data_source_type:
+    mode: 0
+    values: {  }
+  lv_size_corporate:
+    mode: 0
+    values: {  }
+  service_hours_category:
+    mode: 0
+    values: {  }
+  organizational_unit:
+    mode: 0
+    values: {  }
+  physical_address:
+    mode: 0
+    values: {  }
+  time_interval:
+    mode: 0
+    values: {  }
+  service_hours:
+    mode: 0
+    values: {  }
+  cost_center:
+    mode: 0
+    values: {  }
+  corporate_body:
+    mode: 0
+    values: {  }
+  term:
+    mode: 0
+    values: {  }
+  redirect:
+    mode: 0
+    values: {  }

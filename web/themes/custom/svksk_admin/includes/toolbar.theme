@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * toolbar.theme
+ */
+
+use Drupal\svksk_admin\UserPicture;
+use Drupal\gin\GinSettings;
+
+/**
+ * Implements toolbar preprocess.
+ */
+function svksk_admin_preprocess_toolbar(&$variables) {
+  // Use single `:` to make ControllerResolver get the class from definition.
+  // @see Drupal\Core\Controller\ControllerResolver->createController().
+  $variables['user_picture'] = [
+    '#lazy_builder' => [
+      UserPicture::class . ':build',
+      [],
+    ],
+    '#create_placeholder' => TRUE,
+  ];
+
+  // Expose Toolbar variant.
+  /** @var \Drupal\gin\GinSettings $settings */
+  $settings = \Drupal::classResolver(GinSettings::class);
+  $variables['toolbar_variant'] = $settings->get('classic_toolbar');
+}

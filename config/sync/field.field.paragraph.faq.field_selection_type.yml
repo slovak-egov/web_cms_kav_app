@@ -1,0 +1,23 @@
+uuid: 2ddb24cd-70b1-4f1a-bcf6-6627e4d4b53d
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_selection_type
+    - paragraphs.paragraphs_type.faq
+  module:
+    - options
+id: paragraph.faq.field_selection_type
+field_name: field_selection_type
+entity_type: paragraph
+bundle: faq
+label: 'Typ výberu'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: category
+default_value_callback: ''
+settings: {  }
+field_type: list_string

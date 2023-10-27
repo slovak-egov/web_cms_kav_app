@@ -1,0 +1,19 @@
+uuid: 26a6d0d0-df21-4914-9d5f-77703efeb53e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_perex
+field_name: field_perex
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

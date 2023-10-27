@@ -1,0 +1,14 @@
+uuid: be17c710-15df-48de-b24c-56617a65dff3
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.administrator
+  module:
+    - user
+id: user_add_role_action.administrator
+label: 'Pridať rolu Administrátor vybraným používateľom'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: administrator

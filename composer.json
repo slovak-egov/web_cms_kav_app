@@ -1,0 +1,245 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 9 projects with Composer",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ],
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "ext-simplexml": "*",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/allowed_formats": "^2.0",
+        "drupal/auto_entitylabel": "^3.0",
+        "drupal/autologout": "^1.4",
+        "drupal/autosave_form": "^1.4",
+        "drupal/backup_migrate": "^5.0",
+        "drupal/better_exposed_filters": "^6.0",
+        "drupal/ckeditor_paste_filter": "^1.1",
+        "drupal/config_ignore": "^3.0@beta",
+        "drupal/conflict": "^2.0@alpha",
+        "drupal/consumers": "^1.17",
+        "drupal/content_lock": "^2.3",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-project-message": "^10",
+        "drupal/core-recommended": "^10",
+        "drupal/ctools": "^3.13",
+        "drupal/default_content": "^2.0@alpha",
+        "drupal/devel_entity_updates": "^4.1",
+        "drupal/draggableviews": "^2.1",
+        "drupal/entity_browser": "^2.9",
+        "drupal/entity_browser_table": "^1.2",
+        "drupal/entity_usage": "^2.0@beta",
+        "drupal/field_group_metadata": "^1.2",
+        "drupal/gin": "^3.0@RC",
+        "drupal/gin_login": "^1.2",
+        "drupal/gin_toolbar": "^1.0@RC",
+        "drupal/google_analytics": "4.0.2",
+        "drupal/health_check": "^3.0",
+        "drupal/icon_select": "^2.1",
+        "drupal/image_style_warmer": "^1.1",
+        "drupal/image_widget_crop": "^2.3",
+        "drupal/inline_entity_form": "^1.0@RC",
+        "drupal/jsonapi_extras": "^3.20",
+        "drupal/jsonapi_hypermedia": "^1.9",
+        "drupal/jsonapi_image_styles": "^3.0",
+        "drupal/jsonapi_menu_items": "^1.2",
+        "drupal/jsonapi_resources": "^1.0@beta",
+        "drupal/jsonapi_response_alter": "^1.0",
+        "drupal/jsonapi_search_api": "^1.0@RC",
+        "drupal/jsonapi_views": "^1.0",
+        "drupal/layout_options": "^1.0",
+        "drupal/layout_paragraphs": "^2.0",
+        "drupal/linkit": "^6.0",
+        "drupal/maxlength": "^2.1",
+        "drupal/media_entity_link": "2.0",
+        "drupal/metatag": "^2.0",
+        "drupal/migrate_plus": "^6.0",
+        "drupal/migrate_tools": "^6.0",
+        "drupal/next": "^1.6",
+        "drupal/node_edit_protection": "^1.0",
+        "drupal/override_node_options": "^2.6",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/potx": "^1.0",
+        "drupal/r4032login": "^2.2",
+        "drupal/readonly_field_widget": "^1.4",
+        "drupal/rebuild_cache_access": "^1.8",
+        "drupal/redirect": "^1.8",
+        "drupal/restui": "*",
+        "drupal/role_delegation": "^1.2",
+        "drupal/s3fs": "^3.2",
+        "drupal/scheduler": "^2",
+        "drupal/scheduler_content_moderation_integration": "^2.0@beta",
+        "drupal/search_api": "^1.25",
+        "drupal/select2": "^1.13",
+        "drupal/shs": "^2.0@RC",
+        "drupal/simple_oauth": "^5.2",
+        "drupal/simple_sitemap_extensions": "^2.0@beta",
+        "drupal/smtp": "^1.2",
+        "drupal/tablefield": "^2.4",
+        "drupal/taxonomy_max_depth": "^2.0",
+        "drupal/taxonomy_unique": "^2.x-dev",
+        "drush/drush": "^12",
+        "league/iso3166": "^4.0",
+        "lukascivil/treewalker": "^0.9",
+        "npm-asset/daterangepicker": "^3.1",
+        "npm-asset/select2": "^4.0",
+        "oomphinc/composer-installers-extender": "^2.0",
+        "vlucas/phpdotenv": "^5.1",
+        "webflo/drupal-finder": "^1.2",
+        "webmozart/path-util": "^2.3"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9 || ^10"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "discard-changes": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "oomphinc/composer-installers-extender": true,
+            "drupal/core-project-message": true,
+            "phpstan/extension-installer": true
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": ["load.environment.php"]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset"
+            ],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "installer-types": ["bower-asset", "npm-asset"],
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/better_exposed_filters": {
+                "2996297 - Reset button does not use AJAX": "https://www.drupal.org/files/issues/2022-09-14/better_exposed_filters-reset_button_ajax_5x-2996297-74.patch"
+            },
+            "drupal/core": {
+                "2920527 - Postgres driver issue with nested savepoints mimic_implicit_commit duplicated": "https://www.drupal.org/files/issues/2022-01-11/2920527-26.patch",
+                "3349973 - Automatically install pg_trgm extension on PostgreSQL 13+": "https://www.drupal.org/files/issues/2023-05-08/3349973-26.patch",
+                "Disable error when invalid permissions are assigned": "./patches/disable-error-when-invalid-permissions-are-assigned.patch"
+            },
+            "drupal/content_lock": {
+                "2919019 - content_lock_entity_operation doesn't work if the entity list is cached": "https://www.drupal.org/files/issues/content_lock-caching-invalidation-2919019-3.patch",
+                "3071692 - Language object is used in a DB query, it should be a string": "https://www.drupal.org/files/issues/2019-08-20/languageCode-3071692.patch"
+            },
+            "drupal/decoupled_router": {
+                "Fix redirect destination language": "./patches/decoupled_router-fix-redirect-destination-language.patch",
+                "3111456 - Unable to resolve path on node in other language than default": "https://www.drupal.org/files/issues/2023-01-26/decouple_router-3111456-resolve-language-issue-61--get-translation.patch"
+            },
+            "drupal/default_content": {
+                "2698425 - Do not reimport existing entities": "https://www.drupal.org/files/issues/2022-07-29/default_content-fix-uuid-duplicate-entry-2698425.patch"
+            },
+            "drupal/entity_browser": {
+                "2939481 - Resetting an entity browser exposed filters loads the upload tab": "https://www.drupal.org/files/issues/2020-01-28/entity_browser-fix-for-reset-2939481-9.patch",
+                "3181631 - Use theme function for ajax progress": "https://git.drupalcode.org/project/entity_browser/-/merge_requests/23.diff"
+            },
+            "drupal/entity_reference_revisions": {
+                "3150084_2 - Non-translatable fields can only be changed when updating the current revision": "https://www.drupal.org/files/issues/2020-06-09/3150084_2.patch"
+            },
+            "drupal/entity_usage": {
+                "Skip restricted content links completely": "./patches/entity_usage-skip_restricted_content.patch"
+            },
+            "drupal/gin": {
+                "3355885 - Dropbutton style issue after Claro update": "https://www.drupal.org/files/issues/2023-05-02/3355885.patch"
+            },
+            "drupal/google_analytics": {
+                "3373921 - Cannot install from existing config": "https://www.drupal.org/files/issues/2023-08-11/google_analytics-check-role-exists-on-install-3340020-9.patch"
+            },
+            "drupal/layout_paragraphs": {
+                "3259729 - Fatal error saving translation when content moderation is enabled": "https://git.drupalcode.org/project/layout_paragraphs/-/merge_requests/60.diff",
+                "Inherit node id in layout paragraphs": "./patches/layout-paragraphs-inherit-node-id.patch",
+                "3313147 - Cancel button should not validate the form, errors appear on next modal opened": "https://www.drupal.org/files/issues/2022-10-03/layout_paragraphs-cancel-no-validate-3313147-2.patch",
+                "3298887 - Make 'Filter items...' string translatable": "https://www.drupal.org/files/issues/2022-07-21/3298887-1.patch",
+                "Search input width in paragraph select modal": "./patches/layout-paragraphs-select-filter-width.patch",
+                "3265794 - Modal form actions broken once a subform has a validation error": "./patches/layout-paragraphs-broken-form-3265794.patch"
+            },
+            "drupal/image_widget_crop": {
+                "3116312 - Hide vertical tabs when there is only one image style available": "https://www.drupal.org/files/issues/2020-12-24/3116312-7.patch"
+            },
+            "drupal/jsonapi_views": {
+                "Added items per page query param": "./patches/jsonapi_view-items_per_page.patch"
+            },
+            "drupal/paragraphs": {
+                "Make label postfix translatable": "./patches/pararaphs-label_postfix_translations.patch"
+            },
+            "drupal/subrequests": {
+                "63049395 - Get same results on different request": "https://www.drupal.org/files/issues/2019-07-18/change_request_type-63049395-09.patch"
+            },
+            "drupal/s3fs": {
+                "Set empty region in configuration as default": "./patches/s3fs-default_empty_region.patch"
+            },
+            "drupal/select2": {
+                "Validate entities ids on postgresl": "./patches/select2-validate_ids_postgres.patch",
+                "Clear empty values before validating referencable entities": "./patches/select2-clear_empty_values.patch"
+            },
+            "drupal/tablefield": {
+                "3256057 - \"Add Row\" Not Working on Non-English Interfaces.": "https://www.drupal.org/files/issues/2021-12-26/add_row_not_working_non_english_interface-3256057-1.patch"
+            },
+            "drupal/jsonapi_menu_items": {
+                "3257794 - Add langcode": "https://www.drupal.org/files/issues/2023-02-10/3192576-18.patch"
+            }
+        }
+    }
+}

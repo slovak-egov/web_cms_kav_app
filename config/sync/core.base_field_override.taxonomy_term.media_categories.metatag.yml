@@ -1,0 +1,20 @@
+uuid: b9f1c586-df3f-4b90-a1e2-b143f9a72b53
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_categories
+  module:
+    - metatag
+id: taxonomy_term.media_categories.metatag
+field_name: metatag
+entity_type: taxonomy_term
+bundle: media_categories
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The computed meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag_computed

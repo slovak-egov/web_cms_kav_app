@@ -1,0 +1,21 @@
+uuid: 16f32884-88cf-4938-9074-85610a082251
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+  module:
+    - text
+id: taxonomy_term.icons.description
+field_name: description
+entity_type: taxonomy_term
+bundle: icons
+label: Popis
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

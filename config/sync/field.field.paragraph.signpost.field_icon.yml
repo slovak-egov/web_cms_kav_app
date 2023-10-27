@@ -1,0 +1,29 @@
+uuid: 2128851c-0902-420d-b7ea-136e4c223c8a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon
+    - paragraphs.paragraphs_type.signpost
+    - taxonomy.vocabulary.icons
+id: paragraph.signpost.field_icon
+field_name: field_icon
+entity_type: paragraph
+bundle: signpost
+label: Ikona
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      icons: icons
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

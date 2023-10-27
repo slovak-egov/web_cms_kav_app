@@ -1,0 +1,63 @@
+uuid: 4672b504-7fc6-4d11-90ac-6ec061b3709f
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link.field_button_size
+    - field.field.paragraph.link.field_content_reference
+    - field.field.paragraph.link.field_external_link
+    - field.field.paragraph.link.field_font_size
+    - field.field.paragraph.link.field_link_style
+    - field.field.paragraph.link.field_link_type
+    - field.field.paragraph.link.field_linked_content
+    - field.field.paragraph.link.field_title
+    - paragraphs.paragraphs_type.link
+  module:
+    - link
+id: paragraph.link.default
+targetEntityType: paragraph
+bundle: link
+mode: default
+content:
+  field_content_reference:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_external_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_linked_content:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_button_size: true
+  field_font_size: true
+  field_link_style: true
+  field_link_type: true
+  search_api_excerpt: true

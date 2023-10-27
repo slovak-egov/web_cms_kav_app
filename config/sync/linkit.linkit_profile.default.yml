@@ -1,0 +1,22 @@
+uuid: 1137cfc1-3259-4308-9b80-9436b220cccb
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_content
+_core:
+  default_config_hash: Tt8DtxZ3Nooo0PoWPpJvszA3R_5d8MmpUW7LM_R-BzY
+label: Predvolené
+id: default
+description: 'A default Linkit profile'
+matchers:
+  6ee7ba20-c672-4d40-b2d8-7fa27e8df353:
+    id: 'svksk_entity:node'
+    uuid: 6ee7ba20-c672-4d40-b2d8-7fa27e8df353
+    settings:
+      metadata: '[node:content-type] | [node:author] | [node:created:html_date]'
+      bundles: {  }
+      group_by_bundle: 0
+      substitution_type: canonical
+      limit: '100'
+    weight: 0

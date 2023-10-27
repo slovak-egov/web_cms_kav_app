@@ -1,0 +1,13 @@
+uuid: c3bf5f02-b494-407e-acab-afe4f798e8ea
+langcode: sk
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: nvrL9bFilzBvm2bjO9rQnFDpBA7dBBUjShSSt6NS-DU
+id: user_cancel_user_action
+label: 'Zrušiť vybraných používateľov'
+type: user
+plugin: user_cancel_user_action
+configuration: {  }

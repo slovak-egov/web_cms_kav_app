@@ -1,0 +1,18 @@
+uuid: aa92c3d3-c03b-4fe0-8c8a-ae3982771a30
+langcode: sk
+status: true
+dependencies:
+  config:
+    - node.type.news
+id: node.news.title
+field_name: title
+entity_type: node
+bundle: news
+label: Titulok
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

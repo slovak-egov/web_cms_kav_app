@@ -1,0 +1,152 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright Slovensko IT, a. s. <info@slovenskoit.sk>
+# Generated from files:
+#  svksk_content.module: n/a
+#  svksk_content.info.yml: n/a
+#  svksk_content.links.task.yml: n/a
+#  svksk_content.routing.yml: n/a
+#  svksk_content.permissions.yml: n/a
+#  src/SchedulerService.php: n/a
+#  src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php: n/a
+#  src/Plugin/Layout/MultiWidthLayoutBase.php: n/a
+#  src/Plugin/Linkit/Matcher/EntityMatcher.php: n/a
+#  src/Plugin/QueueWorker/NextRevalidateWorker.php: n/a
+#  src/Plugin/views/filter/SearchApiContentFulltext.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2022-11-28 20:12+0100\n"
+"PO-Revision-Date: 2022-11-28 20:12+0100\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_content.module:129
+msgid "Published at time"
+msgstr "Zverejnené"
+
+#: svksk_content.module:130
+msgid "Date and time of when the content was published."
+msgstr "Dátum a čas, kedy bol obsah zverejnený."
+
+#: svksk_content.module:148
+msgid "Fulltext search (Search API Index)"
+msgstr ""
+
+#: svksk_content.module:149
+msgid "Search in Search API DB index table."
+msgstr ""
+
+#: svksk_content.module:245
+msgid "- Any -"
+msgstr "- Akýkoľvek -"
+
+#: svksk_content.module:430
+msgid "Enter external link."
+msgstr "Zadajte externý odkaz."
+
+#: svksk_content.module:437
+msgid "Select content that should be linked."
+msgstr "Vyberte obsah, ktorý sa má nalinkovať."
+
+#: svksk_content.module:518
+msgid "Text to display in the reset button of the exposed form. This field is disabled to maintain reset button functionality for Exposed forms embedded in Entity browser modal. For that reason \"Reset\" label needs to be hardcoded."
+msgstr ""
+
+#: svksk_content.info.yml:0
+msgid "Slovensko.sk Content"
+msgstr ""
+
+#: svksk_content.info.yml:0
+msgid "Content related stuff."
+msgstr ""
+
+#: svksk_content.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_content.links.task.yml:0 svksk_content.routing.yml:0
+msgid "Comments"
+msgstr "Komentáre"
+
+#: svksk_content.permissions.yml:0
+msgid "Access archived content"
+msgstr "Zobraziť archivovaný obsah"
+
+#: svksk_content.permissions.yml:0
+msgid "Allow to access archived content in admin lists."
+msgstr ""
+"Umožní používateľovi zobraziť archivovaný/zrušený obsah v "
+"zoznamoch v administrácii."
+
+#: svksk_content.permissions.yml:0
+msgid "Access FAQ list"
+msgstr "Zobraziť zoznam FAQ"
+
+#: svksk_content.permissions.yml:0
+msgid "Allow user to access FAQ list and change the order of FAQ nodes."
+msgstr "Umožniť používateľovi pristúpiť k zoznamu FAQ."
+
+#: src/SchedulerService.php:66
+msgid "This content is scheduled for publishing on @date but it's not approved for publishing therefore publish action will not be executed"
+msgstr "Po schválení správcom, bude tento obsah publikovaný dňa @date."
+
+#: src/SchedulerService.php:73
+msgid "This content is scheduled for publishing on @date"
+msgstr "Tento obsah je plánovaný na publikovanie dňa @date"
+
+#: src/SchedulerService.php:84
+msgid "This content is scheduled for unpublishing on @date but it's not published therefore unpublish action will not be executed"
+msgstr "Tento obsah je plánovaný na zneplatnenie dňa @date. (Po schválení správcom a publikovaní)"
+
+#: src/SchedulerService.php:91
+msgid "This content is scheduled for unpublishing on @date"
+msgstr "Tento obsah je plánovaný na zneplatnenie dňa @date"
+
+#: src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php:43
+msgid "Author"
+msgstr "Autor"
+
+#: src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php:44
+msgid "Type"
+msgstr "Typ"
+
+#: src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php:45
+msgid "Updated"
+msgstr "Aktualizované"
+
+#: src/Plugin/Field/FieldWidget/EntityReferenceBrowserTableWidget.php:8
+msgid "Entity Browser - Table Extended"
+msgstr ""
+
+#: src/Plugin/Layout/MultiWidthLayoutBase.php:40
+msgid "Column widths"
+msgstr "Šírka stĺpcov"
+
+#: src/Plugin/Linkit/Matcher/EntityMatcher.php:8
+msgid "SVKSK: Entity"
+msgstr ""
+
+#: src/Plugin/QueueWorker/NextRevalidateWorker.php:8
+msgid "Content: Next revalidate queue"
+msgstr ""
+
+#: src/Plugin/views/filter/SearchApiContentFulltext.php:112
+msgid "Placeholder"
+msgstr "Zástupný reťazec"
+
+#: src/Plugin/views/filter/SearchApiContentFulltext.php:114
+msgid "Hint text that appears inside the field when empty."
+msgstr ""
+
+#: src/Plugin/views/filter/SearchApiContentFulltext.php:130
+msgid "Value"
+msgstr "Hodnota"
+

@@ -1,0 +1,18 @@
+uuid: ddbb5ac6-de72-4822-8fbf-7f118cb5ae57
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.info_banner
+id: paragraph.info_banner.created
+field_name: created
+entity_type: paragraph
+bundle: info_banner
+label: 'Napísané dňa'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

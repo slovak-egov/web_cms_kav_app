@@ -1,0 +1,15 @@
+uuid: 39cc92b5-d464-4117-a9bf-c7ff6be50508
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: image
+label: Obrázok
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

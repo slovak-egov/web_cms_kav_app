@@ -1,0 +1,38 @@
+label: Editorial
+type_settings:
+  states:
+    new:
+      label: New
+    sent_for_assesment:
+      label: 'Sent for assesment'
+    in_review:
+      label: 'In review'
+    approved:
+      label: Approved
+    amendment_needed:
+      label: 'Amendment needed'
+    published:
+      label: Published
+    obsolete:
+      label: Obsolete
+    deleted:
+      label: Deleted
+  transitions:
+    approval:
+      label: Approval
+    cancel:
+      label: Cancel
+    create_new:
+      label: New
+    publish:
+      label: Publish
+    return_for_amendment:
+      label: 'Return for amendment'
+    to_review:
+      label: 'To review'
+    to_verify:
+      label: 'To verify'
+    amendment:
+      label: Amendment
+    end:
+      label: Delete

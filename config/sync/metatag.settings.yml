@@ -1,0 +1,62 @@
+langcode: sk
+entity_type_groups:
+  consumer:
+    consumer:
+      basic: basic
+  file:
+    file:
+      basic: basic
+  media:
+    audio:
+      basic: basic
+    document:
+      basic: basic
+    image:
+      basic: basic
+    link:
+      basic: basic
+    remote_video:
+      basic: basic
+    test:
+      basic: basic
+  node:
+    article:
+      basic: basic
+      advanced: advanced
+    event:
+      basic: basic
+      advanced: advanced
+    faq:
+      basic: basic
+      advanced: advanced
+    feedback_pool:
+      basic: basic
+    life_event:
+      basic: basic
+      advanced: advanced
+    news:
+      basic: basic
+      advanced: advanced
+    notice:
+      basic: basic
+      advanced: advanced
+    organization:
+      basic: basic
+      advanced: advanced
+    page:
+      basic: basic
+      advanced: advanced
+    service:
+      basic: basic
+      advanced: advanced
+separator: ','
+tag_trim_method: beforeValue
+use_maxlength: true
+tag_trim_maxlength:
+  metatag_maxlength_title: null
+  metatag_maxlength_description: null
+  metatag_maxlength_abstract: null
+  metatag_maxlength_og_site_name: null
+  metatag_maxlength_og_title: null
+  metatag_maxlength_og_description: null
+tag_scroll_max_height: ''

@@ -1,0 +1,48 @@
+uuid: 9ec49151-a423-4a86-bed7-0caf3533cc28
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_ui_translations
+id: svksk_ui_translation.svksk_ui_translation.default
+targetEntityType: svksk_ui_translation
+bundle: svksk_ui_translation
+mode: default
+content:
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  machine_name:
+    type: string_textfield
+    weight: -2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  string:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  string_plural:
+    type: string_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

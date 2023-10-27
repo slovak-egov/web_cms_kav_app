@@ -1,0 +1,12 @@
+diff --git a/src/Select2Trait.php b/src/Select2Trait.php
+index 2cf6a21..727c6e0 100644
+--- a/src/Select2Trait.php
++++ b/src/Select2Trait.php
+@@ -27,6 +27,7 @@ trait Select2Trait {
+     $options = [];
+     /** @var \Drupal\Core\Entity\EntityReferenceSelection\SelectionInterface $selection_handler */
+     $selection_handler = \Drupal::service('plugin.manager.entity_reference_selection')->getInstance($handler_settings);
++    $ids = array_filter($ids, 'is_numeric');
+     $valid_ids = $selection_handler->validateReferenceableEntities($ids);
+     $entities = \Drupal::entityTypeManager()->getStorage($handler_settings['target_type'])->loadMultiple($valid_ids);
+     foreach ($entities as $entity_id => $entity) {

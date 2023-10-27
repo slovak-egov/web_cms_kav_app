@@ -1,0 +1,18 @@
+uuid: dc03206b-61d2-4fc0-afdd-91eb455dacec
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_categories
+id: taxonomy_term.media_categories.publish_on
+field_name: publish_on
+entity_type: taxonomy_term
+bundle: media_categories
+label: Publikovať
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

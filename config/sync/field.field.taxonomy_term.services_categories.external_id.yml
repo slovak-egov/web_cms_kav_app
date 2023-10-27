@@ -1,0 +1,19 @@
+uuid: f0c08f31-d6b1-4263-9c6f-f81054951a7c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.external_id
+    - taxonomy.vocabulary.services_categories
+id: taxonomy_term.services_categories.external_id
+field_name: external_id
+entity_type: taxonomy_term
+bundle: services_categories
+label: 'Externé ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

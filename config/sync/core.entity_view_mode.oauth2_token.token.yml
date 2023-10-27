@@ -1,0 +1,10 @@
+uuid: e0a28078-b675-4303-b059-0028f931071e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - simple_oauth
+id: oauth2_token.token
+label: Token
+targetEntityType: oauth2_token
+cache: true

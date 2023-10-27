@@ -1,0 +1,23 @@
+uuid: 455028d7-938f-4fac-9eaf-a64f4d066c3a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rss
+    - node.type.page
+id: node.page.field_rss
+field_name: field_rss
+entity_type: node
+bundle: page
+label: 'Zahrnúť v RSS feede'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnúť
+  off_label: Vypnúť
+field_type: boolean

@@ -1,0 +1,83 @@
+<?php
+
+/**
+ * @file
+ * Contains svksk_api.module.
+ */
+
+use Drupal\Core\Access\AccessResult;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Session\AccountInterface;
+use Symfony\Component\HttpFoundation\Response;
+
+/**
+ * Implements hook_jsonapi_response_alter().
+ */
+function svksk_api_jsonapi_response_alter(array &$jsonapi_response, Response $response) {
+  // Construct helper array to get included data key
+  $included_entities = !empty($jsonapi_response['included']) ?
+    array_flip(array_map(fn($value): string => $value['type'] . ':' . $value['id'], $jsonapi_response['included'])) : NULL;
+
+  // Alter output field_component output to nest Paragraphs into Layout sections
+  if (isset($jsonapi_response['data']['relationships']['field_components']) && $included_entities) {
+    $layout = NULL;
+    $parent_type = 'paragraph--layout_section';
+    $field_components = &$jsonapi_response['data']['relationships']['field_components']['data'];
+
+    // Rebuild jsonapi response structure when field_components include layout_section paragraph
+    foreach ($field_components as $key => $component) {
+      $included_key = $component['type'] . ':' . $component['id'];
+      $included_entity = array_key_exists($included_key, $included_entities) ? $jsonapi_response['included'][$included_entities[$included_key]] : NULL;
+      if ($component['type'] == $parent_type) {
+        // Looking for section paragraphs
+        $layout[$component['id']] = ['key' => $key, 'childs' => []];
+      } else if ($included_entity && isset($included_entity['attributes']['behavior_settings']['layout_paragraphs']['parent_uuid'])) {
+        $parent_uuid = $included_entity['attributes']['behavior_settings']['layout_paragraphs']['parent_uuid'];
+        $parent_key = $parent_type . ':' . $parent_uuid;
+        if (key_exists($parent_key, $included_entities)) {
+          $jsonapi_response['included'][$included_entities[$parent_key]]['relationships']['paragraph_childs']['data'][] = [
+            'type' => $component['type'],
+            'id' => $component['id']
+          ];
+          unset($field_components[$key]);
+        }
+      }
+    }
+
+    // Reset array keys
+    $field_components = array_values($field_components);
+  }
+
+  // Alter output of field_steps to nest step paragraphs into groups
+  if (isset($jsonapi_response['data']['relationships']['field_steps']) && $included_entities) {
+    $parent_type = 'paragraph--life_event_step_heading';
+    $field_steps_relationship = &$jsonapi_response['data']['relationships']['field_steps']['data'];
+
+    $parent_uuid = NULL;
+    $parent_relationships = NULL;
+    foreach ($field_steps_relationship as $key => &$component) {
+      if ($component['type'] == $parent_type) {
+        $parent_key = $component['type'] . ':' . $component['id'];
+        $parent_relationships = &$jsonapi_response['included'][$included_entities[$parent_key]]['relationships'];
+      } else if ($parent_relationships) {
+        $parent_relationships['paragraph_childs']['data'][] = [
+          'type' => $component['type'],
+          'id' => $component['id']
+        ];
+        unset($field_steps_relationship[$key]);
+      }
+    }
+
+    // Reset array keys
+    $field_steps_relationship = array_values($field_steps_relationship);
+  }
+}
+
+/**
+ * Implements hook_jsonapi_entity_filter_access().
+ */
+function svksk_api_jsonapi_entity_filter_access(EntityTypeInterface $entity_type, AccountInterface $account) {
+  return ([
+    JSONAPI_FILTER_AMONG_ALL => AccessResult::allowed(),
+  ]);
+}

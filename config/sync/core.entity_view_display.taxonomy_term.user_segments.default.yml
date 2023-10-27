@@ -1,0 +1,41 @@
+uuid: 812cdbca-b54c-4ace-a510-bdbebfc2c986
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.user_segments.field_show_more_text
+    - field.field.taxonomy_term.user_segments.field_title
+    - taxonomy.vocabulary.user_segments
+  module:
+    - text
+id: taxonomy_term.user_segments.default
+targetEntityType: taxonomy_term
+bundle: user_segments
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_show_more_text:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

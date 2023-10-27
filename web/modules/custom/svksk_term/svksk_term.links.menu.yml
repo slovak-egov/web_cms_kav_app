@@ -1,0 +1,5 @@
+entity.term.collection:
+  title: 'Terms'
+  route_name: entity.term.collection
+  parent: svksk_base.admin
+  weight: 189

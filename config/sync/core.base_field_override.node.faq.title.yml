@@ -1,0 +1,18 @@
+uuid: bc739330-e1d3-4202-b424-b03741304ebc
+langcode: sk
+status: true
+dependencies:
+  config:
+    - node.type.faq
+id: node.faq.title
+field_name: title
+entity_type: node
+bundle: faq
+label: Titulok
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

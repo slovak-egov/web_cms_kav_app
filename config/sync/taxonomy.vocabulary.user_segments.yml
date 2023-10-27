@@ -1,0 +1,13 @@
+uuid: 99d16ee1-c4a4-4eb1-b47f-f1aa4576f5da
+langcode: sk
+status: true
+dependencies:
+  module:
+    - taxonomy_max_depth
+third_party_settings:
+  taxonomy_max_depth:
+    max_depth: 0
+name: 'Používateľské segmenty'
+vid: user_segments
+description: ''
+weight: 0

@@ -1,0 +1,18 @@
+uuid: 0a0f7266-d1c5-4315-9a85-78606fe28bbf
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.organization_search
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.organization_search
+target_entity_type_id: paragraph
+target_bundle: organization_search
+default_langcode: site_default
+language_alterable: true

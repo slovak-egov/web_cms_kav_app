@@ -1,0 +1,11 @@
+uuid: eb6e4ff2-c2fb-4579-94d9-9845775e601e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_data_source_type.lv_data_source_type
+target_entity_type_id: lv_data_source_type
+target_bundle: lv_data_source_type
+default_langcode: site_default
+language_alterable: false

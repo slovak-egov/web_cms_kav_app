@@ -1,0 +1,12 @@
+name: Contact
+type: module
+description: Contact entities
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:svksk_list_values
+  - drupal:datetime
+
+'interface translation project': svksk_contact
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po

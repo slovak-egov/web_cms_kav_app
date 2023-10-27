@@ -1,0 +1,14 @@
+uuid: 2b6dc469-cc9a-48ca-9059-1e98f1d6853c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.cms_admin
+  module:
+    - user
+id: user_remove_role_action.cms_admin
+label: 'Odobrať rolu Správca aplikácie vybraným používateľom'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: cms_admin

@@ -1,0 +1,12 @@
+uuid: 31f57eb9-3853-4a29-8327-3dd7fe32cb6e
+langcode: sk
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: h3BeHVei4Lnyqbkao3YiF4KqoY-DhRvUNfEgKG8Rgjg
+id: paragraph.preview
+label: Náhľad
+targetEntityType: paragraph
+cache: true

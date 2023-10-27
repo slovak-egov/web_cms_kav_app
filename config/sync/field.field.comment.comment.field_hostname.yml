@@ -1,0 +1,26 @@
+uuid: 45953fbe-5763-460b-b083-6b9d13f641cf
+langcode: sk
+status: true
+dependencies:
+  config:
+    - comment.type.comment
+    - field.storage.comment.field_hostname
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats: {  }
+id: comment.comment.field_hostname
+field_name: field_hostname
+entity_type: comment
+bundle: comment
+label: IP
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text

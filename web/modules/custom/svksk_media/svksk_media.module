@@ -1,0 +1,62 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Slovensko.sk Media module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\svksk_media\ModuleFormAlters;
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function svksk_media_form_media_form_alter(array &$form, FormStateInterface $form_state, $form_id) {
+  // If the media name is accessible, it could be overridden.
+  if (array_key_exists('name', $form) && $form['name']['#access']) {
+    \Drupal::service('class_resolver')
+      ->getInstanceFromDefinition(ModuleFormAlters::class)
+      ->alterMediaEditForm($form_state);
+
+    // Always set the custom submit handler if the original name has
+    // been provided to the build info.
+    $buildInfo = $form_state->getBuildInfo();
+    if (
+      array_key_exists(ModuleFormAlters::MEDIA_NAME_ORIGINAL_VALUE, $buildInfo) &&
+      !empty($buildInfo[ModuleFormAlters::MEDIA_NAME_ORIGINAL_VALUE])
+    ) {
+      $form['actions']['submit']['#submit'][] = 'svksk_media_media_edit_form_submit';
+    }
+  }
+}
+
+/**
+ * Custom submit handler for the Media edit form.
+ */
+function svksk_media_media_edit_form_submit(array &$form, FormStateInterface $form_state) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleFormAlters::class)
+    ->mediaEditFormSubmitHandler($form_state);
+}
+
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ */
+function svksk_media_entity_base_field_info_alter(&$fields, EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'media' && !empty($fields['name'])) {
+    $fields['name']->setRequired(FALSE);
+  }
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function svksk_media_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entity_type, $bundle) {
+  if ($entity_type->id() === 'media' && !empty($fields['name']) && $bundle === 'remote_video') {
+    $fields['name']->setRequired(FALSE);
+    $fields['name']->setLabel(new TranslatableMarkup('Name', [], ['context' => 'media']));
+  }
+}

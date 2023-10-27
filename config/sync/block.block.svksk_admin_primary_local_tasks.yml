@@ -1,0 +1,22 @@
+uuid: 9dcdf344-259c-40a4-8318-b69dcc77816b
+langcode: sk
+status: true
+dependencies:
+  theme:
+    - svksk_admin
+_core:
+  default_config_hash: Hh01DLj9k7UnNdPpOQXHZHW7GHf2OPNDQyCJF7_R9ac
+id: svksk_admin_primary_local_tasks
+theme: svksk_admin
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primárne karty'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: bcdc4253-65ce-40f9-b8cd-7eca24b84f01
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_external_link
+    - paragraphs.paragraphs_type.signpost
+  module:
+    - link
+id: paragraph.signpost.field_external_link
+field_name: field_external_link
+entity_type: paragraph
+bundle: signpost
+label: Odkaz
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function frontend_form_email_menu()
+{
+  $items = array();
+
+  // Define an endpoint for receiving POST requests from the frontend.
+  $items['send-email'] = array(
+    'page callback' => 'drupal_json_output',
+    'access callback' => 'user_access',
+    'access arguments' => array('send emails'), // Customize access permissions.
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Callback function for the custom endpoint.
+ */
+function frontend_form_email_send_email()
+{
+  // Get the POST data from the frontend.
+  $data = file_get_contents("php://input");
+  $data = json_decode($data, true);
+
+  // Ensure that the required data is provided.
+  if (isset($data['recipient']) && isset($data['subject']) && isset($data['body'])) {
+    $recipient = $data['recipient'];
+    $subject = $data['subject'];
+    $body = $data['body'];
+
+    $params = array(
+      'subject' => $subject,
+      'body' => $body,
+    );
+    $message = drupal_mail('frontend_form_email', 'email', $recipient, language_default(), $params);
+    if ($message['result'] == TRUE) {
+      return drupal_json_output(array('status' => 'Email sent successfully.'));
+    } else {
+      return drupal_json_output(array('error' => 'Failed to send email.'));
+    }
+  } else {
+    return drupal_json_output(array('error' => 'Missing parameters (recipient, subject, body).'));
+  }
+}

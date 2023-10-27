@@ -1,0 +1,18 @@
+uuid: 9b3df072-b65b-423f-bd8e-3f8878efb9b5
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.user_segments
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.user_segments
+target_entity_type_id: taxonomy_term
+target_bundle: user_segments
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,18 @@
+uuid: 7415f755-6f6a-4212-864e-f8c11ff6e0e6
+langcode: sk
+status: true
+dependencies:
+  module:
+    - consumers
+id: consumer.consumer.label
+field_name: label
+entity_type: consumer
+bundle: consumer
+label: Označenie
+description: 'The consumer label.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

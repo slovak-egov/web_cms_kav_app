@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Codelist>
+    <CodelistCode>CL000023</CodelistCode>
+    <CodelistName effectiveFrom="2015-07-01T00:00:00+02:00" language="en">Regional statistical local unit 3 - region</CodelistName>
+    <CodelistName effectiveFrom="2015-07-01T00:00:00+02:00" language="sk">Regionálna štatistická územná jednotka 3 - kraj</CodelistName>
+    <CodelistManager managerType="major" effectiveFrom="2015-07-01T00:00:00+02:00">d2e6852f-2f1d-4e48-8f9d-e605e830a03b-88027af4-7459-44fa-922a-317ac7dccdfb</CodelistManager>
+    <SourceCodelist>Číselník Štatistického úradu Slovenskej republiky č. 0023.</SourceCodelist>
+    <ValidFrom>2015-06-08T00:00:00+02:00</ValidFrom>
+    <EffectiveFrom>2015-07-01T00:00:00+02:00</EffectiveFrom>
+    <EffectiveTo xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <IsBasic>true</IsBasic>
+    <Note language="sk">Platnosť a účinnosť základného číselníka nadobudnutá na základe výnosu Ministerstva financií SR č. 137/2015 Z. z., ktorým sa mení a dopĺňa výnos č. 55/2014  o štandardoch pre informačné systémy verejnej správy v znení výnosu č. 276/2014 Z. z.
+V atribúte pre doplňujúci obsah položky je kód kraja podľa číselníka Štatistického úradu SR č. 0049.
+</Note>
+    <Note language="sk">Právny rámec pre vytvorenie číselníka:
+Nariadenie č. 1059/2003 Ú. v. EÚ o zostavení spoločnej nomenklatúry štatistických územných jednotiek (NUTS); Vyhláška č. 438/2004 Z. z., ktorou sa vydáva klasifikácia štatistických územných jednotiek.
+</Note>
+    <ContactPerson>
+        <firstName>Sylvia</firstName>
+        <lastName>Jenovčíková</lastName>
+        <phoneNumber>+421 2 50236 229</phoneNumber>
+        <email>sylvia.jenovcikova@statistics.sk</email>
+    </ContactPerson>
+    <CodelistItem>
+        <ItemCode>SK010</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Bratislava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislavský kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Bratislava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislavský kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislavský kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Bratislavský kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">1</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">1</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK021</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Trnava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trnavský kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Trnava</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trnavský kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trnavský kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trnavský kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">2</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">2</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK022</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Trenčín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trenčiansky kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Trenčín</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trenčiansky kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trenčiansky kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Trenčiansky kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">3</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">3</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK023</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Nitra</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nitriansky kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Nitra</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nitriansky kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nitriansky kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Nitriansky kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">4</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">4</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK031</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Žilina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žilinský kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Žilina</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žilinský kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žilinský kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Žilinský kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">5</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">5</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK032</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Banská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banskobystrický kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Banská Bystrica</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banskobystrický kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banskobystrický kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Banskobystrický kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">6</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">6</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK041</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Prešov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prešovský kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Prešov</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prešovský kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prešovský kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Prešovský kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">7</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">7</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SK042</ItemCode>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Košice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košický kraj</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="en">Region of Košice</ItemName>
+        <ItemName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košický kraj</ItemName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košický kraj</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">Košický kraj</ItemShortenedName>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">8</AdditionalContent>
+        <AdditionalContent effectiveFrom="2004-08-01T00:00:00+02:00" language="sk">8</AdditionalContent>
+        <ValidFrom>2004-08-13T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-08-13T00:00:00+02:00">
+            <EffectiveFrom>2004-08-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2004-08-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SKZZ</ItemCode>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemShortenedName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ValidFrom>2013-12-06T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="2013-12-06T00:00:00+01:00">
+            <EffectiveFrom>2013-01-01T00:00:00+01:00</EffectiveFrom>
+            <EffectiveTo>2014-09-22T00:00:00+02:00</EffectiveTo>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2013-12-06T00:00:00+01:00">
+            <EffectiveFrom>2013-01-01T00:00:00+01:00</EffectiveFrom>
+            <EffectiveTo>2014-09-22T00:00:00+02:00</EffectiveTo>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2013-01-01T00:00:00+01:00" effectiveTo="2014-09-22T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>SKZZZ</ItemCode>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="en">Extra-regio</ItemName>
+        <ItemName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemName>
+        <ItemShortenedName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ItemShortenedName effectiveFrom="2014-09-23T00:00:00+02:00" language="sk">Zahraničie</ItemShortenedName>
+        <ValidFrom>2014-09-22T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2014-09-22T00:00:00+02:00">
+            <EffectiveFrom>2014-09-23T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2014-09-22T00:00:00+02:00">
+            <EffectiveFrom>2014-09-23T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2014-09-23T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2014-09-23T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+</Codelist>

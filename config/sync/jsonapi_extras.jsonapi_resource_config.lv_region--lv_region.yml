@@ -1,0 +1,57 @@
+uuid: 7a77b5ac-72f6-4b96-9c58-17a1b30434b4
+langcode: sk
+status: true
+dependencies:
+  module:
+    - jsonapi_defaults
+    - svksk_list_values
+third_party_settings:
+  jsonapi_defaults:
+    page_limit: 50
+id: lv_region--lv_region
+disabled: false
+path: lv_region/lv_region
+resourceType: lv_region--lv_region
+resourceFields:
+  code:
+    disabled: false
+    fieldName: code
+    publicName: code
+    enhancer:
+      id: ''
+  uuid:
+    disabled: false
+    fieldName: uuid
+    publicName: uuid
+    enhancer:
+      id: ''
+  langcode:
+    disabled: false
+    fieldName: langcode
+    publicName: langcode
+    enhancer:
+      id: ''
+  name:
+    disabled: false
+    fieldName: name
+    publicName: name
+    enhancer:
+      id: ''
+  short_name:
+    disabled: false
+    fieldName: short_name
+    publicName: short_name
+    enhancer:
+      id: ''
+  country_id:
+    disabled: false
+    fieldName: country_id
+    publicName: country_id
+    enhancer:
+      id: ''
+  default_langcode:
+    disabled: false
+    fieldName: default_langcode
+    publicName: default_langcode
+    enhancer:
+      id: ''

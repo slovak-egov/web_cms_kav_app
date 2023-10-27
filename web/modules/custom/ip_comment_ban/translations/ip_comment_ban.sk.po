@@ -1,0 +1,79 @@
+msgid "The IP address(es) %ip has been banned."
+msgstr "IP adresa/y %ip bola zablokovaná pre komentovanie"
+
+msgid "The IP address(es) %ip has been banned until %expiry"
+msgstr "IP adresa/y %ip bola zablokovaná pre komentovanie do %expiry"
+
+msgid "Enter a valid IP address."
+msgstr "Zadajte IP adresu"
+
+msgid "IP address (end of range)"
+msgstr "IP adresy (koniec rozsahu)"
+
+msgid "Enter a valid IP address (optional)."
+msgstr "Zadajte IP adresu (voliteľné)"
+
+msgid "Select expiration duration for ban."
+msgstr "Vyberte koniec blokovania IP adresy"
+
+msgid "No blocked IP addresses available."
+msgstr "Žiadna IP adresa nie je blokovaná."
+
+msgid "This IP address is already banned."
+msgstr "IP adresa je už blokovaná"
+
+msgid "This IP address is already banned."
+msgstr "IP adresa je už blokovaná"
+
+msgid "You may not ban your own IP address %own_ip"
+msgstr "Nemôžte zablokovať vlastnú IP adresu %own_ip"
+
+msgid "Only IPv4 is available for IP range."
+msgstr "Len IPv4 sú dostupné ako rozsah."
+
+msgid "IP ban expiry duration"
+msgstr "Dĺžka blokovania IP adresy"
+
+msgid "Expiration time"
+msgstr "Doba blokovania"
+
+msgid "IP addresses (individual or range) listed here are banned from your site. Banned addresses are completely forbidden from accessing the site and instead see a brief message explaining the situation. Banned addresses can be unblocked after expiration."
+msgstr "Uvedené IP adresy (jednotlivé alebo rozsahy) sú blokované od posielania komentárov. Zakázané adresy je možné odomknúť po uplynutí doby ich blokovania."
+
+msgid "Expiry check"
+msgstr "Kontrola vypršania blokovania"
+
+msgid "Check if the IP was expired."
+msgstr "Skontrolovať či blokovanie nevypršalo."
+
+msgid "Delete all"
+msgstr "Vymazať všetko"
+
+msgid "Delete All IP addresses"
+msgstr "Vymazať všetky IP adresy"
+
+msgid "Delete All simple IP only"
+msgstr "Vymazať všetky jednoduché IP adresy"
+
+msgid "Delete All range IP only"
+msgstr "Vymazať všetky IP adresy v rozsahu"
+
+msgid "Delete all expired IP"
+msgstr "Vymazať všetky expirované IP adresy"
+
+msgid "Delete expired IP only"
+msgstr "Vymazať len expirované IP adresy"
+
+msgid "Delete not expired IP only"
+msgstr "Vymazať neexpirované IP adresy"
+
+msgid "Expiry durations"
+msgstr "Trvanie expirovania"
+
+msgid "Banned IP addresses"
+msgstr "Zablokované IP adresy"
+
+msgid "Advanced IP address bans"
+msgstr "Blokovanie komentárov podľa IP adresy"
+
+

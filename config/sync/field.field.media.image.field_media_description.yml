@@ -1,0 +1,19 @@
+uuid: 487af651-2ef7-45b9-98a5-35b57877c506
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_description
+    - media.type.image
+id: media.image.field_media_description
+field_name: field_media_description
+entity_type: media
+bundle: image
+label: 'Krátky popis'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

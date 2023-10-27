@@ -1,0 +1,24 @@
+services:
+  svksk_content.route_subscriber:
+    class: Drupal\svksk_content\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  svksk_content_generator:
+    class: Drupal\svksk_content\ContentGeneratorService
+    arguments: [ '@config.factory' ]
+  svksk_content.references:
+    class: Drupal\svksk_content\ReferencesService
+    arguments: ['@database', '@entity_type.manager', '@entity_field.manager', '@language_manager']
+  svksk_content.invalidator:
+    class: Drupal\svksk_content\ReferencesService
+    arguments: ['@database', '@entity_type.manager', '@entity_field.manager']
+  svksk_content.scheduler:
+    class: Drupal\svksk_content\SchedulerService
+    arguments: ['@entity_type.manager', '@scheduler.manager', '@content_moderation.moderation_information', '@date.formatter']
+  svksk_content.references_event_subscriber:
+    class: Drupal\svksk_content\EventSubscriber\ReferencesEventSubscriber
+    tags:
+      - { name: 'event_subscriber' }
+  svksk_content.next_cache_invalidator:
+    class: Drupal\svksk_content\NextCacheInvalidator
+    arguments: ['@next.entity_type.manager', '@http_client', '@logger.channel.next_extras']

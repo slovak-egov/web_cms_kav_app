@@ -1,0 +1,11 @@
+diff --git a/src/Element/Select2.php b/src/Element/Select2.php
+--- a/src/Element/Select2.php
++++ b/src/Element/Select2.php
+@@ -235,6 +235,7 @@
+       'handler' => $element['#selection_handler'],
+     ];
+     $value = is_array($element['#value']) ? $element['#value'] : [$element['#value']];
++    $value = array_filter($value);
+     return $value ? static::getValidReferenceableEntities($value, $handler_settings) : [];
+   }
+

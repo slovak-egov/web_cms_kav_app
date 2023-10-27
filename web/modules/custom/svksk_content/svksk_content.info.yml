@@ -1,0 +1,16 @@
+name: Content
+type: module
+description: Content related stuff.
+core_version_requirement: ^8 || ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:layout_options
+  - drupal:entity_browser_table
+  - drupal:taxonomy_unique
+  - drupal:next_extras
+  - drupal:svksk_base
+  - drupal:svksk_http_client
+
+'interface translation project': svksk_content
+'interface translation server pattern': modules/custom/svksk_content/translations/%project.%language.po

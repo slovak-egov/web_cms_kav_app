@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * This file is used to customization user forms.
+ */
+
+use Drupal\Core\Url;
+
+ /**
+  * Implements user_register_form_alter()
+  * Redirect after create user to edit user. Set default values. Hide same fields.
+  */
+ function customization_of_user_form_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+  if ($form_id == 'user_register_form') {
+    //default value for notify for user
+    $form['account']['notify']['#default_value'] = TRUE;
+    //set redirect to edit after created user
+    $form['actions']['submit']['#submit'][] = 'my_redirect_node_form_submit';
+  }
+}
+
+function my_redirect_node_form_submit($form, &$form_state) {
+  $url = Url::fromRoute('entity.user.edit_form', ['user' => $form_state->getformObject()->getEntity()->id()]);
+  $form_state->setRedirectUrl($url);
+}

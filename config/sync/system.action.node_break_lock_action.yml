@@ -1,0 +1,11 @@
+uuid: aa64cb99-5823-4335-ac62-3346d6ac6472
+langcode: sk
+status: true
+dependencies:
+  module:
+    - content_lock
+id: node_break_lock_action
+label: 'Zrušiť zámok obsahu'
+type: node
+plugin: 'entity:break_lock:node'
+configuration: {  }

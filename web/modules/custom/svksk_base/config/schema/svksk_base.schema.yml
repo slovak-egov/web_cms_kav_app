@@ -1,0 +1,25 @@
+svksk_base.general_settings:
+  type: config_object
+  label: 'General settings'
+  mapping:
+    egov_header_trigger_link_1:
+      type: label
+      label: 'Trigger link (1)'
+    egov_header_trigger_link_2:
+      type: label
+      label: 'Trigger link (2)'
+    egov_header_title_1:
+      type: label
+      label: 'Title (1)'
+    egov_header_text_1:
+      type: text_format
+      label: 'Text (1)'
+    egov_header_title_2:
+      type: label
+      label: 'Title (2)'
+    egov_header_text_2:
+      type: text_format
+      label: 'Text (2)'
+    footer_claim:
+      type: text_format
+      label: 'Footer Claim'

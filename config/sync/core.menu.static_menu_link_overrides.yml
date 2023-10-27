@@ -1,0 +1,106 @@
+_core:
+  default_config_hash: CXhei_vpaZk-3f_Mj2cH0YmpK-ZpKHoSzVA3yZrDq0g
+langcode: sk
+definitions:
+  contact__site_page:
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  comment__admin:
+    weight: -9
+    menu_name: admin
+    parent: system.admin_content
+    enabled: true
+    expanded: false
+  'admin_toolbar_tools__extra_links:media_page':
+    weight: -8
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:node__add':
+    weight: -7
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:view__files':
+    weight: -6
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  entity__svksk_organization__corporate_body_collection:
+    weight: -5
+    parent: system.admin_content
+    menu_name: admin
+    expanded: false
+    enabled: true
+  entity__svksk_organization__organizational_unit_collection:
+    weight: -4
+    parent: system.admin_content
+    menu_name: admin
+    expanded: false
+    enabled: true
+  entity__term__collection:
+    weight: -3
+    parent: system.admin_content
+    menu_name: admin
+    expanded: false
+    enabled: true
+  entity__svksk_ui_translation__collection:
+    weight: -1
+    menu_name: admin
+    parent: system.admin_content
+    expanded: false
+    enabled: true
+  'admin_toolbar_tools__extra_links:entity__taxonomy_vocabulary__overview_form__user_segments':
+    enabled: false
+    menu_name: admin
+    parent: entity.taxonomy_vocabulary.collection
+    expanded: false
+    weight: 0
+  'admin_toolbar_tools__extra_links:entity__taxonomy_vocabulary__edit_form__user_segments':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.taxonomy_vocabulary.overview_form.user_segments'
+    weight: 0
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__taxonomy_term__field_ui_fieldsuser_segments':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.taxonomy_vocabulary.overview_form.user_segments'
+    weight: 1
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__entity_form_display__taxonomy_term__defaultuser_segments':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.taxonomy_vocabulary.overview_form.user_segments'
+    weight: 2
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__entity_permissions_form__taxonomy_term__default__user_segments':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.taxonomy_vocabulary.overview_form.user_segments'
+    weight: 3
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__entity_view_display__taxonomy_term__default__user_segments':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.taxonomy_vocabulary.overview_form.user_segments'
+    weight: 3
+    expanded: false
+  'admin_toolbar_tools__extra_links:entity__taxonomy_vocabulary__delete_form__user_segments':
+    enabled: false
+    menu_name: admin
+    parent: 'admin_toolbar_tools.extra_links:entity.taxonomy_vocabulary.overview_form.user_segments'
+    weight: 5
+    expanded: false
+  svksk_base__frontend_rebuild:
+    enabled: false
+    menu_name: admin
+    parent: svksk_base.admin
+    expanded: false
+    weight: 101

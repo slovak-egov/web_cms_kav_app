@@ -1,0 +1,53 @@
+uuid: 802fbaa4-0aab-4f61-9a27-4733c4079202
+langcode: sk
+status: true
+dependencies:
+  config:
+    - core.entity_view_display.comment.comment.default
+    - core.entity_view_mode.node.comments
+    - field.field.node.news.ci_id
+    - field.field.node.news.comment
+    - field.field.node.news.field_components
+    - field.field.node.news.field_image
+    - field.field.node.news.field_metatags
+    - field.field.node.news.field_migrated
+    - field.field.node.news.field_perex
+    - field.field.node.news.field_rss
+    - field.field.node.news.field_tags
+    - node.type.news
+  module:
+    - comment
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.news.comments
+targetEntityType: node
+bundle: news
+mode: comments
+content:
+  comment:
+    type: comment_default
+    label: hidden
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  ci_id: true
+  content_moderation_control: true
+  field_components: true
+  field_image: true
+  field_metatags: true
+  field_migrated: true
+  field_organizational_unit: true
+  field_perex: true
+  field_rss: true
+  field_tags: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

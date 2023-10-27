@@ -1,0 +1,281 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  svksk_base.module: n/a
+#  svksk_base.info.yml: n/a
+#  svksk_base.links.menu.yml: n/a
+#  svksk_base.routing.yml: n/a
+#  config/schema/svksk_base.schema.yml: n/a
+#  svksk_base.links.task.yml: n/a
+#  svksk_base.permissions.yml: n/a
+#  src/Form/GeneralSettingsForm.php: n/a
+#  src/Form/FrontendRebuildForm.php: n/a
+#  src/Plugin/Block/CmsVersion.php: n/a
+#  src/Plugin/Validation/Constraint/ExcludeSelfReferenceConstraint.php: n/a
+#  config/install/svksk_base.general_settings.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2023-05-22 12:23+0200\n"
+"PO-Revision-Date: 2023-05-22 12:23+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_base.module:26
+msgid "SVG icon"
+msgstr "SVG ikona"
+
+#: svksk_base.info.yml:0
+msgid "Slovensko.sk Base"
+msgstr "Slovensko.sk Base"
+
+#: svksk_base.info.yml:0
+msgid "General Drupal customizations"
+msgstr "Základné prispôsobenia Drupal inštalácie"
+
+#: svksk_base.info.yml:0 svksk_base.links.menu.yml:0 svksk_base.routing.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_base.links.menu.yml:0 svksk_base.routing.yml:0 config/schema/svksk_base.schema.yml:0
+msgid "General settings"
+msgstr "Všeobecné nastavenia"
+
+#: svksk_base.links.menu.yml:0 svksk_base.routing.yml:0
+msgid "Frontend rebuild"
+msgstr "Obnovenie frontend stránky"
+
+#: svksk_base.links.task.yml:0
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: svksk_base.permissions.yml:0
+msgid "Administer Slovensko.sk settings"
+msgstr "Spravovať nastavenia Slovensko.sk"
+
+#: svksk_base.permissions.yml:0
+msgid "Allow user to change general site settings."
+msgstr "Umožniť používateľovi meniť všeobecné nastavenia stránky."
+
+#: svksk_base.permissions.yml:0
+msgid "Allow user to rebuild frontend"
+msgstr "Umožniť používateľovi obnoviť frontend"
+
+#: svksk_base.permissions.yml:0
+msgid "Gives user an interface to to rebuild frontend Next site."
+msgstr ""
+"Dáva používateľovi rozhranie v ktorom môže obnoviť frontend "
+"Next stránky."
+
+#: svksk_base.routing.yml:0
+msgid "Dashboard"
+msgstr "Nástenka"
+
+#: config/schema/svksk_base.schema.yml:0
+msgid "Trigger link (1)"
+msgstr ""
+
+#: config/schema/svksk_base.schema.yml:0
+msgid "Trigger link (2)"
+msgstr ""
+
+#: config/schema/svksk_base.schema.yml:0
+msgid "Title (1)"
+msgstr ""
+
+#: config/schema/svksk_base.schema.yml:0
+msgid "Text (1)"
+msgstr ""
+
+#: config/schema/svksk_base.schema.yml:0
+msgid "Title (2)"
+msgstr ""
+
+#: config/schema/svksk_base.schema.yml:0
+msgid "Text (2)"
+msgstr ""
+
+#: config/schema/svksk_base.schema.yml:0 src/Form/GeneralSettingsForm.php:226
+msgid "Footer Claim"
+msgstr "Text v pätičke"
+
+#: src/Form/FrontendRebuildForm.php:86
+msgid "Rebuild frontend"
+msgstr "Obnoviť frontend"
+
+#: src/Form/FrontendRebuildForm.php:110
+msgid "Refresh"
+msgstr "Obnoviť"
+
+#: src/Form/FrontendRebuildForm.php:121
+msgid "Refreshing status..."
+msgstr "Osvieženie stavu..."
+
+#: src/Form/FrontendRebuildForm.php:153
+msgid "Rebuild successfully triggered"
+msgstr "Obnovenie stránky bolo úspešne spustené"
+
+#: src/Form/FrontendRebuildForm.php:157
+msgid "Rebuild already running"
+msgstr "Obnovenie stránky už bolo spustené"
+
+#: src/Form/FrontendRebuildForm.php:161
+msgid "Invalid rebuild secret provided"
+msgstr "Bol použitý nesprávny 'rebuild secret'"
+
+#: src/Form/FrontendRebuildForm.php:163
+msgid "There was an error response while triggering rebuild"
+msgstr "Pri spúšťaní obnovenia odpovedal frontend chybou"
+
+#: src/Form/FrontendRebuildForm.php:165
+msgid "There was an error while triggering rebuild webhook."
+msgstr "Pri spúšťaní obnovenia sa vyskytla chyba"
+
+#: src/Form/FrontendRebuildForm.php:190
+msgid "There is a rebuild process currently running since @date by @user"
+msgstr ""
+"Momentálne beží proces obnovenia od @date spustený používateľom "
+"@user"
+
+#: src/Form/FrontendRebuildForm.php:201
+msgid "Last rebuild was completed on @date by @user"
+msgstr "Posledný rebuild bol spustený @date používateľom @user"
+
+#: src/Form/GeneralSettingsForm.php:80
+msgid "Front page settings"
+msgstr "Nastavenia domovskej stránky"
+
+#: src/Form/GeneralSettingsForm.php:88
+msgid "Select front page"
+msgstr "Vyberte domovskú stránku"
+
+#: src/Form/GeneralSettingsForm.php:95
+msgid "Front page image"
+msgstr "Obrázok na domovskej stránke"
+
+#: src/Form/GeneralSettingsForm.php:96
+msgid "Image at the top of the front page."
+msgstr "Obrázok v hornej časti domovskej strany."
+
+#: src/Form/GeneralSettingsForm.php:103
+msgid "E-gov header"
+msgstr "E-gov hlavička"
+
+#: src/Form/GeneralSettingsForm.php:110;116
+msgid "Trigger link (:num)"
+msgstr "Otvárač (:num)"
+
+#: src/Form/GeneralSettingsForm.php:122;128
+msgid "Trigger link (:num) - short"
+msgstr "Otvárač (:num) - skrátený"
+
+#: src/Form/GeneralSettingsForm.php:134;148
+msgid "Title (:num)"
+msgstr "Nadpis (:num)"
+
+#: src/Form/GeneralSettingsForm.php:141;155
+msgid "Text (:num)"
+msgstr "Text (:num)"
+
+#: src/Form/GeneralSettingsForm.php:162
+msgid "Header"
+msgstr "Nadpis"
+
+#: src/Form/GeneralSettingsForm.php:170
+msgid "Header logo"
+msgstr "Logo v hlavičke"
+
+#: src/Form/GeneralSettingsForm.php:171
+msgid "Default logo image in site header. Recommended image size is 40x40px."
+msgstr ""
+"Základný obrázok loga v hlavičke stránky. Odporúčaná veľkosť "
+"obrázka je 40x40px."
+
+#: src/Form/GeneralSettingsForm.php:178
+msgid "Header logo - Title"
+msgstr "Logo v hlavičke - Titul"
+
+#: src/Form/GeneralSettingsForm.php:184
+msgid "Header logo - Subtitle"
+msgstr "Logo v hlavičke - Podtitul"
+
+#: src/Form/GeneralSettingsForm.php:190
+msgid "Header logo - Title short"
+msgstr "Logo v hlavičke - Skrátený titul"
+
+#: src/Form/GeneralSettingsForm.php:196
+msgid "Header logo - Subtitle short"
+msgstr "Logo v hlavičke - Skrátený podtitul"
+
+#: src/Form/GeneralSettingsForm.php:202
+msgid "Footer"
+msgstr "Päta"
+
+#: src/Form/GeneralSettingsForm.php:210
+msgid "Footer logo"
+msgstr "Logo v pätičke"
+
+#: src/Form/GeneralSettingsForm.php:211
+msgid "Default logo image in site footer."
+msgstr "Základný obrázok loga v pätičke stránky."
+
+#: src/Form/GeneralSettingsForm.php:218
+msgid "Footer logo alternative text"
+msgstr "Logo v pätičke - alternatívny text"
+
+#: src/Form/GeneralSettingsForm.php:219
+msgid "Alternative text for logo image in site footer."
+msgstr "Alternatívny text pre logo v pätičke."
+
+#: src/Form/GeneralSettingsForm.php:233
+msgid "Cookies"
+msgstr ""
+
+#: src/Form/GeneralSettingsForm.php:241
+msgid "Select cookies settings page"
+msgstr "Vyberte stránku nastavení súborov cookies"
+
+#: src/Form/GeneralSettingsForm.php:247
+msgid "Lifespan [days]"
+msgstr "Životnosť [dni]"
+
+#: src/Form/GeneralSettingsForm.php:264
+msgid "Feedback forms"
+msgstr "Formuláre spätnej väzby"
+
+#: src/Form/GeneralSettingsForm.php:285
+msgid "Requests forms"
+msgstr "Formuláre žiadostí"
+
+#: src/Form/GeneralSettingsForm.php:292
+msgid "Requests notification e-mail"
+msgstr "Notifikačný e-mail pre žiadosti"
+
+#: src/Form/GeneralSettingsForm.php:271
+msgid "Feedback Form Report"
+msgstr "Formulár pre nahlásenie chyby"
+
+#: src/Form/GeneralSettingsForm.php:296
+msgid "In order for the modifications of this configuration to be reflected on the website, it is necessary to start the <a href=\":url\">Frontend rebuild</a> manually."
+msgstr "Aby sa úpravy tejto konfigurácie prejavili na webe, je potrebné manuálne spustiť <a href=\":url\">Obnovenie frontend stránky</a>."
+
+#: src/Form/GeneralSettingsForm.php:323
+msgid "There was an error during file usage saving."
+msgstr "Nastala chyba počas ukladanie použitia súboru."
+
+#: src/Plugin/Block/CmsVersion.php:26;7
+msgid "Version"
+msgstr "Verzia"
+
+#: src/Plugin/Validation/Constraint/ExcludeSelfReferenceConstraint.php:7
+msgctxt "Validation"
+msgid "Entity Reference - Exclude Self"
+msgstr ""

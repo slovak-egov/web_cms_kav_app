@@ -1,0 +1,33 @@
+uuid: c86cd723-f530-4a88-9902-ed2d0aeb8672
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: article_en
+label: Article
+type: 'canonical_entities:node'
+pattern: '[node:organization:alias]/articles/[node:title]'
+selection_criteria:
+  e9e38536-1f0b-4813-9cab-5577afcaee7f:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e9e38536-1f0b-4813-9cab-5577afcaee7f
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+  2ff9e84a-8065-449f-acc5-3c6978fbba52:
+    id: language
+    negate: false
+    uuid: 2ff9e84a-8065-449f-acc5-3c6978fbba52
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

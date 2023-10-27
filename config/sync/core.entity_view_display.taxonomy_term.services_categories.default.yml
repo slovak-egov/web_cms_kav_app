@@ -1,0 +1,46 @@
+uuid: 2a880a85-2991-464c-9b92-5f6f2c14f953
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.services_categories.external_id
+    - field.field.taxonomy_term.services_categories.field_components
+    - field.field.taxonomy_term.services_categories.field_icon
+    - field.field.taxonomy_term.services_categories.field_meta_tags
+    - field.field.taxonomy_term.services_categories.field_perex
+    - taxonomy.vocabulary.services_categories
+  module:
+    - metatag
+    - text
+id: taxonomy_term.services_categories.default
+targetEntityType: taxonomy_term
+bundle: services_categories
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_meta_tags:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_perex:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  external_id: true
+  field_components: true
+  field_icon: true
+  langcode: true
+  search_api_excerpt: true

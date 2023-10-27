@@ -1,0 +1,14 @@
+uuid: 60852825-810b-45a2-94a0-24f0ede11ba1
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.organization_editor
+  module:
+    - user
+id: user_add_role_action.organization_editor
+label: 'Pridať rolu Tvorca obsahu inštitúcie vybraným používateľom'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: organization_editor

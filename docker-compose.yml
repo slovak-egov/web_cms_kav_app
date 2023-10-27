@@ -1,0 +1,114 @@
+version: "3.9"
+
+networks:
+  db_network:
+    name: "db_network"
+
+  traefik_net:
+    name: "traefik_net"
+    external: true
+
+services:
+  postgres-server:
+    container_name: "postgres-server"
+    image: "postgres:13-alpine"
+    restart: "unless-stopped"
+    networks:
+      - "db_network"
+    ports:
+      - "5432:5432"
+    environment:
+      TZ: "Europe/Bratislava"
+      POSTGRES_DB: "slovensko_sk"
+      POSTGRES_USER: "slovensko_sk"
+      POSTGRES_PASSWORD: "password"
+    command: [
+      "postgres",
+      "-c", "max_connections=1000"
+    ]
+    volumes:
+      - "/srv/postgres-server/data:/var/lib/postgresql/data"
+    healthcheck:
+      test: "psql $${POSTGRES_DB} $${POSTGRES_USER} -c \"SELECT 1;\" || exit 1"
+      interval: 10s
+      timeout: 3s
+      retries: 5
+
+  cms-kav-slovensko:
+    container_name: "cms-kav-slovensko"
+    image: "${IMAGE_NAME}:${IMAGE_TAG}"
+    restart: "unless-stopped"
+    networks:
+      - "db_network"
+      - "traefik_net"
+    depends_on:
+      postgres-server:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          memory: "4G"
+    environment:
+      TZ: "Europe/Bratislava"
+      DEBUG: "true"
+      CMS_MODE: "true"
+      ADMIN_PASSWORD: "${DC_ADMIN_PASSWORD}"
+      DB_HOST: "postgres-server"
+      DB_PORT: "5432"
+      DB_DATABASE: "slovensko_sk"
+      DB_USERNAME: "slovensko_sk"
+      DB_PASSWORD: "password"
+      DB_PREFIX: "cms_kav"
+      S3_HOSTNAME: "${DC_S3_URL}"
+      S3_BUCKET: "kav.${CI_ENVIRONMENT_NAME_LOWER}-cms"
+      S3_ACCESS_KEY: "${DC_S3_ACCESS_KEY}"
+      S3_SECRET_KEY: "${DC_S3_SECRET_KEY}"
+      S3_DISABLE_CERT_VERIFY: "false"
+      DRUPAL_HASH_SALT: "${DC_DRUPAL_HASH_SALT}"
+      DRUPAL_API_PATH_PREFIX: "cms-api"
+      DRUPAL_REVERSE_PROXY: "false"
+      DRUPAL_PROXY_HTTP: ""
+      DRUPAL_PROXY_HTTPS: ""
+      DRUPAL_PROXY_NO: ""
+      API_BASE_URL: ""
+      CMDB_API_URL: "https://10.20.1.116:8443"
+      API_CLIENT_VERIFY: "false"
+      API_CLIENT_CA: ""
+      NEXT_BASE_URL: "https://portal.kav.skit.zone"
+      NEXT_PREVIEW_URL: "https://portal.kav.skit.zone/api/preview"
+      NEXT_REVALIDATE_URL: "https://portal.kav.skit.zone/api/revalidate"
+      NEXT_PREVIEW_SECRET: "${DC_NEXT_PREVIEW_SECRET}"
+      NEXT_REBUILD_SECRET: "${DC_NEXT_REBUILD_SECRET}"
+      SMTP_HOSTNAME : "${DC_SMTP_HOSTNAME}"
+      SMTP_PORT : "${DC_SMTP_PORT}"
+      SMTP_PROTO : "${DC_SMTP_PROTO}"
+      SMTP_USERNAME : "${DC_SMTP_USERNAME}"
+      SMTP_FROM : "${DC_SMTP_FROM}"
+      SMTP_FROMNAME : "${DC_SMTP_FROMNAME}"
+      SMTP_PASSWORD : "${DC_SMTP_PASSWORD}"
+      REQUEST_NOTIFICATION_EMAIL : "${DC_REQUEST_NOTIFICATION_EMAIL}"
+    labels:
+      traefik.enable: "true"
+      traefik.http.services.kav.loadbalancer.server.port: "80"
+      traefik.http.services.kav.loadbalancer.server.scheme: "http"
+
+      traefik.http.routers.kav-http.service: "kav"
+      traefik.http.routers.kav-http.rule: "Host(`cms.kav.skit.zone`)"
+      traefik.http.routers.kav-http.entrypoints: "web"
+      traefik.http.routers.kav-http.middlewares: "kav-redirect-https"
+
+      traefik.http.middlewares.kav-redirect-https.redirectscheme.permanent: "true"
+      traefik.http.middlewares.kav-redirect-https.redirectscheme.scheme: "https"
+
+      traefik.http.routers.kav-https.service: "kav"
+      traefik.http.routers.kav-https.rule: "Host(`cms.kav.skit.zone`)"
+      traefik.http.routers.kav-https.entrypoints: "websecure"
+      traefik.http.routers.kav-https.tls: "true"
+      traefik.http.routers.kav-https.tls.certresolver: "smallstep"
+    healthcheck:
+      test: "curl -fIs http://localhost/health | grep 'HTTP/'"
+      start_period: 180s
+      interval: 10s
+      timeout: 3s
+      retries: 10
+

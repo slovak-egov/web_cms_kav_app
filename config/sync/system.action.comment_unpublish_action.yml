@@ -1,0 +1,13 @@
+uuid: 88839e16-a808-4e5c-801e-21ab19395005
+langcode: sk
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: tWOIjSMobEWOFZddMkNqb9JySbOVwE1diC6NRqcfLTk
+id: comment_unpublish_action
+label: 'Zrušiť zverejnenie komentáru'
+type: comment
+plugin: 'entity:unpublish_action:comment'
+configuration: {  }

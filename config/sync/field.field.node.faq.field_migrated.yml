@@ -1,0 +1,23 @@
+uuid: dc6d4bce-9f09-4b93-abdc-fe66740cc302
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_migrated
+    - node.type.faq
+id: node.faq.field_migrated
+field_name: field_migrated
+entity_type: node
+bundle: faq
+label: 'Migrovaný obsah'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Áno
+  off_label: Nie
+field_type: boolean

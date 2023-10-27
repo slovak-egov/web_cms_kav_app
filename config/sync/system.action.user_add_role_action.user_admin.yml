@@ -1,0 +1,14 @@
+uuid: a99cefe0-4769-4076-a098-0fd2b4038be6
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.user_admin
+  module:
+    - user
+id: user_add_role_action.user_admin
+label: 'Pridať rolu Správca oprávnení vybraným používateľom'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: user_admin

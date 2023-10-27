@@ -1,0 +1,19 @@
+uuid: c0ce77b8-77ca-4d60-827a-023fd0df949d
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_annotation
+    - paragraphs.paragraphs_type.accordion
+id: paragraph.accordion.field_annotation
+field_name: field_annotation
+entity_type: paragraph
+bundle: accordion
+label: Popis
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

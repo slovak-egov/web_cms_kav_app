@@ -1,0 +1,26 @@
+uuid: 4e7e255b-c803-4702-9722-ed571087bd39
+langcode: sk
+status: true
+dependencies:
+  config:
+    - crop.type.default
+  module:
+    - crop
+name: teaser
+label: Teaser
+effects:
+  88c0dc02-3130-4ffd-a86c-d3b6cdce746d:
+    uuid: 88c0dc02-3130-4ffd-a86c-d3b6cdce746d
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: default
+      automatic_crop_provider: null
+  ec3b9833-428d-446a-9cde-ea0c8bb2fe63:
+    uuid: ec3b9833-428d-446a-9cde-ea0c8bb2fe63
+    id: image_scale
+    weight: 2
+    data:
+      width: 640
+      height: null
+      upscale: true

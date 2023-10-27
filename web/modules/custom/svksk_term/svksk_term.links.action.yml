@@ -1,0 +1,5 @@
+entity.term.add_form:
+  route_name: entity.term.add_form
+  title: 'Add Term'
+  appears_on:
+    - entity.term.collection

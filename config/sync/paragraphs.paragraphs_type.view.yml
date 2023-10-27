@@ -1,0 +1,15 @@
+uuid: c87f5cdd-6486-47ee-b594-e6fb1355ce90
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: view
+label: Zoznam
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

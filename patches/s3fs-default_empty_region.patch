@@ -1,0 +1,15 @@
+diff --git a/src/S3fsService.php b/src/S3fsService.php
+index 756660b..ceca428 100644
+--- a/src/S3fsService.php
++++ b/src/S3fsService.php
+@@ -259,7 +259,9 @@ class S3fsService implements S3fsServiceInterface {
+     // If the client hasn't been set up yet, or the config given to this call is
+     // different from the previous call, (re)build the client.
+     if (!isset($s3) || $static_config != $config) {
+-      $client_config = [];
++      $client_config = [
++        'region' => '',
++      ];
+ 
+       $access_key = Settings::get('s3fs.access_key', '');
+       $secret_key = Settings::get('s3fs.secret_key', '');

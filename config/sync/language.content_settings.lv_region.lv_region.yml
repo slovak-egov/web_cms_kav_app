@@ -1,0 +1,11 @@
+uuid: ff6964db-d324-4184-a347-b328516ecde8
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_list_values
+id: lv_region.lv_region
+target_entity_type_id: lv_region
+target_bundle: lv_region
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,15 @@
+uuid: 433fcded-b3bd-4fcd-a4ec-05d9270a5c5c
+langcode: sk
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: signpost
+label: Rázcestník
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: false
+    available_layouts: {  }

@@ -1,0 +1,30 @@
+uuid: 8682912f-ddb4-438d-91de-5c91ad5073eb
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_ui_translations
+id: svksk_ui_translation.svksk_ui_translation.default
+targetEntityType: svksk_ui_translation
+bundle: svksk_ui_translation
+mode: default
+content:
+  string:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  string_plural:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

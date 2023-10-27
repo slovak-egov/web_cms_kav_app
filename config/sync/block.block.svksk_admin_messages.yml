@@ -1,0 +1,22 @@
+uuid: 32da59d5-d85c-452e-975e-e669a19429d6
+langcode: sk
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - svksk_admin
+_core:
+  default_config_hash: WvPhI8OwllG0gE69-F8qL3ai3nd5SbYD6JpmEuZcyok
+id: svksk_admin_messages
+theme: svksk_admin
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

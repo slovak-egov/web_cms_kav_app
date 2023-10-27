@@ -1,0 +1,21 @@
+uuid: 80e8b954-49c3-42ac-95ad-6739911d2e21
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_type
+    - paragraphs.paragraphs_type.image
+  module:
+    - options
+id: paragraph.image.field_link_type
+field_name: field_link_type
+entity_type: paragraph
+bundle: image
+label: 'Typ odkazu'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

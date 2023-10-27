@@ -1,0 +1,69 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright Slovensko IT, a. s. <info@slovenskoit.sk>
+# Generated from files:
+#  svksk_moderation.module: n/a
+#  svksk_moderation.info.yml: n/a
+#  svksk_moderation.links.task.yml: n/a
+#  svksk_moderation.routing.yml: n/a
+#  src/Controller/WorkflowModalController.php: n/a
+#  src/Plugin/Menu/LocalTask/VerificationContent.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1\n"
+"POT-Creation-Date: 2022-08-10 13:07+0200\n"
+"PO-Revision-Date: 2022-08-10 13:07+0200\n"
+"Last-Translator: Slovensko IT, a. s. <info@slovenskoit.sk>\n"
+"Language-Team: Slovensko IT, a. s. <info@slovenskoit.sk>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_moderation.module:35
+msgid "Show preview of editorial process"
+msgstr "Zobraziť náhľad redakčného procesu"
+
+#: svksk_moderation.info.yml:0
+msgid "Slovensko.sk Moderation"
+msgstr ""
+
+#: svksk_moderation.info.yml:0
+msgid "Moderation content"
+msgstr "Moderovanie obsahu"
+
+#: svksk_moderation.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_moderation.links.task.yml:0
+msgid "Content waiting for approval"
+msgstr "Obsah čakajúci na schválenie"
+
+#: svksk_moderation.links.task.yml:0
+msgid "Content waiting for amendment"
+msgstr "Obsah čakajúci na doplnenie"
+
+#: svksk_moderation.permissions.yml:0
+msgid "Access in review content"
+msgstr "Upravovať posudzovaný obsah"
+
+#: svksk_moderation.permissions.yml:0
+msgid "Allow to access in review content."
+msgstr ""
+"Umožní používateľovi upravovať posudzovaný obsah."
+
+#: svksk_moderation.routing.yml:0 src/Controller/WorkflowModalController.php:70
+msgid "Preview of editorial process"
+msgstr "Náhľad redakčného procesu"
+
+#: src/Plugin/Menu/LocalTask/VerificationContent.php:76
+msgid "Content waiting for approval (@count)"
+msgstr "Obsah čakajúci na schválenie (@count)"
+
+#: src/Plugin/Menu/LocalTask/AmendmentContent.php:66
+msgid "Content waiting for amendment (@count)"
+msgstr "Obsah čakajúci na doplnenie (@count)"

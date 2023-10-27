@@ -1,0 +1,70 @@
+<?php
+
+/**
+ * @file
+ * Allows to ban individual or range IP addresses.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_help().
+ */
+function ip_comment_ban_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.ip_comment_ban':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Advanced Ban module allows administrators to ban visits to their site from individual or range IP addresses.') . '</p>';
+      $output .= '<h3>' . t('Uses') . '</h3>';
+      $output .= '<dl>';
+      $output .= '<dt>' . t('Banning IP addresses: individual or range.') . '</dt>';
+      $output .= '<dt>' . t('Addig expiry dates to blocked IP addresses and unblocking them after a certain amount of time.') . '</dt>';
+      $output .= '<dt>' . t('Uses Blacklist or whitelist, where blacklisted IPs are denied from the site, and whitelisted are allowed. Whitelists always override blacklists.') . '</dt>';
+      $output .= '<dd>' . t('Administrators can enter IP addresses to ban on the <a href=":bans">IP address bans</a> page.', [':bans' => Url::fromRoute('ip_comment_ban.admin_page')->toString()]) . '</dd>';
+      $output .= '</dl>';
+      return $output;
+
+    case 'ip_comment_ban.admin_page':
+      return '<p>' . t('IP addresses (individual or range) listed here are banned from your site. Banned addresses are completely forbidden from accessing the site and instead see a brief message explaining the situation. Banned addresses can be unblocked after expiration.') . '</p>';
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ip_comment_ban_theme($existing, $type, $theme, $path) {
+  return [
+    'ip_ban_view' => [
+      'variables' => [
+        'ip' => NULL,
+        'ip_end' => NULL,
+        'expiry_duration' => NULL,
+        'status' => NULL,
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_cron().
+ */
+function ip_comment_ban_cron() {
+  $unbannedIp = \Drupal::service('ip_comment_ban.ip_manager')->unblockExpiredIp();
+  if ($unbannedIp > 0) {
+    \Drupal::logger('advanced ban')->notice('Unbanned expired IP count: %count', ['%count' => $unbannedIp]);
+  }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ *
+ * @param \Drupal\Core\Entity\EntityTypeInterface[] $entity_types
+ */
+function ip_comment_ban_entity_type_alter(array &$entity_types) {
+  // Add validation constraint to the comment entity.
+  if (array_key_exists('comment', $entity_types )) {
+    $entity_types['comment']->addConstraint('userCommentBanned',[]);
+  }
+}

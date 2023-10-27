@@ -1,0 +1,7 @@
+drupal.svksk_moderation.disabled_form:
+  js:
+    js/content_disabled_form.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once

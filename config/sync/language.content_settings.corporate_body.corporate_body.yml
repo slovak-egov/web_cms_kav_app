@@ -1,0 +1,11 @@
+uuid: 5f3c4864-2bce-4b62-86ca-93bf0fdaa4cd
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_organization
+id: corporate_body.corporate_body
+target_entity_type_id: corporate_body
+target_bundle: corporate_body
+default_langcode: site_default
+language_alterable: false

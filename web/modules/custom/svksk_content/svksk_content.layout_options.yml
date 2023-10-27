@@ -1,0 +1,56 @@
+layout_option_definitions:
+  layout_bg_color:
+    title: 'Background color'
+    description: ''
+    default: ''
+    plugin: layout_options_class_select
+    multi: false
+    options: {
+      bg-grey: 'Grey',
+    }
+    layout: true
+    regions: false
+    weight: 0
+  layout_custom_border:
+    title: 'Layout border'
+    description: ''
+    default: ''
+    plugin: layout_options_class_checkboxes
+    inline: false
+    multi: false
+    options: {
+      with-border: 'With border'
+    }
+    layout: true
+    regions: false
+    weight: 1
+  layout_operating_system:
+    title: 'Operating system'
+    description: ''
+    default: ''
+    plugin: layout_options_class_checkboxes
+    inline: false
+    multi: true
+    options: {
+      windows: 'MS Windows',
+      mac: 'Mac OS',
+      linux: 'Linux',
+      android: 'Android',
+      ios: 'iOS',
+    }
+    layout: true
+    regions: false
+    weight: 2
+#
+# This section of the yaml file defines the "rules" used to determine which options are shown.
+# It can also be used to override the settings defined in the definition area.
+#
+layout_options:
+
+  #
+  # Options in the global section appears on all layout configurations unless overridden
+  #
+  global:
+    layout_bg_color: { }
+    layout_custom_border: { }
+    layout_operating_system: { }

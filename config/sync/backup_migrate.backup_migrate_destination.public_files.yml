@@ -1,0 +1,9 @@
+uuid: 4cc83210-1ddd-414b-b85f-3be2bbc7169e
+langcode: sk
+status: true
+dependencies: {  }
+id: public_files
+label: 'Public files'
+type: Directory
+config:
+  directory: 'public://backup_migrate/'

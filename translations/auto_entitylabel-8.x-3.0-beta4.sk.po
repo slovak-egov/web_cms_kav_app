@@ -1,0 +1,26 @@
+# Slovak translation of Automatic Entity Label (8.x-3.0-beta4)
+# Copyright (c) 2020 by the Slovak translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Automatic Entity Label (8.x-3.0-beta4)\n"
+"POT-Creation-Date: 2020-12-30 17:50+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Slovak\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=((n==1)?(0):(((n>=2)&&(n<=4))?(1):2));\n"
+
+msgid "Disabled"
+msgstr "Zakázané"
+msgid "Entity"
+msgstr "Entita"
+msgid "Chunk size"
+msgstr "Ohraničenie"
+msgid "Usage"
+msgstr "Využitie"
+msgid "About"
+msgstr "Informácie o"
+msgid "Dependencies"
+msgstr "Závislosti"

@@ -1,0 +1,27 @@
+uuid: a81edb48-6548-4fb5-a3af-a1a8f813ed28
+langcode: sk
+status: true
+dependencies:
+  module:
+    - comment
+    - options
+id: comment.field_comment_state
+field_name: field_comment_state
+entity_type: comment
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: correct
+      label: 'Vhodný komentár'
+    -
+      value: incorrect
+      label: 'Nevhodný komentár'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Codelist>
+    <CodelistCode>CL010139</CodelistCode>
+    <CodelistName effectiveFrom="2015-10-15T00:00:00+02:00" language="sk">Druh adresy</CodelistName>
+    <CodelistName effectiveFrom="2015-10-15T00:00:00+02:00" language="en">Type of addresses</CodelistName>
+    <CodelistManager managerType="major" effectiveFrom="2015-10-15T00:00:00+02:00" effectiveTo="2016-05-31T00:00:00+02:00">d2e6852f-2f1d-4e48-8f9d-e605e830a03b-d5e4b6f4-f103-44f1-b588-9db280e7d850</CodelistManager>
+    <CodelistManager managerType="major" effectiveFrom="2016-06-01T00:00:00+02:00">d2e6852f-2f1d-4e48-8f9d-e605e830a03b-a26e801d-c331-408a-bb69-4ec22a6c009a</CodelistManager>
+    <ValidFrom>2018-11-29T07:41:57.474+01:00</ValidFrom>
+    <EffectiveFrom>2015-10-15T00:00:00+02:00</EffectiveFrom>
+    <EffectiveTo xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+    <IsBasic>true</IsBasic>
+    <Note language="sk">Účinnosť základného číselníka nadobudnutá na základe výnosu Ministerstva financií SR č. 55/2014 Z.z. o štandardoch pre informačné systémy verejnej správy v znení výnosu č. 137/2015 Z.z.</Note>
+    <ContactPerson>
+        <firstName>Viktória</firstName>
+        <lastName>Šunderlíková</lastName>
+        <phoneNumber>+42122092 8213</phoneNumber>
+        <email>viktoria.sunderlikova@vicepremier.gov.sk</email>
+    </ContactPerson>
+    <CodelistItem>
+        <ItemCode>100001</ItemCode>
+        <ItemName effectiveFrom="1949-04-01T00:00:00+01:00" language="en">Permanent address</ItemName>
+        <ItemName effectiveFrom="1949-04-01T00:00:00+01:00" language="sk">Trvalý pobyt</ItemName>
+        <ItemName effectiveFrom="1949-04-01T00:00:00+01:00" language="en">Permanent address</ItemName>
+        <ItemName effectiveFrom="1949-04-01T00:00:00+01:00" language="sk">Trvalý pobyt</ItemName>
+        <AdditionalContent effectiveFrom="1949-04-01T00:00:00+01:00" language="sk">Podľa zákona č. 513/1991 Zb. obchodný zákonník sa stotožňuje s hodnotou bydlisko.</AdditionalContent>
+        <AdditionalContent effectiveFrom="1949-04-01T00:00:00+01:00" language="sk">Podľa zákona č. 513/1991 Zb. obchodný zákonník sa stotožňuje s hodnotou bydlisko.</AdditionalContent>
+        <Note language="sk">Podľa § 3 zákona č. 253/1998 Z. z. o hlásení pobytu občanov Slovenskej republiky a registri obyvateľov Slovenskej republiky. Trvalý pobyt je pobyt občana spravidla v mieste jeho stáleho bydliska na území Slovenskej republiky.</Note>
+        <Note language="sk">Podľa § 3 zákona č. 253/1998 Z. z. o hlásení pobytu občanov Slovenskej republiky a registri obyvateľov Slovenskej republiky. Trvalý pobyt je pobyt občana spravidla v mieste jeho stáleho bydliska na území Slovenskej republiky.</Note>
+        <Note language="sk">Zákon č. 52/1949 Zb. o hlásení obyvateľstva a o povoľovaní pobytu cudzincom v účinnosti od 1.4.1949 do 31.12.1982.
+Zákon č. 135/1982 Zb. o hlásení a evidencii pobytu občanov 1.1.1983 do 31.12.1999.</Note>
+        <Note language="sk">Zákon č. 52/1949 Zb. o hlásení obyvateľstva a o povoľovaní pobytu cudzincom v účinnosti od 1.4.1949 do 31.12.1982.
+Zákon č. 135/1982 Zb. o hlásení a evidencii pobytu občanov 1.1.1983 do 31.12.1999.</Note>
+        <ValidFrom>1949-04-01T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="1949-04-01T00:00:00+01:00">
+            <EffectiveFrom>1949-04-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="1949-04-01T00:00:00+01:00">
+            <EffectiveFrom>1949-04-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="1949-04-01T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="1949-04-01T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100002</ItemCode>
+        <ItemName effectiveFrom="1958-03-01T00:00:00+01:00" language="en">Temporary address</ItemName>
+        <ItemName effectiveFrom="1958-03-01T00:00:00+01:00" language="sk">Prechodný pobyt</ItemName>
+        <ItemName effectiveFrom="1958-03-01T00:00:00+01:00" language="en">Temporary address</ItemName>
+        <ItemName effectiveFrom="1958-03-01T00:00:00+01:00" language="sk">Prechodný pobyt</ItemName>
+        <Note language="sk">Podľa § 8 zákona č. 253/1998 Z. z. o hlásení pobytu občanov Slovenskej republiky a registri obyvateľov Slovenskej republiky. Prechodný pobyt je pobyt občana mimo miesta trvalého pobytu, kde sa občan dočasne zdržiava.</Note>
+        <Note language="sk">Podľa § 8 zákona č. 253/1998 Z. z. o hlásení pobytu občanov Slovenskej republiky a registri obyvateľov Slovenskej republiky. Prechodný pobyt je pobyt občana mimo miesta trvalého pobytu, kde sa občan dočasne zdržiava.</Note>
+        <Note language="sk">Zákon č. 76/1957 Zb. ktorým sa mení a doplňuje zákon o hlásení obyvateľstva a o povoľovaní pobytu cudzincom č. 52/1949 Zb., v účinnosti od 1.3.1958 do 31.12.1982.
+Zákon č. 135/1982 Zb. o hlásení a evidencii pobytu občanov 1.1.1983 do 31.12.1999.</Note>
+        <Note language="sk">Zákon č. 76/1957 Zb. ktorým sa mení a doplňuje zákon o hlásení obyvateľstva a o povoľovaní pobytu cudzincom č. 52/1949 Zb., v účinnosti od 1.3.1958 do 31.12.1982.
+Zákon č. 135/1982 Zb. o hlásení a evidencii pobytu občanov 1.1.1983 do 31.12.1999.</Note>
+        <ValidFrom>1958-03-01T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="1958-03-01T00:00:00+01:00">
+            <EffectiveFrom>1958-03-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="1958-03-01T00:00:00+01:00">
+            <EffectiveFrom>1958-03-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="1958-03-01T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="1958-03-01T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100003</ItemCode>
+        <ItemName effectiveFrom="2000-01-01T00:00:00+01:00" language="en">Foreign residence</ItemName>
+        <ItemName effectiveFrom="2000-01-01T00:00:00+01:00" language="sk">Pobyt v zahraničí</ItemName>
+        <ItemName effectiveFrom="2000-01-01T00:00:00+01:00" language="en">Foreign residence</ItemName>
+        <ItemName effectiveFrom="2000-01-01T00:00:00+01:00" language="sk">Pobyt v zahraničí</ItemName>
+        <Note language="sk">Podľa § 9 zákona č. 253/1998 Z. z. o hlásení pobytu občanov Slovenskej republiky a registri obyvateľov Slovenskej republiky. Prechodný pobyt je pobyt občana mimo miesta trvalého pobytu, kde sa občan dočasne zdržiava.</Note>
+        <Note language="sk">Podľa § 9 zákona č. 253/1998 Z. z. o hlásení pobytu občanov Slovenskej republiky a registri obyvateľov Slovenskej republiky. Prechodný pobyt je pobyt občana mimo miesta trvalého pobytu, kde sa občan dočasne zdržiava.</Note>
+        <ValidFrom>2022-05-23T08:40:39.551+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2000-01-01T00:00:00+01:00">
+            <EffectiveFrom>2000-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2000-01-01T00:00:00+01:00">
+            <EffectiveFrom>2000-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2000-01-01T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2000-01-01T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100004</ItemCode>
+        <ItemName effectiveFrom="2002-04-01T00:00:00+02:00" language="en">Tolerated residence</ItemName>
+        <ItemName effectiveFrom="2002-04-01T00:00:00+02:00" language="sk">Tolerovaný pobyt</ItemName>
+        <ItemName effectiveFrom="2002-04-01T00:00:00+02:00" language="en">Tolerated residence</ItemName>
+        <ItemName effectiveFrom="2002-04-01T00:00:00+02:00" language="sk">Tolerovaný pobyt</ItemName>
+        <Note language="sk">Podľa § 58 zákona č. 404/2011 Z. z. o pobyte cudzincov. Tolerovaný pobyt je špecifický typ pobytu, ktorý možno udeliť cudzincovi na kratšie obdobie na základe splnenia určitých podmienok.</Note>
+        <Note language="sk">Podľa § 58 zákona č. 404/2011 Z. z. o pobyte cudzincov. Tolerovaný pobyt je špecifický typ pobytu, ktorý možno udeliť cudzincovi na kratšie obdobie na základe splnenia určitých podmienok.</Note>
+        <Note language="sk">Zákon č. 48/2002 Z. z. o pobyte cudzincov a o zmene a doplnení niektorých zákonov v účinnosti od 1.4.2002 do 31.12.2011.
+</Note>
+        <Note language="sk">Zákon č. 48/2002 Z. z. o pobyte cudzincov a o zmene a doplnení niektorých zákonov v účinnosti od 1.4.2002 do 31.12.2011.
+</Note>
+        <ValidFrom>2002-04-01T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2002-04-01T00:00:00+02:00">
+            <EffectiveFrom>2002-04-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2002-04-01T00:00:00+02:00">
+            <EffectiveFrom>2002-04-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2002-04-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2002-04-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100101</ItemCode>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="en">Corporate body seat</ItemName>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="sk">Sídlo právnickej osoby</ItemName>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="en">Corporate body seat</ItemName>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="sk">Sídlo právnickej osoby</ItemName>
+        <Note language="sk">Podľa § 2 zákona č. 513/1991 Zb. obchodný zákonník. Sídlom právnickej osoby je adresa, ktorá je ako sídlo zapísaná v obchodnom registri alebo živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom. Právnická osoba musí preukázať, že má k nehnuteľnosti alebo jej časti, ktorej adresa je ako jej sídlo alebo miesto podnikania zapísaná v obchodnom registri alebo v živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom, vlastnícke právo alebo užívacie právo, ktoré užívanie nehnuteľnosti alebo jej časti ako sídla nevylučuje, alebo súhlas vlastníka nehnuteľnosti alebo jej časti so zápisom nehnuteľnosti alebo jej časti ako sídla do obchodného registra, živnostenského registra alebo inej evidencie ustanovenej osobitným zákonom.</Note>
+        <Note language="sk">Podľa § 2 zákona č. 513/1991 Zb. obchodný zákonník. Sídlom právnickej osoby je adresa, ktorá je ako sídlo zapísaná v obchodnom registri alebo živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom. Právnická osoba musí preukázať, že má k nehnuteľnosti alebo jej časti, ktorej adresa je ako jej sídlo alebo miesto podnikania zapísaná v obchodnom registri alebo v živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom, vlastnícke právo alebo užívacie právo, ktoré užívanie nehnuteľnosti alebo jej časti ako sídla nevylučuje, alebo súhlas vlastníka nehnuteľnosti alebo jej časti so zápisom nehnuteľnosti alebo jej časti ako sídla do obchodného registra, živnostenského registra alebo inej evidencie ustanovenej osobitným zákonom.</Note>
+        <Note language="sk">Zákonný článok č. XXXVII/1875 r. z., Uhorský obchodný zákonník, účinný od 1.1.1876 čiastočne až do 30.6.1964.
+Zákon č. 103/1950 Zb., o národných podnikoch priemyslových, účinný od 1.7.1950 do 31.12.1955.
+Zákon č. 55/1955 Zb. o národných podnikoch a niektorých iných hospodárskych organizáciách, účinný od 1.1.1956 do 30.6.1964.
+Zákon č. 109/1964 Zb., hospodársky zakonník, účinný od 1.7.1964 do 31.12.1991.</Note>
+        <Note language="sk">Zákonný článok č. XXXVII/1875 r. z., Uhorský obchodný zákonník, účinný od 1.1.1876 čiastočne až do 30.6.1964.
+Zákon č. 103/1950 Zb., o národných podnikoch priemyslových, účinný od 1.7.1950 do 31.12.1955.
+Zákon č. 55/1955 Zb. o národných podnikoch a niektorých iných hospodárskych organizáciách, účinný od 1.1.1956 do 30.6.1964.
+Zákon č. 109/1964 Zb., hospodársky zakonník, účinný od 1.7.1964 do 31.12.1991.</Note>
+        <ValidFrom>1876-01-01T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="1876-01-01T00:00:00+01:00">
+            <EffectiveFrom>1876-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="1876-01-01T00:00:00+01:00">
+            <EffectiveFrom>1876-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="1876-01-01T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="1876-01-01T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100102</ItemCode>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="en">Place of business of natural person</ItemName>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="sk">Miesto podnikania fyzickej osoby</ItemName>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="en">Place of business of natural person</ItemName>
+        <ItemName effectiveFrom="1876-01-01T00:00:00+01:00" language="sk">Miesto podnikania fyzickej osoby</ItemName>
+        <Note language="sk">Podľa § 2 zákona č. 513/1991 Zb. obchodný zákonník. Miestom podnikania fyzickej osoby je adresa, ktorá je ako miesto podnikania zapísaná v obchodnom registri alebo živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom. Fyzická osoba musí preukázať, že má k nehnuteľnosti alebo jej časti, ktorej adresa je ako jej miesto podnikania zapísaná v obchodnom registri alebo v živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom, vlastnícke právo alebo užívacie právo, ktoré užívanie nehnuteľnosti alebo jej časti ako miesta podnikania nevylučuje, alebo súhlas vlastníka nehnuteľnosti alebo jej časti so zápisom nehnuteľnosti alebo jej časti ako miesta podnikania do obchodného registra, živnostenského registra alebo inej evidencie ustanovenej osobitným zákonom.</Note>
+        <Note language="sk">Podľa § 2 zákona č. 513/1991 Zb. obchodný zákonník. Miestom podnikania fyzickej osoby je adresa, ktorá je ako miesto podnikania zapísaná v obchodnom registri alebo živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom. Fyzická osoba musí preukázať, že má k nehnuteľnosti alebo jej časti, ktorej adresa je ako jej miesto podnikania zapísaná v obchodnom registri alebo v živnostenskom registri, alebo v inej evidencii ustanovenej osobitným zákonom, vlastnícke právo alebo užívacie právo, ktoré užívanie nehnuteľnosti alebo jej časti ako miesta podnikania nevylučuje, alebo súhlas vlastníka nehnuteľnosti alebo jej časti so zápisom nehnuteľnosti alebo jej časti ako miesta podnikania do obchodného registra, živnostenského registra alebo inej evidencie ustanovenej osobitným zákonom.</Note>
+        <Note language="sk">Zákonný článok č. XXXVII/1875 r. z., Uhorský obchodný zákonník, účinný od 1.1.1876 čiastočne až do 30.6.1964.
+Zákon č. 103/1990 Zb. ktorým sa mení alebo dopĺňa Hospodársky zákonník č. 109/1964 Zb., účinný od 1.5.1990 do 31.12.1991</Note>
+        <Note language="sk">Zákonný článok č. XXXVII/1875 r. z., Uhorský obchodný zákonník, účinný od 1.1.1876 čiastočne až do 30.6.1964.
+Zákon č. 103/1990 Zb. ktorým sa mení alebo dopĺňa Hospodársky zákonník č. 109/1964 Zb., účinný od 1.5.1990 do 31.12.1991</Note>
+        <ValidFrom>1876-01-01T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="1876-01-01T00:00:00+01:00">
+            <EffectiveFrom>1876-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="1876-01-01T00:00:00+01:00">
+            <EffectiveFrom>1876-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="1876-01-01T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="1876-01-01T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100103</ItemCode>
+        <ItemName effectiveFrom="1992-01-01T00:00:00+01:00" language="en">Business premises</ItemName>
+        <ItemName effectiveFrom="1992-01-01T00:00:00+01:00" language="sk">Prevádzkáreň</ItemName>
+        <ItemName effectiveFrom="1992-01-01T00:00:00+01:00" language="en">Business premises</ItemName>
+        <ItemName effectiveFrom="1992-01-01T00:00:00+01:00" language="sk">Prevádzkáreň</ItemName>
+        <Note language="sk">Podľa § 7 zákona č. 513/1991 Zb. obchodný zákonník. Prevádzkárňou sa rozumie priestor, v ktorom sa uskutočňuje určitá podnikateľská činnosť. Nepoužíva sa ak sa jedná o zdravotnícke zariadenie, na to slúži položka č. 100201. 
+Podľa §17 zákona č. 455/1991 Zb. živnostenský zákon. Prevádzkarňou sa rozumie priestor, v ktorom sa prevádzkuje živnosť; nie je ním priestor súvisiaci s prevádzkovaním živnosti ani technické a technologické zariadenie určené na prevádzkovanie živnosti alebo súvisiace s prevádzkovaním živnosti.</Note>
+        <Note language="sk">Podľa § 7 zákona č. 513/1991 Zb. obchodný zákonník. Prevádzkárňou sa rozumie priestor, v ktorom sa uskutočňuje určitá podnikateľská činnosť. Nepoužíva sa ak sa jedná o zdravotnícke zariadenie, na to slúži položka č. 100201. 
+Podľa §17 zákona č. 455/1991 Zb. živnostenský zákon. Prevádzkarňou sa rozumie priestor, v ktorom sa prevádzkuje živnosť; nie je ním priestor súvisiaci s prevádzkovaním živnosti ani technické a technologické zariadenie určené na prevádzkovanie živnosti alebo súvisiace s prevádzkovaním živnosti.</Note>
+        <ValidFrom>1991-11-05T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="1991-11-05T00:00:00+01:00">
+            <EffectiveFrom>1992-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="1991-11-05T00:00:00+01:00">
+            <EffectiveFrom>1992-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="1992-01-01T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="1992-01-01T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100104</ItemCode>
+        <ItemName effectiveFrom="2013-07-01T00:00:00+02:00" language="en">Address of specialized activity performance location</ItemName>
+        <ItemName effectiveFrom="2013-07-01T00:00:00+02:00" language="sk">Adresa miesta výkonu odbornej činnosti</ItemName>
+        <ItemName effectiveFrom="2013-07-01T00:00:00+02:00" language="en">Address of specialized activity performance location</ItemName>
+        <ItemName effectiveFrom="2013-07-01T00:00:00+02:00" language="sk">Adresa miesta výkonu odbornej činnosti</ItemName>
+        <Note language="sk">Použitie nie je obmedzené iba na oblasť zdravotníctva, ale napr.: 
+- podľa zákona č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov § 20 ods. 1 písm. e) bod 4 v znení zákona č 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov, 
+- podľa zákona č. 362/2011 Z. z. o liekoch a zdravotníckych pomôckach a o zmene a doplnení niektorých zákonov § 7  ods. 6 písm. f).</Note>
+        <Note language="sk">Použitie nie je obmedzené iba na oblasť zdravotníctva, ale napr.: 
+- podľa zákona č. 581/2004 Z. z. o zdravotných poisťovniach, dohľade nad zdravotnou starostlivosťou a o zmene a doplnení niektorých zákonov § 20 ods. 1 písm. e) bod 4 v znení zákona č 153/2013 Z. z. o národnom zdravotníckom informačnom systéme a o zmene a doplnení niektorých zákonov, 
+- podľa zákona č. 362/2011 Z. z. o liekoch a zdravotníckych pomôckach a o zmene a doplnení niektorých zákonov § 7  ods. 6 písm. f).</Note>
+        <ValidFrom>2013-05-17T00:00:00+02:00</ValidFrom>
+        <Effectiveness effectiveFrom="2013-05-17T00:00:00+02:00">
+            <EffectiveFrom>2013-07-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2013-05-17T00:00:00+02:00">
+            <EffectiveFrom>2013-07-01T00:00:00+02:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2013-07-01T00:00:00+02:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2013-07-01T00:00:00+02:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>100201</ItemCode>
+        <ItemName effectiveFrom="2005-01-01T00:00:00+01:00" language="en">Place of running a healthcare facility</ItemName>
+        <ItemName effectiveFrom="2005-01-01T00:00:00+01:00" language="sk">Miesto prevádzkovania zdravotníckeho zariadenia</ItemName>
+        <ItemName effectiveFrom="2005-01-01T00:00:00+01:00" language="en">Place of running a healthcare facility</ItemName>
+        <ItemName effectiveFrom="2005-01-01T00:00:00+01:00" language="sk">Miesto prevádzkovania zdravotníckeho zariadenia</ItemName>
+        <Note language="sk">Adresa zdravotníckeho zariadenia poskytovateľa zdravotnej starostlivosti, prevádzkovanie ktorého bolo povolené podľa príslušnej legislatívy. Podľa zákona č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov § 25 písm. c), zákona č. 538/2005 Z. z. o prírodných liečivých vodách, prírodných liečebných kúpeľoch, kúpeľných miestach a prírodných minerálnych vodách a o zmene a doplnení niektorých zákonov § 34a ods. 3 písm. d).</Note>
+        <Note language="sk">Adresa zdravotníckeho zariadenia poskytovateľa zdravotnej starostlivosti, prevádzkovanie ktorého bolo povolené podľa príslušnej legislatívy. Podľa zákona č. 578/2004 Z. z. o poskytovateľoch zdravotnej starostlivosti, zdravotníckych pracovníkoch, stavovských organizáciách v zdravotníctve a o zmene a doplnení niektorých zákonov § 25 písm. c), zákona č. 538/2005 Z. z. o prírodných liečivých vodách, prírodných liečebných kúpeľoch, kúpeľných miestach a prírodných minerálnych vodách a o zmene a doplnení niektorých zákonov § 34a ods. 3 písm. d).</Note>
+        <ValidFrom>2004-12-02T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="2004-12-02T00:00:00+01:00">
+            <EffectiveFrom>2005-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="2004-12-02T00:00:00+01:00">
+            <EffectiveFrom>2005-01-01T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="2005-01-01T00:00:00+01:00">true</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="2005-01-01T00:00:00+01:00">true</LegislativeValidity>
+    </CodelistItem>
+    <CodelistItem>
+        <ItemCode>200001</ItemCode>
+        <ItemName effectiveFrom="1918-10-28T00:00:00+01:00" language="en"> Contact address</ItemName>
+        <ItemName effectiveFrom="1918-10-28T00:00:00+01:00" language="sk">Kontaktná adresa</ItemName>
+        <ItemName effectiveFrom="1918-10-28T00:00:00+01:00" language="en"> Contact address</ItemName>
+        <ItemName effectiveFrom="1918-10-28T00:00:00+01:00" language="sk">Kontaktná adresa</ItemName>
+        <Note language="sk">Spravidla pre účely poštovej komunikácie.</Note>
+        <Note language="sk">Spravidla pre účely poštovej komunikácie.</Note>
+        <ValidFrom>1918-10-28T00:00:00+01:00</ValidFrom>
+        <Effectiveness effectiveFrom="1918-10-28T00:00:00+01:00">
+            <EffectiveFrom>1918-10-28T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <Effectiveness effectiveFrom="1918-10-28T00:00:00+01:00">
+            <EffectiveFrom>1918-10-28T00:00:00+01:00</EffectiveFrom>
+        </Effectiveness>
+        <LegislativeValidity effectiveFrom="1918-10-28T00:00:00+01:00">false</LegislativeValidity>
+        <LegislativeValidity effectiveFrom="1918-10-28T00:00:00+01:00">false</LegislativeValidity>
+    </CodelistItem>
+</Codelist>

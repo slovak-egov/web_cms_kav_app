@@ -1,0 +1,9 @@
+uuid: 28666a04-a325-49b1-9f26-f53784236a4f
+langcode: sk
+status: true
+dependencies: {  }
+id: en
+label: Angličtina
+direction: ltr
+weight: 1
+locked: false

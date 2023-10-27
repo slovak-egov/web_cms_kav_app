@@ -1,0 +1,42 @@
+diff --git a/src/Resource/ViewsResource.php b/src/Resource/ViewsResource.php
+index d729567..de15bea 100644
+--- a/src/Resource/ViewsResource.php
++++ b/src/Resource/ViewsResource.php
+@@ -57,6 +57,18 @@ final class ViewsResource extends EntityResourceBase {
+     return $exposed_sort_params;
+   }
+ 
++  /**
++   * Extracts items per page number from the request.
++   *
++   * @return int
++   *   Items per page.
++   */
++  protected function getItemsPerPage() {
++    $all_params = $this->request->query->all();
++    $items_per_page = isset($all_params['items-per-page']) ? (is_numeric($all_params['items-per-page']) ? intval($all_params['items-per-page']) : FALSE) : FALSE;
++    return $items_per_page;
++  }
++
+   /**
+    * Extracts view argument values from the request.
+    *
+@@ -136,6 +148,10 @@ final class ViewsResource extends EntityResourceBase {
+     $exposed_params = \array_merge($exposed_filter_params, $exposed_sort_params);
+     $view->setExposedInput($exposed_params);
+ 
++    if ($items_per_page = $this->getItemsPerPage()) {
++      $view->setItemsPerPage($items_per_page);
++    }
++
+     return $view->preview($display_id, $this->getViewArguments());
+   }
+ 
+@@ -199,6 +215,7 @@ final class ViewsResource extends EntityResourceBase {
+     if (isset($bubbleable_metadata)) {
+       $bubbleable_metadata->addCacheContexts([
+         'url.query_args:page',
++        'url.query_args:items-per-page',
+         'url.query_args:views-filter',
+         'url.query_args:views-sort',
+         'url.query_args:views-argument',

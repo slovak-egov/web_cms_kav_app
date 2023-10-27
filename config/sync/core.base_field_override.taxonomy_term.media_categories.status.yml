@@ -1,0 +1,22 @@
+uuid: 2a9cb09a-17b3-44c1-ac13-48508f9690ae
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.media_categories
+id: taxonomy_term.media_categories.status
+field_name: status
+entity_type: taxonomy_term
+bundle: media_categories
+label: Zverejnené
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnúť
+  off_label: Vypnúť
+field_type: boolean

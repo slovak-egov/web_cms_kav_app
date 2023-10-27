@@ -1,0 +1,32 @@
+uuid: 09565f01-e776-4f43-8bed-d6d95ae0c74a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.organization_search.field_node_reference
+    - paragraphs.paragraphs_type.organization_search
+  module:
+    - select2
+id: paragraph.organization_search.default
+targetEntityType: paragraph
+bundle: organization_search
+mode: default
+content:
+  field_node_reference:
+    type: select2_entity_reference
+    weight: 0
+    region: content
+    settings:
+      width: 100%
+      autocomplete: false
+      match_operator: CONTAINS
+      match_limit: 25
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

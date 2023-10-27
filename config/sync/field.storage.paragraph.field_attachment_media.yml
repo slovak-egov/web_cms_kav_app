@@ -1,0 +1,20 @@
+uuid: 0ffdab20-031e-4842-a322-f71c4355fa02
+langcode: sk
+status: true
+dependencies:
+  module:
+    - media
+    - paragraphs
+id: paragraph.field_attachment_media
+field_name: field_attachment_media
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,35 @@
+uuid: 07673f10-64c7-49ab-bb70-3861373f8a3f
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attachment_media
+    - media.type.document
+    - media.type.image
+    - media.type.link
+    - media.type.remote_video
+    - paragraphs.paragraphs_type.attachments
+id: paragraph.attachments.field_attachment_media
+field_name: field_attachment_media
+entity_type: paragraph
+bundle: attachments
+label: Súbory
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+      remote_video: remote_video
+      link: link
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: document
+field_type: entity_reference

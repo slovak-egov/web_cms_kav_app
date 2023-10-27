@@ -1,0 +1,19 @@
+uuid: 46f43a0d-5d20-4284-8f8c-bff0f5b7d080
+langcode: sk
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - tablefield
+id: paragraph.field_table_content
+field_name: field_table_content
+entity_type: paragraph
+type: tablefield
+settings: {  }
+module: tablefield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

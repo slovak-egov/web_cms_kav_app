@@ -1,0 +1,33 @@
+uuid: f785c6e8-9629-4fc6-a358-98654a49dfcd
+langcode: sk
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: article_sk
+label: Article
+type: 'canonical_entities:node'
+pattern: '[node:organization:alias]/clanky/[node:title]'
+selection_criteria:
+  5450f113-9682-415d-b01d-559eee6ccfc4:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 5450f113-9682-415d-b01d-559eee6ccfc4
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+  b3641e48-2ef8-4ec2-bd8b-fd51b5f10a49:
+    id: language
+    negate: false
+    uuid: b3641e48-2ef8-4ec2-bd8b-fd51b5f10a49
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      sk: sk
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Jazyk

@@ -1,0 +1,10 @@
+uuid: 63ffff06-dd52-4917-b281-27a29c2b20af
+langcode: sk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Hlavné menu'
+description: menu
+locked: true

@@ -1,0 +1,10 @@
+uuid: f0f3ec0d-f304-4a29-a0cf-45ee3d9e306b
+langcode: sk
+status: true
+dependencies: {  }
+id: content
+label: Obsah
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

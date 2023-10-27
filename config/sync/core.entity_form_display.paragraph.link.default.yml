@@ -1,0 +1,66 @@
+uuid: 961ae67c-8183-4bce-8f74-efbd19c2d58c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.link.field_button_size
+    - field.field.paragraph.link.field_content_reference
+    - field.field.paragraph.link.field_external_link
+    - field.field.paragraph.link.field_font_size
+    - field.field.paragraph.link.field_link_style
+    - field.field.paragraph.link.field_link_type
+    - field.field.paragraph.link.field_linked_content
+    - field.field.paragraph.link.field_title
+    - paragraphs.paragraphs_type.link
+  module:
+    - link
+id: paragraph.link.default
+targetEntityType: paragraph
+bundle: link
+mode: default
+content:
+  field_button_size:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_external_link:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_font_size:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_link_style:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_content_reference: true
+  field_link_type: true
+  field_linked_content: true
+  status: true

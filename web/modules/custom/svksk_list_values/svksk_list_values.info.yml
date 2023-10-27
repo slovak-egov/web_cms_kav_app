@@ -1,0 +1,8 @@
+name: List values
+type: module
+description: Definition of list value entities.
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+
+'interface translation project': svksk_list_values
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po

@@ -1,0 +1,14 @@
+name: Organization
+type: module
+description: Organization entities
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+
+dependencies:
+  - drupal:svksk_contact
+  - drupal:svksk_list_values
+  - drupal:skit_time_field
+  - drupal:svksk_content
+
+'interface translation project': svksk_organization
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po

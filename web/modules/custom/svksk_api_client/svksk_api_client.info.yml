@@ -1,0 +1,5 @@
+name: API Client
+type: module
+description: Clients to consume API integrations
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk

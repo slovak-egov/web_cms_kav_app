@@ -1,0 +1,19 @@
+uuid: ef58bf1b-0443-409c-b0e7-05aa322cdf20
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_typ
+    - node.type.data_source
+id: node.data_source.field_typ
+field_name: field_typ
+entity_type: node
+bundle: data_source
+label: Typ
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

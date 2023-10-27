@@ -1,0 +1,150 @@
+# $Id$
+#
+# Slovenčina translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  svksk_list_values.info.yml: n/a
+#  svksk_list_values.permissions.yml: n/a
+#  src/Entity/LvAddressType.php: n/a
+#  src/Entity/LvBase.php: n/a
+#  src/Entity/LvContactType.php: n/a
+#  src/Entity/LvDataSourceType.php: n/a
+#  src/Entity/LvSizeCorporate.php: n/a
+#  src/Entity/LvCorporateBodyType.php: n/a
+#  src/Entity/LvCountry.php: n/a
+#  src/Entity/LvCounty.php: n/a
+#  src/Entity/LvDistrict.php: n/a
+#  src/Entity/LvIntervalType.php: n/a
+#  src/Entity/LvLegalForm.php: n/a
+#  src/Entity/LvLegalStatus.php: n/a
+#  src/Entity/LvMunicipality.php: n/a
+#  src/Entity/LvNACE.php: n/a
+#  src/Entity/LvOrganizationalUnitType.php: n/a
+#  src/Entity/LvRegion.php: n/a
+#  src/Entity/LvServiceHoursType.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2022-10-20 08:32+0200\n"
+"PO-Revision-Date: 2022-10-20 08:32+0200\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Slovenčina <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: svksk_list_values.info.yml:0
+msgid "Slovensko.sk List values"
+msgstr ""
+
+#: svksk_list_values.info.yml:0
+msgid "Definition of list value entities."
+msgstr ""
+
+#: svksk_list_values.info.yml:0
+msgid "Slovensko.sk"
+msgstr "Slovensko.sk"
+
+#: svksk_list_values.permissions.yml:0
+msgid "Administer list values"
+msgstr "Spravovať číselníky"
+
+#: src/Entity/LvAddressType.php:7
+msgid "LV Address Type"
+msgstr ""
+
+#: src/Entity/LvBase.php:20
+msgid "ID"
+msgstr "ID"
+
+#: src/Entity/LvBase.php:25
+msgid "Name"
+msgstr "Názov"
+
+#: src/Entity/LvBase.php:34
+msgid "Short name"
+msgstr "Krátky názov"
+
+#: src/Entity/LvContactType.php:49 src/Entity/LvDataSourceType.php:49 src/Entity/LvSizeCorporate.php:49
+msgid "Description"
+msgstr "Popis"
+
+#: src/Entity/LvContactType.php:9
+msgid "LV Contact Type"
+msgstr ""
+
+#: src/Entity/LvCorporateBodyType.php:5
+msgid "LV Corporate Body type"
+msgstr ""
+
+#: src/Entity/LvCountry.php:47
+msgid "Short acronym"
+msgstr "Skratka"
+
+#: src/Entity/LvCountry.php:56
+msgid "Long acronym"
+msgstr "Dlhá skratka"
+
+#: src/Entity/LvCountry.php:9
+msgid "LV Country"
+msgstr ""
+
+#: src/Entity/LvCounty.php:47
+msgid "Region"
+msgstr "Umiestnenie"
+
+#: src/Entity/LvCounty.php:9
+msgid "LV County"
+msgstr ""
+
+#: src/Entity/LvDataSourceType.php:9
+msgid "LV Data Source Types"
+msgstr ""
+
+#: src/Entity/LvDistrict.php:5
+msgid "LV District"
+msgstr ""
+
+#: src/Entity/LvIntervalType.php:7
+msgid "LV Interval Type"
+msgstr ""
+
+#: src/Entity/LvLegalForm.php:5
+msgid "LV Legal Form"
+msgstr ""
+
+#: src/Entity/LvLegalStatus.php:7
+msgid "LV Legal Status"
+msgstr ""
+
+#: src/Entity/LvMunicipality.php:5
+msgid "LV Municipality"
+msgstr ""
+
+#: src/Entity/LvNACE.php:5
+msgid "LV NACE"
+msgstr ""
+
+#: src/Entity/LvOrganizationalUnitType.php:9
+msgid "LV Organizational Unit Type"
+msgstr ""
+
+#: src/Entity/LvRegion.php:47
+msgid "Country"
+msgstr "Krajina"
+
+#: src/Entity/LvRegion.php:9
+msgid "LV Region"
+msgstr ""
+
+#: src/Entity/LvServiceHoursType.php:7
+msgid "LV Service Hour Type"
+msgstr ""
+
+#: src/Entity/LvSizeCorporate.php:9
+msgid "LV Corporate Size"
+msgstr ""
+

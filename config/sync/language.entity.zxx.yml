@@ -1,0 +1,11 @@
+uuid: c785c518-15a0-42f8-a366-fee79f5d6445
+langcode: sk
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 35CefWbnzaiytcg3acexxz_GTvuwIjYd_ZTcmmR-tXA
+id: zxx
+label: Neurčené
+direction: ltr
+weight: 5
+locked: true

@@ -1,0 +1,11 @@
+uuid: 063485c5-2c9b-4148-ab5f-8f89c011173d
+langcode: sk
+status: true
+dependencies:
+  module:
+    - svksk_organization
+id: physical_address.physical_address
+target_entity_type_id: physical_address
+target_bundle: physical_address
+default_langcode: site_default
+language_alterable: false

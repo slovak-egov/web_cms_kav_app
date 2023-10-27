@@ -1,0 +1,18 @@
+uuid: 1b13dd5f-9709-43db-87b3-5c901d042855
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.organization_search
+id: paragraph.organization_search.created
+field_name: created
+entity_type: paragraph
+bundle: organization_search
+label: 'Napísané dňa'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

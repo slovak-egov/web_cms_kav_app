@@ -1,0 +1,7 @@
+administer svksk settings:
+  title: 'Administer Slovensko.sk settings'
+  description: 'Allow user to change general site settings.'
+
+rebuild next frontend:
+  title: 'Allow user to rebuild frontend'
+  description: 'Gives user an interface to to rebuild frontend Next site.'

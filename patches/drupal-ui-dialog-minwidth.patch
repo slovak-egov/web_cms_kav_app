@@ -1,0 +1,12 @@
+diff --git a/core/misc/dialog/dialog.js b/core/misc/dialog/dialog.js
+index 5760e40ed4..dc541b421e 100644
+--- a/core/misc/dialog/dialog.js
++++ b/core/misc/dialog/dialog.js
+@@ -10,6 +10,7 @@
+     dialogClass: '',
+     buttonClass: 'button',
+     buttonPrimaryClass: 'button--primary',
++    minWidth: 400,
+     close: function close(event) {
+       Drupal.dialog(event.target).close();
+       Drupal.detachBehaviors(event.target, null, 'unload');

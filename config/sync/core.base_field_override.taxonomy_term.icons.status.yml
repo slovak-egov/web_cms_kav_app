@@ -1,0 +1,22 @@
+uuid: 9441f058-37de-4e46-98f9-ba5cff70fa31
+langcode: sk
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.icons
+id: taxonomy_term.icons.status
+field_name: status
+entity_type: taxonomy_term
+bundle: icons
+label: Zverejnené
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Zapnúť
+  off_label: Vypnúť
+field_type: boolean

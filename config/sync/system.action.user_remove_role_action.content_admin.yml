@@ -1,0 +1,14 @@
+uuid: e4e7a97b-13a6-455e-ad53-df1f507e0845
+langcode: sk
+status: true
+dependencies:
+  config:
+    - user.role.content_admin
+  module:
+    - user
+id: user_remove_role_action.content_admin
+label: 'Odobrať rolu Správca obsahu vybraným používateľom'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: content_admin

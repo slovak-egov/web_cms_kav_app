@@ -1,0 +1,11 @@
+name: Base
+type: module
+description: General Drupal customizations
+core_version_requirement: ^8 || ^9 || ^10
+package: Slovensko.sk
+
+'interface translation project': svksk_base
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po
+
+dependencies:
+  - drupal:svksk_http_client

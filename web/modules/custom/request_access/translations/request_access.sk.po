@@ -1,0 +1,23 @@
+msgid "Access request"
+msgstr "Žiadosť o prístup na interný portál"
+
+msgid "New Access request"
+msgstr "Nová žiadosť o prístup na interný portál"
+
+msgid "Requests notification mail is not configured"
+msgstr "Notifikačný e-mail pre žiadosti nie je nakonfigurovaný"
+
+msgid "Request has been noted"
+msgstr "Žiadosť bola odoslaná"
+
+msgid "PhoneNumber"
+msgstr "Telefónne číslo"
+
+msgid "InterestArea"
+msgstr "Oblasť záujmu"
+
+msgid "Request"
+msgstr "Žiadosť"
+
+msgid "Role"
+msgstr "Rola"

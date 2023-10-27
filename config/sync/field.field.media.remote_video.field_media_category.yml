@@ -1,0 +1,29 @@
+uuid: b9d9a68e-68d0-46b8-acdb-f7fdcb74ec15
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_category
+    - media.type.remote_video
+    - taxonomy.vocabulary.media_categories
+id: media.remote_video.field_media_category
+field_name: field_media_category
+entity_type: media
+bundle: remote_video
+label: Adresár
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: taxonomy_unique
+  handler_settings:
+    target_bundles:
+      media_categories: media_categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

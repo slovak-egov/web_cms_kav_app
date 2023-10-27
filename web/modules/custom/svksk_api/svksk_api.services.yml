@@ -1,0 +1,38 @@
+services:
+  svksk_api.route_subscriber:
+    class: Drupal\svksk_api\Routing\RouteSubscriber
+    tags:
+      - { name: event_subscriber }
+  svksk_api.path_processor_api_prefix:
+    class: Drupal\svksk_api\PathProcessor\PathProcessorApiPrefix
+    tags:
+      - { name: path_processor_inbound, priority: 500 }
+      - { name: path_processor_outbound, priority: 500 }
+    arguments: [ '@config.factory', '@language_manager' ]
+  svksk_api.consumer_manager:
+    class: Drupal\svksk_api\ConsumerManager
+    arguments: ['@entity_type.manager', '@logger.factory']
+  svksk_api.commands:
+    class: \Drupal\svksk_api\Commands\DrushCommands
+    tags:
+      - { name: drush.command }
+  http_middleware.svksk_api_gateway:
+    class: Drupal\svksk_api\StackMiddleware\ApiGatewayMiddleware
+    arguments: [ '@settings' ]
+    tags:
+      - { name: http_middleware, priority: 301 }
+  jsonapi.entity_resource:
+    class: Drupal\svksk_api\Controller\EntityResource
+    arguments:
+      - "@entity_type.manager"
+      - "@entity_field.manager"
+      - "@jsonapi.resource_type.repository"
+      - "@renderer"
+      - "@entity.repository"
+      - "@jsonapi.include_resolver"
+      - "@jsonapi.entity_access_checker"
+      - "@jsonapi.field_resolver"
+      - "@jsonapi.serializer"
+      - "@datetime.time"
+      - "@current_user"
+      - "%next_jsonapi.size_max%"

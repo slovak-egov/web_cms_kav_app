@@ -1,0 +1,161 @@
+<?php
+
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+
+/**
+ * Makes the 'physical_address' field multiple and migrate its data.
+ */
+function svksk_organization_update_8001() {
+  $database = \Drupal::database();
+
+  $physical_addresses = $database->select('organizational_unit', 'ou')
+    ->fields('ou', ['id', 'physical_address'])
+    ->execute()
+    ->fetchAllKeyed();
+
+  // Remove data from the storage.
+  $database->update('organizational_unit')
+    ->fields(['physical_address' => NULL])
+    ->execute();
+
+  // Update definitions and schema.
+  $manager = \Drupal::entityDefinitionUpdateManager();
+  $storage_definition = $manager->getFieldStorageDefinition('physical_address', 'organizational_unit');
+  $storage_definition->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED);
+  $manager->updateFieldStorageDefinition($storage_definition);
+
+  // Restore entity data in the new schema.
+  $insert_query = $database->insert('organizational_unit__physical_address')
+    ->fields(['bundle', 'deleted', 'entity_id', 'revision_id', 'langcode', 'delta', 'physical_address_target_id']);
+  foreach ($physical_addresses as $id => $physical_address) {
+    $insert_query->values(['organizational_unit', 0, $id, $id, 'sk', 0, $physical_address]);
+  }
+  $insert_query->execute();
+}
+
+/**
+ * Create Corporate Body entity type
+ */
+function svksk_organization_update_9001() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('corporate_body')) {
+    return 'Corporate body already exists.';
+  }
+}
+
+/**
+ * Add 'corporate_body_id' field to 'organizational_unit' entities.
+ */
+function svksk_organization_update_9002() {
+  $field_storage_definition = BaseFieldDefinition::create('entity_reference')
+    ->setLabel(new TranslatableMarkup('Corporate body', [], ['context' => 'organizational unit']))
+    ->setSetting('target_type', 'corporate_body')
+    ->setSetting('handler', 'default')
+    ->setDisplayOptions('form', [
+      'type' => 'options_select',
+      'weight' => 5,
+    ]);
+
+  \Drupal::entityDefinitionUpdateManager()
+    ->installFieldStorageDefinition('corporate_body_id', 'organizational_unit', 'svksk_organization', $field_storage_definition);
+}
+
+/**
+ * Create Service Hours Category entity type
+ */
+function svksk_organization_update_9003() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('service_hours_category')) {
+    return 'Service Hours Category already exists.';
+  }
+}
+
+/**
+ * Add 'service_hours_categories' field to 'organizational_unit' entities.
+ */
+function svksk_organization_update_9004() {
+  $field_storage_definition = BaseFieldDefinition::create('entity_reference')
+    ->setLabel(new TranslatableMarkup('Service hours categories'))
+    ->setRequired(TRUE)
+    ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+    ->setSetting('target_type', 'service_hours_category')
+    ->setSetting('handler', 'default')
+    ->setDisplayOptions('form', [
+      'type' => 'inline_entity_form_simple',
+      'weight' => 11,
+      'settings' => [
+        'override_labels' => TRUE,
+        'label_singular' => new TranslatableMarkup('Service hours category'),
+        'label_plural' => new TranslatableMarkup('Service hours categories'),
+      ],
+    ]);
+
+  \Drupal::entityDefinitionUpdateManager()
+    ->installFieldStorageDefinition('service_hours_categories', 'organizational_unit', 'svksk_organization', $field_storage_definition);
+}
+
+/**
+ * Create Service Hours entity type
+ */
+function svksk_organization_update_9005() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('service_hours')) {
+    return 'Service Hours already exists.';
+  }
+}
+
+/**
+ * Create Time Interval entity type
+ */
+function svksk_organization_update_9006() {
+  \Drupal::service('module_installer')->install(['skit_time_field'], TRUE);
+  if (!\Drupal::service('entity_schema_manager')->installEntity('time_interval')) {
+    return 'Time Interval already exists.';
+  }
+}
+
+/**
+ * Create Time Interval entity type
+ */
+function svksk_organization_update_9007() {
+  drupal_flush_all_caches();
+
+  $entity_type_id = 'organizational_unit';
+  $entity_type = \Drupal::entityTypeManager()->getDefinition($entity_type_id);
+  $field_name = $entity_type->getKey('revision_translation_affected');
+
+  $storage_definition = BaseFieldDefinition::create('boolean')
+    ->setLabel(t('Revision translation affected'))
+    ->setDescription(t('Indicates if the last edit of a translation belongs to current revision.'))
+    ->setReadOnly(TRUE)
+    ->setRevisionable(TRUE)
+    ->setTranslatable(TRUE)
+    ->setInitialValue(TRUE);
+
+  \Drupal::entityDefinitionUpdateManager()
+    ->installFieldStorageDefinition($field_name, $entity_type_id, 'svksk_organization', $storage_definition);
+}
+
+/**
+ * Change service hours description to formatted long text.
+ */
+function svksk_organization_update_9008() {
+  $manager = \Drupal::entityDefinitionUpdateManager();
+  // Remove existing field
+  $storage_definition = $manager->getFieldStorageDefinition('description', 'service_hours_category');
+  $manager->uninstallFieldStorageDefinition($storage_definition);
+
+  // Install as new with 'text_long' definition
+  $storage_definition = BaseFieldDefinition::create('text_long')
+    ->setLabel(new TranslatableMarkup('Description'))
+    ->setRequired(FALSE)
+    ->setTranslatable(TRUE)
+    ->setSettings([
+      'text_processing' => TRUE,
+    ])
+    ->setDisplayOptions('form', [
+      'type' => 'text_textarea',
+      'weight' => 2,
+    ]);;
+
+  $manager->installFieldStorageDefinition('description', 'service_hours_category', 'svksk_organization', $storage_definition);
+}

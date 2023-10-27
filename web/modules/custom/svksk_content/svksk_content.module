@@ -1,0 +1,423 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Slovensko.sk Content module.
+ *
+ * @DCG
+ * This file is no longer required in Drupal 8.
+ * @see https://www.drupal.org/node/2217931
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Session\AccountInterface;
+use Drupal\Core\Url;
+use Drupal\node\NodeInterface;
+use Drupal\path_alias\PathAliasInterface;
+use Drupal\svksk_admin\UserPicture;
+use Drupal\svksk_base\Defaults;
+use Drupal\svksk_content\ModuleFormAlters;
+use Drupal\svksk_content\ModuleEntityOperations;
+
+/**
+ * Implements hook_node_grants().
+ */
+function svksk_content_node_grants(AccountInterface $account, $op) {
+  $grants = [];
+
+  // Grant user permission to view archived content (should be only admins)
+  if ($account->hasPermission('access archived content')) {
+    $grants['content_archived'] = [1];
+  }
+
+  // Grant user permission to view any unpublished content
+  if ($account->hasPermission('view any unpublished content')) {
+    $grants['content_unpublished'] = [1];
+  }
+
+  // Grant user permission to view any published content
+  if ($account->hasPermission('access content')) {
+    $grants['content_published'] = [1];
+  }
+
+  // Grant user permission to view and edit own content
+  if ($account->isAuthenticated()) {
+    $grants['content_author'] = [$account->id()];
+  }
+
+  return $grants;
+}
+
+/**
+ * Implements hook_node_access_records().
+ */
+function svksk_content_node_access_records(NodeInterface $node) {
+  $grants = [];
+  $trashed_moderation_states = ['canceled', 'archived', 'deleted'];
+  $languages = $node->getTranslationLanguages();
+  foreach ($languages as $language) {
+    $archived = FALSE;
+    $langcode = $language->getId();
+    $translation = $node->getTranslation($langcode);
+
+    if (!$translation->get('moderation_state')
+        ->isEmpty() && in_array($translation->get('moderation_state')->value, $trashed_moderation_states)) {
+      $archived = TRUE;
+      $grants[] = [
+        'realm' => 'content_archived',
+        'gid' => 1,
+        'grant_view' => 1,
+        'grant_update' => 0,
+        'grant_delete' => 0,
+        'langcode' => $langcode,
+      ];
+    }
+
+    if ($archived) {
+      continue;
+    }
+
+    if ($node->getOwnerId()) {
+      $grants[] = [
+        'realm' => 'content_author',
+        'gid' => $node->getOwnerId(),
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'langcode' => $langcode,
+      ];
+    }
+
+    if (!$translation->isPublished()) {
+      $grants[] = [
+        'realm' => 'content_unpublished',
+        'gid' => 1,
+        'grant_view' => 1,
+        'grant_update' => 0,
+        'grant_delete' => 0,
+        'langcode' => $langcode,
+      ];
+    } else {
+      $grants[] = [
+        'realm' => 'content_published',
+        'gid' => 1,
+        'grant_view' => 1,
+        'grant_update' => 0,
+        'grant_delete' => 0,
+        'langcode' => $langcode,
+      ];
+    }
+  }
+
+  return $grants;
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function svksk_content_library_info_alter(&$libraries, $extension) {
+  if (isset($libraries['entity_browser_table']) && $extension == 'entity_browser_table') {
+    // Replace table widget library files for custom
+    $dir = \Drupal::service('extension.list.module')->getPath('svksk_content');
+    $libraries['entity_browser_table']['js'] = ['/' . $dir . '/assets/js/entity_browser.table.js' => []];
+    $libraries['entity_browser_table']['css']['theme'] = ['/' . $dir . '/assets/css/entity_browser.table.css' => []];
+  }
+}
+
+/**
+ * Implements hook_views_data_alter().
+ */
+function svksk_content_views_data_alter(array &$data) {
+  $data['node_field_data']['svksk_content_published_at_timestamp'] = [
+    'title' => t('Published at time'),
+    'help' => t('Date and time of when the content was published.'),
+    'argument' => [
+      'field' => 'created',
+      'id' => 'date_fulldate',
+    ],
+    'real field' => 'created',
+    'field' => [
+      'id' => 'svksk_content_published_at',
+    ],
+    'sort' => [
+      'field' => 'created',
+      'id' => 'date',
+    ],
+    'filter' => [
+      'id' => 'svksk_content_published_at',
+    ],
+  ];
+  $data['node_field_data']['search_api_index_search'] = [
+    'title' => t('Fulltext search (Search API Index)'),
+    'help' => t('Search in Search API DB index table.'),
+    'filter' => [
+      'field' => 'nid',
+      'id' => 'svksk_content_search_api_index_search',
+    ],
+  ];
+}
+
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ */
+function svksk_content_entity_base_field_info_alter(&$fields, EntityTypeInterface $entity_type) {
+  if ($entity_type->id() === 'redirect') {
+    $fields['redirect_redirect']->setDisplayOptions('form', [
+      'type' => 'linkit',
+      'weight' => -4,
+      'settings' => [
+        'linkit_profile' => 'default',
+      ],
+    ]);
+  }
+}
+
+/**
+ * Implements hook_entity_view().
+ */
+function svksk_content_entity_view(array &$build, \Drupal\Core\Entity\EntityInterface $entity, \Drupal\Core\Entity\Display\EntityViewDisplayInterface $display, $view_mode) {
+  if (!$entity instanceof NodeInterface) {
+    return;
+  }
+
+  /** @var \Drupal\svksk_content\SchedulerService $scheduler */
+  $scheduler = \Drupal::service('svksk_content.scheduler');
+  $build['scheduler'] = $scheduler->nodeInfoBar($entity);
+}
+
+/**
+ * Implements hook_entity_presave().
+ */
+function svksk_content_entity_presave(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityPresave($entity);
+}
+
+/**
+ * Implements hook_entity_insert().
+ */
+function svksk_content_entity_insert(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityInsert($entity);
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function svksk_content_entity_update(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityUpdate($entity);
+}
+
+/**
+ * Implements hook_entity_delete().
+ */
+function svksk_content_entity_delete(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityDelete($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_presave().
+ */
+function svksk_content_menu_link_content_presave(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->menuLinkPresave($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update() for path_alias.
+ */
+function svksk_content_path_alias_update(PathAliasInterface $path_alias) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->pathAliasUpdate($path_alias);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_delete() for 'path_alias'.
+ */
+function svksk_content_path_alias_delete(PathAliasInterface $path_alias) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->pathAliasDelete($path_alias);
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function svksk_content_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  if (isset($form['meta']['author'])) {
+    /** @var EntityInterface $entity */
+    if ($entity = $form_state->getFormObject()->getEntity()) {
+      if ($role = UserPicture::getRole($entity->getOwner())) {
+        $form['meta']['author']['#markup'] .= ' (' . $role->label() . ')';
+      }
+    }
+  }
+
+  // Media author information for administrators.
+  if (isset($form['#attributes']['class'][1]) && $form['#attributes']['class'][1] == 'media-form') {
+    if (!\Drupal::currentUser()->hasPermission('administer media author')) {
+      $form['author']['#access'] = FALSE;
+    }
+  }
+
+  // Media ctegory select2 limit
+  if (isset($form['field_media_category'])) {
+    $form['field_media_category']['widget']['#select2']['minimumResultsForSearch'] = 50;
+  }
+  if (isset($form['media'][0]['fields']['field_media_category'])) {
+    $form['media'][0]['fields']['field_media_category']['widget']['#select2']['minimumResultsForSearch'] = 50;
+  }
+
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function svksk_content_form_views_exposed_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  /** @var \Drupal\views\Views $view */
+  $view = $form_state->getStorage('view');
+  /** @var \Drupal\svksk_content\ModuleFormAlters $module_alters */
+  $module_alters = \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleFormAlters::class);
+
+  if (in_array($view['view']->id(), ['content'])) {
+    $module_alters->viewsExposedFormContentAdminAlter($form, $form_state);
+  }
+
+  if (in_array($view['view']->id(), ['moderated_content'])) {
+    $module_alters->viewsExposedFormModeratedContentAlter($form, $form_state);
+  }
+
+  if (in_array($view['view']->id(), ['media', 'media_library'])) {
+    $module_alters->viewsExposedFormMediaAlter($form, $form_state);
+  }
+}
+
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function svksk_content_form_content_moderation_entity_moderation_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $entity = $form_state->getBuildInfo()['args'][0];
+
+  // Allow to change entity state only for those users that have update access on entity.
+  $form['#access'] = $entity->access('update');
+  $form['#cache']['contexts'][] = 'user';
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for layout_paragraphs_component_form.
+ */
+function svksk_content_form_layout_paragraphs_component_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleFormAlters::class)
+    ->paragraphFormAlter($form['#paragraph']->bundle(), $form, $form_state);
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function svksk_content_form_views_ui_edit_display_form_alter(&$form, $form_state, $form_id) {
+  if (!empty($form['options']['exposed_form_options']['reset_button_label'])) {
+    $form['options']['exposed_form_options']['reset_button_label']['#disabled'] = TRUE;
+    $form['options']['exposed_form_options']['reset_button_label']['#description'] = t('Text to display in the reset button of the exposed form. This field is disabled to maintain reset button functionality for Exposed forms embedded in Entity browser modal. For that reason "Reset" label needs to be hardcoded.');
+  }
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter().
+ */
+function svksk_content_field_widget_paragraphs_form_alter(&$element, FormStateInterface $form_state, $context) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleFormAlters::class)
+    ->paragraphFormAlter($element['#paragraph_type'], $element['subform'], $form_state);
+}
+
+/**
+ * Implements hook_field_widget_WIDGET_TYPE_form_alter() for metatag_firehose.
+ */
+function svksk_content_field_widget_metatag_firehose_form_alter(&$element, FormStateInterface $form_state, $context) {
+  $element['advanced']['#access'] = (\Drupal::currentUser()->id() == 1);
+}
+
+/**
+ * Implements hook_next_site_preview_alter().
+ */
+function svksk_content_next_site_preview_alter(array &$preview, array $context) {
+  /** @var \Drupal\Core\Entity\EntityInterface $entity */
+  $entity = $context['entity'];
+
+  if (isset($preview['toolbar']['links']['#links']['live_link']['url'])) {
+    /** @var \Drupal\next\Entity\NextSiteInterface $next_site */
+    $next_site = \Drupal::entityTypeManager()->getStorage('next_site')
+      ->load(Defaults::NEXT_SITE_ID);
+    $preview_url_parsed = parse_url($next_site->getPreviewUrl());
+    $preview_url = $preview_url_parsed['scheme'] . "://" . $preview_url_parsed['host'];
+    if (!empty($preview_url_parsed['port'])) {
+      $preview_url .= ':' . $preview_url_parsed['port'];
+    }
+    $preview_url .= $entity->toUrl()->toString();
+    $preview['toolbar']['links']['#links']['live_link']['url'] = Url::fromUri($preview_url);
+  }
+
+  if ($entity instanceof NodeInterface) {
+    $preview['scheduler'] = \Drupal::service('svksk_content.scheduler')
+      ->nodeInfoBar($entity);
+    $preview['scheduler']['#weight'] = -90;
+  }
+
+  if (isset($preview['toolbar']['info']['#context']['bundle'])) {
+    $bundle_info = \Drupal::service("entity_type.bundle.info")
+      ->getAllBundleInfo();
+    $preview['toolbar']['info']['#context']['bundle'] = $bundle_info[$entity->getEntityTypeId()][$entity->bundle()]['label'];
+  }
+}
+
+/**
+ * Implements hook_field_widget_form_alter().
+ */
+function svksk_content_field_widget_form_alter(&$element, FormStateInterface &$form_state, $context) {
+  if (!empty($element['entity_browser'])) {
+    $default_value = $element['entity_browser']['#default_value'];
+    $ids = [];
+    if (method_exists($form_state->getformObject(), 'getEntity')) {
+      $ids[] = $form_state->getformObject()->getEntity()->id();
+    }
+    if (!empty($form_state->getformObject()->hostId)) {
+      $ids[] = $form_state->getformObject()->hostId;
+    }
+    foreach ($default_value as $entity) {
+      $ids[] = $entity->id();
+    }
+    $element['entity_browser']['#widget_context']['current_ids'] = implode('+', array_filter($ids));
+  }
+}
+
+/**
+ * Implements hook_entity_bundle_field_info_alter().
+ */
+function svksk_content_entity_bundle_field_info_alter(&$fields, EntityTypeInterface $entityType, $bundle) {
+  if ($entityType->id() == 'taxonomy_term') {
+    if (!empty($fields['name'])) {
+      $fields['name']->addConstraint('taxonomy_unique');
+    }
+  }
+}
+
+/**
+ * Implements hook_entity_type_alter().
+ */
+function svksk_content_entity_type_alter(array &$entity_types) {
+  // Add validation constraint to the path alias entity
+  $entity_types['path_alias']->addConstraint('ReservedPathAlias');
+}

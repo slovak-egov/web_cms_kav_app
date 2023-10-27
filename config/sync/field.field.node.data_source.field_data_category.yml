@@ -1,0 +1,29 @@
+uuid: 7a0b8458-21cc-414d-bb59-ac82c37beed9
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_data_category
+    - node.type.data_source
+    - taxonomy.vocabulary.kategoria_datoveho_zdroja
+id: node.data_source.field_data_category
+field_name: field_data_category
+entity_type: node
+bundle: data_source
+label: Kategória
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      kategoria_datoveho_zdroja: kategoria_datoveho_zdroja
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

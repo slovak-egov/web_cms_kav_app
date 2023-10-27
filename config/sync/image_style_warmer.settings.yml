@@ -1,0 +1,5 @@
+langcode: sk
+initial_image_styles:
+  content: content
+  teaser: teaser
+queue_image_styles: {  }

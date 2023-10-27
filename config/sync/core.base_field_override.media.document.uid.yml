@@ -1,0 +1,20 @@
+uuid: 53e2c326-904b-4154-814f-483a7392565c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - media.type.document
+id: media.document.uid
+field_name: uid
+entity_type: media
+bundle: document
+label: Autor
+description: 'Používateľské meno autora.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\media\Entity\Media::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

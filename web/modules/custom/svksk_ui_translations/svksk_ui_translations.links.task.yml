@@ -1,0 +1,21 @@
+# Translated string routing definition
+svksk_ui_translation.settings_tab:
+  route_name: svksk_ui_translation.settings
+  title: 'Settings'
+  base_route: svksk_ui_translation.settings
+
+entity.svksk_ui_translation.canonical:
+  route_name: entity.svksk_ui_translation.canonical
+  base_route: entity.svksk_ui_translation.canonical
+  title: 'View'
+
+entity.svksk_ui_translation.edit_form:
+  route_name: entity.svksk_ui_translation.edit_form
+  base_route: entity.svksk_ui_translation.canonical
+  title: 'Edit'
+
+entity.svksk_ui_translation.delete_form:
+  route_name:  entity.svksk_ui_translation.delete_form
+  base_route:  entity.svksk_ui_translation.canonical
+  title: Delete
+  weight: 10

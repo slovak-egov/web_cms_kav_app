@@ -1,0 +1,13 @@
+uuid: 66c50a31-65e0-4057-b872-bbc286817e6a
+langcode: sk
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.search_report
+id: paragraph.search_report.default
+targetEntityType: paragraph
+bundle: search_report
+mode: default
+content: {  }
+hidden:
+  search_api_excerpt: true

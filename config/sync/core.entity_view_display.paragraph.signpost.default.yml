@@ -1,0 +1,77 @@
+uuid: 3ecabf26-8a2f-4603-ad65-586f4c33534d
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.signpost.field_content_reference
+    - field.field.paragraph.signpost.field_description
+    - field.field.paragraph.signpost.field_external_link
+    - field.field.paragraph.signpost.field_heading
+    - field.field.paragraph.signpost.field_icon
+    - field.field.paragraph.signpost.field_image
+    - field.field.paragraph.signpost.field_link_type
+    - field.field.paragraph.signpost.field_signpost_append
+    - paragraphs.paragraphs_type.signpost
+  module:
+    - link
+    - text
+id: paragraph.signpost.default
+targetEntityType: paragraph
+bundle: signpost
+mode: default
+content:
+  field_content_reference:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_external_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_heading:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_icon:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_link_type: true
+  field_signpost_append: true
+  search_api_excerpt: true

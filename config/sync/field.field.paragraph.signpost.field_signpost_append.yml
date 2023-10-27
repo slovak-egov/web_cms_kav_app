@@ -1,0 +1,21 @@
+uuid: e449dbd9-444c-4574-8c68-43a29a9b2a26
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_signpost_append
+    - paragraphs.paragraphs_type.signpost
+  module:
+    - options
+id: paragraph.signpost.field_signpost_append
+field_name: field_signpost_append
+entity_type: paragraph
+bundle: signpost
+label: 'Ikona / Obrázok'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,235 @@
+uuid: 2bfe5721-9a96-4121-98bd-e35d466f940e
+langcode: sk
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - media.type.document
+    - media.type.image
+    - media.type.link
+    - media.type.remote_video
+    - node.type.article
+    - node.type.data_source
+    - node.type.faq
+    - node.type.news
+    - node.type.organization
+    - node.type.page
+    - taxonomy.vocabulary.faq_categories
+    - taxonomy.vocabulary.icons
+    - taxonomy.vocabulary.media_categories
+    - taxonomy.vocabulary.services_categories
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.term_categories
+    - taxonomy.vocabulary.user_segments
+    - workflows.workflow.editorial
+  module:
+    - comment
+    - content_lock
+    - content_moderation
+    - content_translation
+    - draggableviews
+    - entity_usage
+    - filter
+    - ip_comment_ban
+    - layout_paragraphs_permissions
+    - media
+    - node
+    - paragraphs_type_permissions
+    - path
+    - pathauto
+    - redirect
+    - scheduler
+    - subrequests
+    - svksk_base
+    - svksk_contact
+    - svksk_moderation
+    - svksk_term
+    - system
+    - tablefield
+    - taxonomy
+    - toolbar
+id: content_admin
+label: 'Správca obsahu'
+weight: -6
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access comments'
+  - 'access content'
+  - 'access content overview'
+  - 'access draggableviews'
+  - 'access entity usage statistics'
+  - 'access in review content'
+  - 'access media overview'
+  - 'access taxonomy overview'
+  - 'access toolbar'
+  - 'access user profiles'
+  - 'addrow tablefield'
+  - 'administer comments'
+  - 'administer contact entities'
+  - 'administer menu'
+  - 'administer pathauto'
+  - 'administer redirects'
+  - 'administer term entities'
+  - 'administer url aliases'
+  - 'advanced ban IP addresses'
+  - 'break content lock'
+  - 'bypass paragraphs type content access'
+  - 'create article content'
+  - 'create data_source content'
+  - 'create document media'
+  - 'create faq content'
+  - 'create image media'
+  - 'create link media'
+  - 'create news content'
+  - 'create organization content'
+  - 'create page content'
+  - 'create paragraph content accordion'
+  - 'create paragraph content attachments'
+  - 'create paragraph content content'
+  - 'create paragraph content faq'
+  - 'create paragraph content heading'
+  - 'create paragraph content image'
+  - 'create paragraph content info_banner'
+  - 'create paragraph content layout_section'
+  - 'create paragraph content link'
+  - 'create paragraph content organization_search'
+  - 'create paragraph content related_content'
+  - 'create paragraph content search_report'
+  - 'create paragraph content signpost'
+  - 'create paragraph content table'
+  - 'create paragraph content text'
+  - 'create paragraph content video'
+  - 'create paragraph content view'
+  - 'create remote_video media'
+  - 'create terms in faq_categories'
+  - 'create terms in icons'
+  - 'create terms in media_categories'
+  - 'create terms in services_categories'
+  - 'create terms in tags'
+  - 'create terms in term_categories'
+  - 'create terms in user_segments'
+  - 'create url aliases'
+  - 'delete any document media'
+  - 'delete any image media'
+  - 'delete any link media'
+  - 'delete any remote_video media'
+  - 'delete own document media'
+  - 'delete own image media'
+  - 'delete own remote_video media'
+  - 'delete paragraph content accordion'
+  - 'delete paragraph content attachments'
+  - 'delete paragraph content content'
+  - 'delete paragraph content faq'
+  - 'delete paragraph content heading'
+  - 'delete paragraph content image'
+  - 'delete paragraph content info_banner'
+  - 'delete paragraph content layout_section'
+  - 'delete paragraph content link'
+  - 'delete paragraph content organization_search'
+  - 'delete paragraph content related_content'
+  - 'delete paragraph content search_report'
+  - 'delete paragraph content signpost'
+  - 'delete paragraph content table'
+  - 'delete paragraph content text'
+  - 'delete paragraph content video'
+  - 'delete paragraph content view'
+  - 'delete terms in faq_categories'
+  - 'delete terms in icons'
+  - 'delete terms in media_categories'
+  - 'delete terms in services_categories'
+  - 'delete terms in tags'
+  - 'delete terms in term_categories'
+  - 'delete terms in user_segments'
+  - 'edit any article content'
+  - 'edit any data_source content'
+  - 'edit any document media'
+  - 'edit any faq content'
+  - 'edit any image media'
+  - 'edit any link media'
+  - 'edit any news content'
+  - 'edit any organization content'
+  - 'edit any page content'
+  - 'edit any remote_video media'
+  - 'edit layout paragraphs plugin config'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own data_source content'
+  - 'edit own document media'
+  - 'edit own faq content'
+  - 'edit own image media'
+  - 'edit own link media'
+  - 'edit own news content'
+  - 'edit own organization content'
+  - 'edit own page content'
+  - 'edit own remote_video media'
+  - 'edit terms in faq_categories'
+  - 'edit terms in icons'
+  - 'edit terms in media_categories'
+  - 'edit terms in services_categories'
+  - 'edit terms in tags'
+  - 'edit terms in term_categories'
+  - 'edit terms in user_segments'
+  - 'issue subrequests'
+  - 'notify of path changes'
+  - 'perform batch updates entity usage'
+  - 'post comments'
+  - 'rebuild next frontend'
+  - 'rebuild tablefield'
+  - 'reorder layout paragraphs components'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert data_source revisions'
+  - 'revert faq revisions'
+  - 'revert news revisions'
+  - 'revert organization revisions'
+  - 'revert page revisions'
+  - 'schedule publishing of nodes'
+  - 'translate editable entities'
+  - 'update paragraph content accordion'
+  - 'update paragraph content attachments'
+  - 'update paragraph content content'
+  - 'update paragraph content faq'
+  - 'update paragraph content heading'
+  - 'update paragraph content image'
+  - 'update paragraph content info_banner'
+  - 'update paragraph content layout_section'
+  - 'update paragraph content link'
+  - 'update paragraph content organization_search'
+  - 'update paragraph content related_content'
+  - 'update paragraph content search_report'
+  - 'update paragraph content signpost'
+  - 'update paragraph content table'
+  - 'update paragraph content text'
+  - 'update paragraph content video'
+  - 'update paragraph content view'
+  - 'use editorial transition amendment'
+  - 'use editorial transition approval'
+  - 'use editorial transition cancel'
+  - 'use editorial transition create_new'
+  - 'use editorial transition end'
+  - 'use editorial transition publish'
+  - 'use editorial transition return_for_amendment'
+  - 'use editorial transition to_review'
+  - 'use editorial transition to_verify'
+  - 'use text format full_html'
+  - 'view all media revisions'
+  - 'view all revisions'
+  - 'view any unpublished content'
+  - 'view article revisions'
+  - 'view data_source revisions'
+  - 'view faq revisions'
+  - 'view latest version'
+  - 'view news revisions'
+  - 'view organization revisions'
+  - 'view own unpublished content'
+  - 'view own unpublished media'
+  - 'view page revisions'
+  - 'view paragraph content accordion'
+  - 'view paragraph content content'
+  - 'view paragraph content faq'
+  - 'view paragraph content frontend_form'
+  - 'view paragraph content related_content'
+  - 'view scheduled content'
+  - 'view the administration theme'
+  - 'view user email addresses'

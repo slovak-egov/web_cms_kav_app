@@ -1,0 +1,24 @@
+ip_comment_ban.admin_page:
+  title: 'Advanced IP address bans'
+  description: 'Ban visits from specific or range IP addresses.'
+  route_name: ip_comment_ban.admin_page
+  weight: 10
+  parent: user.admin_index
+
+ip_comment_ban.search:
+  route_name: ip_comment_ban.search
+  title: 'Search'
+  weight: 1
+  parent: ip_comment_ban.admin_page
+
+ip_comment_ban.delete_all:
+  route_name: ip_comment_ban.delete_all
+  title: 'Delete all'
+  weight: 2
+  parent: ip_comment_ban.admin_page
+
+ip_comment_ban.settings:
+  route_name: ip_comment_ban.settings
+  title: 'Settings'
+  weight: 10
+  parent: ip_comment_ban.admin_page

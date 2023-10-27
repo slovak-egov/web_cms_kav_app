@@ -1,0 +1,29 @@
+uuid: 9debc209-c695-4847-98e8-e96bbff20a7c
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.news
+    - taxonomy.vocabulary.tags
+id: node.news.field_tags
+field_name: field_tags
+entity_type: node
+bundle: news
+label: Značky
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: taxonomy_unique
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,113 @@
+#!/bin/bash
+set -o errexit
+set -o pipefail
+set -o nounset
+
+DEBUG="${DEBUG:-false}"
+CMS_MODE="${CMS_MODE:-false}"
+ADMIN_PASSWORD="${ADMIN_PASSWORD:-}"
+DRUSH_OPTS="${DRUSH_OPTS:-}"
+APACHE_OPTS="${APACHE_OPTS:-}"
+UPDATE_CA_CERTS_OPTS="${UPDATE_CA_CERTS_OPTS:-}"
+
+if [[ "${DEBUG,,}" == "true" ]]; then
+  echo "Debug mode enabled"
+
+  DEBUG="true"
+
+  set -x
+
+  DRUSH_OPTS="${DRUSH_OPTS} -v -d"
+  echo -e "\nRunning drush with: '${DRUSH_OPTS}'"
+
+  APACHE_OPTS="${APACHE_OPTS} -e debug"
+  echo -e "\nRunning apache with: '${APACHE_OPTS}'"
+
+  UPDATE_CA_CERTS_OPTS="${UPDATE_CA_CERTS_OPTS} --verbose"
+  echo -e "\nRunning update-ca-certificates with: '$UPDATE_CA_CERTS_OPTS'"
+fi
+
+# Starting CMS mode
+if [[ "${CMS_MODE}" == "true" ]]; then
+  # Fail if DB is unreachable
+  echo -e "\nTesting DB connection..."
+  TABLE_COUNT=$(psql postgresql://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}/${DB_DATABASE} -q -c "SELECT count(*) FROM pg_catalog.pg_tables WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema';" -t)
+  echo "${TABLE_COUNT} tables were found"
+
+  echo -e "\nTurning off db parameter 'synchronous_commit'"
+  psql postgresql://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}/${DB_DATABASE} -c "ALTER USER ${DB_USERNAME} SET synchronous_commit=OFF;"
+
+  # If there are no tables in CMS database, initialize drupal
+  if [[ ${TABLE_COUNT} -eq 0 ]]; then
+    echo -e "\nInstalling Drupal..."
+    php -d memory_limit=1024M vendor/bin/drush site:install --existing-config -y ${DRUSH_OPTS}
+
+    # Disabling debug logging for security reasons
+    if [[ "${DEBUG}" == "true" ]]; then
+      set +x
+    fi
+
+    # Uninstall next_extras module
+    echo -e "\nClearing Drupal cache..."
+    vendor/bin/drush cr ${DRUSH_OPTS}
+
+    # Set admin password, if setup
+    if [[ -n "${ADMIN_PASSWORD}" ]]; then
+      echo -e "\nSetting admin password"
+      vendor/bin/drush upwd admin "${ADMIN_PASSWORD}" ${DRUSH_OPTS}
+    fi
+
+
+    if [[ "${DEBUG}" == "true" ]]; then
+      set -x
+    fi
+  fi
+
+  if [[ ! -d "config/simple_oauth_keys" ]]; then
+    vendor/bin/drush simple-oauth:generate-keys ../config/simple_oauth_keys ${DRUSH_OPTS}
+  fi
+
+  # echo -e "\nDeploying config changes, DB migrations..."
+  # # Deploy config changes, run DB migrations
+  # vendor/bin/drush deploy -y ${DRUSH_OPTS}
+
+  # Import user interface translation
+  echo -e "\nImporting translations..."
+  vendor/bin/drush locale:import sk ../translations/drupal.sk.po --type=not-customized --override=not-customized -y ${DRUSH_OPTS}
+
+  # vendor/bin/drush locale:import en ../translations/app.en.po --type=customized --override=all -y ${DRUSH_OPTS}
+  vendor/bin/drush locale:import sk ../translations/app.sk.po --type=customized --override=all -y ${DRUSH_OPTS}
+  vendor/bin/drush locale:check
+  vendor/bin/drush locale:update
+
+  # vendor/bin/drush svksk-ui-translations:import -y ${DRUSH_OPTS}
+
+  # echo -e "\nRestore OAuth consumer"
+  # vendor/bin/drush svksk-api:restore-consumer-keys
+
+  echo -e "\nRebuild and clear Drupal cache"
+  vendor/bin/drush cache:rebuild
+
+  echo -e "\nTurning on db parameter 'synchronous_commit'"
+  psql postgresql://${DB_USERNAME}:${DB_PASSWORD}@${DB_HOST}/${DB_DATABASE} -c "ALTER USER ${DB_USERNAME} SET synchronous_commit=ON;"
+
+  # Generate Simple OAuth keys
+  # if [ ! -d "config/simple_oauth_keys" ]; then
+  #   vendor/bin/drush simple-oauth:generate-keys ../config/simple_oauth_keys
+  # fi
+fi
+
+# echo -e "\nImporting custom CA certificates from '/usr/local/share/ca-certificates/'"
+# if [[ -z "$(ls -A /usr/local/share/ca-certificates/)" ]]; then
+#   echo -e "No custom CAs found..."
+# else
+#    update-ca-certificates ${UPDATE_CA_CERTS_OPTS}
+# fi
+
+echo -e "\nStarting apache2..."
+# If first arg is `-f` or `--some-option`, append
+if [[ "${1#*-}" != "$1" ]]; then
+  set -- apache2-foreground ${APACHE_OPTS}
+fi
+
+exec "$@"

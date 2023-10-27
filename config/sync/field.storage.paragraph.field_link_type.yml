@@ -1,0 +1,30 @@
+uuid: 19b5ce46-a51d-4d81-a4c6-a5c822a6de7d
+langcode: sk
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_link_type
+field_name: field_link_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: internal
+      label: Interný
+    -
+      value: external
+      label: Externý
+    -
+      value: custom
+      label: Externý
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,20 @@
+uuid: ac9fdb1a-322b-4627-9d0d-50231bc52602
+langcode: sk
+status: true
+dependencies:
+  theme:
+    - svksk_admin
+_core:
+  default_config_hash: OQ9aJ-4qVwK1x00o9EOYK4eFDjQr_HLpbPiJaPSVZiQ
+id: svksk_admin_local_actions
+theme: svksk_admin
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

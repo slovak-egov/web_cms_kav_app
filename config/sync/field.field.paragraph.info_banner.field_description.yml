@@ -1,0 +1,27 @@
+uuid: b893da57-d62b-44c5-ac2c-f57106158018
+langcode: sk
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.info_banner
+  module:
+    - allowed_formats
+    - text
+third_party_settings:
+  allowed_formats:
+    allowed_formats:
+      - basic_html
+id: paragraph.info_banner.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: info_banner
+label: Popis
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

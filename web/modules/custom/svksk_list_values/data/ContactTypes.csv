@@ -1,0 +1,11 @@
+code;name;description
+1;Mobil;Mobilné telefónne číslo vo formáte +421 901 234 567
+2;Telefón;Pevná telefónna linka
+3;Fax;Fax
+4;Mail;E-mailová adresa
+5;Facebook;Facebook
+6;Instagram;Instagram
+7;URL;URL kontaktu
+8;www;Link na webovú stránku. Webové sídlo
+9;Skype;Skype
+10;Osoba;Kontaktná osoba

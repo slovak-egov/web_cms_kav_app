@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Slovensko.sk CMDB module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\svksk_cmdb\ModuleEntityOperations;
+
+/**
+ * Implements hook_entity_presave().
+ */
+function svksk_cmdb_entity_presave(EntityInterface $entity) {
+  \Drupal::service('class_resolver')
+    ->getInstanceFromDefinition(ModuleEntityOperations::class)
+    ->entityPresave($entity);
+}

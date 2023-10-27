@@ -1,0 +1,171 @@
+<?php
+
+use Drupal\Core\Locale\CountryManager;
+use League\ISO3166\ISO3166;
+
+/**
+ * @file
+ * Install, update and uninstall functions for the svksk_list_values module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function svksk_list_values_install() {
+  $countries = CountryManager::getStandardList();
+  $lvCountryStorage = \Drupal::entityTypeManager()
+    ->getStorage('lv_country');
+  $lvCountryStorage
+    ->delete($lvCountryStorage->loadMultiple(\Drupal::entityQuery('lv_country')->accessCheck(true)->execute()));
+
+  foreach ($countries as $alpha2 => $country) {
+    try {
+      $countryISO3166 = (new ISO3166())->alpha2($alpha2);
+      $lvCountryStorage->create([
+        'code' => $countryISO3166['alpha3'],
+        'name' => $country,
+        'akronym_short' => $countryISO3166['alpha2'],
+        'akronym_long' => $countryISO3166['alpha3'],
+        'langcode' => 'sk',
+      ])->save();
+    } catch (\Exception $exception) {
+      continue;
+    }
+  }
+
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+
+  $import_manager->importMetaIS('lv_address_type', 'modules/custom/svksk_list_values/data/CL010139_MetaIS.xml');
+  $import_manager->importMetaIS('lv_region', 'modules/custom/svksk_list_values/data/CL000023_MetaIS.xml');
+  $import_manager->importMetaIS('lv_county', 'modules/custom/svksk_list_values/data/CL000024_MetaIS.xml');
+  $import_manager->importMetaIS('lv_municipality', 'modules/custom/svksk_list_values/data/CL000025_MetaIS.xml');
+  $import_manager->importMetaIS('lv_district', 'modules/custom/svksk_list_values/data/CL010141_MetaIS.xml');
+  $import_manager->importMetaIS('lv_organizational_unit_type', 'modules/custom/svksk_list_values/data/CL010110_MetaIS.xml');
+  $import_manager->importMetaIS('lv_nace', 'modules/custom/svksk_list_values/data/CL005205_MetaIS.xml');
+  $import_manager->importMetaIS('lv_legal_form', 'modules/custom/svksk_list_values/data/CL000056_MetaIS.xml');
+  $import_manager->importMetaIS('lv_legal_status', 'modules/custom/svksk_list_values/data/CL010108_MetaIS.xml');
+  $import_manager->importCSV('lv_contact_type', 'modules/custom/svksk_list_values/data/ContactTypes.csv');
+  $import_manager->importCSV('lv_data_source_type', 'modules/custom/svksk_list_values/data/DataSourceTypes.csv');
+  $import_manager->importCSV('lv_corporate_body_type', 'modules/custom/svksk_list_values/data/CorporateBodyTypes.csv');
+  $import_manager->importCSV('lv_size_corporate', 'modules/custom/svksk_list_values/data/CorporateSizes.csv');
+  $import_manager->importCSV('lv_service_hour_type', 'modules/custom/svksk_list_values/data/ServiceHoursTypes.csv');
+  $import_manager->importCSV('lv_interval_type', 'modules/custom/svksk_list_values/data/IntervalTypes.csv');
+}
+
+/**
+ * Create LV Corporate body type entity
+ */
+function svksk_list_values_update_9001() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('lv_corporate_body_type')) {
+    return 'LV Corporate Body type already exists.';
+  }
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+  $import_manager->importCSV('lv_corporate_body_type', 'modules/custom/svksk_list_values/data/CorporateBodyTypes.csv');
+}
+
+/**
+ * Create LV NACE type entity
+ */
+function svksk_list_values_update_9002() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('lv_nace')) {
+    return 'LV NACE already exists.';
+  }
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+  $import_manager->importMetaIS('lv_nace', 'modules/custom/svksk_list_values/data/CL005205_MetaIS.xml');
+}
+
+/**
+ * Create LV Legal Form type entity
+ */
+function svksk_list_values_update_9003() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('lv_legal_form')) {
+    return 'LV Legal Form already exists.';
+  }
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+  $import_manager->importMetaIS('lv_legal_form', 'modules/custom/svksk_list_values/data/CL000056_MetaIS.xml');
+}
+
+/**
+ * Create LV Corporate Size type entity
+ */
+function svksk_list_values_update_9004() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('lv_size_corporate')) {
+    return 'LV Corporate Size type already exists.';
+  }
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+  $import_manager->importCSV('lv_size_corporate', 'modules/custom/svksk_list_values/data/CorporateSizes.csv');
+}
+
+/**
+ * Create LV Legal Status type entity
+ */
+function svksk_list_values_update_9005() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('lv_legal_status')) {
+    return 'LV Legal Status already exists.';
+  }
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+  $import_manager->importMetaIS('lv_legal_status', 'modules/custom/svksk_list_values/data/CL010108_MetaIS.xml');
+}
+
+/**
+ * Create LV Service Hours type entity
+ */
+function svksk_list_values_update_9006() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('lv_service_hour_type')) {
+    return 'LV Service Hours type already exists.';
+  }
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+  $import_manager->importCSV('lv_service_hour_type', 'modules/custom/svksk_list_values/data/ServiceHoursTypes.csv');
+}
+
+/**
+ * Create LV Interval type entity
+ */
+function svksk_list_values_update_9007() {
+  if (!\Drupal::service('entity_schema_manager')->installEntity('lv_interval_type')) {
+    return 'LV Interval type already exists.';
+  }
+  /** @var \Drupal\svksk_list_values\ImportManager $import_manager */
+  $import_manager = \Drupal::service('svksk_list_values.import_manager');
+  $import_manager->importCSV('lv_interval_type', 'modules/custom/svksk_list_values/data/IntervalTypes.csv');
+}
+
+/**
+ * Install data_table for LV entity type definitions where it's missing.
+ */
+function svksk_list_values_update_9008() {
+  $entity_type_ids = [
+    'lv_address_type',
+    'lv_region',
+    'lv_county',
+    'lv_country',
+    'lv_municipality',
+    'lv_district',
+    'lv_organizational_unit_type',
+    'lv_nace',
+    'lv_legal_form',
+    'lv_legal_status',
+    'lv_contact_type',
+    'lv_data_source_type',
+    'lv_corporate_body_type',
+    'lv_size_corporate',
+    'lv_service_hour_type',
+    'lv_interval_type'
+  ];
+  $entity_type_manager = \Drupal::entityTypeManager();
+  $entity_last_installed_schema_repository = \Drupal::service('entity.last_installed_schema.repository');
+  foreach ($entity_type_ids as $entity_type_id) {
+    $entity_type = $entity_type_manager->getActiveDefinition($entity_type_id);
+    if (!$entity_type->getDataTable() && ($base_table = $entity_type->getBaseTable())) {
+      $entity_type->set('data_table', $base_table . '_field_data');
+    }
+    $entity_last_installed_schema_repository->setLastInstalledDefinition($entity_type);
+  }
+}

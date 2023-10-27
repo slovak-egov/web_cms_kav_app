@@ -1,0 +1,11 @@
+name: Term
+type: module
+description: Term entities
+core_version_requirement: ^9 || ^10
+package: Slovensko.sk
+dependencies:
+  - drupal:taxonomy
+  - drupal:svksk_content
+
+'interface translation project': svksk_term
+'interface translation server pattern': modules/custom/%project/translations/%project.%language.po
